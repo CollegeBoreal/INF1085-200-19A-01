@@ -27,8 +27,6 @@ Unix - Communication
 Unix - The vi Editor 
 ```
 
-[VI CheatSheet](./VI.md)
-
 ## Programmation
 
 ```
