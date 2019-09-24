@@ -27,7 +27,7 @@ Astuces:
 | 03   | 300105201 |  :x:                                                     | 10.13.237.78 |
 | 04   | 300106918 |  https://networkake.wordpress.com                        | 10.13.237.18 |
 | 05   | 300107361 |  https://infoscience570953701.wordpress.com              | 10.13.237.99 |
-| 06   | 300108234 |  https://linux1stblog.blogspot.com                       | 10.13.237.55 |
+| 06   | 300108234 |  https://linux1stblog.wordpress.com                      | 10.13.237.55 |
 | 07   | 300110500 |                                                          | 10.13.237.75 |
 | 08   | 300110529 |                                                          | 10.13.237.80 |
 | 09   | 300111671 |                                                          | 10.13.237.63 |
