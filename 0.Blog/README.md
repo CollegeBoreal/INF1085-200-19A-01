@@ -35,7 +35,7 @@ Astuces:
 | 11   | 300112017 | https://ordenrosae.000webhostapp.com/TUTORIELS/         | 10.13.237.60 |
 | 12   | 300112687 | :x:                                                     | 10.13.237.87 |
 | 13   | 300112917 | https://ubuntuserver101.blogpost.com                    | 10.13.237.79 |
-| 14   | 300113775 | https://linuxserver.cmonsite.fr                         | 10.13.237.77 |
+| 14   | 300113775 | https://futuratech816653405.wordpress.com               | 10.13.237.77 |
 
 #### Example
 
