@@ -33,7 +33,7 @@ Astuces:
 | 09   | 300111671 | https://commentinstallerlunixsurunserveur.wordpress.com/ | 10.13.237.63 |
 | 10   | 300111766 | https://thiamcheikh.webnode.fr/linux/                    | 10.13.237.66 |
 | 11   | 300112017 | https://ordenrosae.000webhostapp.com/TUTORIELS/          | 10.13.237.60 |
-| 12   | 300112687 | :x:                                                      | 10.13.237.87 |
+| 12   | 300112687 | https://installationdelinux.wordpress.com                | 10.13.237.87 |
 | 13   | 300112917 | https://ubuntuserver101.blogpost.com                     | 10.13.237.79 |
 | 14   | 300113775 | https://futuratech816653405.wordpress.com                | 10.13.237.77 |
 
