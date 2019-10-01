@@ -26,22 +26,22 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 
 :two: Renseigner son utilisateur dans le tableau ci-dessous (i.e. MONUSER@10.13.237.126 => brice@10.13.237.126)
 
-|:hash:| :id:      | Utilisateur à remplacer      |
-|------|-----------|------------------------------|
-| 01   | 300104524 | echnaideurg@10.13.237.19         |
-| 02   | 300104541 | MONUSER@10.13.237.:x:        |
-| 03   | 300105201 | fabrice@10.13.237.78         |
-| 04   | 300106918 | MONUSER@10.13.237.18         |
-| 05   | 300107361 |  toch90@10.13.237.99         |
-| 06   | 300108234 | MONUSER@10.13.237.55         |
-| 07   | 300110500 | MONUSER@10.13.237.75         |
-| 08   | 300110529 | MONUSER@10.13.237.80         |
-| 09   | 300111671 | sadissou@10.13.237.63        |
-| 10   | 300111766 | MONUSER@10.13.237.66         |
-| 11   | 300112017 | orden@10.13.237.60           |
-| 12   | 300112687 | nsomwe@10.13.237.87          |
-| 13   | 300112917 | djumaster@10.13.237.79       |
-| 14   | 300113775 | widby@10.13.237.77           |
+|:hash:| :id:      | Utilisateur à remplacer      | ssh              | Docker Engine    | 
+|------|-----------|------------------------------|------------------|------------------|
+| 01   | 300104524 | echnaideurg@10.13.237.19     |:heavy_check_mark:|:x:               |
+| 02   | 300104541 | MONUSER@10.13.237.:x:        |:x:               |:x:               |
+| 03   | 300105201 | fabrice@10.13.237.78         |:heavy_check_mark:|:x:               |
+| 04   | 300106918 | MONUSER@10.13.237.18         |:x:               |:x:               |
+| 05   | 300107361 |  toch90@10.13.237.99         |:heavy_check_mark:|:heavy_check_mark:|
+| 06   | 300108234 | MONUSER@10.13.237.55         |:x:               |:x:               |
+| 07   | 300110500 | MONUSER@10.13.237.75         |:x:               |:x:               |
+| 08   | 300110529 | MONUSER@10.13.237.80         |:x:               |:x:               |
+| 09   | 300111671 | sadissou@10.13.237.63        |:x:               |:x:               |
+| 10   | 300111766 | MONUSER@10.13.237.66         |:x:               |:x:               |
+| 11   | 300112017 | orden@10.13.237.60           |:heavy_check_mark:|:x:               |
+| 12   | 300112687 | nsomwe@10.13.237.87          |:heavy_check_mark:|:x:               |
+| 13   | 300112917 | djumaster@10.13.237.79       |:heavy_check_mark:|:x:               |
+| 14   | 300113775 | widby@10.13.237.77           |:heavy_check_mark:|:x:               |
 
 :three: Installer Docker Engine sur sa machine Linux
 
