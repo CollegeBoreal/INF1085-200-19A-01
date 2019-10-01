@@ -14,7 +14,7 @@ $ ssh monID@monAdresseIP
 $ nano ~/.ssh/authorized_keys
 ```
 
-* copier la clé publique ci-dessous dans un nouvelle ligne 
+* copier la clé publique ci-dessous dans une nouvelle ligne 
 
 (attention copier la clé tel quel sans espace ou autre charactere, i.e. la clé est longue)
 
