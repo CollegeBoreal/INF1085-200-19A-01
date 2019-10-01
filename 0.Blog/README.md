@@ -23,7 +23,7 @@ Astuces:
 |:hash:| :id:      |   Blog (https://wordpress.com)                           | Serveur      |
 |------|-----------|----------------------------------------------------------|--------------|
 | 01   | 300104524 | https://linuxinstallation572303153.wordpress.com                                 | 10.13.237.19 |
-| 02   | 300104541 | https://wordpress.com/block-editor/post/linuxcomputer508517026.wordpress.com/16  | 10.13.237.41 |       
+| 02   | 300104541 | https://linuxcomputer508517026.wordpress.com                                     | 10.13.237.41 |       
 | 03   | 300105201 | https://linuxfbrice.wordpress.com                                                | 10.13.237.78 |
 | 04   | 300106918 | https://networkake.wordpress.com                                                 | 10.13.237.18 |
 | 05   | 300107361 | https://infoscience570953701.wordpress.com                                       | 10.13.237.99 |
