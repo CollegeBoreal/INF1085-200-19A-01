@@ -39,7 +39,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 | 09   | 300111671 | MONUSER@10.13.237.63         |
 | 10   | 300111766 | MONUSER@10.13.237.66         |
 | 11   | 300112017 | orden@10.13.237.60           |
-| 12   | 300112687 | MONUSER@10.13.237.87         |
+| 12   | 300112687 | nsomwe@10.13.237.87          |
 | 13   | 300112917 | djumaster@10.13.237.79       |
 | 14   | 300113775 | widby@10.13.237.77           |
 
