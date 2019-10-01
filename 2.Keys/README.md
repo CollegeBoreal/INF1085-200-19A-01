@@ -24,7 +24,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 
 ## Identifiant
 
-* Renseigner son utilisateur dans le tableau ci-dessous (i.e. MONUSER@10.13.237.126 => brice@10.13.237.126)
+:two: Renseigner son utilisateur dans le tableau ci-dessous (i.e. MONUSER@10.13.237.126 => brice@10.13.237.126)
 
 |:hash:| :id:      | Utilisateur à remplacer      |
 |------|-----------|------------------------------|
@@ -43,7 +43,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 | 13   | 300112917 | MONUSER@10.13.237.79         |
 | 14   | 300113775 | MONUSER@10.13.237.77         |
 
-:two: Installer Docker Engine sur sa machine Linux
+:three: Installer Docker Engine sur sa machine Linux
 
 Suivre le tutoriel suivant
 
