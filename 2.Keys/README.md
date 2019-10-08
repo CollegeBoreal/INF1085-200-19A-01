@@ -29,7 +29,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 |:hash:| :id:      | Utilisateur à remplacer      | ssh              | Docker Engine    | 
 |------|-----------|------------------------------|------------------|------------------|
 | 01   | 300104524 | echnaideurg@10.13.237.19     |:heavy_check_mark:|:x:               |
-| 02   | 300104541 | romeo@10.13.237.:41:        |:x:               |:x:               |
+| 02   | 300104541 | romeo@10.13.237.41      |:x:               |:x:               |
 | 03   | 300105201 | fabrice@10.13.237.78         |:heavy_check_mark:|:x:               |
 | 04   | 300106918 | amir@10.13.237.18         |:x:               |:x:               |
 | 05   | 300107361 |  toch90@10.13.237.99         |:heavy_check_mark:|:heavy_check_mark:|
