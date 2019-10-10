@@ -49,7 +49,7 @@ Suivre le tutoriel suivant
 
 https://github.com/CollegeBoreal/Tutoriels/tree/master/2.Cloud-Native/2.Docker/Linux
 
-** Tester si Dcoker Engine est fonctionel
+### Tester si Dcoker Engine est fonctionel
 
 ```
 $ systemctl status docker
