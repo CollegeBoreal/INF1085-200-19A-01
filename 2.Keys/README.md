@@ -33,7 +33,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 | 03   | 300105201 | fabrice@10.13.237.78         |:heavy_check_mark:|:x:               |
 | 04   | 300106918 | amir@10.13.237.18            |:heavy_check_mark:|:heavy_check_mark:|
 | 05   | 300107361 | toch90@10.13.237.99          |:heavy_check_mark:|:heavy_check_mark:|
-| 06   | 300108234 | haliuser@10.13.237.55        |:x:               |:x:               |
+| 06   | 300108234 | haliuser@10.13.237.55        |:heavy_check_mark:|:heavy_check_mark:|
 | 07   | 300110500 | MONUSER@10.13.237.75         |:x:               |:x:               |
 | 08   | 300110529 | david@10.13.237.80           |:x:               |:x:               |
 | 09   | 300111671 | sadissou@10.13.237.63        |:x:               |:x:               |
