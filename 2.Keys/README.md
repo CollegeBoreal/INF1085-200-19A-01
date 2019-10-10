@@ -36,7 +36,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 | 06   | 300108234 | haliuser@10.13.237.55        |:heavy_check_mark:|:heavy_check_mark:|
 | 07   | 300110500 | MONUSER@10.13.237.75         |:x:               |:x:               |
 | 08   | 300110529 | david@10.13.237.80           |:heavy_check_mark:|:x:               |
-| 09   | 300111671 | sadissou@10.13.237.63        |:x:               |:x:               |
+| 09   | 300111671 | sadissou@10.13.237.63        |:heavy_check_mark:|:heavy_check_mark:|
 | 10   | 300111766 | thiam@10.13.237.66         |:x:               |:x:               |
 | 11   | 300112017 | orden@10.13.237.60           |:heavy_check_mark:|:x:               |
 | 12   | 300112687 | nsomwe@10.13.237.87          |:heavy_check_mark:|:x:               |
