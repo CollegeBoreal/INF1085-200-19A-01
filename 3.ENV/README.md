@@ -2,7 +2,7 @@
 
 Fichier .bashrc (profile)
 
-:one: Créer votre fichier `.bashrc` sur votre serveur et mettez son contenu dans le fichier :id:`.rc`
+:one: Créer votre fichier `.bashrc` sur votre serveur et mettez son contenu dans le fichier .:id:`.rc`
 
 :two: Modifier votre prompt pour afficher `[moi@ip-10-13-237-16 /home/moimeme]$`
 
