@@ -1,5 +1,8 @@
 # Shell Suite
 
+Fichier .bashrc (profile)
+
+:one: Créer votre fichier .bashrc sur votre serveur et mettez son contenu dans le fichier :id:`.rc`
 
 * Pemissions
 
