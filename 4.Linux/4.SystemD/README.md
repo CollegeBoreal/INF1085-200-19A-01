@@ -13,3 +13,6 @@ systemd est un système d’initialisation et un daemon qui a été spécifiquem
 ### SysVinit to Systemd
 https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet
 
+
+http://images.linoxide.com/systemd-vs-sysVinit-cheatsheet.pdf
+
