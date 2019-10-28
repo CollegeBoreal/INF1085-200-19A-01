@@ -8,6 +8,9 @@ systemd est un système d’initialisation et un daemon qui a été spécifiquem
 
 ![alt tag](https://github.com/CollegeBoreal/INF1045-16A/blob/master/1.Boot/Systemd_components.svg.png)
 
+
+[En Francais](https://lea-linux.org/documentations/Systemd)
+
 # Reference:
 
 ### SysVinit to Systemd
