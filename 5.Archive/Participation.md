@@ -21,6 +21,8 @@
 | 13   | [300112917](300112917) | :x:                | :heavy_check_mark: |
 | 14   | [300113775](300113775) | :heavy_check_mark: | :heavy_check_mark: |
 
+## Inscrits AWS 
+
 | Nom                               | :email:                                          | Type    | Status           |
 |-----------------------------------|--------------------------------------------------|---------|------------------|
 | Olaitan Adechoubou                | olaitan_machoukouri_or.adechoubou@monboreal.ca	 | Student | Approved         |
