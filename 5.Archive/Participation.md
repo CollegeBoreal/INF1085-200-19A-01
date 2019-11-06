@@ -29,14 +29,14 @@
 | widby Armand	                    | 300113775@monboreal.ca	                         | Student | Approved         |
 | Tochgaly-Kitovah Etienne          | 300107361@monboreal.ca	                         | Student | Approved         |
 | Halima Fadde                      | halima.fadde@monboreal.ca	                       | Student | Approved         |
-| Halima Fadde                      | 300108234@monboreal.ca	                         | Student | Approved         |
+|                                   | 300108234@monboreal.ca	                         | Student | Approved         |
 | Echnaideur Geneus	                | echnaideur.geneus@monboreal.ca	                 | Student | Approved         |
 | Djuma Heri                        | djuma.heri@monboreal.ca	                         | Student | Approved         |
 | David Kayembe	                    | david.kayembe@monboreal.ca	                     | Student | Approved         |
 | Amichia Christian Eric Romeo Mian	| amichia_christian_eric.mian@monboreal.ca         | Student | Approved         |
 | Joseph Nsomwe	                    | 300112687@monboreal.ca                           | Student | Approved         |
 | Alade Sadissou                    | alade_mouhamad_abbas.sadissou@monboreal.ca       | Student | Approved         |
-| Alade Sadissou                    | 300111671@monboreal.ca                           | Student | Approved         |
+|                                   | 300111671@monboreal.ca                           | Student | Approved         |
 | AEK chaouche                      | abdelkader.chaouche@monboreal.ca                 | Student | Rejected - Final |
 | AEK chaouche                      | 300106918@monboreal.ca                           | K12     | Rejected - Final | 
 | guigma didier Guigma              | 300110500@monboreal.ca	                         | Student | Rejected - Final | 
