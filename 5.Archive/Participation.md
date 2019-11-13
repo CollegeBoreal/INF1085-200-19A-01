@@ -1,7 +1,7 @@
 # Participation
 
 
-## Resultat
+## Inscrit AWS
 
 
 |:hash:| :id:                   | AWS                | Nom                               | :email:                                          | Type    | Status           |
