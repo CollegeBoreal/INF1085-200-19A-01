@@ -4,8 +4,8 @@
 ## Inscrit AWS
 
 
-|:hash:| :id:                   | AWS                | Nom                               | :email:                                          | Type    | Status           |
-|------|------------------------|--------------------|-----------------------------------|--------------------------------------------------|---------|------------------|
+|:hash:| :id:                   | AWS                | Nom                               | :email:        | Status           |
+|------|------------------------|--------------------|-----------------------------------|----------------|------------------|
 | 01   | [300104524](300104524) | :heavy_check_mark: | Echnaideur Geneus                 | echnaideur.geneus@monboreal.ca                 | Approved         |
 | 02   | [300104541](300104541) | :x:                | Amichia Christian Eric Romeo Mian | amichia_christian_eric.mian@monboreal.ca       | Approved         |
 | 03   | [300105201](300105201) | :x:                |                                   |                                                |                  |
