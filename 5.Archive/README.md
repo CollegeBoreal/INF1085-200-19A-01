@@ -11,4 +11,3 @@ Linux In Action: Chapitre 4
 
 * décompresser le fichier sur le serveur linux
 
-# [Participation](Participation.md)
