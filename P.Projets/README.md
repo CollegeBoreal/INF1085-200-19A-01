@@ -34,4 +34,8 @@ $ cd P.Projects
 
 :pushpin: `MediaWiki` Se référer au Chapitre 7 page 130
 
+#### :parking: Chapter 8 : Building a Nextcloud file-sharing server
+
+:pushpin: `Nextcloud` Se référer au Chapitre 8 page 155
+
 
