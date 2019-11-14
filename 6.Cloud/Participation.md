@@ -42,7 +42,7 @@
 | 13   | [300112917](300112917) | :heavy_check_mark: |
 | 14   | [300113775](300113775) | :heavy_check_mark: |
 
-## Possession Raspberry Pi 4
+## :strawberry: Possession RaspberryPi 4
 
 |:hash:| :id:                   | :strawberry:       | MAC Address         |
 |------|------------------------|--------------------|---------------------|
