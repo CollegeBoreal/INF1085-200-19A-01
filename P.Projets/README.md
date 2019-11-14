@@ -27,3 +27,5 @@ $ cd P.Projects
 ## Liste 
 
 #### :parking: Chapter 7 : Building a MediaWiki server
+
+Se référer au Chapitre 7 page 130
