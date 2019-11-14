@@ -6,7 +6,7 @@
 $ cd P.Projects
 ```
 
-|:hash:| :id:      | Utilisateur à remplacer      | Nom projet       | local/cloud      | 
+|:hash:| :id:      | :computer:      | Nom projet       | local/cloud      | 
 |------|-----------|------------------------------|------------------|------------------|
 | 01   | 300104524 | echnaideurg@10.13.237.19     |:x:               |:x:               |
 | 02   | 300104541 | romeo@10.13.237.41           | VPN               |:x:               |
