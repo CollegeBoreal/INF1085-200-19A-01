@@ -1,6 +1,6 @@
 # Projets
 
-## 7 WebServer Wiki Media
+
 
 ```
 $ cd P.Projects
@@ -9,7 +9,7 @@ $ cd P.Projects
 |:hash:| :id:      | Utilisateur à remplacer      | Nom projet       | local/cloud      | 
 |------|-----------|------------------------------|------------------|------------------|
 | 01   | 300104524 | echnaideurg@10.13.237.19     |:x:               |:x:               |
-| 02   | 300104541 | romeo@10.13.237.41           |:x:               |:x:               |
+| 02   | 300104541 | romeo@10.13.237.41           | VPN               |:x:               |
 | 03   | 300105201 | fabrice@10.13.237.78         |:x:               |:x:               |
 | 04   | 300106918 | amir@10.13.237.18            |:x:               |:x:               |
 | 05   | 300107361 | toch90@10.13.237.99          |:x:               |:x:               |
@@ -22,3 +22,8 @@ $ cd P.Projects
 | 12   | 300112687 | nsomwe@10.13.237.87          |:x:               |:x:               |
 | 13   | 300112917 | djumaster@10.13.237.79       |:x:               | Local            |
 | 14   | 300113775 | widby@10.13.237.77           |:x:               |:x:               |
+
+
+## Liste 
+
+#### :m: Chapter 7 : Building a MediaWiki server
