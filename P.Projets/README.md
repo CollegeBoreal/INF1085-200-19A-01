@@ -28,10 +28,10 @@ $ cd P.Projects
 
 #### :parking: Chapter 5 : Configuring automated offsite backups
 
-Se référer au Chapitre 5 page 90
+:pushpin: `Archives` - Se référer au Chapitre 5 page 90
 
 #### :parking: Chapter 7 : Building a MediaWiki server
 
-Se référer au Chapitre 7 page 130
+:pushpin: `MediaWiki` Se référer au Chapitre 7 page 130
 
 
