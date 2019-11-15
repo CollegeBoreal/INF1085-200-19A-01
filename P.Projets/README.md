@@ -17,7 +17,7 @@ $ cd P.Projects
 | 07   | 300110500 | didier@10.13.237.75          |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)|:x:               |
 | 08   | 300110529 | david@10.13.237.80           |:x:               |:x:               |
 | 09   | 300111671 | sadissou@10.13.237.63        |:x:               |:x:               |
-| 10   | 300111766 | thiam@10.13.237.66           |[:parking: MediaWiki](README.md#parking-chapter-12--building-a-mediawiki-server)| Local            |
+| 10   | 300111766 | thiam@10.13.237.66           |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local            |
 | 11   | 300112017 | orden@10.13.237.60           |:x:               | Local            |
 | 12   | 300112687 | nsomwe@10.13.237.87          |:x:               |:x:               |
 | 13   | 300112917 | djumaster@10.13.237.79       |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
