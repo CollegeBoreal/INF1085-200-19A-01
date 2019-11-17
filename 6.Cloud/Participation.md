@@ -23,7 +23,7 @@
 | 13   | [300112917](300112917) | :heavy_check_mark: | Djuma Heri                        | djuma.heri@mo..al.ca                        | Approved         |
 | 14   | [300113775](300113775) | :heavy_check_mark: | widby Armand                      | 300113775@mo..al.ca                         | Approved         |
 
-## Inscrits AWS 
+## Inscrits Azure 
 
 |:hash:| :id:                   | Azure              |
 |------|------------------------|--------------------|
