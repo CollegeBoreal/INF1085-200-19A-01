@@ -17,7 +17,7 @@
 | 08   | [300110529](300110529) | :heavy_check_mark: | David Kayembe                     | david.kayembe@mo..al.ca                     | Approved         |
 | 09   | [300111671](300111671) | :heavy_check_mark: | Alade Sadissou                    | alade_mouhamad_abbas.sadissou@mo..al.ca     | Approved         |
 |      |                        |                    |                                   | 300111671@mo..al.ca                         | Approved         |
-| 10   | [300111766](300111766) | :x:                |                                   |                                                |                  |
+| 10   | [300111766](300111766) | :x:                | CHEIKH THIAM                      | cheikh.thiam@mo..al.ca                     | Approved         |
 | 11   | [300112017](300112017) | :heavy_check_mark: | Olaitan Adechoubou                | olaitan_machoukouri_or.adechoubou@mo..al.ca | Approved         |      
 | 12   | [300112687](300112687) | :heavy_check_mark: | Joseph Nsomwe                     | 300112687@mo..al.ca                         | Approved         |
 | 13   | [300112917](300112917) | :heavy_check_mark: | Djuma Heri                        | djuma.heri@mo..al.ca                        | Approved         |
