@@ -1,7 +1,7 @@
 # Participation
 
 
-## :a: Inscrit 
+## :a: AWS 
 
 #### :pushpin: S'inscrire à [AWS](https://github.com/CollegeBoreal/Tutoriels/tree/master/5.AWS)
 
