@@ -13,7 +13,7 @@
 | 05   | [300107361](300107361) | :heavy_check_mark: | Tochgaly-Kitovah Etienne          | 300107361@mo..al.ca                         | Approved         |
 | 06   | [300108234](300108234) | :heavy_check_mark: | Halima Fadde                      | halima.fadde@mo..al.ca                      | Approved         |
 |      |                        |                    |                                   | 300108234@mo..al.ca                         | Approved         |
-| 07   | [300110500](300110500) | :x:                | guigma didier Guigma              | 300110500@mo..al.ca                         | Rejected - Final |        
+| 07   | [300110500](300110500) | :x:                | Florence Guigma                   | didier_sidwende.guigma@mo..al.ca           | Approved         |        
 | 08   | [300110529](300110529) | :heavy_check_mark: | David Kayembe                     | david.kayembe@mo..al.ca                     | Approved         |
 | 09   | [300111671](300111671) | :heavy_check_mark: | Alade Sadissou                    | alade_mouhamad_abbas.sadissou@mo..al.ca     | Approved         |
 |      |                        |                    |                                   | 300111671@mo..al.ca                         | Approved         |
