@@ -3,10 +3,10 @@
 
 ## Inscrit AWS
 
-| Legend        | Account Type                |
-|---------------|-----------------------------|
-| :credit_card: | AWS Personnal Account       |
-| :beginner:    | AWS Educate Starter Account |
+| Legend        | Account Type                           |
+|---------------|----------------------------------------|
+| :credit_card: | AWS Personnal Account                  |
+| :beginner:    | AWS Educate Starter Account (Vocareum) |
 
 
 |:hash:| :id:                   | AWS           | Nom                               | :email:        | Status           |
