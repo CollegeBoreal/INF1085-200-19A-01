@@ -16,7 +16,7 @@
 | 01   | [300104524](300104524) | :beginner:    | Echnaideur Geneus                 | echnaideur.geneus@mo..al.ca                 | Approved         |
 | 02   | [300104541](300104541) | :credit_card: | Amichia Christian Eric Romeo Mian | amichia_christian_eric.mian@mo..al.ca       | Approved         |
 | 03   | [300105201](300105201) | :credit_card:           |     Approved                              |                                                |                  |
-| 04   | [300106918](300106918) | :credit_card: | AEK chaouche                      | abdelkader.chaouche@mo..al.ca               | Approved         |
+| 04   | [300106918](300106918) | :beginner:    | AEK chaouche                      | abdelkader.chaouche@mo..al.ca               | Approved         |
 | 05   | [300107361](300107361) | :credit_card: | Tochgaly-Kitovah Etienne          | 300107361@mo..al.ca                         | Approved         |
 | 06   | [300108234](300108234) | :beginner:    | Halima Fadde                      | halima.fadde@mo..al.ca                      | Approved         |
 |      |                        |               |                                   | 300108234@mo..al.ca                         | Approved         |
