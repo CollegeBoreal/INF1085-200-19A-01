@@ -15,7 +15,7 @@ $ cd P.Projects
 | 05   | 300107361 | toch90@10.13.237.99          |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)|:x:               |
 | 06   | 300108234 | haliuser@10.13.237.55        |[:parking: Archives](README.md#parking-chapter-5--configuring-automated-offsite-backups)|:x:               |
 | 07   | 300110500 | didier@10.13.237.75          |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)|:x:               |
-| 08   | 300110529 | david@10.13.237.80           |:x:               |:x:               |
+| 08   | 300110529 | david@10.13.237.80           |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) |:x:               |
 | 09   | 300111671 | sadissou@10.13.237.63        |:x:               |:x:               |
 | 10   | 300111766 | thiam@10.13.237.66           |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local            |
 | 11   | 300112017 | orden@10.13.237.60           |:x:               | Local            |
