@@ -31,7 +31,7 @@ Astuces:
 | 07   | 300110500 | https://dedier377673719.wordpress.com                          | 10.13.237.75 |
 | 08   | 300110529 | https://davidtec24.wordpress.com                               | 10.13.237.80 |
 | 09   | 300111671 | https://commentinstallerlunixserveur.blogspot.com              | 10.13.237.63 |
-| 10   | 300111766 | https://thiamcheikh.webnode.fr/linux/                          | 10.13.237.66 |
+| 10   | 300111766 | https://thiamcheikh.webnode.fr/linux/  :down:                  | 10.13.237.66 |
 |      |           | https://thiamcheikh9.webnode.fr/linux/                         |              |
 | 11   | 300112017 | https://ordenrosae.000webhostapp.com/TUTORIELS/                | 10.13.237.60 |
 | 12   | 300112687 | https://installationdelinux.wordpress.com                      | 10.13.237.87 :warning: |
