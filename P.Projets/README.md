@@ -42,6 +42,10 @@ $ cd P.Projects
 
 :pushpin: `SecureWeb` Se référer au Chapitre 9 page 174
 
+#### :parking: Chapter 10 : Securing network connections VPN
+
+:pushpin: `VPN` Se référer au Chapitre 10 page 204
+
 #### :parking: Chapitre 12 : Sharing data over a private network
 
 :pushpin: `Samba` Se référer au Chapitre 12
