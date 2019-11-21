@@ -19,7 +19,7 @@ $ cd P.Projects
 | 09   | 300111671 | sadissou@10.13.237.63        |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn)   |:x:               |
 | 10   | 300111766 | thiam@10.13.237.66           |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local            |
 | 11   | 300112017 | orden@10.13.237.60           |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)               | Local            |
-| 12   | 300112687 | nsomwe@10.13.237.87          |(README.md#parking-chapter-10--securing-network-connections-vpn)               |:x:               |
+| 12   | 300112687 | nsomwe@10.13.237.87          |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn)               |:x:               |
 | 13   | 300112917 | djumaster@10.13.237.79       |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
 | 14   | 300113775 | widby@10.13.237.77           |[:parking: Nextcloud](README.md#parking-chapter-8--building-a-nextcloud-file-sharing-server)|:x:               |
 
