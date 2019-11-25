@@ -21,5 +21,7 @@ root@rasberrypi:~# exit
 pi@rasberrypi:~ $ ifconfig wlan0
 ```
 
+# Visuel
+![image](rasbian.png)
+
 # Author: Toch Etienne <etiennetochgaly@gmail.com>
-#Date: Sun Nov 24 21:44:05 2019 -0700
