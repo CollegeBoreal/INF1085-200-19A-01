@@ -28,7 +28,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 
 |:hash:| :id:      | Utilisateur à remplacer | ssh              | Docker Engine    | 
 |------|-----------|-------------------------|------------------|------------------|
-| 01   | 300104524 | pi@10.13.237.19         |:heavy_check_mark:|:x:               |
+| 01   | 300104524 | pi@10.13.237.19         |:heavy_check_mark:|:heavy_check_mark:|
 | 02   | 300104541 | pi@10.13.237.41         |:x:               |:x:               |
 | 03   | 300105201 | pi@10.13.237.78         |:x:               |:x:               |
 | 04   | 300106918 | pi@10.13.237.18         |:x:               |:x:               |
@@ -40,8 +40,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 | 10   | 300111766 | pi@10.13.237.66         |:x:               |:x:               |
 | 11   | 300112017 | pi@10.13.237.60         |:x:               |:x:               |
 | 12   | 300112687 | pi@10.13.237.87         |:x:               |:x:               |
-| 13   | 300112917 | pi@10.13.237.79         |:heavy_check_mark:|:x:               |
-| 14   | 300113775 | pi@10.13.237.77         |:heavy_check_mark:|:x:               |
+| 13   | 300112917 | pi@10.13.237.79         |:heavy_check_mark:|:heavy_check_mark:|
+| 14   | 300113775 | pi@10.13.237.77         |:heavy_check_mark:|:heavy_check_mark:|
 
 :three: Installer Docker Engine sur sa machine Linux
 
