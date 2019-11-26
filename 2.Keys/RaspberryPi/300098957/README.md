@@ -11,6 +11,8 @@ $ ip route | grep default | awk '{print $3}'
 
 ## :one: Modifier le fichier `/etc/dhcpcd.conf`
 
+:bookmark: En enlevant les commentaires devant les lignes de configurations suivantes
+
 :pushpin: à la maison derrière son routeur
 
 ```
