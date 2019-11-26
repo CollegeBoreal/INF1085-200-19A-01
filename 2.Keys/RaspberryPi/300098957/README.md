@@ -32,3 +32,9 @@ static ip_address=10.13.237.16/25
 static routers=10.13.237.1
 static domain_name_servers=10.10.99.2 10.10.99.3 8.8.8.8 
 ```
+
+## :two: Redémarrer la machine
+
+```
+$ sudo reboot
+```
