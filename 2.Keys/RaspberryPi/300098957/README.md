@@ -1,5 +1,14 @@
 # :strawberry: Static IP Change using `DHCP` Method
 
+## :zero: Verifier son environnement
+
+:pushpin: Récuperer l'adresse de la passerelle par défaut
+
+```
+$ ip route | grep default | awk '{print $3}'
+```
+
+
 ## :one: Modifier le fichier `/etc/dhcpcd.conf`
 
 :pushpin: à la maison derrière son routeur
