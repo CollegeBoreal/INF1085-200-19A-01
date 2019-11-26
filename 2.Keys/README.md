@@ -36,11 +36,11 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 | 06   | 300108234 | pi@10.13.237.55         |:x:               |:x:               |
 | 07   | 300110500 | pi@10.13.237.75         |:x:               |:x:               |
 | 08   | 300110529 | pi@10.13.237.80         |:x:               |:x:               |
-| 09   | 300111671 | pi@10.13.237.63         |:heavy_check_mark:|:heavy_check_mark:|
+| 09   | 300111671 | pi@10.13.237.63         |:heavy_check_mark:|:x:               |
 | 10   | 300111766 | pi@10.13.237.66         |:x:               |:x:               |
 | 11   | 300112017 | pi@10.13.237.60         |:x:               |:x:               |
 | 12   | 300112687 | pi@10.13.237.87         |:x:               |:x:               |
-| 13   | 300112917 | pi@10.13.237.79         |:x:               |:x:               |
+| 13   | 300112917 | pi@10.13.237.79         |:heavy_check_mark:|:x:               |
 | 14   | 300113775 | pi@10.13.237.77         |:x:               |:x:               |
 
 :three: Installer Docker Engine sur sa machine Linux
