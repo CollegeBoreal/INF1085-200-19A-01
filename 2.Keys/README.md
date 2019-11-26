@@ -26,22 +26,22 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 
 :two: Renseigner son utilisateur dans le tableau ci-dessous (i.e. MONUSER@10.13.237.126 => brice@10.13.237.126)
 
-|:hash:| :id:      | Utilisateur à remplacer      | ssh              | Docker Engine    | 
-|------|-----------|------------------------------|------------------|------------------|
-| 01   | 300104524 | echnaideurg@10.13.237.19     |:heavy_check_mark:|:heavy_check_mark:|
-| 02   | 300104541 | romeo@10.13.237.41           |:heavy_check_mark:|:x:               |
-| 03   | 300105201 | fabrice@10.13.237.78         |:heavy_check_mark:|:x:               |
-| 04   | 300106918 | amir@10.13.237.18            |:heavy_check_mark:|:heavy_check_mark:|
-| 05   | 300107361 | toch90@10.13.237.99          |:heavy_check_mark:|:heavy_check_mark:|
-| 06   | 300108234 | haliuser@10.13.237.55        |:heavy_check_mark:|:heavy_check_mark:|
-| 07   | 300110500 | didier@10.13.237.75         |:x:               |:x:               |
-| 08   | 300110529 | david@10.13.237.80           |:heavy_check_mark:|:x:               |
-| 09   | 300111671 | sadissou@10.13.237.63        |:heavy_check_mark:|:heavy_check_mark:|
-| 10   | 300111766 | thiam@10.13.237.66           |:heavy_check_mark:|:x:               |
-| 11   | 300112017 | orden@10.13.237.60           |:heavy_check_mark:|:heavy_check_mark:|
-| 12   | 300112687 | nsomwe@10.13.237.87          |:heavy_check_mark:|:x:               |
-| 13   | 300112917 | djumaster@10.13.237.79       |:heavy_check_mark:|:heavy_check_mark:|
-| 14   | 300113775 | widby@10.13.237.77           |:heavy_check_mark:|:heavy_check_mark:|
+|:hash:| :id:      | Utilisateur à remplacer | ssh              | Docker Engine    | 
+|------|-----------|-------------------------|------------------|------------------|
+| 01   | 300104524 | pi@10.13.237.19         |:heavy_check_mark:|:x:               |
+| 02   | 300104541 | pi@10.13.237.41         |:x:               |:x:               |
+| 03   | 300105201 | pi@10.13.237.78         |:x:               |:x:               |
+| 04   | 300106918 | pi@10.13.237.18         |:x:               |:x:               |
+| 05   | 300107361 | pi@10.13.237.99         |:x:               |:x:               |
+| 06   | 300108234 | pi@10.13.237.55         |:x:               |:x:               |
+| 07   | 300110500 | pi@10.13.237.75         |:x:               |:x:               |
+| 08   | 300110529 | pi@10.13.237.80         |:x:               |:x:               |
+| 09   | 300111671 | pi@10.13.237.63         |:heavy_check_mark:|:heavy_check_mark:|
+| 10   | 300111766 | pi@10.13.237.66         |:x:               |:x:               |
+| 11   | 300112017 | pi@10.13.237.60         |:x:               |:x:               |
+| 12   | 300112687 | pi@10.13.237.87         |:x:               |:x:               |
+| 13   | 300112917 | pi@10.13.237.79         |:x:               |:x:               |
+| 14   | 300113775 | pi@10.13.237.77         |:x:               |:x:               |
 
 :three: Installer Docker Engine sur sa machine Linux
 
