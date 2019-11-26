@@ -33,8 +33,18 @@ static domain_name_servers=192.168.1.1 8.8.8.8
 #static domain_name_servers=10.10.99.2 10.10.99.3 8.8.8.8
 ```
 
-## :two: Redémarrer la machine
+## :two: Redémarrer ou Éteindre la machine
+
+:pushpin: Redémarrer
 
 ```
 $ sudo reboot
+```
+
+**ou** 
+
+:pushpin: Éteindre
+
+```
+$ sudo shutdown -h now
 ```
