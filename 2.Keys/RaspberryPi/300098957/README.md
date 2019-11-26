@@ -73,6 +73,8 @@ $ ssh pi@localhost
 ```
 
 
+
+```
 $ ssh pi@10.13.237.19
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
@@ -87,4 +89,5 @@ Add correct host key in /c/Users/300098957/.ssh/known_hosts to get rid of this m
 Offending ECDSA key in /c/Users/300098957/.ssh/known_hosts:13
 ECDSA host key for 10.13.237.19 has changed and you have requested strict checking.
 Host key verification failed.
+```
 
