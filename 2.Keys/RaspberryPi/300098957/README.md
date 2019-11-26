@@ -71,3 +71,20 @@ $ sudo systemctl start ssh
 ```
 $ ssh pi@localhost
 ```
+
+
+$ ssh pi@10.13.237.19
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:7ZfMNE9ibP4I8NbCdjoVYtaBuKzdG5Iqh4Z5mMSi/Ho.
+Please contact your system administrator.
+Add correct host key in /c/Users/300098957/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /c/Users/300098957/.ssh/known_hosts:13
+ECDSA host key for 10.13.237.19 has changed and you have requested strict checking.
+Host key verification failed.
+
