@@ -65,3 +65,9 @@ $ sudo systemctl enable ssh
 ```
 $ sudo systemctl start ssh
 ```
+
+:bulb: Tester le service `ssh`
+
+```
+$ ssh pi@localhost
+```
