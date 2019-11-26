@@ -48,3 +48,17 @@ $ sudo reboot
 ```
 $ sudo shutdown -h now
 ```
+
+## :ab: Démarrer le service à distance `ssh`
+
+:pushpin: installer le service
+
+```
+$ sudo systemctl enable ssh
+```
+
+:pushpin: démarrer le service
+
+```
+$ sudo systemctl start ssh
+```
