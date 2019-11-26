@@ -23,7 +23,7 @@ static routers=192.168.1.1
 static domain_name_servers=192.168.1.1 8.8.8.8
 ```
 
-:pushpin: au Collège avec les addresses IP fixes `10.13.237.0/25` DNS `10.10.99.2` et `10.10.99.3`
+:pushpin: au Collège avec les adresses IP fixes `10.13.237.0/25` DNS `10.10.99.2` et `10.10.99.3`
 
 ```
 # Example static IP configuration:
