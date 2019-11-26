@@ -1,5 +1,8 @@
 # :strawberry: Static IP Change using `DHCP` Method
 
+
+# :a: Changer l'adresse IP statique
+
 ## :zero: Verifier son environnement
 
 :pushpin: Récuperer l'adresse de la passerelle par défaut
@@ -49,7 +52,7 @@ $ sudo reboot
 $ sudo shutdown -h now
 ```
 
-## :ab: Démarrer le service à distance `ssh`
+# :ab: Démarrer le service à distance `ssh`
 
 :pushpin: installer le service
 
