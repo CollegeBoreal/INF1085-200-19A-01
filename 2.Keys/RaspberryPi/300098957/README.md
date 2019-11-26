@@ -1,4 +1,4 @@
-# :strawberry: Static IP
+# :strawberry: Static IP Change using `DHCP` Method
 
 ## :one: Modifier le fichier `/etc/dhcpcd.conf`
 
