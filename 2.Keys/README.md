@@ -26,22 +26,22 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 
 :two: Renseigner son utilisateur dans le tableau ci-dessous (i.e. MONUSER@10.13.237.126 => brice@10.13.237.126)
 
-|:hash:| :id:      | Utilisateur à remplacer | ssh              | Docker Engine    | 
+|:hash:| :id:      | Utilisateur `pi`        | ssh              | Docker Engine    | 
 |------|-----------|-------------------------|------------------|------------------|
-| 01   | 300104524 | pi@10.13.237.19         |:heavy_check_mark:|:heavy_check_mark:|
-| 02   | 300104541 | pi@10.13.237.41         |:x:               |:x:               |
-| 03   | 300105201 | pi@10.13.237.78         |:x:               |:x:               |
-| 04   | 300106918 | pi@10.13.237.18         |:x:               |:x:               |
-| 05   | 300107361 | pi@10.13.237.99         |:x:               |:x:               |
-| 06   | 300108234 | pi@10.13.237.55         |:x:               |:x:               |
-| 07   | 300110500 | pi@10.13.237.75         |:x:               |:x:               |
-| 08   | 300110529 | pi@10.13.237.80         |:x:               |:x:               |
-| 09   | 300111671 | pi@10.13.237.63         |:heavy_check_mark:|:x:               |
-| 10   | 300111766 | pi@10.13.237.66         |:x:               |:x:               |
-| 11   | 300112017 | pi@10.13.237.60         |:x:               |:x:               |
-| 12   | 300112687 | pi@10.13.237.87         |:x:               |:x:               |
-| 13   | 300112917 | pi@10.13.237.79         |:heavy_check_mark:|:heavy_check_mark:|
-| 14   | 300113775 | pi@10.13.237.77         |:heavy_check_mark:|:heavy_check_mark:|
+| 01   | 300104524 | `ssh pi@10.13.237.19`   |:heavy_check_mark:|:heavy_check_mark:|
+| 02   | 300104541 | `ssh pi@10.13.237.41`   |:x:               |:x:               |
+| 03   | 300105201 | `ssh pi@10.13.237.78`   |:x:               |:x:               |
+| 04   | 300106918 | `ssh pi@10.13.237.18`   |:x:               |:x:               |
+| 05   | 300107361 | `ssh pi@10.13.237.99`   |:x:               |:x:               |
+| 06   | 300108234 | `ssh pi@10.13.237.55`   |:x:               |:x:               |
+| 07   | 300110500 | `ssh pi@10.13.237.75`   |:x:               |:x:               |
+| 08   | 300110529 | `ssh pi@10.13.237.80`   |:x:               |:x:               |
+| 09   | 300111671 | `ssh pi@10.13.237.63`   |:heavy_check_mark:|:x:               |
+| 10   | 300111766 | `ssh pi@10.13.237.66`   |:x:               |:x:               |
+| 11   | 300112017 | `ssh pi@10.13.237.60`   |:x:               |:x:               |
+| 12   | 300112687 | `ssh pi@10.13.237.87`   |:x:               |:x:               |
+| 13   | 300112917 | `ssh pi@10.13.237.79`   |:heavy_check_mark:|:heavy_check_mark:|
+| 14   | 300113775 | `ssh pi@10.13.237.77`   |:heavy_check_mark:|:heavy_check_mark:|
 
 :three: Installer Docker Engine sur sa machine Linux
 
