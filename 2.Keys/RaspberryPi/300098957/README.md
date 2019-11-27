@@ -54,6 +54,8 @@ $ sudo shutdown -h now
 
 # :ab: Démarrer le service à distance `ssh`
 
+:zero: Installation de `ssh`
+ 
 :pushpin: installer le service
 
 ```
@@ -66,16 +68,23 @@ $ sudo systemctl enable ssh
 $ sudo systemctl start ssh
 ```
 
-:bulb: Tester le service `ssh`
+:one: Tester le service `ssh` 
+
+:pushpin: localement au préalable
 
 ```
 $ ssh pi@localhost
 ```
 
-
+:pushpin: à distance
 
 ```
-$ ssh pi@10.13.237.19
+$ ssh pi@10.13.237.16
+```
+
+:warning: Alerte du au changement de machine donc d'adresse Ethernet
+
+```
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -87,7 +96,16 @@ SHA256:7ZfMNE9ibP4I8NbCdjoVYtaBuKzdG5Iqh4Z5mMSi/Ho.
 Please contact your system administrator.
 Add correct host key in /c/Users/300098957/.ssh/known_hosts to get rid of this message.
 Offending ECDSA key in /c/Users/300098957/.ssh/known_hosts:13
-ECDSA host key for 10.13.237.19 has changed and you have requested strict checking.
+ECDSA host key for 10.13.237.16 has changed and you have requested strict checking.
 Host key verification failed.
 ```
 
+Ouvrir le fichier `~/.ssh/known_hosts`et enlever la ligne ressemblant à celle ci-dessous
+```
+10.13.237.19 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMrWaYXRK6bd7KGr+YlDkWVB/dqYyOv6mROS/b2M0EuAq3QT4n7Dc55z4ub4c2ZN+PEqVtLmJcqcs16dcisGUV0=
+```
+
+
+```
+$ ssh -Y pi@10.13.237.16
+```
