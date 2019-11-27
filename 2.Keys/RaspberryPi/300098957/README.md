@@ -100,12 +100,15 @@ ECDSA host key for 10.13.237.16 has changed and you have requested strict checki
 Host key verification failed.
 ```
 
-Ouvrir le fichier `~/.ssh/known_hosts`et enlever la ligne ressemblant à celle ci-dessous
+Ouvrir le fichier `~/.ssh/known_hosts`et enlever la ligne ressemblant à celle ci-dessous avec l'adresse IP `10.13.237.19`
 ```
 10.13.237.19 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMrWaYXRK6bd7KGr+YlDkWVB/dqYyOv6mROS/b2M0EuAq3QT4n7Dc55z4ub4c2ZN+PEqVtLmJcqcs16dcisGUV0=
 ```
 
+:pushpin: à distance avec une interface UI utiliser `-Y`
 
 ```
 $ ssh -Y pi@10.13.237.16
 ```
+
+
