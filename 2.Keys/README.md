@@ -33,8 +33,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 | 02   | 300104541 - <image src="https://avatars0.githubusercontent.com/u/00000000?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.41`   |:x:               |:x:               |
 | 03   | 300105201 - <image src="https://avatars0.githubusercontent.com/u/00000000?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.78`   |:x:               |:x:               |
 | 04   | 300106918 - <image src="https://avatars0.githubusercontent.com/u/00000000?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.18`   |:x:               |:x:               |
-| 05   | 300107361 - <image src="https://avatars0.githubusercontent.com/u/00000000?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.99`   |:x:               |:x:               |
-| 06   | 300108234 - <image src="https://avatars0.githubusercontent.com/u/00000000?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.55`   |:x:               |:x:               |
+| 05   | 300107361 - <image src="https://avatars0.githubusercontent.com/u/43481043?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.99`   |:x:               |:x:               |
+| 06   | 300108234 - <image src="https://avatars2.githubusercontent.com/u/43480203?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.55`   |:x:               |:x:               |
 | 07   | 300110500 - <image src="https://avatars0.githubusercontent.com/u/00000000?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.75`   |:x:               |:x:               |
 | 08   | 300110529 - <image src="https://avatars0.githubusercontent.com/u/00000000?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.80`   |:x:               |:x:               |
 | 09   | 300111671 - <image src="https://avatars0.githubusercontent.com/u/00000000?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.63`   |:heavy_check_mark:|:heavy_check_mark:|
