@@ -38,7 +38,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2pLhMqFGKffSdYvNCMAyM7598oBY+m/3q5AMXmb7I
 | 08   | 300110529 | `ssh pi@10.13.237.80`   |:x:               |:x:               |
 | 09   | 300111671 | `ssh pi@10.13.237.63`   |:heavy_check_mark:|:heavy_check_mark:|
 | 10   | 300111766 | `ssh pi@10.13.237.66`   |:x:               |:x:               |
-| 11   | [300112017 - <image src="https://avatars1.githubusercontent.com/u/43898171?s=460&v=4" width=20 height=20></image>] | `ssh pi@10.13.237.60`   |:x:               |:x:               |
+| 11   | 300112017 - <image src="https://avatars1.githubusercontent.com/u/43898171?s=460&v=4" width=20 height=20></image> | `ssh pi@10.13.237.60`   |:x:               |:x:               |
 | 12   | 300112687 | `ssh pi@10.13.237.87`   |:x:               |:x:               |
 | 13   | 300112917 | `ssh pi@10.13.237.79`   |:heavy_check_mark:|:heavy_check_mark:|
 | 14   | 300113775 | `ssh pi@10.13.237.77`   |:heavy_check_mark:|:heavy_check_mark:|
