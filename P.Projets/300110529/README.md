@@ -12,7 +12,7 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 
 ## Comment installer !
 
-:Step one: Nous allons récupérer les informations sur les paquets qui peuvent etre installés. y compris les mises à jour des paquets actuellement installés qui sont disponibles, à partir des sources Internet.
+:one: Nous allons récupérer les informations sur les paquets qui peuvent etre installés. y compris les mises à jour des paquets actuellement installés qui sont disponibles, à partir des sources Internet.
 ```
 $ sudo apt-get update
 ```
@@ -24,3 +24,4 @@ $ sudo apt-get install openvpn easy-rsa
 ```
 ![](pj(2).png)
 
+:two:
