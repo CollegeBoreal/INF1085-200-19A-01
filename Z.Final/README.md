@@ -25,7 +25,7 @@
 | Use input-output redirection (e.g. >, >>, <code>pipe</code>, 2>)    | `2>&1`                                              |
 | :-1: Analyze text using basic regular expressions                   |                                                     |
 | Archive, backup, compress, unpack, and uncompress files             | `tar` $4.4.2                                        |
-| Create, delete, copy, and move files and directories                | `mkdir`, `rmdir`, `cd`, `rm`, `mv`, `stat` $1.2.3   |
+| Create, delete, copy, and move files and directories                | `mkdir`,`rmdir`,`cd`,`rm`,`mv`,`mv`,`stat` $1.2.3   |
 | :-1: Create and manage hard and soft links                          |                                                     |
 | List, set, and change standard file permissions                     | `ls`, `chmod` $4.4.4                                |
 | Read, and use system documentation                                  | `man`, `info` $1.3                                  |
