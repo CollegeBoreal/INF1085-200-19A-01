@@ -17,7 +17,7 @@
 | Search for files                                                    |                                               |
 | Evaluate and compare the basic file system features and options     |                                               |
 | Compare and manipulate file content                                 |                                               |
-| Use input-output redirection (e.g. >, >>, <code>|</code>, 2>)       |                                               |
+| Use input-output redirection (e.g. >, >>, <code>||</code>, 2>)       |                                               |
 | :x: Analyze text using basic regular expressions                    |                                               |
 | Archive, backup, compress, unpack, and uncompress files             |                                               |
 | Create, delete, copy, and move files and directories                |                                               |
