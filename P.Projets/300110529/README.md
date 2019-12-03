@@ -25,3 +25,8 @@ $ sudo apt-get install openvpn easy-rsa
 ![](pj(2).png)
 
 :two: Pour autoriser les connexions entrantes sur un port spécifique, nous utiliserons les commandes suivantes pour spécifier la règle pour UFW
+```
+# ufw enable
+# ufw allow 22
+# ufw allow 1194
+```
