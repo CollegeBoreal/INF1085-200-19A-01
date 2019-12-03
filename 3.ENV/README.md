@@ -35,4 +35,4 @@ unset DOCKER_MACHINE_NAME
 # eval $(docker-machine env --unset)
 ```
 
-<image src="images/docker-engine.png" width="200" height="100"></image>
+<image src="images/docker-engine.png" width="980" height="540"></image>
