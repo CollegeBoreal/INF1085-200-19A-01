@@ -18,7 +18,7 @@ $ sudo apt-get update
 
 ![](pj(1).png)
 
-Nous installerons également le paquet easy-rsa, qui nous aidera à mettre en place une CA (autorité de certification) interne pour une utilisation avec notre VPN
+Installer OpenVPN Nous installerons également le paquet easy-rsa, qui nous aidera à mettre en place une CA (autorité de certification) interne pour une utilisation avec notre VPN
 
 $ sudo apt-get install openvpn easy-rsa
 
