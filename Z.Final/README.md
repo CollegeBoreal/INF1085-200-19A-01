@@ -16,20 +16,20 @@
 
 #### Essential Commands – 25%
 
-|   Feature                                                           | Chapter                                       |
-|---------------------------------------------------------------------|-----------------------------------------------|
-| Log into local & remote graphical and text mode consoles            | `login`, `nano`, `vi`                         |
-| Search for files                                                    | `find` $4.4.3                                 |
-| Evaluate and compare the basic file system features and options     | `ls`, `touch`, `cat`  $1.2.3                  |
-| Compare and manipulate file content                                 | `diff`, `grep`, `wc`                          |
-| Use input-output redirection (e.g. >, >>, <code>pipe</code>, 2>)    | `2>&1`                                        |
-| :-1: Analyze text using basic regular expressions                   |                                               |
-| Archive, backup, compress, unpack, and uncompress files             | `tar` $4.4.2                                  |
-| Create, delete, copy, and move files and directories                | `mkdir`, `cd`, `rm`, `mv` $1.2.3              |
-| :-1: Create and manage hard and soft links                          |                                               |
-| List, set, and change standard file permissions                     | `ls`, `chmod` $4.4.4                          |
-| Read, and use system documentation                                  | `man`, `info` $1.3                            |
-| Manage access to the root account                                   | `sudo`, `su` $1.2.6                           |
+|   Feature                                                           | Chapter                                             |
+|---------------------------------------------------------------------|-----------------------------------------------------|
+| Log into local & remote graphical and text mode consoles            | `login`, `nano`, `vi`                               |
+| Search for files                                                    | `find` $4.4.3                                       |
+| Evaluate and compare the basic file system features and options     | `ls`, `touch`, `cat`  $1.2.3                        |
+| Compare and manipulate file content                                 | `diff`, `grep`, `wc`                                |
+| Use input-output redirection (e.g. >, >>, <code>pipe</code>, 2>)    | `2>&1`                                              |
+| :-1: Analyze text using basic regular expressions                   |                                                     |
+| Archive, backup, compress, unpack, and uncompress files             | `tar` $4.4.2                                        |
+| Create, delete, copy, and move files and directories                | `mkdir`, `rmdir`, `cd`, `rm`, `mv`, `stat` $1.2.3   |
+| :-1: Create and manage hard and soft links                          |                                                     |
+| List, set, and change standard file permissions                     | `ls`, `chmod` $4.4.4                                |
+| Read, and use system documentation                                  | `man`, `info` $1.3                                  |
+| Manage access to the root account                                   | `sudo`, `su` $1.2.6                                 |
 
 #### Operation of Running Systems – 20%
 
