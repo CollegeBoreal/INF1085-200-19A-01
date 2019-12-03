@@ -11,3 +11,5 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 - Protocoles - les protocoles créent les tunnels VPN
 
 ## Comment installer !
+
+Premièrement nous allons récupérer les informations sur les paquets qui peuvent etre installés. y compris les mises à jour des paquets actuellement installés qui sont disponibles, à partir des sources Internet.
