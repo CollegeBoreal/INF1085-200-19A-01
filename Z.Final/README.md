@@ -47,6 +47,52 @@ Manage Software
     * Identify the component of a Linux distribution that a file belongs to
 ```
 
+#### User and Group Management – 10%
+
+```
+Create, delete, and modify local user accounts
+Create, delete, and modify local groups and group memberships
+     * Manage system-wide environment profiles
+Manage template user environment
+     * Configure user resource limits
+     * Manage user privileges
+     * Configure PAM
+```
+
+#### Service Configuration – 20%
+
+```
+Configure a caching DNS server
+     * Maintain a DNS zone
+     * Configure email aliases
+Configure SSH servers and clients
+     * Restrict access to the HTTP proxy server
+     * Configure an IMAP and IMAPS service
+     * Query and modify the behavior of system services at various operating modes
+     * Configure an HTTP server
+     * Configure HTTP server log files
+     * Configure a database server
+     * Restrict access to a web page
+Manage and configure containers
+Manage and configure Virtual Machines
+```
+
+#### Storage Management – 13%
+
+```
+List, create, delete, and modify physical storage partitions
+     * Manage and configure LVM storage
+     * Create and configure encrypted storage
+     * Configure systems to mount file systems at or during boot
+     * Configure and manage swap space
+     * Create and manage RAID devices
+     * Configure systems to mount file systems on demand
+Create, manage and diagnose advanced file system permissions
+     * Setup user and group disk quotas for filesystems
+     * Create and configure file systems
+```
+
+
 <hr>
 
 
