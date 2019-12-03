@@ -56,7 +56,7 @@
 
 |   Feature                                                           | Chapter                                       |
 |---------------------------------------------------------------------|-----------------------------------------------|
-| Create, delete, and modify local user accounts                      |                                               |
+| Create, delete, and modify local user accounts                      |  `useradd`, groupadd                           |
 | Create, delete, and modify local groups and group memberships       |                                               |
 | :-1: Manage system-wide environment profiles                        |                                               |
 | Manage template user environment                                    |                                               |
@@ -68,11 +68,11 @@
 
 |   Feature                                                           | Chapter                                       |
 |---------------------------------------------------------------------|-----------------------------------------------|
-| Configure networking and hostname resolution statically or dynamic..|                                               |
+| Configure networking and hostname resolution statically or dynamic..| `ifconfig`,                                   |
 | Configure network services to start automatically at boot           |                                               |
 | :-1: Implement packet filtering                                     |                                               |
 | Start, stop, and check the status of network services               |                                               |
-| Statically route IP traffic                                         |                                               |
+| Statically route IP traffic                                         | `ip route`                                    |
 | :-1: Synchronize time using other network peers                     |                                               |
 
 #### Service Configuration – 20%
@@ -82,7 +82,7 @@
 | Configure a caching DNS server                                      |                                               |
 | :-1: Maintain a DNS zone                                            |                                               |
 | :-1: Configure email aliases                                        |                                               |
-| Configure SSH servers and clients                                   |                                               |
+| Configure SSH servers and clients                                   | `systemctl`                                   |
 | :-1: Restrict access to the HTTP proxy server                       |                                               |
 | :-1: Configure an IMAP and IMAPS service                            |                                               |
 | :-1: Query and modify the behavior of system services at various ...|                                               |
@@ -90,14 +90,14 @@
 | :-1: Configure HTTP server log files                                |                                               |
 | :-1: Configure a database server                                    |                                               |
 | :-1: Restrict access to a web page                                  |                                               |
-| Manage and configure containers                                     |                                               |
-| Manage and configure Virtual Machines                               |                                               |
+| Manage and configure containers                                     | `docker container`                            |
+| Manage and configure Virtual Machines                               | `docker-machine`                              |
 
 #### Storage Management – 13%
 
 |   Feature                                                           | Chapter                                       |
 |---------------------------------------------------------------------|-----------------------------------------------|
-| List, create, delete, and modify physical storage partitions        |                                               |
+| List, create, delete, and modify physical storage partitions        | `df`, `du`                                    |
 | :-1: Manage and configure LVM storage                               |                                               |
 | :-1: Create and configure encrypted storage                         |                                               |
 | :-1: Configure systems to mount file systems at or during boot      |                                               |
