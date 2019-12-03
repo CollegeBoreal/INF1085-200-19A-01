@@ -20,7 +20,8 @@ https://www.tutorialspoint.com/unix/unix-environment.htm
 
 ```
 $ docker-machine ls
-NAME   ACTIVE   DRIVER   STATE   URL   SWARM   DOCKER   ERRORS
+NAME           ACTIVE   DRIVER    STATE     URL                     SWARM   DOCKER     ERRORS
+fianarantsoa   -        generic   Running   tcp://10.13.5.21:2376           v19.03.5   
 ```
 
 * remettre à zéro
