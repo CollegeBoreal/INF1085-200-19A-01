@@ -15,10 +15,10 @@
 | Evaluate and compare the basic file system features and options     |                                               |
 | Compare and manipulate file content                                 |                                               |
 | Use input-output redirection (e.g. >, >>, <code>pipe</code>, 2>)    |                                               |
-| :x: Analyze text using basic regular expressions                    |                                               |
+| :-1: Analyze text using basic regular expressions                    |                                               |
 | Archive, backup, compress, unpack, and uncompress files             |                                               |
 | Create, delete, copy, and move files and directories                |                                               |
-| :x: Create and manage hard and soft links                           |                                               |
+| :-1: Create and manage hard and soft links                           |                                               |
 | List, set, and change standard file permissions                     |                                               |
 | Read, and use system documentation                                  |                                               |
 | Manage access to the root account                                   |                                               |
@@ -28,21 +28,21 @@
 |   Feature                                                           | Chapter                                       |
 |---------------------------------------------------------------------|-----------------------------------------------|
 | Boot, reboot, and shut down a system safely                         |                                               |
-| :x: Boot or change system into different operating modes            |                                               |
+| :-1: Boot or change system into different operating modes            |                                               |
 | Install, configure and troubleshoot bootloaders                     |                                               |
 | Diagnose and manage processes                                       |                                               |
 | Locate and analyze system log files                                 |                                               |
-| :x: Schedule tasks to run at a set date and time                    |                                               |
-| :x: Verify completion of scheduled jobs                             |                                               |
+| :-1: Schedule tasks to run at a set date and time                    |                                               |
+| :-1: Verify completion of scheduled jobs                             |                                               |
 | Update software to provide required functionality and security      |                                               |
 | Verify the integrity and availability of resources                  |                                               |
 | Verify the integrity and availability of key processes              |                                               |
-| :x: Change kernel runtime parameters, persistent and non-persistent |                                               |
+| :-1: Change kernel runtime parameters, persistent and non-persistent |                                               |
 | Use scripting to automate system maintenance tasks                  |                                               |
 | Manage the startup process and services (In Services Configuration) |                                               |
-| :x: List and identify SELinux/AppArmor file and process contexts    |                                               |
+| :-1: List and identify SELinux/AppArmor file and process contexts    |                                               |
 | Manage Software                                                     |                                               |
-| :x: Identify the component of a Linux distribution that a file .... |                                               |
+| :-1: Identify the component of a Linux distribution that a file .... |                                               |
 
 
 #### User and Group Management – 10%
