@@ -82,7 +82,7 @@ Dans la sortie, il vous sera demandé de confirmer le nom commun de votre autori
 
 appuyez sur ENTERpour accepter le nom par défaut
 
-### :tree: Création des fichiers de certificat de serveur, de clé et de chiffrement
+#### :tree: Création des fichiers de certificat de serveur, de clé et de chiffrement
 
 :m: Commencez par naviguer vers le répertoire EasyRSA sur votre serveur OpenVPN :
 $ cd EasyRSA-3.0.4/
