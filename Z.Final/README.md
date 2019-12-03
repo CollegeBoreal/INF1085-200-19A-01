@@ -11,7 +11,7 @@
 |   Feature                                                           | Chapter                                       |
 |---------------------------------------------------------------------|-----------------------------------------------|
 | Log into local & remote graphical and text mode consoles            |                                               |
-| Search for files                                                    |                                               |
+| Search for files                                                    | `find` chap 4.4.3                             |
 | Evaluate and compare the basic file system features and options     |                                               |
 | Compare and manipulate file content                                 |                                               |
 | Use input-output redirection (e.g. >, >>, <code>pipe</code>, 2>)    |                                               |
