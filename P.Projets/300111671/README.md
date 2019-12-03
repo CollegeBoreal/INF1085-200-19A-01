@@ -60,7 +60,7 @@ Recherchez les paramètres qui définissent les valeurs par défaut des champs p
 
 
 
-![image](2.pdf)
+![image](AB.pdf)
 
 
 
@@ -120,7 +120,7 @@ $./easyrsa sign-req server pi
 
 Dans la sortie, il vous sera demandé de vérifier que la demande provient d'une source approuvée. Tapez :yes: puis appuyez sur :ENTER: pour confirmer ceci:
 
-![image](3.pdf)
+![image](AC.pdf)
 
 
 
