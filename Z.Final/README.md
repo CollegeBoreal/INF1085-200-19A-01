@@ -28,68 +28,66 @@
 |   Feature                                                           | Chapter                                       |
 |---------------------------------------------------------------------|-----------------------------------------------|
 | Boot, reboot, and shut down a system safely                         |                                               |
-| :-1: Boot or change system into different operating modes            |                                               |
+| :-1: Boot or change system into different operating modes           |                                               |
 | Install, configure and troubleshoot bootloaders                     |                                               |
 | Diagnose and manage processes                                       |                                               |
 | Locate and analyze system log files                                 |                                               |
-| :-1: Schedule tasks to run at a set date and time                    |                                               |
-| :-1: Verify completion of scheduled jobs                             |                                               |
+| :-1: Schedule tasks to run at a set date and time                   |                                               |
+| :-1: Verify completion of scheduled jobs                            |                                               |
 | Update software to provide required functionality and security      |                                               |
 | Verify the integrity and availability of resources                  |                                               |
 | Verify the integrity and availability of key processes              |                                               |
-| :-1: Change kernel runtime parameters, persistent and non-persistent |                                               |
+| :-1: Change kernel runtime parameters, persistent and non-persistent|                                               |
 | Use scripting to automate system maintenance tasks                  |                                               |
 | Manage the startup process and services (In Services Configuration) |                                               |
-| :-1: List and identify SELinux/AppArmor file and process contexts    |                                               |
+| :-1: List and identify SELinux/AppArmor file and process contexts   |                                               |
 | Manage Software                                                     |                                               |
-| :-1: Identify the component of a Linux distribution that a file .... |                                               |
-
+| :-1: Identify the component of a Linux distribution that a file ....|                                               |
 
 #### User and Group Management – 10%
 
-```
-Create, delete, and modify local user accounts
-Create, delete, and modify local groups and group memberships
-     * Manage system-wide environment profiles
-Manage template user environment
-     * Configure user resource limits
-     * Manage user privileges
-     * Configure PAM
-```
+|   Feature                                                           | Chapter                                       |
+|---------------------------------------------------------------------|-----------------------------------------------|
+| Create, delete, and modify local user accounts                      |                                               |
+| Create, delete, and modify local groups and group memberships       |                                               |
+| :-1: Manage system-wide environment profiles                        |                                               |
+| Manage template user environment                                    |                                               |
+| :-1: Configure user resource limits                                 |                                               |
+| :-1: Manage user privileges                                         |                                               |
+| :-1: Configure PAM                                                  |                                               |
 
 #### Service Configuration – 20%
 
-```
-Configure a caching DNS server
-     * Maintain a DNS zone
-     * Configure email aliases
-Configure SSH servers and clients
-     * Restrict access to the HTTP proxy server
-     * Configure an IMAP and IMAPS service
-     * Query and modify the behavior of system services at various operating modes
-     * Configure an HTTP server
-     * Configure HTTP server log files
-     * Configure a database server
-     * Restrict access to a web page
-Manage and configure containers
-Manage and configure Virtual Machines
-```
+|   Feature                                                           | Chapter                                       |
+|---------------------------------------------------------------------|-----------------------------------------------|
+| Configure a caching DNS server                                      |                                               |
+| :-1: Maintain a DNS zone                                            |                                               |
+| :-1: Configure email aliases                                        |                                               |
+| Configure SSH servers and clients                                   |                                               |
+| :-1: Restrict access to the HTTP proxy server                       |                                               |
+| :-1: Configure an IMAP and IMAPS service                            |                                               |
+| :-1: Query and modify the behavior of system services at various ...|                                               |
+| :-1: Configure an HTTP server                                       |                                               |
+| :-1: Configure HTTP server log files                                |                                               |
+| :-1: Configure a database server                                    |                                               |
+| :-1: Restrict access to a web page                                  |                                               |
+| Manage and configure containers                                     |                                               |
+| Manage and configure Virtual Machines                               |                                               |
 
 #### Storage Management – 13%
 
-```
-List, create, delete, and modify physical storage partitions
-     * Manage and configure LVM storage
-     * Create and configure encrypted storage
-     * Configure systems to mount file systems at or during boot
-     * Configure and manage swap space
-     * Create and manage RAID devices
-     * Configure systems to mount file systems on demand
-Create, manage and diagnose advanced file system permissions
-     * Setup user and group disk quotas for filesystems
-     * Create and configure file systems
-```
-
+|   Feature                                                           | Chapter                                       |
+|---------------------------------------------------------------------|-----------------------------------------------|
+| List, create, delete, and modify physical storage partitions        |                                               |
+| :-1: Manage and configure LVM storage                               |                                               |
+| :-1: Create and configure encrypted storage                         |                                               |
+| :-1: Configure systems to mount file systems at or during boot      |                                               |
+| :-1: Configure and manage swap space                                |                                               |
+| :-1: Create and manage RAID devices                                 |                                               |
+| :-1: Configure systems to mount file systems on demand              |                                               |
+| Create, manage and diagnose advanced file system permissions        |                                               |
+| :-1: Setup user and group disk quotas for filesystems               |                                               |
+| :-1: Create and configure file systems                              |                                               |
 
 <hr>
 
