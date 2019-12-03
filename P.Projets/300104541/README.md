@@ -6,7 +6,7 @@ VPN en anglais "Virtual Private Network" (réseau privé virtuel) désigne un r�
 
 ### 2.Notre but 
 :M: Créer un tunnel de réseau privé virtuel (VPN) permettant des connexions distantes sécurisées et invisibles.
--Concevoir des architectures de pare-feu plus sophistiquées pour diviser votre réseau de manière stratégique en segments isolés.
--Créer un environnement de réseau virtuel afin de pouvoir tester vos configurations.
+- Concevoir des architectures de pare-feu plus sophistiquées pour diviser votre réseau de manière stratégique en segments isolés.
+- Créer un environnement de réseau virtuel afin de pouvoir tester vos configurations.
 
 
