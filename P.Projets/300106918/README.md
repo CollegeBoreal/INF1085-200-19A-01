@@ -5,4 +5,4 @@ configurer de routage sur serveur linux
 configuration shorewall firewall server
 
 
-![](image/DMZ.png)
+![](DMZ.png)
