@@ -16,4 +16,4 @@ Premièrement nous allons récupérer les informations sur les paquets qui peuve
 
 $ sudo apt-get update
 
-![] pj(1).png
+![image] (pj(1).png)
