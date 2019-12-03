@@ -13,14 +13,14 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 ## Comment installer !
 
 :one: Nous allons récupérer les informations sur les paquets qui peuvent etre installés. y compris les mises à jour des paquets actuellement installés qui sont disponibles, à partir des sources Internet.
-
+```
 $ sudo apt-get update
-
+```
 ![](pj(1).png)
 
 Et installer OpenVPN, nous installerons également le paquet easy-rsa, qui nous aidera à mettre en place une CA (autorité de certification) interne pour une utilisation avec notre VPN
-
+```
 $ sudo apt-get install openvpn easy-rsa
-
+```
 ![](pj(2).png)
 
