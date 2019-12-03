@@ -5,6 +5,14 @@
 ### :bookmark: [Reference](../REFERENCES.md)
 
 
+```
+* Essential Commands – 25%
+* Operation of Running Systems – 20%
+* User and Group Management – 10%
+* Networking – 12%
+* Service Configuration – 20%
+* Storage Management – 13%
+```
 
 #### Essential Commands – 25%
 
@@ -55,6 +63,17 @@
 | :-1: Configure user resource limits                                 |                                               |
 | :-1: Manage user privileges                                         |                                               |
 | :-1: Configure PAM                                                  |                                               |
+
+#### Networking – 12%
+
+|   Feature                                                           | Chapter                                       |
+|---------------------------------------------------------------------|-----------------------------------------------|
+| Configure networking and hostname resolution statically or dynamic..|                                               |
+| Configure network services to start automatically at boot           |                                               |
+| :-1: Implement packet filtering                                     |                                               |
+| Start, stop, and check the status of network services               |                                               |
+| Statically route IP traffic                                         |                                               |
+| :-1: Synchronize time using other network peers                     |                                               |
 
 #### Service Configuration – 20%
 
