@@ -11,12 +11,12 @@
 |   Feature                                                           | Chapter                                       |
 |---------------------------------------------------------------------|-----------------------------------------------|
 | Log into local & remote graphical and text mode consoles            |                                               |
-| Search for files                                                    | `find` chap 4.4.3                             |
+| Search for files                                                    | `find` $ 4.4.3                                |
 | Evaluate and compare the basic file system features and options     |                                               |
 | Compare and manipulate file content                                 |                                               |
 | Use input-output redirection (e.g. >, >>, <code>pipe</code>, 2>)    |                                               |
-| :-1: Analyze text using basic regular expressions                    |                                               |
-| Archive, backup, compress, unpack, and uncompress files             |                                               |
+| :-1: Analyze text using basic regular expressions                   |                                               |
+| Archive, backup, compress, unpack, and uncompress files             | `tar` $ 4.4.2                                 |
 | Create, delete, copy, and move files and directories                |                                               |
 | :-1: Create and manage hard and soft links                           |                                               |
 | List, set, and change standard file permissions                     |                                               |
