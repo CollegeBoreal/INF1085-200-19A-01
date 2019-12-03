@@ -39,7 +39,7 @@
 | :-1: Boot or change system into different operating modes           |                                               |
 | Install, configure and troubleshoot bootloaders                     |                                               |
 | Diagnose and manage processes                                       |                                               |
-| Locate and analyze system log files                                 |                                               |
+| Locate and analyze system log files                                 | `journalctl`, `/var/log` $11.1.1              |
 | :-1: Schedule tasks to run at a set date and time                   |                                               |
 | :-1: Verify completion of scheduled jobs                            |                                               |
 | Update software to provide required functionality and security      |                                               |
