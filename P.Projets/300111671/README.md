@@ -8,8 +8,10 @@
 
 :pushpin: Pour commencer installer les pacquet de notre serveur VPN ET OpenVPN:
 
+```
 $ sudo apt update
 $ sudo apt install openvpn
+```
 
 *Emettre des certificats:VPN TLS / SSL
 
