@@ -1,11 +1,12 @@
- # :parking: `Samba`  Chapitre 12 : Sharing data over a private network
+ # 🐱‍🏍`Samba`  Chapitre 12 : Sharing data over a private network
  
  ## :pushpin: How to set up Samba in Ubuntu/Linux, and access it in Windows ?
  
  ### :one: what is samba ?
- 
-Samba is a free software re-implementation of the SMB networking protocol, and was originally developed by    Andrew Tridgell
+``` 
+Samba is a free software re-implementation of the SMB networking protocol, and was originally developed by    Andrew Tridgell 🕵️‍♂️
 Samba allows to share files and printers with other computers remotely, regardless their operating system (linux, windows, Mac, ...). 
+```
 
 ##### This guide show how to intall and configure the Samba service in a Ubuntu machine and access it through windows 
 
@@ -92,6 +93,8 @@ Since Samba doesn't use the system account password, we need to set up a Samba p
 sudo smbpasswd -a username
 ```
 ## :pushpin: Connecting to Share
+
+### :five: Accessing to Samba Server Files
 
 ##### 🌈 On Windows:
 ```
