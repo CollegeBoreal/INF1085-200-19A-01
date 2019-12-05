@@ -13,6 +13,25 @@ VPN en anglais "Virtual Private Network" (réseau privé virtuel) désigne un r�
 
 L'installation VPN sur votre serveur nécessite deux packages: openvpn et, pour gérer le processus de génération de clé de cryptage, easy-rsa. Si nécessaire, les utilisateurs de CentOS doivent d’abord installer le référentiel epel-release. Pour vous permettre de tester facilement l’accès à une application serveur, vous pouvez également installer le serveur Web Apache (apache2 pour Ubuntu et httpd sur CentOS). Pendant que vous configurez votre serveur, vous pouvez également le faire correctement et activer un pare-feu qui bloque tous les ports autres que 22 (SSH) et 1194 (le port OpenVPN par défaut). Cet exemple illustre la manière dont cela fonctionnera sur le ufw d’Ubuntu
 
+## Preparer le serveur pour OPENVPN
+
+L'installation d'OpenVPN sur le serveur nécessite deux packages: Openvpn et, pour gérer le processus de génération de clé de chiffrement, easy-rsa.Pendant que vous configurez votre serveur, vous pouvez le faire correctement en activant un pare-feu qui bloque tous les ports à part 22 (SSH) et 1194 (le port OpenVPN par défaut). Cet exemple illustre la façon dont cela fonctionnera sur l'UFW d'Ubuntu
+
+```
+   $ sudo -i
+   # apt update 
+   # apt upgrade
+   # apt update
+   # apt install firewalld
+   # firewall-cmd --state running
+   # firewall-cmd --permanent --add-port=80/tcp
+   # firewall-cmd --permanent --add-port=443/tcp
+   # firewall-cmd --reload
+   ```
+
+
+
+
 
 
 
