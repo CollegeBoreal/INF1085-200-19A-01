@@ -23,7 +23,7 @@ L'installation d'OpenVPN sur le serveur nécessite deux packages: Openvpn et, po
    # apt upgrade
    # apt update
    # apt install firewalld
-   # firewall-cmd --state running
+   # firewall-cmd --state 
    # firewall-cmd --permanent --add-port=80/tcp
    # firewall-cmd --permanent --add-port=443/tcp
    # firewall-cmd --reload
