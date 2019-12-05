@@ -14,7 +14,7 @@ Samba allows to share files and printers with other computers remotely, regardle
 
 ### :two: Installing Samba
 
-Firstly run the update
+Firstly run the update 🧐
 
 ```
 sudo apt update
@@ -40,7 +40,7 @@ samba: /usr/sbin/samba /usr/lib/samba /etc/samba /usr/share/samba /usr/share/man
 
 Now that Samba is installed, you need to create a directory for it to share:
 
-Before that make sure you are connecting on rout, by typing:
+Before that, make sure you are connecting on rout, by typing:
 
 ```
 sudo -i
@@ -52,9 +52,9 @@ Create the share folder:
 mkdir /home/<username>/fileshare/
 
 ```
-The command above creates a new folder "fileshare" in your home directory which you will share later.
+The command above 👆 creates a new folder "fileshare" in your home directory which you will share later.
 
-The configuration file for Samba is located at /etc/samba/smb.conf. To add the new directory as a share, you edit the file by running:
+The configuration file for Samba is located at `/etc/samba/smb.conf` To add the new directory as a share, you edit the file by running:
 
 ```
 vi /etc/samba/smb.conf
@@ -69,9 +69,9 @@ set your share folder by adding the following lines:
     read only = no                         --> Permission to modify the contents of the share folder
     browsable = yes                        --> file managers will list this share under "Network"
 ```
-Then press `ESC` and type `:wq` to save and exit from the vi text editor.
+Then press `ESC` and type `:wq` to save and exit from the `vi` text editor.
 
-Now that we have you new share configured, save it and restart Samba for it to take effect:
+Now that we have you new share configured, save it and restart Samba 🐱‍🏍 for it to take effect:
 
 ```
 sudo service smbd restart
@@ -87,7 +87,7 @@ sudo ufw allow samba
 
 ### :four: set up user account
 
-Since Samba doesn't use the system account password, we need to set up a Samba password for our user account:
+Since Samba doesn't ❌ use the system account password, we need to set up a Samba password for our user account:
 
 ```
 sudo smbpasswd -a username
@@ -101,7 +101,7 @@ sudo smbpasswd -a username
 Start button -> Run
 Type: \\<your-ip-address-to-ubuntu>\<your-share-folder>
 ```
-All set
+All set 😃
 
 ##### 🍏 On Mac OS:
 ```
@@ -112,3 +112,5 @@ Connect
 Select guest and OK
 ```
 Your all set, you'll be able to see /<your-share-folder> from here.
+ 
+                                                                                                   `Halima_etp` 🥰
