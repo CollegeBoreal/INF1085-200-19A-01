@@ -24,8 +24,9 @@
 # [sharehome] path = /samba/sharehome writable = yes
 
 ## 4. Test the configuration. 
-#testparm
-$ su sambauser
+
+-#testparm
+-$ su sambauser
 
 
 
