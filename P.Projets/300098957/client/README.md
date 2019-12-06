@@ -35,6 +35,6 @@ $ brew cask install tunnelblick
 
 <image src ="images/image006.png" width="266" height="195"></image>
 
-:seven: Pour déconnecter, Sélectionner `Tunnelblick` dans la barre de menu.
+:seven: Pour déconnecter, Sélectionner `Tunnelblick` <image src ="https://tunnelblick.net/common/tb-icon-64x64.v1.png" width="16" height="16"></image> dans la barre de menu.
 
 <image src ="images/image007.png" width="530" height="150"></image>
