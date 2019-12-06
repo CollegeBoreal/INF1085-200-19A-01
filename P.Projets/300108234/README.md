@@ -85,7 +85,7 @@ systemctl status samba
 Since Samba doesn't ❌ use the system account password, we need to set up a Samba password for our user account:
 
 ```
-sudo smbpasswd -a username
+sudo smbpasswd -a halima
 ```
 ## :pushpin: Testing your Samba configuration
 
@@ -100,6 +100,7 @@ to switch the user (su) to the sambauser account you associated with Samba you r
 
 ```
 $ su sambauser
+```
 
 
 Install samba client with the following command:   
@@ -140,6 +141,7 @@ In the "Server Address" textbox, type: smb://10.13.237.55/fileshare
 Connect
 Select guest and OK
 ```
+
 Your all set, you'll be able to see /<your-share-folder> from here.
  
 
