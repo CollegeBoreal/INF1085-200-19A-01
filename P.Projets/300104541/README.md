@@ -30,6 +30,7 @@ $ sudo -i
 ```
 #testparm
 $ su sambauser
+# smbclient //localhost/sharehome 
 ```
 
 
