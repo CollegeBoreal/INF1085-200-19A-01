@@ -3,7 +3,7 @@
 J’ai pu connecter mon mac sur ton serveur VPN
  
 :one: dans un répertoire `amelie-vpn` sur mon mac, j’ai copié 
-* les clés `client.{crt,key,}`, 
+* les clés `client.{key,crt,csr}`, 
 * le certificat `ca.crt` et 
 * le fichier de configuration `client.conf` 
 
