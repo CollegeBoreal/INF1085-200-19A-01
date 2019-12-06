@@ -74,13 +74,14 @@ $ sudo apt-get install easy-rsa
 
 ```
 $ sudo cp -r /usr/share/easy-rsa/ /etc/openvpn
-$ cd /etc/openvpn/easy-rsa
+$ sudo -i
+# cd /etc/openvpn/easy-rsa
 ```
 
 :pushpin: ouvrir le fichier `vars`
 
 ```
-$ sudo vi vars
+# nano vars
 ```
 
 :pushpin: ajouter le contenu suivant
@@ -92,6 +93,23 @@ export KEY_CITY="Toronto"
 export KEY_ORG="Bootstrap IT"
 export KEY_EMAIL="300098957@collegeboreal.ca"
 export KEY_OU="IT"
+```
+
+:pushpin: ajouter le fichier `vars` dans les variables d'environnement
+
+```
+# source vars
+```
+
+:m: Génerer les clés
+
+```
+# ./easyrsa clean-all
+
+Note: using Easy-RSA configuration from: ./vars
+
+init-pki complete; you may now create a CA or requests.
+Your newly created PKI dir is: /etc/openvpn/easy-rsa/pki
 ```
 
 
