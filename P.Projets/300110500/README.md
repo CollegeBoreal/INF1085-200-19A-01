@@ -9,11 +9,16 @@ choses, et notamment la création d'un serveur Web chez soi. Évidemment, pour s
 
 Avant toute installation, il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
 Pour installer MARIA DB sur rasberry pi:
-### :one: Ouvrir le terminal git bash et se connecter a votre rasberry pi  ssh pi@10.13.237.75
-### :two: faire une mise a jour de votre rasberry pi en entrant la commande:  $ sudo apt-get update
+### :one: Ouvrir le terminal git bash et se connecter a votre rasberry pi  
+ssh pi@10.13.237.75
+
+### :two: faire une mise a jour de votre rasberry pi en entrant la commande:  
+$ sudo apt-get update
 
 
-### :three: installer Mari DB avec la commande suivante:  # apt install mariadb-server
+### :three: installer Mari DB avec la commande suivante:
+
+~#   apt install mariadb-server
 
 ### :four: creeation d'un utlisateur 
 
