@@ -1,7 +1,9 @@
 
 ## :loop:   MES PREMIERS PAS SUR RASBERRY PI
-Le wiki le plus important est Wikipedia. C'est une immense encyclopédie (au même titre qu'une encyclopédie papier).
-Elle possède des dizaines de milliers d'articles sur différents sujets (société, santé, mathématiques, informatique, littérature...) dans différentes langues (la majorité des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
+
+Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix intéressant fait du Raspberry pi un produit idéal pour tester différentes 
+choses, et notamment la création d'un serveur Web chez soi. Évidemment, pour sa taille il ne faut pas s'attendre à des performances incroyables, mais pour mettre en ligne des projets à montrer au client ou expérimenter avec linux c.
+
 
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
 
@@ -50,6 +52,11 @@ phpinfo();
 
 ##### Ouvrir un explorateur et et taper
 10.13.237.75/testmyphp.php
+
+### :pushpin: INSTALLER MEDIAWIKI ON RASBERRY PI
+
+Le wiki le plus important est Wikipedia. C'est une immense encyclopédie (au même titre qu'une encyclopédie papier).
+Elle possède des dizaines de milliers d'articles sur différents sujets (société, santé, mathématiques, informatique, littérature...) dans différentes langues (la majorité des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
 
 
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
