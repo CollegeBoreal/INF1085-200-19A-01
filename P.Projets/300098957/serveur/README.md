@@ -66,3 +66,28 @@ To                         Action      From
 $ sudo reboot -h now
 ```
 
+:two: Permettre le routage interne entre les interfaces de réseaux sur le serveur
+
+:pushpin: Modifier le fichier de configuration Système `/etc/sysctl.conf`
+
+
+```
+$ sudo nano /etc/sysctl.conf
+```
+
+:pushpin: Modifier le fichier Systeme
+
+* Enlever le commentaire pour la variable `net.ipv4.ip_forward`
+
+```
+# Uncomment the next line to enable packet forwarding for IPv4
+#net.ipv4.ip_forward=1
+```
+
+* Prendre en compte la modification
+
+```
+$ sudo sysctl -p
+net.ipv4.ip_forward = 1
+net.ipv6.conf.all.forwarding = 1
+```
