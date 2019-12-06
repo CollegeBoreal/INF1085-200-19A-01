@@ -62,7 +62,7 @@ $ systemctl status openvpn
 :three: Installer `OpenVPN` et Gérer les clés avec `easy-RSA`
 
 ```
-$ sudo apt-get install openvpn easy-rsa
+$ sudo apt-get install openvpn
 ```
 
 
