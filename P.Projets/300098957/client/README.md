@@ -33,4 +33,4 @@ $ brew cask install tunnelblick
 
 :six: Appuyer sur le bouton `connecté` et la connexion est établie
 
-<image src ="images/image006.png" width="532" height="390"></image>
+<image src ="images/image006.png" width="266" height="195"></image>
