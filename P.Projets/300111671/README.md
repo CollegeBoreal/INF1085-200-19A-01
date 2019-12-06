@@ -29,23 +29,38 @@ $ wget -P ~/ https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.4/EasyRS
 
 
 :pushpin: Apres telechargement il faut l'archiver:
-
+```
 $ cd ~
 $ tar xvf EasyRSA-3.0.4.tgz
+
+```
 Apres installation de tout les logiciels passons a l'etape 2.
 
 ### :two: Configuration des variables EasyRSA et création de l'autorité de certification
 
 :pushpin: Sur home acceder au repertoire EasyRSA :
 
+```
 $ cd ~/EasyRSA-3.0.4/
+
+```
 Sur ce repertoire acceder au fichier  nommé vars.example
 Faites une copie de ce fichier et nommez-la vars sans extension de fichier:
 
+
+```
 $ cp vars.example vars
 
+```
 -Ouvrez ce nouveau fichier en utilisant votre éditeur de nano que moi je prefere:
+
+```
 $ nano vars
+
+```
+
+
+
 
 
 
@@ -75,14 +90,18 @@ ctrl O pour save et ctrl x pour exit
 :m: Le répertoire EasyRSA contient un script appelé easyrsa (permet de a la creation et a la gestion des certification)
 Exécutez ce script avec :
 
-
+```
 $ ./easyrsa init-pki
 
+```
 :m: Exécutez easyrsa avec "build-ca" qui va construire 'autorité de certification et créera deux fichiers importants - ca.crt( certificat public) et ca.key- qui constitueront les côtés public et privé( certificat prive) d'un certificat SSL.
 vous pouvez aussi exécuter la build-cacommande avec l' nopassoption suivante:
 
+
+```
 $ ./easyrsa build-ca nopass
 
+```
 
 Dans la sortie, il vous sera demandé de confirmer le nom commun de votre autorité de certification:
 
@@ -91,38 +110,53 @@ appuyez sur ENTERpour accepter le nom par défaut
 #### :tree: Création des fichiers de certificat de serveur, de clé et de chiffrement
 
 :m: Commencez par naviguer vers le répertoire EasyRSA sur votre serveur OpenVPN :
+
+```
 $ cd EasyRSA-3.0.4/
 
+```
 :pushpin: lancez le easyrsascript avec l'option init-pki option
 
+
+```
 ./easyrsa init-pki
 
+```
 Appelez ensuite à easyrsa nouveau le script, cette fois avec l'option gen-req option suivie d'un nom commun pour la machine:
 
+```
 
 $./easyrsa gen-req server nopass
 
+```
+
 :pushpin: Cela créera une clé privée pour le serveur et un fichier de demande de certificat appelé server.req. Copiez la clé du serveur dans le /etc/openvpn/répertoire:
 
-
+```
 $ sudo cp ~/EasyRSA-3.0.4/pki/private/server.key /etc/openvpn/
 
+```
 :pushpin: Vous pouvez aussi faire une copie securisee sur votre serveur:
 
+```
 scp ~/EasyRSA-3.0.4/pki/reqs/server.req pi@10.13.237.63:/tmp
 
+```
 
 :m:  En utilisant à easyrsanouveau le script, importez le server.reqfichier en suivant le chemin du fichier avec son nom commun:
 
+```
 $./easyrsa import-req /tmp/server.req server
 
+```
 :pushpin: signez la demande en exécutant le easyrsascript avec l' sign-req option,suivie du type de demande(client ou server) et du nom commun(user,locahost...).
 
 *pour la demande de certificat du serveur OpenVPN vous utiliser server:
 
+```
 $./easyrsa sign-req server pi
 
-
+```
 
 Dans la sortie, il vous sera demandé de vérifier que la demande provient d'une source approuvée. Tapez :yes: puis appuyez sur :ENTER: pour confirmer ceci:
 
