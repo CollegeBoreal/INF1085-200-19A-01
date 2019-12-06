@@ -1,7 +1,10 @@
 
-##   MES PREMIERS PAS SUR RASBERRY PI
+## :loop:   MES PREMIERS PAS SUR RASBERRY PI
+Le wiki le plus important est Wikipedia. C'est une immense encyclopédie (au même titre qu'une encyclopédie papier).
+Elle possède des dizaines de milliers d'articles sur différents sujets (société, santé, mathématiques, informatique, littérature...) dans différentes langues (la majorité des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
 
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
+
 Avant toute installation, il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
 Pour installer MARIA DB sur rasberry pi:
 ### :one: Ouvrir le terminal git bash et se connecter a votre rasberry pi  ssh pi@10.13.237.75
