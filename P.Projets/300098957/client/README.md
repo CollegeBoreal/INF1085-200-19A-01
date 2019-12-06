@@ -13,4 +13,8 @@ J’ai pu connecter mon mac sur ton serveur VPN
 
 <image src ="images/image002.png" width="423" height="251"></image>
 
+:three: J’ai ensuite fait un `drag-and-drop` du fichier `client.conf` dans le paneau configuration de tunnelblick
+
+<image src ="images/image003.png" width="423" height="251"></image>
+
 
