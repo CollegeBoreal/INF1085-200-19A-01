@@ -49,7 +49,9 @@ sudo -i
 Create the share folder: 
 
 ```
-mkdir /home/halima/fileshare/
+# mkdir -p /samba/sharehome
+# touch /samba/sharehome/myfile
+# chmod 777 /samba/sharehome
 
 ```
 The command above 👆 creates a new folder "fileshare" in your home directory which you will share later.
@@ -57,24 +59,24 @@ The command above 👆 creates a new folder "fileshare" in your home directory w
 The configuration file for Samba is located at `/etc/samba/smb.conf` To add the new directory as a share, you edit the file by running:
 
 ```
-vi /etc/samba/smb.conf
+# nano /etc/samba/smb.conf
 ```
 
 set your share folder by adding the following lines:
 
 ```
-[fileshare]                                --> name of your share file/ optional
+[sharehome]                                --> name of your share file/ optional
     comment = Samba on Ubuntu              --> A brief description of the share/ optional
-    path = /home/username/sambashare       --> where you create your share file/ The directory of your share.
-    read only = no                         --> Permission to modify the contents of the share folder
-    browsable = yes                        --> file managers will list this share under "Network"
+    path = /samba/sharehome                --> where you create your share file/ The directory of your share.
+    writable = yes                         --> Permission to modify the contents of the share folder
 ```
-Then press `ESC` and type `:wq` to save and exit from the `vi` text editor.
+Then press `Ctrl-O` to save and `Ctrl-X` to exit from the nano text editor.
 
-Now that we have you new share configured, save it and restart Samba 🐱‍🏍 for it to take effect:
+Now that you have a new share configured, save it and start/enable the Samba daemon 🐱‍🏍 for it to take effect:
 
 ```
-systemctl status samba
+# systemctl start smbd
+# systemctl enable smbd
 ```
 
 
@@ -85,7 +87,8 @@ systemctl status samba
 Since Samba doesn't ❌ use the system account password, we need to set up a Samba password for our user account:
 
 ```
-sudo smbpasswd -a halima
+# adduser sambauser
+# smbpasswd -a sambauser
 ```
 ## :pushpin: Testing your Samba configuration
 
@@ -112,8 +115,9 @@ sudo apt-get install smbclient
 and then run this command to log in to your Samba share from the local machine :
 
 ```
-# smbclient //localhost/fileshare
+# smbclient //localhost/sharehome
 ```
+![image](smb.png)
 
 ##### Remarque: to show your Workgroup list use the following command 
 
