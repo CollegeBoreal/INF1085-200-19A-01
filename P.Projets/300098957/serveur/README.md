@@ -74,7 +74,7 @@ $ sudo cp -r /usr/share/easy-rsa/ /etc/openvpn
 $ cd /etc/openvpn/easy-rsa
 ```
 
-<image src ="images/manageKeys.png" width="1574" height="854"></image>
+<image src ="images/manageKeys.png" width="737" height="427"></image>
 
 
 
