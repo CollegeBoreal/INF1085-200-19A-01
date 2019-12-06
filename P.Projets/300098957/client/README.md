@@ -19,5 +19,5 @@ J’ai pu connecter mon mac sur ton serveur VPN
 
 :four: J’ai cliqué la configuration pour Moi seulement
 
-<image src ="images/image004.png" width="510" height="1251"></image>
+<image src ="images/image004.png" width="510" height="751"></image>
 
