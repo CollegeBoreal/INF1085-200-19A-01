@@ -35,7 +35,7 @@ MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 
-### Installer PHP
+### :pushpin: INSTALLATION DE PHP ON YOR SERVER
 
  # apt install php
 # apt install libapache2-mod-php
