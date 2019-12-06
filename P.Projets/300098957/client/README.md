@@ -6,7 +6,7 @@ J’ai pu connecter mon mac sur ton serveur VPN
 * le certificat `ca.crt` et 
 * le fichier de configuration `client.conf` 
 
-<image src ="images/image001.png" width="1122" height="456"></image>
+<image src ="images/image001.png" width="561" height="228"></image>
 
 :two: J’ai téléchargé l’application `tunnelblick` pour Mac https://tunnelblick.net/
 
