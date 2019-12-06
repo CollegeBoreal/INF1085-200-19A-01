@@ -6,7 +6,7 @@ J’ai pu connecter mon mac sur ton serveur VPN
 * le certificat `ca.crt` et 
 * le fichier de configuration `client.conf` 
 
-![image](images/image001.png)
+![image](images/image001-thumb.png)
 
 
 
