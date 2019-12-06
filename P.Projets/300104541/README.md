@@ -1,6 +1,6 @@
-# SECURING NETWORK CONNECTIONS
+# SAMBA
 
-## 1.Introduction VPN
+## 1.Introduction 
 
 VPN en anglais "Virtual Private Network" (réseau privé virtuel) désigne un réseau crypté dans le réseau Internet, qui permet à une société dont les locaux seraient géographiquement dispersés de communiquer et partager des documents de manière complètement sécurisée, comme s'il n'y avait qu'un local avec un réseau interne.D'une maniere terre a terre il permet d'échanger des informations de manière sécurisée et anonyme en utilisant une adresse IP différente a celle de votre ordinateur.
 
@@ -9,25 +9,34 @@ VPN en anglais "Virtual Private Network" (réseau privé virtuel) désigne un r�
 - Concevoir des architectures de pare-feu plus sophistiquées pour diviser votre réseau de manière stratégique en segments isolés.
 - Créer un environnement de réseau virtuel afin de pouvoir tester vos configurations.
 
-## Construire un tunnel VPN
+## 1. Create a Samba user account on the Linux server. 
 
-L'installation VPN sur votre serveur nécessite deux packages: openvpn et, pour gérer le processus de génération de clé de cryptage, easy-rsa. Si nécessaire, les utilisateurs de CentOS doivent d’abord installer le référentiel epel-release. Pour vous permettre de tester facilement l’accès à une application serveur, vous pouvez également installer le serveur Web Apache (apache2 pour Ubuntu et httpd sur CentOS). Pendant que vous configurez votre serveur, vous pouvez également le faire correctement et activer un pare-feu qui bloque tous les ports autres que 22 (SSH) et 1194 (le port OpenVPN par défaut). Cet exemple illustre la manière dont cela fonctionnera sur le ufw d’Ubuntu
-
-## Preparer le serveur pour OPENVPN
-
-L'installation d'OpenVPN sur le serveur nécessite deux packages: Openvpn et, pour gérer le processus de génération de clé de chiffrement, easy-rsa.Pendant que vous configurez votre serveur, vous pouvez le faire correctement en activant un pare-feu qui bloque tous les ports à part 22 (SSH) et 1194 (le port OpenVPN par défaut). Cet exemple illustre la façon dont cela fonctionnera sur l'UFW d'Ubuntu
-
+```sudo apt-get update
 ```
-   $ sudo -i
-   # apt update 
-   # apt upgrade
-   # apt update
-   # apt install firewalld
-   # firewall-cmd --state 
-   # firewall-cmd --permanent --add-port=80/tcp
-   # firewall-cmd --permanent --add-port=443/tcp
-   # firewall-cmd --reload
-   ```
+```sudo -i
+```
+``` sudo apt-get install samba
+```
+##  2.Designate a share directory 
+
+```# mkdir -p /samba/sharehome 
+   # touch /samba/sharehome/myfile
+   # chmod 777 /samba/sharehome
+   # nano /etc/samba/smb.conf
+```
+
+###  3.Define the share through the edit smb.conf.file
+
+```[sharehome] path = /samba/sharehome writable = yes
+```
+
+#### 4. Test the configuration. 
+```#testparm
+```
+
+```$ su sambauser
+```
+
 
 
 
