@@ -60,6 +60,8 @@ phpinfo();
 
 - Configurer en ouvrant un explorer mediawiki10.13.237.75/mediawiki/index.php
 
+ -- configuring your wiki link: http://10.13.237.75/mw-config/index.php?page=Options
+ 
 ### :pushpin: INSTALLER MEDIAWIKI ON RASBERRY PI
 
 Le wiki le plus important est Wikipedia. C'est une immense encyclopédie (au même titre qu'une encyclopédie papier).
