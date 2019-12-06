@@ -30,3 +30,5 @@ $ brew cask install tunnelblick
 :five: La configuration `client` est installée
 
 <image src ="images/image005.png" width="421" height="235"></image>
+
+:six: Appuyer sur le bouton `connecté` et la connexion est établie
