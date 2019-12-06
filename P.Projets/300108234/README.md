@@ -117,7 +117,7 @@ and then run this command to log in to your Samba share from the local machine :
 ```
 # smbclient //localhost/sharehome
 ```
-![image](smb.png)
+![image](smb.jpg)
 
 ##### Remarque: to show your Workgroup list use the following command 
 
