@@ -112,6 +112,7 @@ init-pki complete; you may now create a CA or requests.
 Your newly created PKI dir is: /etc/openvpn/easy-rsa/pki
 ```
 
+:pushpin: Donner le `passphrase` password au New CA Key Passphrase (ne peux etre vide)
 
 ```
 # ./easyrsa build-ca
