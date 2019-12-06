@@ -15,3 +15,5 @@ On commence donc par installer samba qui va nous permettre de rendre ce dossier 
 
 
   # apt-get install samba
+  # smbclient //localhost/sharehome
+ 
