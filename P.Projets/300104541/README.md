@@ -7,10 +7,11 @@
 
 ## 1. Create a Samba user account on the Linux server. 
 
-``` $ sudo apt-get update
 ```
-``` $ sudo apt-get install samba
-``` $ sudo -i 
+$ sudo apt-get update
+$ sudo apt-get install samba
+$ sudo -i
+```
 ##  2.Designate a share directory 
 
 ```# mkdir -p /samba/sharehome 
