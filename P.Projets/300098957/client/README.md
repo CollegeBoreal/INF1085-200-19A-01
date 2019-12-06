@@ -2,7 +2,7 @@
 
 #### :apple: Connection du mac sur un serveur VPN
 
-:zero: Installer l’application [tunnelblick ![image](https://tunnelblick.net/common/tb-icon-64x64.v1.png)] pour Mac https://tunnelblick.net/ 
+:zero: Installer l’application `tunnelblick` <image src ="https://tunnelblick.net/common/tb-icon-64x64.v1.png" width="64" height="64"></image> pour Mac https://tunnelblick.net/ 
 
 ```
 $ brew cask install tunnelblick
