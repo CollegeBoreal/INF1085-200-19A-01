@@ -61,9 +61,13 @@ $ systemctl status openvpn
 
 :three: Gestion des clés avec `easy-rsa`
 
+:pushpin: Installer l'utilitaire de création des clés
+
 ```
 $ sudo apt-get install easy-rsa
 ```
+
+:pushpin: Copier les fichiers d'examples dans la configuration d'`OpenVPN`
 
 
 
