@@ -1,7 +1,7 @@
 
 ##   MES PREMIERS PAS SUR RASBERRY PI
 
-### :green: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
+### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
 Avant toute installation, il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
 Pour installer MARIA DB sur rasberry pi:
 ### :one: Ouvrir le terminal git bash et se connecter a votre rasberry pi  ssh pi@10.13.237.75
