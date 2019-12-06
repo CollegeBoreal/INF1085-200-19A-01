@@ -13,18 +13,17 @@ Pour installer MARIA DB sur rasberry pi:
 ### :two: faire une mise a jour de votre rasberry pi en entrant la commande:  $ sudo apt-get update
 
 
-- installer Mari DB avec la commande suivante:  # apt install mariadb-server
+### :three: installer Mari DB avec la commande suivante:  # apt install mariadb-server
 
-- creeation d'un utlisateur
- DROP USER 'root'@'localhost';
-CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
-DROP USER 'root'@'localhost';
-CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+### :four: creeation d'un utlisateur 
 
-- Acceder a la base de donnees par la commande suivante:  $ mysql -u root -p
--creer des bases de donnees
+- CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
+- GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+
+### :five: Acceder a la base de donnees par la commande suivante: 
+$ mysql -u root -p
+
+- creer des bases de donnees
 MariaDB> use companydb
 MariaDB> CREATE TABLE Contacts (
 ID int,
@@ -36,6 +35,7 @@ City varchar(255)
 
 mysql> CREATE DATABASE wikidb;
 
+- Insert statements
 MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
@@ -50,8 +50,10 @@ VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 phpinfo();
 ?>
 
-##### Ouvrir un explorateur et et taper
-10.13.237.75/testmyphp.php
+##### Tester la connectivite de php
+- Ouvrir un explorer et taper 10.13.237.75/testmyphp.php
+
+- Configurer mediawiki10.13.237.75/mediawiki/index.php
 
 ### :pushpin: INSTALLER MEDIAWIKI ON RASBERRY PI
 
