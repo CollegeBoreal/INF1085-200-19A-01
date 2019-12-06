@@ -25,8 +25,8 @@
 
 ## 4. Test the configuration. 
 
-``-#testparm
--$ su sambauser
+``#testparm
+$ su sambauser
 ```
 
 
