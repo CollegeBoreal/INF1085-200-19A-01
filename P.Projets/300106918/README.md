@@ -1,6 +1,6 @@
 Installation du Firewall shorewall
 
-         sudo apt-get install shorewall6
+         sudo apt-get install shorewall
          
          pi@raspberrypi:~ $ firewall delete
 -bash: firewall: command not found
