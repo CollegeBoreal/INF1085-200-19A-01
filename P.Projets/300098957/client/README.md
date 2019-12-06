@@ -27,6 +27,6 @@ $ brew cask install tunnelblick
 
 <image src ="images/image004.png" width="255" height="375"></image>
 
-:five: La configuration client est installée
+:five: La configuration `client` est installée
 
 <image src ="images/image005.png" width="421" height="235"></image>
