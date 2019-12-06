@@ -10,6 +10,6 @@ J’ai pu connecter mon mac sur ton serveur VPN
 
 :two: J’ai téléchargé l’application `tunnelblick` pour Mac https://tunnelblick.net/
 
-<image src ="images/image002.png" width="1692" height="1004"></image>
+<image src ="images/image002.png" width="846" height="502"></image>
 
 
