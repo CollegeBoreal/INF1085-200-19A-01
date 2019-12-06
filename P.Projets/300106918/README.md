@@ -1,5 +1,7 @@
 Installation du Firewall shorewall    https://www.linuxhelp.com/how-to-install-shorewall-in-linux
 
+sudo firewall-cmd --list-services
+
          sudo apt-get install shorewall
          
          pi@raspberrypi:~ $ firewall delete
