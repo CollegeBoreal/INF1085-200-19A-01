@@ -69,13 +69,30 @@ $ sudo apt-get install easy-rsa
 
 :pushpin: Copier les fichiers d'examples d'`easy-rsa` dans la configuration d'`OpenVPN`
 
+
+<image src ="images/manageKeys.png" width="737" height="427"></image>
+
 ```
 $ sudo cp -r /usr/share/easy-rsa/ /etc/openvpn
 $ cd /etc/openvpn/easy-rsa
 ```
 
-<image src ="images/manageKeys.png" width="737" height="427"></image>
+:pushpin: ouvrir le fichier `vars`
 
+```
+$ sudo vi vars
+```
+
+:pushpin: ajouter le contenu suivant
+
+```
+export KEY_COUNTRY="CA"
+export KEY_PROVINCE="ON"
+export KEY_CITY="Toronto"
+export KEY_ORG="Bootstrap IT"
+export KEY_EMAIL="300098957@collegeboreal.ca"
+export KEY_OU="IT"
+```
 
 
 :ab: Installer un 'firewall' par precaution
