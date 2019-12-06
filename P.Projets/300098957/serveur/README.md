@@ -42,11 +42,31 @@ net.ipv4.ip_forward = 1
 net.ipv6.conf.all.forwarding = 1
 ```
 
-:two: Installer `OpenVPN` et `easy-RSA` pour la gestion des clés
+:two: Installer `OpenVPN`
+
+:pushpin: Installer
+
+```
+$ sudo apt-get install openvpn
+```
+
+:pushpin: Vérifier
+
+```
+$ systemctl status openvpn
+● openvpn.service - OpenVPN service
+   Loaded: loaded (/lib/systemd/system/openvpn.service; enabled; vendor preset: enabled)
+   Active: active (exited) since Fri 2019-12-06 10:10:15 EST; 1h 0min ago
+```
+
+:three: Installer `OpenVPN` et Gérer les clés avec `easy-RSA`
 
 ```
 $ sudo apt-get install openvpn easy-rsa
 ```
+
+
+
 
 :ab: Installer un 'firewall' par precaution
 
