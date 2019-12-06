@@ -8,6 +8,8 @@ J’ai pu connecter mon mac sur ton serveur VPN
 
 ![image](images/image001-thumb.png)
 
+:two: J’ai téléchargé l’application `tunnelblick` pour Mac https://tunnelblick.net/
+
 
 
 
