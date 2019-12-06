@@ -40,7 +40,7 @@ samba: /usr/sbin/samba /usr/lib/samba /etc/samba /usr/share/samba /usr/share/man
 
 Now that Samba is installed, you need to create a directory for it to share:
 
-Before that, make sure you are connecting on rout, by typing:
+Before that, make sure you are connecting on root, by typing:
 
 ```
 sudo -i
@@ -49,7 +49,7 @@ sudo -i
 Create the share folder: 
 
 ```
-mkdir /home/<username>/fileshare/
+mkdir /home/halima/fileshare/
 
 ```
 The command above 👆 creates a new folder "fileshare" in your home directory which you will share later.
@@ -74,14 +74,9 @@ Then press `ESC` and type `:wq` to save and exit from the `vi` text editor.
 Now that we have you new share configured, save it and restart Samba 🐱‍🏍 for it to take effect:
 
 ```
-sudo service smbd restart
+systemctl status samba
 ```
 
-Update the firewall rules to allow Samba traffic:
-
-```
-sudo ufw allow samba
-```
 
 ## :pushpin: Setting up User Accounts
 
@@ -92,14 +87,48 @@ Since Samba doesn't ❌ use the system account password, we need to set up a Sam
 ```
 sudo smbpasswd -a username
 ```
+## :pushpin: Testing your Samba configuration
+
+### :five: test your configuration
+
+to show the section you added run the following command:
+```
+# testparm
+```
+
+to switch the user (su) to the sambauser account you associated with Samba you run:
+
+```
+$ su sambauser
+
+
+Install samba client with the following command:   
+
+```
+sudo apt-get install smbclient
+```
+
+and then run this command to log in to your Samba share from the local machine :
+
+```
+# smbclient //localhost/fileshare
+```
+
+##### Remarque: to show your Workgroup list use the following command 
+
+```
+sudo smbtree -L
+```
+
+
 ## :pushpin: Connecting to Share
 
-### :five: Accessing to Samba Server Files
+### :six: Accessing to Samba Server Files
 
 ##### 🌈 On Windows:
 ```
 Start button -> Run
-Type: \\<your-ip-address-to-ubuntu>\<your-share-folder>
+Type: \\10.13.237.55\fileshare
 ```
 All set 😃
 
@@ -107,7 +136,7 @@ All set 😃
 ```
 Open finder
 Menu Go -> Connect to server (command-k)
-In the "Server Address" textbox, type: smb://<your-ip-address-to-ubuntu>
+In the "Server Address" textbox, type: smb://10.13.237.55/fileshare
 Connect
 Select guest and OK
 ```
