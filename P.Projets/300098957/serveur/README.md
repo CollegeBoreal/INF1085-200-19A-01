@@ -16,7 +16,7 @@ $ sudo apt-get update
 ```
 
 
-:two: Permettre le routage interne entre les interfaces de réseaux sur le serveur
+:one: Permettre le routage interne entre les interfaces de réseaux sur le serveur
 
 :pushpin: Modifier le fichier de configuration Système `/etc/sysctl.conf`
 
@@ -40,6 +40,12 @@ $ sudo nano /etc/sysctl.conf
 $ sudo sysctl -p
 net.ipv4.ip_forward = 1
 net.ipv6.conf.all.forwarding = 1
+```
+
+:two: Installer `OpenVPN` et `easy-RSA` pour la gestion des clés
+
+```
+$ sudo apt-get install openvpn easy-rsa
 ```
 
 :ab: Installer un 'firewall' par precaution
