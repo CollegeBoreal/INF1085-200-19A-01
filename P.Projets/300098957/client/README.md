@@ -1,25 +1,25 @@
 # Configuration Client
 
-#### :apple: J’ai pu connecter mon mac sur ton serveur VPN
+#### :apple: Connection du mac sur un serveur VPN
 
-:zero: J’ai installé l’application `tunnelblick` pour Mac https://tunnelblick.net/
+:zero: Installer l’application `tunnelblick` pour Mac https://tunnelblick.net/
 
 ```
 $ brew cask install tunnelblick
 ```
 
-:one: dans un répertoire `amelie-vpn` sur mon mac, j’ai copié 
+:one: dans un répertoire i.e. `amelie-vpn` sur le mac, copier
 * les clés `client.{key,crt,csr}`, 
 * le certificat `ca.crt` et 
 * le fichier de configuration `client.conf` 
 
 <image src ="images/image001.png" width="561" height="228"></image>
 
-:two: J’ai ensuite fait un `drag-and-drop` du fichier `client.conf` dans le paneau configuration de tunnelblick
+:two: Faire un `drag-and-drop` du fichier `client.conf` dans le paneau configuration de `TunnelBlick`
 
 <image src ="images/image002.png" width="423" height="251"></image>
 
-:three: J’ai cliqué la configuration pour Moi seulement
+:three: Choisir la configuration pour `Moi seulement`
 
 <image src ="images/image003.png" width="405" height="207"></image>
 
