@@ -19,12 +19,12 @@
    # nano /etc/samba/smb.conf
 ```
 
-###  3.Define the share through the edit smb.conf.file
+##  3.Define the share through the edit smb.conf.file
 
 ```# [sharehome] path = /samba/sharehome writable = yes
 ```
 
-#### 4. Test the configuration. 
+## 4. Test the configuration. 
 #testparm
 $ su sambauser
 
