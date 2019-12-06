@@ -67,8 +67,12 @@ $ systemctl status openvpn
 $ sudo apt-get install easy-rsa
 ```
 
-:pushpin: Copier les fichiers d'examples dans la configuration d'`OpenVPN`
+:pushpin: Copier les fichiers d'examples d'`easy-rsa` dans la configuration d'`OpenVPN`
 
+```
+$ sudo cp -r /usr/share/easy-rsa/ /etc/openvpn
+$ cd /etc/openvpn/easy-rsa
+```
 
 
 
