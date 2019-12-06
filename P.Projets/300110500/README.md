@@ -15,7 +15,7 @@ Pour installer MARIA DB sur rasberry pi:
 
 - installer Mari DB avec la commande suivante:  # apt install mariadb-server
 
--creeation d'un utlisateur
+- creeation d'un utlisateur
  DROP USER 'root'@'localhost';
 CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
