@@ -2,7 +2,7 @@
 
 #### :apple: Connection du mac sur un serveur VPN
 
-:zero: Installer l’application `tunnelblick` pour Mac https://tunnelblick.net/
+:zero: Installer l’application [tunnelblick ![image](https://tunnelblick.net/common/tb-icon-64x64.v1.png)] pour Mac https://tunnelblick.net/ 
 
 ```
 $ brew cask install tunnelblick
@@ -15,7 +15,7 @@ $ brew cask install tunnelblick
 
 <image src ="images/image001.png" width="561" height="228"></image>
 
-:two: Faire un `drag-and-drop` du fichier `client.conf` dans le paneau configuration de `TunnelBlick`
+:two: Faire un `drag-and-drop` du fichier `client.conf` dans le paneau configuration de `Tunnelblick`
 
 <image src ="images/image002.png" width="423" height="251"></image>
 
@@ -35,6 +35,6 @@ $ brew cask install tunnelblick
 
 <image src ="images/image006.png" width="266" height="195"></image>
 
-:seven: Pour déconnecter, Sélectionner `TunnelBlick` dans la barre de menu.
+:seven: Pour déconnecter, Sélectionner `Tunnelblick` dans la barre de menu.
 
 <image src ="images/image007.png" width="530" height="150"></image>
