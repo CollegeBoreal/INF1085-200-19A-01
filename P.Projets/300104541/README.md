@@ -22,8 +22,9 @@ $ sudo -i
 
 ##  3.Define the share through the edit smb.conf.file
 
-# [sharehome] path = /samba/sharehome writable = yes
-
+```
+[sharehome] path = /samba/sharehome writable = yes
+```
 ## 4. Test the configuration. 
 
 ```
