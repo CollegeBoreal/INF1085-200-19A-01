@@ -22,6 +22,7 @@ $ brew cask install tunnelblick
 
 <image src ="images/image003.png" width="405" height="207"></image>
 
+:five: Après plusieurs messages d’alertes insignifiants
 
 <image src ="images/image004.png" width="255" height="375"></image>
 
