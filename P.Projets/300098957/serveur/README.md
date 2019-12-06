@@ -144,6 +144,38 @@ Your new CA certificate file for publishing is at:
 
 ```
 
+:pushpin:  build-server-full server
+
+* Donner le `password` au `PEM pass` phrase (ne peux etre vide)
+
+* Donner le `password` au `ca.key` (ne peux etre vide)
+
+```
+
+# ./easyrsa build-server-full server
+
+Note: using Easy-RSA configuration from: ./vars
+
+Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
+Generating a RSA private key
+....+++++
+....+++++
+writing new private key to '/etc/openvpn/easy-rsa/pki/private/server.key.f1TfVHDXUv'
+Enter PEM pass phrase:
+Verifying - Enter PEM pass phrase:
+-----
+Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
+Enter pass phrase for /etc/openvpn/easy-rsa/pki/private/ca.key:
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'server'
+Certificate is to be certified until Nov 20 23:39:04 2022 GMT (1080 days)
+
+Write out database with 1 new entries
+Data Base Updated
+```
+
 
 :ab: Installer un 'firewall' par precaution
 
