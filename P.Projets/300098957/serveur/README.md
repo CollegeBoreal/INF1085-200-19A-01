@@ -74,6 +74,8 @@ $ sudo cp -r /usr/share/easy-rsa/ /etc/openvpn
 $ cd /etc/openvpn/easy-rsa
 ```
 
+<image src ="images/manageKeys.png" width="561" height="228"></image>
+
 
 
 :ab: Installer un 'firewall' par precaution
