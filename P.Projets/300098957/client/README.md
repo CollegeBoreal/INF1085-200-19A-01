@@ -11,13 +11,17 @@ J’ai pu connecter mon mac sur ton serveur VPN
 
 :two: J’ai téléchargé l’application `tunnelblick` pour Mac https://tunnelblick.net/
 
+```
+$ brew cask install tunnelblick
+```
+:three: J’ai ensuite fait un `drag-and-drop` du fichier `client.conf` dans le paneau configuration de tunnelblick
+
 <image src ="images/image002.png" width="423" height="251"></image>
 
-:three: J’ai ensuite fait un `drag-and-drop` du fichier `client.conf` dans le paneau configuration de tunnelblick
+:four: J’ai cliqué la configuration pour Moi seulement
 
 <image src ="images/image003.png" width="405" height="207"></image>
 
-:four: J’ai cliqué la configuration pour Moi seulement
 
 <image src ="images/image004.png" width="255" height="375"></image>
 
