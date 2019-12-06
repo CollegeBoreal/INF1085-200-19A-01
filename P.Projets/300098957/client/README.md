@@ -34,3 +34,7 @@ $ brew cask install tunnelblick
 :six: Appuyer sur le bouton `Connecter` et la connexion est établie
 
 <image src ="images/image006.png" width="266" height="195"></image>
+
+:seven: Pour déconnecter, Sélectionner `TunnelBlick` dans la barre de menu.
+
+<image src ="images/image007.png" width="530" height="150"></image>
