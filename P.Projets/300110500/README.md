@@ -29,7 +29,9 @@ $ sudo apt-get update
 $ mysql -u root -p
 
 - creer des bases de donnees
-MariaDB> use companydb
+
+. MariaDB> use companydb
+
 MariaDB> CREATE TABLE Contacts (
 ID int,
 LastName varchar(255),
@@ -47,7 +49,7 @@ VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 ### :pushpin: INSTALLATION DE PHP ON YOR SERVER
 
- # apt install php
+# apt install php
 # apt install libapache2-mod-php
 
 # nano /var/www/html/testmyphp.php
@@ -58,21 +60,22 @@ phpinfo();
 ##### Tester la connectivite de php
 - Ouvrir un explorer et taper 10.13.237.75/testmyphp.php
 
-- Configurer en ouvrant un explorer mediawiki10.13.237.75/mediawiki/index.php
+- Configurer en ouvrant un explorer mediawiki 10.13.237.75/index.php
 
  -- configuring your wiki link: http://10.13.237.75/mw-config/index.php?page=Options
  
-### :pushpin: INSTALLER MEDIAWIKI ON RASBERRY PI
+### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
 Le wiki le plus important est Wikipedia. C'est une immense encyclopédie (au même titre qu'une encyclopédie papier).
 Elle possède des dizaines de milliers d'articles sur différents sujets (société, santé, mathématiques, informatique, littérature...) dans différentes langues (la majorité des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
 
-
+- pour installer wiki, il faut excecuter la commande suivante dans le terminal git bash
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
 mediawiki-1.30.0.tar.gz
 
 
 $ tar xzvf mediawiki-1.30.0.tar.gz
+-
 $ ls
 mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
 # cp -r mediawiki-1.30.0/* /var/www/html/
