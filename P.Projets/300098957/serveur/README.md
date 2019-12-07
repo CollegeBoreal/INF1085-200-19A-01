@@ -199,6 +199,33 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn
 ```
 
+:two: Générer la partie client
+
+```
+# ./easyrsa build-client-full client
+
+Note: using Easy-RSA configuration from: ./vars
+
+Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
+Generating a RSA private key
+....................................................................................+++++
+.............+++++
+writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.qALrHIxusP'
+Enter PEM pass phrase:
+Verifying - Enter PEM pass phrase:
+-----
+Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
+Enter pass phrase for /etc/openvpn/easy-rsa/pki/private/ca.key:
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'client'
+Certificate is to be certified until Nov 20 23:58:11 2022 GMT (1080 days)
+
+Write out database with 1 new entries
+Data Base Updated
+```
+
 
 
 :ab: Installer un 'firewall' par precaution
