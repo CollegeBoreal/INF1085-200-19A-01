@@ -75,6 +75,32 @@ hostname -I
 
 ![image](ip.PNG)
 
-### :one::one: Se connecter sur le Rasberry Pi en ulissant SSH
+### :one::one: connecter à votre Samba sous Windows 10
+
+Commencez par ouvrir l '« file explorer ».
+
+![image](win.PNG)
+
+Cliquez sur map drive
+
+![image](map.PNG)
+
+Puis, entrez le text pour mapper le lecteur réseau
+
+\\10.13.237.79\pimylifeupshare
+
+![image](map1.PNG)
+
+### :one::two: Se connecter sur le Rasberry Pi en ulissant SSH
+
+![image](ip.PNG)
+
+### :one::three: Se connecter sur le Rasberry Pi en ulissant SSH
+
+![image](ip.PNG)
+
+### :one::four: Se connecter sur le Rasberry Pi en ulissant SSH
+
+![image](ip.PNG)
 
 
