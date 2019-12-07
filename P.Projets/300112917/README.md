@@ -1,4 +1,4 @@
-# Installation de Samba Sur un Rasberry Pi4
+# :snowflake: Installation de Samba Sur un Rasberry Pi4
 
 ### :one: Se connecter sur le Rasberry Pi en ulissant SSH
 
