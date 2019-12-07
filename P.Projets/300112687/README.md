@@ -2,7 +2,10 @@
 Projet
  
  # UPDATE
- sudo apt update 
+ ```
+ $ sudo apt update 
+ ```
+ 
  # install
  sudo apt-get install samba
  
