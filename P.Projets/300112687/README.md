@@ -5,4 +5,7 @@ Projet
  sudo apt update 
  # install
  sudo apt-get install samba
- ![image]()
+ 
+ 
+ ````
+ ![image](config samba.png)
