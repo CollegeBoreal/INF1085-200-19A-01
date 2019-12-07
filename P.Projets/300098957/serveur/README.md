@@ -247,6 +247,14 @@ Data Base Updated
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
 ```
 
+:pushpin: Assembler la configiuration des les clés du client
+
+```
+# cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf \
+ /etc/openvpn/client
+```
+
+
 
 * Redemarrez 
 
