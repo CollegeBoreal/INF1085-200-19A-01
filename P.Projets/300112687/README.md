@@ -14,8 +14,13 @@ Projet
  ```
  $ nano /etc/samba/smb.conf
  ```
- 
+  ```
   $ adduser sambauser
+  ```
+  
+   ```
  $ smbpasswd -a sambauser
+   ```
+ 
  
  ![image]()
