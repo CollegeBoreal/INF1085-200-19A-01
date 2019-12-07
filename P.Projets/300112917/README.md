@@ -2,7 +2,7 @@
 
 ### :one: Se connecter sur le Rasberry Pi en ulissant SSH
 
-$ ssh pi@10.13.237.79
+````$ ssh pi@10.13.237.79
 
 ### :two: Mettre a jour en utilisant les commandes
 
