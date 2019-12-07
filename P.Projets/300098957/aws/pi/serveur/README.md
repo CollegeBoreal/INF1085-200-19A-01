@@ -1,4 +1,7 @@
-# Installation d'un Serveur VPN sur [AWS](https://aws.amazon.com/console)
+# Installation d'un Serveur VPN sur Raspberry Pi 4 :strawberry:
+
+
+https://www.howtoforge.com/tutorial/how-to-install-openvpn-server-and-client-with-easy-rsa-3-on-centos-7/
 
 
 :zero: Connection a la machine avec `docker-machine`
@@ -6,7 +9,7 @@
 :pushpin: Connection à la machine
 
 ```
-$ docker-machine ssh CB-DEV
+$ docker-machine ssh isaha
 ```
 
 :pushpin: Mis à jour du `package manager` poue les futures installations
@@ -42,12 +45,6 @@ net.ipv4.ip_forward = 1
 net.ipv6.conf.all.forwarding = 1
 ```
 
-* Rebooter l'instance
-
-```
-$ sudo reboot -h now
-```
-
 :two: Installer le service `OpenVPN`
 
 :pushpin: Installer
@@ -62,7 +59,7 @@ $ sudo apt-get install openvpn
 $ systemctl status openvpn
 ● openvpn.service - OpenVPN service
    Loaded: loaded (/lib/systemd/system/openvpn.service; enabled; vendor preset: enabled)
-   Active: inactive (dead)
+   Active: active (exited) since Fri 2019-12-06 10:10:15 EST; 1h 0min ago
 ```
 
 :three: Gestion des clés avec `easy-rsa`
@@ -121,20 +118,17 @@ Your newly created PKI dir is: /etc/openvpn/easy-rsa/pki
 :pushpin: Donner le `password` au New CA Key Passphrase (ne peux etre vide)
 
 ```
-# ./easyrsa build-ca
+# ./easyrsa build-ca nopass
 
 Note: using Easy-RSA configuration from: ./vars
 
 Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
-
-Enter New CA Key Passphrase:
-Re-Enter New CA Key Passphrase:
 Generating RSA private key, 2048 bit long modulus (2 primes)
-.........................+++++
-...................+++++
+..........................................................................+++++
+............................................................+++++
 e is 65537 (0x010001)
 Can't load /etc/openvpn/easy-rsa/pki/.rnd into RNG
-3069857808:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:98:Filename=/etc/openvpn/easy-rsa/pki/.rnd
+3069456400:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:98:Filename=/etc/openvpn/easy-rsa/pki/.rnd
 You are about to be asked to enter information that will be incorporated
 into your certificate request.
 What you are about to enter is what is called a Distinguished Name or a DN.
@@ -147,36 +141,27 @@ Common Name (eg: your user, host, or server name) [Easy-RSA CA]:isaha
 CA creation complete and you may now import and sign cert requests.
 Your new CA certificate file for publishing is at:
 /etc/openvpn/easy-rsa/pki/ca.crt
-
 ```
 
 :pushpin:  build-server-full server
 
-* Donner le `password` au `PEM pass` phrase (ne peux etre vide)
-
-* Donner le `password` au `ca.key` (ne peux etre vide)
-
 ```
-
-# ./easyrsa build-server-full server
+# ./easyrsa build-server-full server nopass
 
 Note: using Easy-RSA configuration from: ./vars
 
 Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
 Generating a RSA private key
-....+++++
-....+++++
-writing new private key to '/etc/openvpn/easy-rsa/pki/private/server.key.f1TfVHDXUv'
-Enter PEM pass phrase:
-Verifying - Enter PEM pass phrase:
+.........................................................................................+++++
+......+++++
+writing new private key to '/etc/openvpn/easy-rsa/pki/private/server.key.qFBe6EBR49'
 -----
 Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
-Enter pass phrase for /etc/openvpn/easy-rsa/pki/private/ca.key:
 Check that the request matches the signature
 Signature ok
 The Subject's Distinguished Name is as follows
 commonName            :ASN.1 12:'server'
-Certificate is to be certified until Nov 20 23:39:04 2022 GMT (1080 days)
+Certificate is to be certified until Nov 21 22:17:59 2022 GMT (1080 days)
 
 Write out database with 1 new entries
 Data Base Updated
@@ -197,13 +182,20 @@ This is going to take a long time
 DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 ```
 
+:pushpin:  Gérérer une signature HMAC permettant d'augmenter les capacités de vérification du serveur d'intégrité TLS
+
+```
+# openvpn --genkey --secret pki/ta.key
+```
+
 :pushpin:  Copier les fichiers dans la configuration `OpenVPN`
 
 ```
 # cp /etc/openvpn/easy-rsa/pki/private/server.key /etc/openvpn
 # cp /etc/openvpn/easy-rsa/pki/issued/server.crt /etc/openvpn
-# cp /etc/openvpn/easy-rsa/pki/dh.pem /etc/openvpn/dh2048.pem
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn
+# cp /etc/openvpn/easy-rsa/pki/ta.key /etc/openvpn
+# cp /etc/openvpn/easy-rsa/pki/dh.pem /etc/openvpn/dh2048.pem
 ```
 
 :pushpin:  Configurer le serveur `OpenVPN`
@@ -214,108 +206,52 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
   > /etc/openvpn/server.conf
 ```
 
+* Verifier les fichiers de configurations dans :
+
 ```
 # cd /etc/openvpn
 ```
 
-:four: Générer la partie client
+* Redémarrer
 
 ```
-# ./easyrsa build-client-full client
-
-Note: using Easy-RSA configuration from: ./vars
-
-Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
-Generating a RSA private key
-....................................................................................+++++
-.............+++++
-writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.qALrHIxusP'
-Enter PEM pass phrase:
-Verifying - Enter PEM pass phrase:
------
-Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
-Enter pass phrase for /etc/openvpn/easy-rsa/pki/private/ca.key:
-Check that the request matches the signature
-Signature ok
-The Subject's Distinguished Name is as follows
-commonName            :ASN.1 12:'client'
-Certificate is to be certified until Nov 20 23:58:11 2022 GMT (1080 days)
-
-Write out database with 1 new entries
-Data Base Updated
+# systemctl reload openvpn
 ```
 
-:pushpin: Copier les clés vers `/etc/openvpn`
-
-```
-# cp /etc/openvpn/easy-rsa/pki/private/client.key /etc/openvpn/client
-# cp /etc/openvpn/easy-rsa/pki/issued/client.crt /etc/openvpn/client
-# cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
-```
-
-:pushpin: Assembler la configiuration des les clés du client
-
-```
-# cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf \
- /etc/openvpn/client
-```
-
-
-
-* Redemarrez 
-
-```
-# systemctl start openvpn
-```
-:pushpin: Si vous recevez le message suivant
-
-```
-Broadcast message from root@isaha (Fri 2019-12-06 23:02:21 EST):
-
-Password entry required for 'Enter Private Key Password:' (PID 1366).
-Please enter password with the systemd-tty-ask-password-agent tool:
-```
-
-```
-# sudo systemd-tty-ask-password-agent
-Enter Private Key Password: ********
-```
-
-* Verifiez
+* Verifier le démarrage dans le log
 
 ```
 # journalctl -xe
-Dec 06 23:03:57 isaha ovpn-server[1380]: library versions: OpenSSL 1.1.1c  28 May 2019, LZO 2.10
-Dec 06 23:03:57 isaha systemd[1]: Started OpenVPN connection to server.
--- Subject: A start job for unit openvpn@server.service has finished successfully
 -- Defined-By: systemd
 -- Support: https://www.debian.org/support
 -- 
 -- A start job for unit openvpn@server.service has finished successfully.
 -- 
--- The job identifier is 7155.
-Dec 06 23:03:57 isaha ovpn-server[1380]: NOTE: your local LAN uses the extremely common subnet address 192.168.0.x or 192.168.1.x. 
-Dec 06 23:03:57 isaha ovpn-server[1380]: Diffie-Hellman initialized with 2048 bit key
-Dec 06 23:03:58 isaha sudo[1383]:     root : TTY=pts/0 ; PWD=/etc/openvpn ; USER=root ; COMMAND=/bin/systemd-tty-ask-password-agent
-Dec 06 23:03:58 isaha sudo[1383]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
-Dec 06 23:04:01 isaha ovpn-server[1380]: WARNING: this configuration may cache passwords in memory -- use the auth-nocache option t
-Dec 06 23:04:01 isaha sudo[1383]: pam_unix(sudo:session): session closed for user root
-Dec 06 23:04:01 isaha ovpn-server[1380]: ROUTE_GATEWAY 192.168.1.1/255.255.255.0 IFACE=eth0 HWADDR=dc:a6:32:1a:61:32
-Dec 06 23:04:01 isaha kernel: tun: Universal TUN/TAP device driver, 1.6
-Dec 06 23:04:01 isaha ovpn-server[1380]: TUN/TAP device tun0 opened
-Dec 06 23:04:01 isaha ovpn-server[1380]: TUN/TAP TX queue length set to 100
-Dec 06 23:04:01 isaha ovpn-server[1380]: /sbin/ip link set dev tun0 up mtu 1500
-Dec 06 23:04:01 isaha ovpn-server[1380]: /sbin/ip addr add dev tun0 local 10.8.0.1 peer 10.8.0.2
-Dec 06 23:04:01 isaha ovpn-server[1380]: /sbin/ip route add 10.8.0.0/24 via 10.8.0.2
-Dec 06 23:04:01 isaha ovpn-server[1380]: Could not determine IPv4/IPv6 protocol. Using AF_INET
-Dec 06 23:04:01 isaha ovpn-server[1380]: Socket Buffers: R=[163840->163840] S=[163840->163840]
-Dec 06 23:04:01 isaha ovpn-server[1380]: UDPv4 link local (bound): [AF_INET][undef]:1194
-Dec 06 23:04:01 isaha ovpn-server[1380]: UDPv4 link remote: [AF_UNSPEC]
-Dec 06 23:04:01 isaha ovpn-server[1380]: MULTI: multi_init called, r=256 v=256
-Dec 06 23:04:01 isaha ovpn-server[1380]: IFCONFIG POOL: base=10.8.0.4 size=62, ipv6=0
-Dec 06 23:04:01 isaha ovpn-server[1380]: IFCONFIG POOL LIST
-Dec 06 23:04:01 isaha ovpn-server[1380]: Initialization Sequence Completed
+-- The job identifier is 8770.
+Dec 07 17:40:42 isaha ovpn-server[4134]: NOTE: your local LAN uses the extremely common subnet address 192.168.0.x or 192.168.1.
+Dec 07 17:40:42 isaha ovpn-server[4134]: Diffie-Hellman initialized with 2048 bit key
+Dec 07 17:40:42 isaha ovpn-server[4134]: Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC aut
+Dec 07 17:40:42 isaha ovpn-server[4134]: Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC aut
+Dec 07 17:40:42 isaha ovpn-server[4134]: ROUTE_GATEWAY 192.168.1.1/255.255.255.0 IFACE=eth0 HWADDR=dc:a6:32:1a:61:32
+Dec 07 17:40:42 isaha ovpn-server[4134]: TUN/TAP device tun0 opened
+Dec 07 17:40:42 isaha ovpn-server[4134]: TUN/TAP TX queue length set to 100
+Dec 07 17:40:42 isaha ovpn-server[4134]: /sbin/ip link set dev tun0 up mtu 1500
+Dec 07 17:40:42 isaha ovpn-server[4134]: /sbin/ip addr add dev tun0 local 10.8.0.1 peer 10.8.0.2
+Dec 07 17:40:42 isaha ovpn-server[4134]: /sbin/ip route add 10.8.0.0/24 via 10.8.0.2
+Dec 07 17:40:42 isaha ovpn-server[4134]: Could not determine IPv4/IPv6 protocol. Using AF_INET
+Dec 07 17:40:42 isaha ovpn-server[4134]: Socket Buffers: R=[163840->163840] S=[163840->163840]
+Dec 07 17:40:42 isaha ovpn-server[4134]: UDPv4 link local (bound): [AF_INET][undef]:1194
+Dec 07 17:40:42 isaha ovpn-server[4134]: UDPv4 link remote: [AF_UNSPEC]
+Dec 07 17:40:42 isaha ovpn-server[4134]: MULTI: multi_init called, r=256 v=256
+Dec 07 17:40:42 isaha ovpn-server[4134]: IFCONFIG POOL: base=10.8.0.4 size=62, ipv6=0
+Dec 07 17:40:42 isaha ovpn-server[4134]: ifconfig_pool_read(), in='client,10.8.0.4', TODO: IPv6
+Dec 07 17:40:42 isaha ovpn-server[4134]: succeeded -> ifconfig_pool_set()
+Dec 07 17:40:42 isaha ovpn-server[4134]: IFCONFIG POOL LIST
+Dec 07 17:40:42 isaha ovpn-server[4134]: client,10.8.0.4
+Dec 07 17:40:42 isaha ovpn-server[4134]: Initialization Sequence Completed
 ```
+
+* Vérifier let tunnel dans la configuration réseau `tun0`
 
 ```
 # ip addr
@@ -327,6 +263,63 @@ Dec 06 23:04:01 isaha ovpn-server[1380]: Initialization Sequence Completed
     inet6 fe80::2b86:e81c:b45f:a8b1/64 scope link stable-privacy 
        valid_lft forever preferred_lft forever
 ```
+
+:b: Générer la partie client
+
+```
+$ sudo -i
+# cd /etc/openvpn/easy-rsa
+```
+
+* Générer
+
+```
+# ./easyrsa build-client-full client nopass
+
+Note: using Easy-RSA configuration from: ./vars
+
+Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
+Generating a RSA private key
+...........................................................+++++
+...........+++++
+writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.qDgai1eoYR'
+-----
+Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'client'
+Certificate is to be certified until Nov 21 22:34:22 2022 GMT (1080 days)
+
+Write out database with 1 new entries
+Data Base Updated
+```
+
+:pushpin: Copier les clés vers `/etc/openvpn`
+
+```
+# cp /etc/openvpn/easy-rsa/pki/private/client.key /etc/openvpn/client
+# cp /etc/openvpn/easy-rsa/pki/issued/client.crt /etc/openvpn/client
+# cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
+# cp /etc/openvpn/easy-rsa/pki/ta.key /etc/openvpn/client
+```
+
+:pushpin: Assembler la configuration des clés du client
+
+```
+# cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf \
+ /etc/openvpn/client
+```
+
+```
+# zip client.zip client/*
+```
+
+```
+# chown pi:pi client.zip
+# mv client.zip ~pi/Desktop
+```
+
 
 :ab: Installer un 'firewall' par precaution
 
