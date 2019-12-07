@@ -49,10 +49,13 @@ VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 ### :pushpin: INSTALLATION DE PHP ON YOR SERVER
 
-# apt install php
-# apt install libapache2-mod-php
-
+### :one: Enter la commande suivante dans git bash pour installer
+ # apt install php
+ ### Specifier la version version php a installer
+ # apt install libapache2-mod-php
+### :two Creer un nouveau fichier avec la commande ci-dessous:
 # nano /var/www/html/testmyphp.php
+### :three: Copier l'extension PHP dans via puis sauvegarder
 <?php
 phpinfo();
 ?>
