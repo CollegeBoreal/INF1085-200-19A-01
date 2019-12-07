@@ -31,7 +31,7 @@ $ scp pi@192.168.1.10:Desktop/client.zip .
 
 <image src ="images/image001.png" width="561" height="228"></image>
 
-:two: Faire un `drag-and-drop` du fichier `client.conf` dans le paneau configuration de `Tunnelblick`
+:two: Faire un `drag-and-drop` du fichier `client.conf` sur l'icône <image src ="https://tunnelblick.net/common/tb-icon-64x64.v1.png" width="16" height="16"></image> de `Tunnelblick` dans la barre de menu
 
 <image src ="images/image002.png" width="423" height="251"></image>
 
