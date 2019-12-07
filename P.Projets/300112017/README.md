@@ -106,8 +106,11 @@ MBSTRING module for PHP
 et après
 
 $ sudo apt install php7.0-mbstring php7.0-xml
+
 $ sudo systemctl restart apache2
+
 $ sudo apt install php-mysql php-apcu php-imagick
+
 $ sudo systemctl restart apache2
 
 Connecting MediaWiki to the database
