@@ -182,6 +182,12 @@ This is going to take a long time
 DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 ```
 
+:pushpin:  Gérérer une signature HMAC permettant d'augmenter les capacités de vérification du serveur d'intégrité TLS
+
+```
+# openvpn --genkey --secret ta.key
+```
+
 :pushpin:  Copier les fichiers dans la configuration `OpenVPN`
 
 ```
