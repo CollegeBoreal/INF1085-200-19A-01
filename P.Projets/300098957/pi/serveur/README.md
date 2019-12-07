@@ -1,6 +1,9 @@
 # Installation d'un Serveur VPN sur Raspberry Pi 4 :strawberry:
 
 
+https://www.howtoforge.com/tutorial/how-to-install-openvpn-server-and-client-with-easy-rsa-3-on-centos-7/
+
+
 :zero: Connection a la machine avec `docker-machine`
 
 :pushpin: Connection à la machine
@@ -115,7 +118,7 @@ Your newly created PKI dir is: /etc/openvpn/easy-rsa/pki
 :pushpin: Donner le `password` au New CA Key Passphrase (ne peux etre vide)
 
 ```
-# ./easyrsa build-ca
+# ./easyrsa build-ca nopass
 
 Note: using Easy-RSA configuration from: ./vars
 
@@ -152,7 +155,7 @@ Your new CA certificate file for publishing is at:
 
 ```
 
-# ./easyrsa build-server-full server
+# ./easyrsa build-server-full server nopass
 
 Note: using Easy-RSA configuration from: ./vars
 
@@ -215,7 +218,7 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 :four: Générer la partie client
 
 ```
-# ./easyrsa build-client-full client
+# ./easyrsa build-client-full client nopass
 
 Note: using Easy-RSA configuration from: ./vars
 
