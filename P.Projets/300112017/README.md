@@ -18,7 +18,8 @@ Les pages utilisent le format wikitexte de MediaWiki ; ainsi les utilisateurs pe
     Mais l'automatisation n'est pas toujours la meilleure solution. Parfois, vous voudrez personnaliser votre pile de logiciels en spécifiant des versions de versions particulières pour assurer la compatibilité des applications, ou en substituant un paquet à un autre (MariaDB sur MySQL, par exemple, comme vous allez bientôt le voir). La configuration manuelle sera particulièrement utile dans ce cas, car elle vous forcera à mieux comprendre comment chaque bit fonctionne. 
     
     C'est l'approche que je vais adopter dans ce chapitre.
-    Je vous montre la configuration manuellement.Vous avez le choix,soite vous pouvez l'installer sur une machine physique ou sur une machine virtuelle(CB-DEV).Voici les commandes SSH
+    Je vous montre la configuration manuellement.Vous avez le choix,soite vous pouvez l'installer sur une machine physique ou sur une machine virtuelle(CB-DEV).
+    Voici les commandes SSH
     
     👍 Machine Physique:
 
@@ -37,8 +38,11 @@ $ docker-machine ls
     😍 Voici une liste de ce qu'il faut faire pour atteindre votre objectif :
     
  1️⃣ Installez Apache
+ 
  2️⃣ Installez le langage de script PHP(7.0.0) côté serveur.
+
  3️⃣ Installez un moteur SQL (mysql dans ce cas)
+ 
  4️⃣ Installer et configurer MediaWiki
  
  
