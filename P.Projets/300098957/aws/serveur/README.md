@@ -5,6 +5,7 @@
 :pushpin: Connection à la machine Ubuntu 18.0.4 LTS
 
 ```
+$ export AWS_PROFILE=aws # Choisir son profil AWS
 $ docker-machine ssh cb-dev
 ```
 
