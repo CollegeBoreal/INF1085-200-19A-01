@@ -267,6 +267,13 @@ Dec 07 17:40:42 isaha ovpn-server[4134]: Initialization Sequence Completed
 :b: Générer la partie client
 
 ```
+$ sudo -i
+# cd /etc/openvpn/easy-rsa
+```
+
+* Générer
+
+```
 # ./easyrsa build-client-full client nopass
 
 Note: using Easy-RSA configuration from: ./vars
@@ -302,6 +309,16 @@ Data Base Updated
 # cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf \
  /etc/openvpn/client
 ```
+
+```
+# zip client.zip client/*
+```
+
+```
+# chown pi:pi client.zip
+# mv client.zip ~pi/Desktop
+```
+
 
 :ab: Installer un 'firewall' par precaution
 
