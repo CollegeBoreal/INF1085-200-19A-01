@@ -85,7 +85,7 @@ Enfin, avant de nous connecter à notre partage Raspberry Pi Samba, nous devons 
 
 ### :one::one: Connecter à votre Samba sous Windows 10
 
-Commencez par ouvrir l '« file explorer ».
+Commencez par ouvrir « file explorer ».
 
 ![image](win.PNG)
 
@@ -99,7 +99,7 @@ Puis, entrez le text pour mapper le lecteur réseau
 
 ![image](map1.PNG)
 
-### :one::two: Se connecter sur le Rasberry Pi en ulissant SSH
+### :one::two: Le resultat final
 
 ![image](final.PNG)
 
