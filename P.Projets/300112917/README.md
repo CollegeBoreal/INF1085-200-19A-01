@@ -4,7 +4,7 @@
 
 ````$ ssh pi@10.13.237.79````
 
-### :two: Mettre a jour en utilisant les commandes
+### :two: Mettre à jour en utilisant les commandes
 
 ````sudo apt-get update & sudo apt-get upgrade````
 
@@ -15,7 +15,7 @@
 
 ![image](samba.PNG)
 
-### :four: Creer un repertoire "shared" qu'on aura a partager
+### :four: Créer un répertoire "shared" qu'on aura à partager
 
 ````mkdir /home/pi/shared````
 
@@ -29,54 +29,61 @@
 
 ![image](conf.PNG)
 
-### :six: Ajouter cece vers la fin de la page
+### :six: Ajouter ceci vers la fin de la page
 
 [pimylifeupshare]
 path = /home/pi/shared
 writeable=Yes
 create mask=0777
 directory mask=0777
-public=no
+public=no</code>
 
 :page_with_curl:
 ### :hash: [Pimylifeupshare]
-Ceci définit le partage lui-même, le texte entre les crochets est le point auquel vous accéderez au partage. Par exemple, la nôtre sera à l'adresse suivante: // raspberrypi / pimylifeupshare
+
+Ceci définit le partage lui-même, le texte entre les crochets est le point auquel vous accéderez au partage. Par exemple, la nôtre sera à l'adresse suivante: //10.13.237.79/pimylifeupshare
 
 ### :hash: « path » - 
+
 Cette option est le chemin vers le répertoire de votre Raspberry Pi que vous souhaitez partager.
 
 ### :hash: « writeable »
-Lorsque cette option est définie sur « Oui », cela permettra au dossier d'être inscriptible.
+
+Lorsque cette option est définie sur « yes », cela permettra au dossier d'être inscriptible.
 
 ### :hash: «create mask» et « directory mask » - 
+
 Cette option définit les autorisations maximales pour les fichiers et les dossiers. La définition de 0777 permet aux utilisateurs de lire, d'écrire et d'exécuter.
 
 ### :hash: « Public »
+
 Si ce paramètre est réglé sur « no », le Pi aura besoin d'un utilisateur valide pour accorder l'accès aux dossiers partagés.
 
-### :seven: Se connecter sur le Rasberry Pi en ulissant SSH
+### :seven: Quitter le terminal
+
+Dans notre cas CTRL+O puis ENTER après CTRL+X
 
 ### :eight: Changer le mot de passe, le mot de passe par defaut est "raspberry"
 
-$ sudo smbpasswd -a pi
+````$ sudo smbpasswd -a pi````
 
 ![image](password.PNG)
 
-### :nine:  Redemarage de raspberry
+### :nine:  Redémarrage de raspberry
+
 Enfin, avant de nous connecter à notre partage Raspberry Pi Samba, nous devons redémarrer le service samba afin qu'il se charge dans nos modifications de configuration.
 
-$ sudo systemctl restart smbd
-
+````$ sudo systemctl restart smbd````
 
 ![image](restart.PNG)
 
 ### :keycap_ten: Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
-hostname -I
 
+````$ hostname -I````
 
 ![image](ip.PNG)
 
-### :one::one: connecter à votre Samba sous Windows 10
+### :one::one: Connecter à votre Samba sous Windows 10
 
 Commencez par ouvrir l '« file explorer ».
 
@@ -94,14 +101,7 @@ Puis, entrez le text pour mapper le lecteur réseau
 
 ### :one::two: Se connecter sur le Rasberry Pi en ulissant SSH
 
-![image](ip.PNG)
+![image](final.PNG)
 
-### :one::three: Se connecter sur le Rasberry Pi en ulissant SSH
-
-![image](ip.PNG)
-
-### :one::four: Se connecter sur le Rasberry Pi en ulissant SSH
-
-![image](ip.PNG)
 
 
