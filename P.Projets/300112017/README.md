@@ -1,5 +1,5 @@
-                                               🔎 Web servers 
-                                       Building  a MediaWiki server ( Chap 7 )
+                                               🔎 # Web servers 
+                                       # Building  a MediaWiki server ( Chap 7 )
                                        
    😊 MediaWiki est un logiciel libre orienté serveur, disponible sous licence Licence publique générale GNU (GNU General Public License - GPL). Il est conçu pour fonctionner dans une ferme composée de nombreux serveurs, hébergeant un site web pouvant avoir plusieurs millions de clics par jour.
 MediaWiki est un logiciel extrêmement puissant, adaptable à souhait et permettant une implémentation de wiki aux fonctionnalités riches. Il utilise PHP pour interpréter et afficher les données contenues dans une base de données de type MySQL notamment.
@@ -50,13 +50,13 @@ $ docker-machine ls
  
 Apache web server
 
-# apt update
-# apt install mariadb-server
-# systemctl status mysql
+#apt update
+#apt install mariadb-server
+#systemctl status mysql
 
           Hardening SQL
           
-# mysql_secure_installation
+#mysql_secure_installation
 $ mysql -u root -p
 mysql> CREATE DATABASE wikidb;
 mysql> CREATE USER 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
@@ -66,10 +66,10 @@ mysql> FLUSH PRIVILEGES;
 mysql> exit
 
 Installing PHP
-# apt install php
-# apt install libapache2-mod-php
-# systemctl restart apache2
-# nano /var/www/html/testmyphp.php
+#apt install php
+#apt install libapache2-mod-php
+#systemctl restart apache2
+#nano /var/www/html/testmyphp.php
 <?php
 phpinfo();
 ?>
@@ -81,7 +81,7 @@ $ wget https://releases.wikimedia.org/mediawiki/1.30/\mediawiki-1.30.0.tar.gz
 $ tar xzvf mediawiki-1.30.0.tar.gz
 $ ls
 mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
-# cp -r mediawiki-1.30.0/* /var/www/html/
+#cp -r mediawiki-1.30.0/* /var/www/html/
 
 
 $ sudo apt search mbstring
