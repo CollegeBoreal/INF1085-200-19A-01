@@ -51,9 +51,9 @@ $ sudo smbpasswd -a pi
 
 $ sudo systemctl restart smbd
 
-### :ten: Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
+### :keycap_ten: Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
 hostname -I
 
-### :eleven: Se connecter sur le Rasberry Pi en ulissant SSH
+### :keycap_eleven: Se connecter sur le Rasberry Pi en ulissant SSH
 
 
