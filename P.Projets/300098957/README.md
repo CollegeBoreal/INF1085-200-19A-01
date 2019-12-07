@@ -1,3 +1,5 @@
 # VPN
 
-:a: Install [pi](pi)
+:a: Install on [pi](pi)
+
+:b: Install on [AWS](aws)
