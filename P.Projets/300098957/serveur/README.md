@@ -227,11 +227,12 @@ Write out database with 1 new entries
 Data Base Updated
 ```
 
+:pushpin: Copier les clés vers `/etc/openvpn`
+
 ```
 # cp /etc/openvpn/easy-rsa/pki/private/client.key /etc/openvpn/client
 # cp /etc/openvpn/easy-rsa/pki/issued/client.crt /etc/openvpn/client
-# cp /etc/openvpn/easy-rsa/pki/dh.pem /etc/openvpn/server
-# cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/server
+# cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
 ```
 
 
