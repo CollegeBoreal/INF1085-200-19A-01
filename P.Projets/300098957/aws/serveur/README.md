@@ -1,8 +1,4 @@
-# Installation d'un Serveur VPN sur Raspberry Pi 4 :strawberry:
-
-
-https://www.howtoforge.com/tutorial/how-to-install-openvpn-server-and-client-with-easy-rsa-3-on-centos-7/
-
+# Installation d'un Serveur VPN sur [AWS](https://aws.amazon.com/console/)
 
 :zero: Connection a la machine avec `docker-machine`
 
