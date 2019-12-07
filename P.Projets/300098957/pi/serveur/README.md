@@ -219,19 +219,16 @@ Note: using Easy-RSA configuration from: ./vars
 
 Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
 Generating a RSA private key
-....................................................................................+++++
-.............+++++
-writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.qALrHIxusP'
-Enter PEM pass phrase:
-Verifying - Enter PEM pass phrase:
+...........................................................+++++
+...........+++++
+writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.qDgai1eoYR'
 -----
 Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
-Enter pass phrase for /etc/openvpn/easy-rsa/pki/private/ca.key:
 Check that the request matches the signature
 Signature ok
 The Subject's Distinguished Name is as follows
 commonName            :ASN.1 12:'client'
-Certificate is to be certified until Nov 20 23:58:11 2022 GMT (1080 days)
+Certificate is to be certified until Nov 21 22:34:22 2022 GMT (1080 days)
 
 Write out database with 1 new entries
 Data Base Updated
