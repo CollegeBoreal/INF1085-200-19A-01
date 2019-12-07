@@ -191,6 +191,15 @@ This is going to take a long time
 DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 ```
 
+:pushpin:  Copier les fichiers dans la configuration `OpenVPN`
+
+```
+# cp /etc/openvpn/easy-rsa/pki/issued/server.crt /etc/openvpn
+# cp /etc/openvpn/easy-rsa/pki/dh.pem /etc/openvpn
+# cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn
+```
+
+
 
 :ab: Installer un 'firewall' par precaution
 
