@@ -39,19 +39,19 @@ directory mask=0777
 public=no
 
 :page_with_curl:
-:hash: ### [Pimylifeupshare]
+### :hash: [Pimylifeupshare]
 Ceci définit le partage lui-même, le texte entre les crochets est le point auquel vous accéderez au partage. Par exemple, la nôtre sera à l'adresse suivante: // raspberrypi / pimylifeupshare
 
-:hash: ### « path » - 
+### :hash: « path » - 
 Cette option est le chemin vers le répertoire de votre Raspberry Pi que vous souhaitez partager.
 
-:hash: ### « writeable »
+### :hash: « writeable »
 Lorsque cette option est définie sur « Oui », cela permettra au dossier d'être inscriptible.
 
-:hash: ### «create mask» et « directory mask » - 
+### :hash: «create mask» et « directory mask » - 
 Cette option définit les autorisations maximales pour les fichiers et les dossiers. La définition de 0777 permet aux utilisateurs de lire, d'écrire et d'exécuter.
 
-:hash: ### « Public »
+### :hash: « Public »
 Si ce paramètre est réglé sur « no », le Pi aura besoin d'un utilisateur valide pour accorder l'accès aux dossiers partagés.
 
 ### :seven: Se connecter sur le Rasberry Pi en ulissant SSH
