@@ -301,6 +301,7 @@ Data Base Updated
 # cp /etc/openvpn/easy-rsa/pki/private/client.key /etc/openvpn/client
 # cp /etc/openvpn/easy-rsa/pki/issued/client.crt /etc/openvpn/client
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
+# cp /etc/openvpn/easy-rsa/pki/ta.key /etc/openvpn/client
 ```
 
 :pushpin: Assembler la configuration des clés du client
