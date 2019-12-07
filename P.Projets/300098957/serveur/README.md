@@ -196,7 +196,7 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 ```
 # cp /etc/openvpn/easy-rsa/pki/private/server.key /etc/openvpn/server
 # cp /etc/openvpn/easy-rsa/pki/issued/server.crt /etc/openvpn/server
-# cp /etc/openvpn/easy-rsa/pki/dh.pem /etc/openvpn/server
+# cp /etc/openvpn/easy-rsa/pki/dh.pem /etc/openvpn/server/dh2048.pem
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/server
 ```
 
@@ -209,7 +209,7 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 ```
 
 ```
-$ cd /etc/openvpn/server
+# cd /etc/openvpn/server
 ```
 
 :four: Générer la partie client
