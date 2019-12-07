@@ -56,7 +56,7 @@ $ sudo apt-get install openvpn
 $ systemctl status openvpn
 ● openvpn.service - OpenVPN service
    Loaded: loaded (/lib/systemd/system/openvpn.service; enabled; vendor preset: enabled)
-   Active: active (exited) since Fri 2019-12-06 10:10:15 EST; 1h 0min ago
+   Active: inactive (dead)
 ```
 
 :three: Gestion des clés avec `easy-rsa`
