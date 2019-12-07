@@ -99,6 +99,13 @@ Puis, entrez le text pour mapper le lecteur réseau
 
 ![image](map1.PNG)
 
+### :one::two: Se connecter à votre repertoire "shared"
+
+Utilisateur: pi
+Mot de passe: Djumah9
+
+![image](final.PNG)
+
 ### :one::two: Le resultat final
 
 ![image](final.PNG)
