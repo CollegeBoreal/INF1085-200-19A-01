@@ -6,29 +6,28 @@
 
 ### :two: Mettre a jour en utilisant les commandes
 
-sudo apt-get update
-sudo apt-get upgrade
+````sudo apt-get update & sudo apt-get upgrade````
 
 ### :three: Installer Samba
 
-$ sudo apt-get install samba samba-common-bin
+```` sudo apt-get install samba samba-common-bin````
 
 ### :four: Creer un repertoire "shared" qu'on aura a partager
 
-mkdir /home/pi/shared
+````mkdir /home/pi/shared````
 
 ### :five: Modifier le fichier de configuration de Samba "smb.conf"
 
-sudo nano /etc/samba/smb.conf
+````sudo nano /etc/samba/smb.conf````
 
 ### :six: Ajouter cece vers la fin de la page
 
-[pimylifeupshare]
-path = /home/pi/shared
-writeable=Yes
-create mask=0777
-directory mask=0777
-public=no
+````[pimylifeupshare]````
+````path = /home/pi/shared````
+````writeable=Yes````
+````create mask=0777````
+````directory mask=0777````
+````public=no````
 
 
 " [Pimylifeupshare] " - Ceci définit le partage lui-même, le texte entre les crochets est le point auquel vous accéderez au partage. Par exemple, la nôtre sera à l'adresse suivante: // raspberrypi / pimylifeupshare
