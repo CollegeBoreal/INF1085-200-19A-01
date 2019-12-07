@@ -303,6 +303,17 @@ Dec 06 23:04:01 isaha ovpn-server[1380]: IFCONFIG POOL LIST
 Dec 06 23:04:01 isaha ovpn-server[1380]: Initialization Sequence Completed
 ```
 
+```
+# ip addr
+[...]
+4: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc [...]
+    link/none
+    inet 10.8.0.1 peer 10.8.0.2/32 scope global tun0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::2b86:e81c:b45f:a8b1/64 scope link stable-privacy 
+       valid_lft forever preferred_lft forever
+```
+
 :ab: Installer un 'firewall' par precaution
 
 Continuer à [Pare-feu](firewall.md)
