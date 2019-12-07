@@ -6,25 +6,25 @@
 
 ### :two: Mettre à jour en utilisant les commandes
 
-````sudo apt-get update & sudo apt-get upgrade````
+````$ sudo apt-get update & sudo apt-get upgrade````
 
 ### :three: Installer Samba
 
-```` sudo apt-get install samba samba-common-bin````
+````$ sudo apt-get install samba samba-common-bin````
 
 
 ![image](samba.PNG)
 
 ### :four: Créer un répertoire "shared" qu'on aura à partager
 
-````mkdir /home/pi/shared````
+````$ mkdir /home/pi/shared````
 
 
 ![image](shared.PNG)
 
 ### :five: Modifier le fichier de configuration de Samba "smb.conf"
 
-````sudo nano /etc/samba/smb.conf````
+````$ sudo nano /etc/samba/smb.conf````
 
 
 ![image](conf.PNG)
