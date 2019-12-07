@@ -199,7 +199,7 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn
 ```
 
-:two: Générer la partie client
+:four: Générer la partie client
 
 ```
 # ./easyrsa build-client-full client
