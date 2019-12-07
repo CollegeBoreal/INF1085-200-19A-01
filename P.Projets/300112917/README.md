@@ -2,33 +2,33 @@
 
 ### :1: Se connecter sur le Rasberry Pi en ulissant SSH
 
-$ssh pi@10.13.237.79
+```$ ssh pi@10.13.237.79```
 
 ### :2: Mettre a jour en utilisant les commandes:
 
-sudo apt-get update
-sudo apt-get upgrade
+```sudo apt-get update
+sudo apt-get upgrade```
 
 ### :3: Installer Samba
 
-$ sudo apt-get install samba samba-common-bin
+```$ sudo apt-get install samba samba-common-bin```
 
 ### :4: Creer un repertoire "shared" qu'on aura a partager
 
-mkdir /home/pi/shared
+```mkdir /home/pi/shared```
 
 ### :5: Modifier le fichier de configuration de Samba "smb.conf"
 
-sudo nano /etc/samba/smb.conf
+```sudo nano /etc/samba/smb.conf```
 
 ### :6: Ajouter cece vers la fin de la page
 
-[pimylifeupshare]
+```[pimylifeupshare]
 path = /home/pi/shared
 writeable=Yes
 create mask=0777
 directory mask=0777
-public=no
+public=no```
 
 
 " [Pimylifeupshare] " - Ceci définit le partage lui-même, le texte entre les crochets est le point auquel vous accéderez au partage. Par exemple, la nôtre sera à l'adresse suivante: // raspberrypi / pimylifeupshare
@@ -45,11 +45,11 @@ public=no
 
 ### :8: Changer le mot de passe, le mot de passe par defaut est "raspberry"
 
-$ sudo smbpasswd -a pi
+```$ sudo smbpasswd -a pi```
 
 ### :9:  Enfin, avant de nous connecter à notre partage Raspberry Pi Samba, nous devons redémarrer le service samba afin qu'il se charge dans nos modifications de configuration.
 
-$ sudo systemctl restart smbd
+```$ sudo systemctl restart smbd```
 
 ### :10: Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
 hostname -I
