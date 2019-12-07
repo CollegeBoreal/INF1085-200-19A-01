@@ -2,10 +2,10 @@
 
 :zero: Connection a la machine avec `docker-machine`
 
-:pushpin: Connection à la machine
+:pushpin: Connection à la machine Ubuntu 18.0.4 LTS
 
 ```
-$ docker-machine ssh isaha
+$ docker-machine ssh cb-dev
 ```
 
 :pushpin: Mis à jour du `package manager` poue les futures installations
