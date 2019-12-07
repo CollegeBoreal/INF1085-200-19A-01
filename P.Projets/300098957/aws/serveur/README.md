@@ -6,7 +6,7 @@
 :pushpin: Connection à la machine
 
 ```
-$ docker-machine ssh isaha
+$ docker-machine ssh CB-DEV
 ```
 
 :pushpin: Mis à jour du `package manager` poue les futures installations
