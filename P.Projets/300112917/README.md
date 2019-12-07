@@ -12,13 +12,22 @@
 
 ```` sudo apt-get install samba samba-common-bin````
 
+
+![image](samba.PNG)
+
 ### :four: Creer un repertoire "shared" qu'on aura a partager
 
 ````mkdir /home/pi/shared````
 
+
+![image](shared.PNG)
+
 ### :five: Modifier le fichier de configuration de Samba "smb.conf"
 
 ````sudo nano /etc/samba/smb.conf````
+
+
+![image](conf.PNG)
 
 ### :six: Ajouter cece vers la fin de la page
 
@@ -51,12 +60,20 @@ Si ce paramètre est réglé sur « no », le Pi aura besoin d'un utilisateur va
 
 $ sudo smbpasswd -a pi
 
+![image](password.PNG)
+
 ### :nine:  Enfin, avant de nous connecter à notre partage Raspberry Pi Samba, nous devons redémarrer le service samba afin qu'il se charge dans nos modifications de configuration.
 
 $ sudo systemctl restart smbd
 
+
+![image](restart.PNG)
+
 ### :keycap_ten: Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
 hostname -I
+
+
+![image](ip.PNG)
 
 ### :one::one: Se connecter sur le Rasberry Pi en ulissant SSH
 
