@@ -15,7 +15,7 @@ Projet
  $nano /etc/samba/smb.conf
  ```
  
- # adduser sambauser
-# smbpasswd -a sambauser
+  -adduser sambauser
+ -smbpasswd -a sambauser
  
  ![image]()
