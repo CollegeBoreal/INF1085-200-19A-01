@@ -60,7 +60,8 @@ VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 phpinfo();
 ?>
 
-##### Tester la connectivite de php
+#### :four: Tester la connectivite de php
+
 - Ouvrir un explorer et taper 10.13.237.75/testmyphp.php
 
 - Configurer en ouvrant un explorer mediawiki 10.13.237.75/index.php
