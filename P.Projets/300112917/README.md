@@ -1,27 +1,27 @@
 # Installation de Samba Sur un Rasberry Pi4
 
-### :keycap_one: Se connecter sur le Rasberry Pi en ulissant SSH
+### :one: Se connecter sur le Rasberry Pi en ulissant SSH
 
-```$ ssh pi@10.13.237.79
+$ ssh pi@10.13.237.79
 
-### :keycap_two: Mettre a jour en utilisant les commandes:
+### :two: Mettre a jour en utilisant les commandes
 
-```sudo apt-get update
+sudo apt-get update
 sudo apt-get upgrade
 
-### :keycap_three: Installer Samba
+### :three: Installer Samba
 
 $ sudo apt-get install samba samba-common-bin
 
 ### :four: Creer un repertoire "shared" qu'on aura a partager
 
-```mkdir /home/pi/shared
+mkdir /home/pi/shared
 
 ### :five: Modifier le fichier de configuration de Samba "smb.conf"
 
-```sudo nano /etc/samba/smb.conf
+sudo nano /etc/samba/smb.conf
 
-### :keycap_six: Ajouter cece vers la fin de la page
+### :six: Ajouter cece vers la fin de la page
 
 [pimylifeupshare]
 path = /home/pi/shared
@@ -41,19 +41,19 @@ public=no
 
 « Public » - Si ce paramètre est réglé sur « no », le Pi aura besoin d'un utilisateur valide pour accorder l'accès aux dossiers partagés.
 
-### :keycap_seven: Se connecter sur le Rasberry Pi en ulissant SSH
+### :seven: Se connecter sur le Rasberry Pi en ulissant SSH
 
-### :keycap_eight: Changer le mot de passe, le mot de passe par defaut est "raspberry"
+### :eight: Changer le mot de passe, le mot de passe par defaut est "raspberry"
 
 $ sudo smbpasswd -a pi
 
-### :keycap_nine:  Enfin, avant de nous connecter à notre partage Raspberry Pi Samba, nous devons redémarrer le service samba afin qu'il se charge dans nos modifications de configuration.
+### :nine:  Enfin, avant de nous connecter à notre partage Raspberry Pi Samba, nous devons redémarrer le service samba afin qu'il se charge dans nos modifications de configuration.
 
 $ sudo systemctl restart smbd
 
-### :keycap_ten: Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
+### :ten: Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
 hostname -I
 
-### :keycap_eleven: Se connecter sur le Rasberry Pi en ulissant SSH
+### :eleven: Se connecter sur le Rasberry Pi en ulissant SSH
 
 
