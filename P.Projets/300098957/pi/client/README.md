@@ -8,8 +8,24 @@
 $ brew cask install tunnelblick
 ```
 
-:one: dans un répertoire i.e. `amelie-vpn` sur le mac, copier
+
+:a: Installer les cles
+
+
+* Avec Docker Machine: 
+
+```
+$ docker-machine scp isaha:Desktop/client.zip .
+```
+
+* Avec scp:
+
+```
+$ scp pi@192.168.1.10:Desktop/client.zip .
+```
+:one: dans un répertoire i.e. `Desktop/client` sur le mac, observer
 * les clés `client.{key,crt,csr}`, 
+* la clé `ta.key`,
 * le certificat `ca.crt` et 
 * le fichier de configuration `client.conf` 
 
@@ -38,3 +54,14 @@ $ brew cask install tunnelblick
 :seven: Pour déconnecter, Sélectionner `Tunnelblick` <image src ="https://tunnelblick.net/common/tb-icon-64x64.v1.png" width="16" height="16"></image> dans la barre de menu.
 
 <image src ="images/image007.png" width="530" height="150"></image>
+
+:ab: Verifier dans le terminal
+
+```
+$ ifconfig
+[...]
+utun2: flags=8051<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1500
+	inet 10.8.0.6 --> 10.8.0.5 netmask 0xffffffff 
+```
+
+
