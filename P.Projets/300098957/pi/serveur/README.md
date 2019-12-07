@@ -206,58 +206,19 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
   > /etc/openvpn/server.conf
 ```
 
+* Verifier les fichiers de configurations dans :
+
 ```
 # cd /etc/openvpn
 ```
 
-:four: Générer la partie client
-
-```
-# ./easyrsa build-client-full client nopass
-
-Note: using Easy-RSA configuration from: ./vars
-
-Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
-Generating a RSA private key
-...........................................................+++++
-...........+++++
-writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.qDgai1eoYR'
------
-Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
-Check that the request matches the signature
-Signature ok
-The Subject's Distinguished Name is as follows
-commonName            :ASN.1 12:'client'
-Certificate is to be certified until Nov 21 22:34:22 2022 GMT (1080 days)
-
-Write out database with 1 new entries
-Data Base Updated
-```
-
-:pushpin: Copier les clés vers `/etc/openvpn`
-
-```
-# cp /etc/openvpn/easy-rsa/pki/private/client.key /etc/openvpn/client
-# cp /etc/openvpn/easy-rsa/pki/issued/client.crt /etc/openvpn/client
-# cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
-```
-
-:pushpin: Assembler la configiuration des les clés du client
-
-```
-# cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf \
- /etc/openvpn/client
-```
-
-
-
-* Redemarrez 
+* Redémarrer
 
 ```
 # systemctl reload openvpn
 ```
 
-* Verifiez
+* Verifier le démarrage dans le log
 
 ```
 # journalctl -xe
@@ -290,6 +251,8 @@ Dec 07 17:40:42 isaha ovpn-server[4134]: client,10.8.0.4
 Dec 07 17:40:42 isaha ovpn-server[4134]: Initialization Sequence Completed
 ```
 
+* Vérifier let tunnel dans la configuration réseau `tun0`
+
 ```
 # ip addr
 [...]
@@ -299,6 +262,45 @@ Dec 07 17:40:42 isaha ovpn-server[4134]: Initialization Sequence Completed
        valid_lft forever preferred_lft forever
     inet6 fe80::2b86:e81c:b45f:a8b1/64 scope link stable-privacy 
        valid_lft forever preferred_lft forever
+```
+
+:b: Générer la partie client
+
+```
+# ./easyrsa build-client-full client nopass
+
+Note: using Easy-RSA configuration from: ./vars
+
+Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
+Generating a RSA private key
+...........................................................+++++
+...........+++++
+writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.qDgai1eoYR'
+-----
+Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'client'
+Certificate is to be certified until Nov 21 22:34:22 2022 GMT (1080 days)
+
+Write out database with 1 new entries
+Data Base Updated
+```
+
+:pushpin: Copier les clés vers `/etc/openvpn`
+
+```
+# cp /etc/openvpn/easy-rsa/pki/private/client.key /etc/openvpn/client
+# cp /etc/openvpn/easy-rsa/pki/issued/client.crt /etc/openvpn/client
+# cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
+```
+
+:pushpin: Assembler la configuration des clés du client
+
+```
+# cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf \
+ /etc/openvpn/client
 ```
 
 :ab: Installer un 'firewall' par precaution
