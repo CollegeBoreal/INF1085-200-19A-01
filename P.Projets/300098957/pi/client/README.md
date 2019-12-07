@@ -9,7 +9,7 @@ $ brew cask install tunnelblick
 ```
 
 
-:a: Installer les cles
+:a: Installer les clés `client` en les récupérant sur le serveur
 
 
 * Avec Docker Machine: 
