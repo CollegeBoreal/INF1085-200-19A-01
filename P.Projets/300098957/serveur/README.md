@@ -247,6 +247,61 @@ Data Base Updated
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
 ```
 
+:pushpin: Si vous recevez le message suivant
+
+```
+Broadcast message from root@isaha (Fri 2019-12-06 23:02:21 EST):
+
+Password entry required for 'Enter Private Key Password:' (PID 1366).
+Please enter password with the systemd-tty-ask-password-agent tool:
+```
+
+```
+# sudo systemd-tty-ask-password-agent
+Enter Private Key Password: ********
+```
+
+* Redemarrez 
+
+```
+# systemctl start openvpn
+```
+
+* Verifiez
+
+```
+# journalctl -xe
+Dec 06 23:03:57 isaha ovpn-server[1380]: library versions: OpenSSL 1.1.1c  28 May 2019, LZO 2.10
+Dec 06 23:03:57 isaha systemd[1]: Started OpenVPN connection to server.
+-- Subject: A start job for unit openvpn@server.service has finished successfully
+-- Defined-By: systemd
+-- Support: https://www.debian.org/support
+-- 
+-- A start job for unit openvpn@server.service has finished successfully.
+-- 
+-- The job identifier is 7155.
+Dec 06 23:03:57 isaha ovpn-server[1380]: NOTE: your local LAN uses the extremely common subnet address 192.168.0.x or 192.168.1.x. 
+Dec 06 23:03:57 isaha ovpn-server[1380]: Diffie-Hellman initialized with 2048 bit key
+Dec 06 23:03:58 isaha sudo[1383]:     root : TTY=pts/0 ; PWD=/etc/openvpn ; USER=root ; COMMAND=/bin/systemd-tty-ask-password-agent
+Dec 06 23:03:58 isaha sudo[1383]: pam_unix(sudo:session): session opened for user root by pi(uid=0)
+Dec 06 23:04:01 isaha ovpn-server[1380]: WARNING: this configuration may cache passwords in memory -- use the auth-nocache option t
+Dec 06 23:04:01 isaha sudo[1383]: pam_unix(sudo:session): session closed for user root
+Dec 06 23:04:01 isaha ovpn-server[1380]: ROUTE_GATEWAY 192.168.1.1/255.255.255.0 IFACE=eth0 HWADDR=dc:a6:32:1a:61:32
+Dec 06 23:04:01 isaha kernel: tun: Universal TUN/TAP device driver, 1.6
+Dec 06 23:04:01 isaha ovpn-server[1380]: TUN/TAP device tun0 opened
+Dec 06 23:04:01 isaha ovpn-server[1380]: TUN/TAP TX queue length set to 100
+Dec 06 23:04:01 isaha ovpn-server[1380]: /sbin/ip link set dev tun0 up mtu 1500
+Dec 06 23:04:01 isaha ovpn-server[1380]: /sbin/ip addr add dev tun0 local 10.8.0.1 peer 10.8.0.2
+Dec 06 23:04:01 isaha ovpn-server[1380]: /sbin/ip route add 10.8.0.0/24 via 10.8.0.2
+Dec 06 23:04:01 isaha ovpn-server[1380]: Could not determine IPv4/IPv6 protocol. Using AF_INET
+Dec 06 23:04:01 isaha ovpn-server[1380]: Socket Buffers: R=[163840->163840] S=[163840->163840]
+Dec 06 23:04:01 isaha ovpn-server[1380]: UDPv4 link local (bound): [AF_INET][undef]:1194
+Dec 06 23:04:01 isaha ovpn-server[1380]: UDPv4 link remote: [AF_UNSPEC]
+Dec 06 23:04:01 isaha ovpn-server[1380]: MULTI: multi_init called, r=256 v=256
+Dec 06 23:04:01 isaha ovpn-server[1380]: IFCONFIG POOL: base=10.8.0.4 size=62, ipv6=0
+Dec 06 23:04:01 isaha ovpn-server[1380]: IFCONFIG POOL LIST
+Dec 06 23:04:01 isaha ovpn-server[1380]: Initialization Sequence Completed
+```
 
 :ab: Installer un 'firewall' par precaution
 
