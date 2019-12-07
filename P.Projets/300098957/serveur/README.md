@@ -200,6 +200,18 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/server
 ```
 
+:pushpin:  Configurer le serveur `OpenVPN`
+
+```
+# zcat \
+  /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz \
+  > /etc/openvpn/server/server.conf
+```
+
+```
+$ cd /etc/openvpn/server
+```
+
 :four: Générer la partie client
 
 ```
