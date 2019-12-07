@@ -123,15 +123,12 @@ Your newly created PKI dir is: /etc/openvpn/easy-rsa/pki
 Note: using Easy-RSA configuration from: ./vars
 
 Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
-
-Enter New CA Key Passphrase:
-Re-Enter New CA Key Passphrase:
 Generating RSA private key, 2048 bit long modulus (2 primes)
-.........................+++++
-...................+++++
+..........................................................................+++++
+............................................................+++++
 e is 65537 (0x010001)
 Can't load /etc/openvpn/easy-rsa/pki/.rnd into RNG
-3069857808:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:98:Filename=/etc/openvpn/easy-rsa/pki/.rnd
+3069456400:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:98:Filename=/etc/openvpn/easy-rsa/pki/.rnd
 You are about to be asked to enter information that will be incorporated
 into your certificate request.
 What you are about to enter is what is called a Distinguished Name or a DN.
@@ -144,7 +141,6 @@ Common Name (eg: your user, host, or server name) [Easy-RSA CA]:isaha
 CA creation complete and you may now import and sign cert requests.
 Your new CA certificate file for publishing is at:
 /etc/openvpn/easy-rsa/pki/ca.crt
-
 ```
 
 :pushpin:  build-server-full server
