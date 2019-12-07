@@ -205,11 +205,11 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 ```
 # zcat \
   /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz \
-  > /etc/openvpn/server/server.conf
+  > /etc/openvpn/server.conf
 ```
 
 ```
-# cd /etc/openvpn/server
+# cd /etc/openvpn
 ```
 
 :four: Générer la partie client
@@ -247,6 +247,12 @@ Data Base Updated
 # cp /etc/openvpn/easy-rsa/pki/ca.crt /etc/openvpn/client
 ```
 
+
+* Redemarrez 
+
+```
+# systemctl start openvpn
+```
 :pushpin: Si vous recevez le message suivant
 
 ```
@@ -259,12 +265,6 @@ Please enter password with the systemd-tty-ask-password-agent tool:
 ```
 # sudo systemd-tty-ask-password-agent
 Enter Private Key Password: ********
-```
-
-* Redemarrez 
-
-```
-# systemctl start openvpn
 ```
 
 * Verifiez
