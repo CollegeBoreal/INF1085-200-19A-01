@@ -239,7 +239,15 @@ total 52
 [...]
 ```
 
-* Redémarrer
+* Activer et Démarrer OpenVPN
+
+```
+# systemctl enable openvpn
+# systemctl start openvpn
+```
+
+
+:bulb: si Erreur de configuration rectifier et recharger la configuration
 
 ```
 # systemctl reload openvpn
@@ -280,11 +288,11 @@ lines 2586-2608/2608 (END)
 ```
 # ip addr
 [...]
-4: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc [...]
-    link/none
+4: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 100
+    link/none 
     inet 10.8.0.1 peer 10.8.0.2/32 scope global tun0
        valid_lft forever preferred_lft forever
-    inet6 fe80::2b86:e81c:b45f:a8b1/64 scope link stable-privacy 
+    inet6 fe80::5fc1:cc53:f773:9597/64 scope link stable-privacy 
        valid_lft forever preferred_lft forever
 ```
 
