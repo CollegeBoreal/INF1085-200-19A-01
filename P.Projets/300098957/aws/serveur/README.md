@@ -343,12 +343,26 @@ Data Base Updated
 # cp /etc/openvpn/easy-rsa/pki/ta.key /etc/openvpn/client
 ```
 
-:pushpin: Assembler la configuration des clés du client
+:pushpin: Copier la configuration client
 
 ```
 # cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf \
  /etc/openvpn/client
 ```
+
+:pushpin: Vérifier les fichiers clients
+
+```
+# ls -l /etc/openvpn/client
+total 24
+-rw------- 1 root root 1184 Dec  8 15:55 ca.crt
+-rw-r--r-- 1 root root 3586 Dec  8 15:55 client.conf
+-rw------- 1 root root 4470 Dec  8 15:55 client.crt
+-rw------- 1 root root 1704 Dec  8 15:55 client.key
+-rw------- 1 root root  636 Dec  8 15:55 ta.key
+```
+
+:pushpin: Assembler la configuration des clés du client
 
 ```
 # cd /etc/openvpn
