@@ -15,13 +15,13 @@ $ brew cask install tunnelblick
 * Avec Docker Machine: 
 
 ```
-$ docker-machine scp isaha:Desktop/client.zip .
+$ docker-machine scp CB-DEV:client.zip .
 ```
 
 * Avec scp:
 
 ```
-$ scp pi@192.168.1.10:Desktop/client.zip .
+$ scp -i ~/.docker/machine/machines/cb-dev/id_rsa ubuntu@$(docker-machine ip cb-dev):client.zip .
 ```
 :one: dans un répertoire i.e. `Desktop/client` sur le mac, observer
 * les clés `client.{key,crt,csr}`, 
