@@ -67,6 +67,15 @@ $ systemctl status openvpn
 $ sudo apt-get install easy-rsa
 ```
 
+ou (avec la version 3.0.4 manuellement)
+
+```
+# wget -qO- https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.4/EasyRSA-3.0.4.tgz \
+  | tar zxv -C /usr/share 
+# mv /usr/share/EasyRSA-3.0.4 /usr/share/easy-rsa
+```
+
+
 :pushpin: Copier les fichiers d'examples d'`easy-rsa` dans la configuration d'`OpenVPN`
 
 
