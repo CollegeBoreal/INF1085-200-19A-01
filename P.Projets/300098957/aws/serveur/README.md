@@ -303,31 +303,38 @@ $ sudo -i
 # cd /etc/openvpn/easy-rsa
 ```
 
-* Générer
+* Générer la cle
 
 ```
 # ./easyrsa build-client-full client nopass
+**************************************************************
+  No /etc/openvpn/easy-rsa/openssl.cnf file could be found
+  Further invocations will fail
+**************************************************************
+NOTE: If you run ./clean-all, I will be doing a rm -rf on /etc/openvpn/easy-rsa/keys
 
 Note: using Easy-RSA configuration from: ./vars
-
-Using SSL: openssl OpenSSL 1.1.1c  28 May 2019
+Can't load /etc/openvpn/easy-rsa/pki/.rnd into RNG
+139647652704704:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/etc/openvpn/easy-rsa/pki/.rnd
 Generating a RSA private key
-...........................................................+++++
-...........+++++
-writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.qDgai1eoYR'
+...................................................+++++
+..................+++++
+writing new private key to '/etc/openvpn/easy-rsa/pki/private/client.key.FoxazfwZuV'
 -----
-Using configuration from /etc/openvpn/easy-rsa/pki/safessl-easyrsa.cnf
+Using configuration from ./openssl-easyrsa.cnf
+Can't load /etc/openvpn/easy-rsa/pki/.rnd into RNG
+140648370180544:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/etc/openvpn/easy-rsa/pki/.rnd
 Check that the request matches the signature
 Signature ok
 The Subject's Distinguished Name is as follows
 commonName            :ASN.1 12:'client'
-Certificate is to be certified until Nov 21 22:34:22 2022 GMT (1080 days)
+Certificate is to be certified until Dec  5 15:52:44 2029 GMT (3650 days)
 
 Write out database with 1 new entries
 Data Base Updated
 ```
 
-:pushpin: Copier les clés vers `/etc/openvpn`
+:pushpin: Copier les clés vers `/etc/openvpn/client`
 
 ```
 # cp /etc/openvpn/easy-rsa/pki/private/client.key /etc/openvpn/client
