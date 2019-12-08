@@ -351,12 +351,10 @@ Data Base Updated
 ```
 
 ```
-# zip client.zip client/*
-```
-
-```
-# chown pi:pi client.zip
-# mv client.zip ~pi/Desktop
+# cd /etc/openvpn
+# apt install zip -y
+# zip ~ubuntu/client.zip client/*
+# chown ubuntu:ubuntu ~ubuntu/client.zip
 ```
 
 
