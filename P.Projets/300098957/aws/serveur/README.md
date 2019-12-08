@@ -101,7 +101,7 @@ $ sudo -i
 # nano vars
 ```
 
-:pushpin: ajouter le contenu suivant
+:pushpin: remplacer la section du certificat avec le contenu suivant
 
 ```
 export KEY_COUNTRY="CA"
