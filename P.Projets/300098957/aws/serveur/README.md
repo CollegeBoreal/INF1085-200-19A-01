@@ -63,11 +63,21 @@ $ systemctl status openvpn
 
 :pushpin: Installer l'utilitaire de création des clés
 
+:warning: apt-get installe une vieille version 2.2 de Easy-RSA 
+
 ```
-$ sudo apt-get install easy-rsa
+# sudo apt-get install --simulate easy-rsa
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  easy-rsa
+0 upgraded, 1 newly installed, 0 to remove and 21 not upgraded.
+Inst easy-rsa (2.2.2-2 Ubuntu:18.04/bionic [all])
+Conf easy-rsa (2.2.2-2 Ubuntu:18.04/bionic [all])```
 ```
 
-ou (i.e. avec la version 3.0.4 manuellement)
+Installer manuellement la version 3.0.4, beaucoup plus recente
 
 ```
 #  wget -qO- https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.4/EasyRSA-3.0.4.tgz \
