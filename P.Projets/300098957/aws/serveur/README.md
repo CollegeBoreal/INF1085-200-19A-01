@@ -296,7 +296,33 @@ lines 2586-2608/2608 (END)
        valid_lft forever preferred_lft forever
 ```
 
-:b: Générer la partie client
+* Configuration terminee sortir de root et de la machine virtuelle et revenir sur son PC ou Mac
+
+```
+# exit
+$ exit # ou ^D
+```
+
+:b: Dans Modifier le pare-feu AWS pour activer le port `1194` 
+
+Sur le PC ou Mac en utilisant `git bash` ou le terminal 
+
+```
+%   aws ec2 authorize-security-group-ingress \
+    --group-name default \
+    --protocol udp \
+    --port 1194 \
+    --cidr 0.0.0.0/0 
+```
+
+* Verifier
+
+```
+$ aws ec2 describe-security-groups --output table
+```
+
+
+:o: Générer la partie client
 
 ```
 $ sudo -i
