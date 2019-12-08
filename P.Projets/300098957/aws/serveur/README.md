@@ -228,7 +228,15 @@ DH parameters of size 2048 created at /etc/openvpn/easy-rsa/pki/dh.pem
 * Verifier les fichiers de configurations dans :
 
 ```
-# cd /etc/openvpn
+# ls -lt /etc/openvpn/
+total 52
+-rw-r--r-- 1 root root 10853 Dec  8 15:43 server.conf
+-rw------- 1 root root   424 Dec  8 15:42 dh2048.pem
+-rw------- 1 root root   636 Dec  8 15:42 ta.key
+-rw------- 1 root root  1184 Dec  8 15:42 ca.crt
+-rw------- 1 root root  4586 Dec  8 15:42 server.crt
+-rw------- 1 root root  1704 Dec  8 15:42 server.key
+[...]
 ```
 
 * Redémarrer
