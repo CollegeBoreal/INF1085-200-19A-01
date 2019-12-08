@@ -21,7 +21,7 @@ $ docker-machine scp CB-DEV:client.zip .
 * Avec scp:
 
 ```
-$ scp -i ~/.docker/machine/machines/cb-dev/id_rsa ubuntu@$(docker-machine ip cb-dev):client.zip .
+$ scp -i ~/.docker/machine/machines/cb-dev/id_rsa ubuntu@$(docker-machine ip cb-dev):client.zip ~/Desktop
 ```
 :one: dans un répertoire i.e. `Desktop/client` sur le mac, observer
 * les clés `client.{key,crt,csr}`, 
