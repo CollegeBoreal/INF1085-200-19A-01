@@ -116,6 +116,11 @@ export KEY_OU="IT"
 
 ```
 # source vars
+**************************************************************
+  No /etc/openvpn/easy-rsa/openssl.cnf file could be found
+  Further invocations will fail
+**************************************************************
+NOTE: If you run ./clean-all, I will be doing a rm -rf on /etc/openvpn/easy-rsa/keys
 ```
 
 :m: Génerer les clés
