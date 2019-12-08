@@ -31,6 +31,21 @@ $ scp -i ~/.docker/machine/machines/cb-dev/id_rsa ubuntu@$(docker-machine ip cb-
 
 <image src ="images/image001.png" width="561" height="228"></image>
 
+* Editer le fichier client.conf
+
+remplacer
+
+```
+remote my-server-1 1194
+```
+
+par
+
+```
+% docker-machine ip cb-dev
+34.229.41.161
+```
+
 :two: Faire un `drag-and-drop` du fichier `client.conf` sur l'icône <image src ="https://tunnelblick.net/common/tb-icon-64x64.v1.png" width="16" height="16"></image> de `Tunnelblick` dans la barre de menu
 
 <image src ="images/image002.png" width="423" height="251"></image>
