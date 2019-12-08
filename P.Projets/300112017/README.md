@@ -14,7 +14,8 @@ Les pages utilisent le format wikitexte de MediaWiki ; ainsi les utilisateurs pe
    
    Cette commande, après vous avoir demandé de créer un mot de passe de base de données, déposera automatiquement un serveur Web fonctionnel sur votre système, vous laissant avec rien d'autre à faire que de créer du contenu de site Web. Diriger votre navigateur web vers l'adresse IP du serveur devrait afficher une page de bienvenue créée lors de l'installation d'Apache.
    
-   🙆‍♂️ ATTENTION
+   🙆‍♂️ Remarque
+   
     Mais l'automatisation n'est pas toujours la meilleure solution. Parfois, vous voudrez personnaliser votre pile de logiciels en spécifiant des versions de versions particulières pour assurer la compatibilité des applications, ou en substituant un paquet à un autre (MariaDB sur MySQL, par exemple, comme vous allez bientôt le voir). La configuration manuelle sera particulièrement utile dans ce cas, car elle vous forcera à mieux comprendre comment chaque bit fonctionne. 
     
     C'est l'approche que je vais adopter dans ce chapitre.
