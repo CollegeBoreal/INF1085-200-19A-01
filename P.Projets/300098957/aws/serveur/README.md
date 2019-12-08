@@ -249,33 +249,30 @@ total 52
 
 ```
 # journalctl -xe
--- Defined-By: systemd
--- Support: https://www.debian.org/support
--- 
--- A start job for unit openvpn@server.service has finished successfully.
--- 
--- The job identifier is 8770.
-Dec 07 17:40:42 isaha ovpn-server[4134]: NOTE: your local LAN uses the extremely common subnet address 192.168.0.x or 192.168.1.
-Dec 07 17:40:42 isaha ovpn-server[4134]: Diffie-Hellman initialized with 2048 bit key
-Dec 07 17:40:42 isaha ovpn-server[4134]: Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC aut
-Dec 07 17:40:42 isaha ovpn-server[4134]: Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC aut
-Dec 07 17:40:42 isaha ovpn-server[4134]: ROUTE_GATEWAY 192.168.1.1/255.255.255.0 IFACE=eth0 HWADDR=dc:a6:32:1a:61:32
-Dec 07 17:40:42 isaha ovpn-server[4134]: TUN/TAP device tun0 opened
-Dec 07 17:40:42 isaha ovpn-server[4134]: TUN/TAP TX queue length set to 100
-Dec 07 17:40:42 isaha ovpn-server[4134]: /sbin/ip link set dev tun0 up mtu 1500
-Dec 07 17:40:42 isaha ovpn-server[4134]: /sbin/ip addr add dev tun0 local 10.8.0.1 peer 10.8.0.2
-Dec 07 17:40:42 isaha ovpn-server[4134]: /sbin/ip route add 10.8.0.0/24 via 10.8.0.2
-Dec 07 17:40:42 isaha ovpn-server[4134]: Could not determine IPv4/IPv6 protocol. Using AF_INET
-Dec 07 17:40:42 isaha ovpn-server[4134]: Socket Buffers: R=[163840->163840] S=[163840->163840]
-Dec 07 17:40:42 isaha ovpn-server[4134]: UDPv4 link local (bound): [AF_INET][undef]:1194
-Dec 07 17:40:42 isaha ovpn-server[4134]: UDPv4 link remote: [AF_UNSPEC]
-Dec 07 17:40:42 isaha ovpn-server[4134]: MULTI: multi_init called, r=256 v=256
-Dec 07 17:40:42 isaha ovpn-server[4134]: IFCONFIG POOL: base=10.8.0.4 size=62, ipv6=0
-Dec 07 17:40:42 isaha ovpn-server[4134]: ifconfig_pool_read(), in='client,10.8.0.4', TODO: IPv6
-Dec 07 17:40:42 isaha ovpn-server[4134]: succeeded -> ifconfig_pool_set()
-Dec 07 17:40:42 isaha ovpn-server[4134]: IFCONFIG POOL LIST
-Dec 07 17:40:42 isaha ovpn-server[4134]: client,10.8.0.4
-Dec 07 17:40:42 isaha ovpn-server[4134]: Initialization Sequence Completed
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC au
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC au
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: ROUTE_GATEWAY 172.31.32.1/255.255.240.0 IFACE=eth0 HWADDR=0e:0f:c3:98:60:93
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: TUN/TAP device tun0 opened
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: TUN/TAP TX queue length set to 100
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: do_ifconfig, tt->did_ifconfig_ipv6_setup=0
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: /sbin/ip link set dev tun0 up mtu 1500
+Dec 08 15:45:35 cb-dev systemd-networkd[608]: tun0: Gained carrier
+Dec 08 15:45:35 cb-dev systemd-networkd[608]: tun0: Gained IPv6LL
+Dec 08 15:45:35 cb-dev systemd-timesyncd[481]: Network configuration changed, trying to establish connection.
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: /sbin/ip addr add dev tun0 local 10.8.0.1 peer 10.8.0.2
+Dec 08 15:45:35 cb-dev networkd-dispatcher[832]: WARNING:Unknown index 4 seen, reloading interface list
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: /sbin/ip route add 10.8.0.0/24 via 10.8.0.2
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: Could not determine IPv4/IPv6 protocol. Using AF_INET
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: Socket Buffers: R=[212992->212992] S=[212992->212992]
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: UDPv4 link local (bound): [AF_INET][undef]:1194
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: UDPv4 link remote: [AF_UNSPEC]
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: MULTI: multi_init called, r=256 v=256
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: IFCONFIG POOL: base=10.8.0.4 size=62, ipv6=0
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: IFCONFIG POOL LIST
+Dec 08 15:45:35 cb-dev ovpn-server[11226]: Initialization Sequence Completed
+Dec 08 15:45:35 cb-dev systemd-udevd[11228]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writa
+Dec 08 15:45:35 cb-dev systemd-timesyncd[481]: Synchronized to time server 91.189.89.198:123 (ntp.ubuntu.com).
+lines 2586-2608/2608 (END)
 ```
 
 * Vérifier let tunnel dans la configuration réseau `tun0`
