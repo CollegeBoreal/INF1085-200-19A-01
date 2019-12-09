@@ -21,15 +21,24 @@ Nous pouvons installer MariaDB avec la commande suivante:
 
 ~#   apt install mariadb-server
 
-### :four: creation d'un utlisateur et des privileges 
-# utilisateur et des privileges pour la base de donnes companydb
-- CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
-- GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+### Creation de la base des bases de donnes comanydb et wikidb
+mysql> CREATE DATABASE wikidb;
+mysql> CREATE DATABASE wikidb;
+
+### :four: Creation d'un utlisateur et des privileges 
+- utilisateur et des privileges pour la base de donnes companydb
+mysql> CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+
+- utilisateur et des privileges pour la base de donnes wikibd
+mysql> CREATE USER 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
+mysql> GRANT ALL PRIVILEGES ON wikidb.* TO 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
+mysql> FLUSH PRIVILEGES; 
 
 ### :five: Acceder a la base de donnees par la commande suivante: 
 $ mysql -u root -p
 
-### creer des bases de donnees companydb et wikidb
+### creer des de tables pour companydb 
 
 . MariaDB> use companydb
 
@@ -41,18 +50,12 @@ Address varchar(255),
 City varchar(255)
 );
 
-mysql> CREATE DATABASE wikidb;
-mysql> CREATE USER 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
-mysql> GRANT ALL PRIVILEGES ON wikidb.* TO 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
-mysql> FLUSH PRIVILEGES; 
-mysql> exi
-
-- Insert statements
+- Insert statements dans companydb
 MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 
-### :pushpin: INSTALLATION DE PHP ON YOR SERVER
+### :pushpin: INSTALLATION DE PHP SUR RASBERRY PI
 
 ### :one: Enter la commande suivante dans git bash pour installer
  # apt install php
