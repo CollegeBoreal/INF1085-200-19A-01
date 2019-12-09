@@ -85,6 +85,7 @@ Le wiki le plus important est Wikipedia. C'est une immense encyclopedie (au meme
 Elle possede des dizaines de milliers d'articles sur différents sujets (societe, sante, mathematiques, informatique, litterature...) dans differentes langues (la majorite des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
 
 - pour installer wiki, il faut excecuter la commande suivante dans le terminal git bash
+
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
 mediawiki-1.30.0.tar.gz         
 
