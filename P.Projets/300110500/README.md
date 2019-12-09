@@ -85,8 +85,9 @@ Elle possède des dizaines de milliers d'articles sur différents sujets (socié
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
 mediawiki-1.30.0.tar.gz
 
-L'execution de tar sur l'archive telechargee cree un nouveau repertoire contenant tous les fichiers et repertoires extraits. Vous souhaiterez copier toute cette hierarchie de repertoires a l'emplacement du système de fichiers ou il fera son travail.
-Pour mon cas MediaWiki va etre la seule application Web hebergee sur notre rasberry pi, ce qui  signifie qu'il est notre repertoire racine Web.
+Pour cree un nouveau repertoire contenant tous les fichiers et repertoires en copiant toute cette hierarchie de repertoires a l'emplacement du système de fichiers ou il fera son travail.
+Pour mon cas MediaWiki va etre la seule application Web hebergee sur notre rasberry pi, ce qui  signifie qu'il est notre repertoire racine Web. Pour creer un nouveau repertoire il excecuter la commande suivante
+ 
 $ tar xzvf mediawiki-1.30.0.tar.gz
 
 Une fois que l'archive a ete cree excecuter la commande ci desoous pour s'assurer de sa creation 
