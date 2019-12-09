@@ -79,8 +79,8 @@ phpinfo();
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
-Le wiki le plus important est Wikipedia. C'est une immense encyclopédie (au même titre qu'une encyclopédie papier).
-Elle possède des dizaines de milliers d'articles sur différents sujets (société, santé, mathématiques, informatique, littérature...) dans différentes langues (la majorité des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
+Le wiki le plus important est Wikipedia. C'est une immense encyclopedie (au meme titre qu'une encyclopédie papier).
+Elle possede des dizaines de milliers d'articles sur différents sujets (societe, sante, mathematiques, informatique, litterature...) dans differentes langues (la majorite des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
 
 - pour installer wiki, il faut excecuter la commande suivante dans le terminal git bash
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
