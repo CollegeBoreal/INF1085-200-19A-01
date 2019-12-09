@@ -153,12 +153,17 @@ Copiez ensuite les lignes suivantes dans ce fichier :
 
 
 # Serveur TCP/443
+```
 mode server
 proto tcp
 port 443
 dev tun
 
+```
 # Clefs et certificats
+
+```
+
 ca ca.crt
 cert server.crt
 key server.key
@@ -166,14 +171,22 @@ dh dh1024.pem
 tls-auth ta.key 0
 cipher AES-256-CBC
 
+```
+
 # Reseau
+
+```
 server 10.8.0.0 255.255.255.0
 push "redirect-gateway def1 bypass-dhcp"
 push "dhcp-option DNS 4.4.4.4"
 push "dhcp-option DNS 8.8.8.8"
 keepalive 10 120
 
+```
+
 # Securité
+
+```
 user nobody
 group nogroup
 chroot /etc/openvpn/jail
@@ -183,12 +196,18 @@ Mémos Personnels
 persist-tun
 comp-lzo
 
+```
+
 # Log
+```
 verb 3
 mute 20
 status openvpn-status.log
 ; log-append /var/log/openvpn.log
-L’adresse IP est bien sur à adapter.
+
+```
+
+ :M:L’adresse IP est bien sur à adapter.
 Le point-virgule est important en fin de fichier, nous l’enlèverons par
 la suite lorsque le serveur sera activé.
 Le fichier de configuration que nous venons de créer permet de créer
