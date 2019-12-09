@@ -75,7 +75,7 @@ phpinfo();
 
 10.13.237.75/testmyphp.php
 
- - configurer wikisur un explorer: 
+ - copier l'adress et configurer wiki sur un explorer: 
  
  10.13.237.75/index.php
  
@@ -106,3 +106,11 @@ mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
  pratique et previsible. ceci place les fichiers dans un repertoire appele / var / www / html / mediawiki /. La commande ci dessous 
 
 ~# cp -r mediawiki-1.30.0/* /var/www/html
+
+Je vais installer les deux packages et utiliser systemctl pour redémarrer Apache:
+
+# apt install php7.0-mbstring php7.0-xml
+
+# systemctl restart apache2
+
+
