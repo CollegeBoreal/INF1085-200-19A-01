@@ -127,19 +127,28 @@ Il faut ensuite copier les clés et les certificats utiles pour le serveur
 VPN dans le répertoire /etc/openvpn/ :
 ```
 
-$ cp keys/ca.crt keys/ta.key keys/server.crt keys/server.key
-keys/dh1024.pem /etc/openvpn/
+$ cp keys/ca.crt keys/ta.key keys/server.crt keys/server.key keys/dh1024.pem /etc/openvpn/
 
 ```
 Pour des raisons de sécurité, il faut créer un répertoire 
 dans lequel le processus OpenVPN sera chrooté. Il faut aussi créer
 un autre répertoire qui contiendra la configuration des clients.
-
+```
 $ mkdir /etc/openvpn/jail
+
+```
+```
 $ mkdir /etc/openvpn/clientconf
+
+```
 Pour terminer, on créé le fichier de configuration
 /etc/openvpn/server.conf
+
+```
 $ nano /etc/openvpn/server.conf
+
+```
+
 Copiez ensuite les lignes suivantes dans ce fichier :
 
 
