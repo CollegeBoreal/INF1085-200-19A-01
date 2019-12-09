@@ -27,8 +27,8 @@ Nous pouvons installer MariaDB avec la commande suivante:
 ~#   apt install mariadb-server
 
 ### Creation de la base des bases de donnes comanydb et wikidb
-mysql> CREATE DATABASE wikidb;
 
+mysql> CREATE DATABASE wikidb;
 mysql> CREATE DATABASE wikidb;
 
 ### :four: Creation d'un utlisateur et des privileges 
@@ -45,9 +45,9 @@ mysql> FLUSH PRIVILEGES;
 
 $ mysql -u root -p
 
-### creer des de tables pour companydb 
+### :six: creer des de tables pour companydb 
 
-. MariaDB> use companydb
+. MariaDB> use companydb puis inserrrer les donnnees ci-apres
 
 MariaDB> CREATE TABLE Contacts (
 ID int,
@@ -57,7 +57,7 @@ Address varchar(255),
 City varchar(255)
 );
 
-- Insert statements dans companydb
+### :7:Insert statements dans companydb
 MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
@@ -75,7 +75,7 @@ VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 phpinfo();
 ?>
 
-#### :four: Tester la connectivite de php
+#### :four: Comment Tester la connectivite de php
 
 - Ouvrir un explorer et taper l'adresse suivante sur un explorer 
 
@@ -118,5 +118,7 @@ Je vais installer les deux packages et utiliser systemctl pour redémarrer Apach
 ~#  apt install php7.0-mbstring php7.0-xml
 
 ~# systemctl restart apache2
+
+
 
 
