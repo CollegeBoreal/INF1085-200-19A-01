@@ -76,7 +76,9 @@ phpinfo();
 10.13.237.75/testmyphp.php
 
  - configurer wikisur un explorer: 
+ 
  10.13.237.75/index.php
+ 
  http://10.13.237.75/mw-config/index.php?page=Options
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
