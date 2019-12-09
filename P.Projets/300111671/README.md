@@ -95,15 +95,30 @@ certificats (.crt) :
 ```
 $ cd /etc/openvpn/easy-rsa/
 
+```
+```
 $ source vars
 
+```
+```
 $ ./clean-all
 
+```
+```
 $ ./build-dh
+
+```
+
+```
 
 $ ./pkitool --initca
 
+```
+```
 $ ./pkitool --server server
+
+```
+```
 
 $ openvpn --genkey --secret keys/ta.key
 
