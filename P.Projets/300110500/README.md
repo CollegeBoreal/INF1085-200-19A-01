@@ -87,7 +87,7 @@ mediawiki-1.30.0.tar.gz
 
 
 $ tar xzvf mediawiki-1.30.0.tar.gz
--
+
 $ ls
 mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
 # cp -r mediawiki-1.30.0/* /var/www/html/
