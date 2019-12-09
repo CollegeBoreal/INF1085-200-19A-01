@@ -1,8 +1,8 @@
 
 ## :loop:   MES PREMIERS PAS SUR RASBERRY PI
 
-Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix intéressant fait du Raspberry pi un produit idéal pour tester différentes 
-choses, et notamment la création d'un serveur Web chez soi. Évidemment, pour sa taille il ne faut pas s'attendre à des performances incroyables, mais pour mettre en ligne des projets à montrer au client ou expérimenter avec linux c.
+Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix interessant fait du Raspberry pi un produit ideal pour tester differentes 
+choses, et notamment la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux c.
 
 
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
@@ -16,19 +16,20 @@ ssh pi@10.13.237.75
 $ sudo apt-get update
 
 
-### :three: installer Mari DB avec la commande suivante:
+### :three: installer Mari DB 
+Nous pouvons installer MariaDB avec la commande suivante:
 
 ~#   apt install mariadb-server
 
 ### :four: creeation d'un utlisateur 
-
+-utilisateur et des privileges pour la bse de donnes companydb
 - CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
 - GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
 ### :five: Acceder a la base de donnees par la commande suivante: 
 $ mysql -u root -p
 
-- creer des bases de donnees
+### creer des bases de donnees companydb et wikidb
 
 . MariaDB> use companydb
 
@@ -41,6 +42,10 @@ City varchar(255)
 );
 
 mysql> CREATE DATABASE wikidb;
+mysql> CREATE USER 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
+mysql> GRANT ALL PRIVILEGES ON wikidb.* TO 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
+mysql> FLUSH PRIVILEGES; 
+mysql> exi
 
 - Insert statements
 MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
