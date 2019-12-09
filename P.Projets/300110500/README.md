@@ -109,8 +109,8 @@ mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
 
 Je vais installer les deux packages et utiliser systemctl pour redémarrer Apache:
 
-# apt install php7.0-mbstring php7.0-xml
+~#  apt install php7.0-mbstring php7.0-xml
 
-# systemctl restart apache2
+~# systemctl restart apache2
 
 
