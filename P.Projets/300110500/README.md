@@ -36,6 +36,7 @@ mysql> GRANT ALL PRIVILEGES ON wikidb.* TO 'mw-admin'@'localhost' IDENTIFIED BY 
 mysql> FLUSH PRIVILEGES; 
 
 ### :five: Acceder a la base de donnees par la commande suivante: 
+
 $ mysql -u root -p
 
 ### creer des de tables pour companydb 
