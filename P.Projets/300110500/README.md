@@ -96,4 +96,4 @@ mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
  vous souhaiterez peut-etre creer un sous-repertoire à la racine du document qui exposera le service de maniere
  pratique et previsible. ceci place les fichiers dans un repertoire appele / var / www / html / mediawiki /. La commande ci dessous 
 
-~# cp -r mediawiki-1.30.0/* /var/www/html/
+~# cp -r mediawiki-1.30.0/* /var/www/html
