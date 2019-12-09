@@ -71,11 +71,13 @@ phpinfo();
 
 #### :four: Tester la connectivite de php
 
-- Ouvrir un explorer et taper 10.13.237.75/testmyphp.php
+- Ouvrir un explorer et taper l'adresse suivante sur un explorer 
 
-- Configurer en ouvrant un explorer mediawiki 10.13.237.75/index.php
+10.13.237.75/testmyphp.php
 
- -- configuring your wiki link: http://10.13.237.75/mw-config/index.php?page=Options
+ - configurer wikisur un explorer: 
+ 10.13.237.75/index.php
+ http://10.13.237.75/mw-config/index.php?page=Options
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
