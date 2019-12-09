@@ -16,6 +16,7 @@ Samba est un logiciel d'interopérabilité qui implémente le protocole proprié
 
 ## 3.1 Créez un compte utilisateur Samba sur le serveur Linux.
 ```
+
  
 
 ```
