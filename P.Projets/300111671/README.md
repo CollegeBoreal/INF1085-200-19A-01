@@ -152,17 +152,17 @@ $ nano /etc/openvpn/server.conf
 Copiez ensuite les lignes suivantes dans ce fichier :
 
 
-# Serveur TCP/443
-```
+:pushpin: Serveur TCP/443
+``
 mode server
 proto tcp
 port 443
 dev tun
 
-```
-# Clefs et certificats
+``
+:pushpin: Clefs et certificats
 
-```
+``
 
 ca ca.crt
 cert server.crt
@@ -171,22 +171,22 @@ dh dh1024.pem
 tls-auth ta.key 0
 cipher AES-256-CBC
 
-```
+``
 
-# Reseau
+:pushpin: Reseau
 
-```
+``
 server 10.8.0.0 255.255.255.0
 push "redirect-gateway def1 bypass-dhcp"
 push "dhcp-option DNS 4.4.4.4"
 push "dhcp-option DNS 8.8.8.8"
 keepalive 10 120
 
-```
+``
 
-# Securité
+ :pushpin: Securité
 
-```
+``
 user nobody
 group nogroup
 chroot /etc/openvpn/jail
@@ -196,18 +196,17 @@ Mémos Personnels
 persist-tun
 comp-lzo
 
-```
+``
 
-# Log
-```
+:pushpin: Log
+``
 verb 3
 mute 20
 status openvpn-status.log
 ; log-append /var/log/openvpn.log
-
 ```
 
- :M:L’adresse IP est bien sur à adapter.
+ :M: L’adresse IP est bien sur à adapter.
 Le point-virgule est important en fin de fichier, nous l’enlèverons par
 la suite lorsque le serveur sera activé.
 Le fichier de configuration que nous venons de créer permet de créer
@@ -240,7 +239,7 @@ serveur.
 
 Configuration du routage :
 ``
-# sh -c ‘echo 1 > /proc/sys/net/ipv4/ip_forward’
+:pushpin:  sh -c ‘echo 1 > /proc/sys/net/ipv4/ip_forward’
 
 ```
 Pour que ce paramétrage de routage soit permanent, il faut ajouter
@@ -248,14 +247,14 @@ la ligne suivante au fichier /etc/sysctl.conf
 net.ipv4.ip_forward = 1
 Puis il faut configurer la translation d’adresse (NAT) :
 ```
-# iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
+:pushpin: iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 
 ```
 Pour que cette règle de NAT soit persistante après un reboot du
 serveur, il faut utiliser un script existant :
 
 ```
-# sh -c ‘’iptables-save > /etc/iptables.rules’’
+:pushpin: sh -c ‘’iptables-save > /etc/iptables.rules’’
 
 ```
 Puis il faut éditer le fichier /etc/network/interfaces pour y ajouter la
