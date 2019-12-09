@@ -210,11 +210,12 @@ comp-lzo
 ``
 
 :pushpin: Log
-``
+```
 verb 3
 mute 20
 status openvpn-status.log
 ; log-append /var/log/openvpn.log
+
 ```
 
  :M: L’adresse IP est bien sur à adapter.
@@ -227,7 +228,8 @@ auront une IP dans la plage d’adresse de 10.8.0.0/24 (à adapter en
 fonction de vos besoins).
 
 Testons la configuration :
-``
+
+```
 $ cd /etc/openvpn
 
 $ openvpn server.conf
