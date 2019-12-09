@@ -22,6 +22,7 @@ Nous pouvons installer MariaDB avec la commande suivante:
 
 ### Creation de la base des bases de donnes comanydb et wikidb
 mysql> CREATE DATABASE wikidb;
+
 mysql> CREATE DATABASE wikidb;
 
 ### :four: Creation d'un utlisateur et des privileges 
