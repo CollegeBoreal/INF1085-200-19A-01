@@ -18,7 +18,6 @@ $ sudo apt-get update
 
 ### :three: installer Mari DB 
 Nous pouvons installer MariaDB avec la commande suivante:
-
 ~#   apt install mariadb-server
 
 ### Creation de la base des bases de donnes comanydb et wikidb
