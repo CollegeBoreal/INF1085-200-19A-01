@@ -90,7 +90,7 @@ Pour mon cas MediaWiki va etre la seule application Web hebergee sur notre rasbe
 
  $ tar xzvf mediawiki-1.30.0.tar.gz
 
-Une fois que l'archive a ete cree excecuter la commande ci desoous pour s'assurer de sa creation 
+Une fois que l'archive a ete cree excecuter la commande ci desoous pour s'assurer de sa creation. 
 $ ls
 mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
 
