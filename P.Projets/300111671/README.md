@@ -153,25 +153,36 @@ Copiez ensuite les lignes suivantes dans ce fichier :
 
 
 :pushpin: Serveur TCP/443
-``
+
+```
+
 mode server
+
 proto tcp
+
 port 443
+
 dev tun
 
-``
+
+```
 :pushpin: Clefs et certificats
 
-``
+```
 
 ca ca.crt
+
 cert server.crt
+
 key server.key
+
 dh dh1024.pem
+
 tls-auth ta.key 0
+
 cipher AES-256-CBC
 
-``
+```
 
 :pushpin: Reseau
 
