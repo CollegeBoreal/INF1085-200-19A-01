@@ -16,9 +16,8 @@ ssh pi@10.13.237.75
 $ sudo apt-get update
 
 ### :three:installation preeliminaire
- $apt install php 
- $apt install libapache2-mod-php# apt install libapache2-mod-php
-
+ $ apt install php 
+ $ apt install libapache2-mod-php   
 
 ### :four: installer Mari DB 
 Nous pouvons installer MariaDB avec la commande suivante:
