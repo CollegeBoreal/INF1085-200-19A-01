@@ -21,8 +21,8 @@ Nous pouvons installer MariaDB avec la commande suivante:
 
 ~#   apt install mariadb-server
 
-### :four: creeation d'un utlisateur 
--utilisateur et des privileges pour la bse de donnes companydb
+### :four: creation d'un utlisateur et des privileges 
+# utilisateur et des privileges pour la base de donnes companydb
 - CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
 - GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
