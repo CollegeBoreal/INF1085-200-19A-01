@@ -27,7 +27,7 @@ Ensuite vous devrez utiliser un programme appelé smbpasswd pour configurer un u
 - # smbpasswd -a sambauser
 ```
 
-##  4.Designate a share directory 
+##  4.Designer un repertoire de partage  
 ```
 Vous pouvez créer un répertoire où sera basé le partage. Pour faciliter les tests ultérieurs, il faut donc cree un nouveau répertoire. Étant donné que plusieurs clients peuvent finir par travailler avec des fichiers dans ce répertoire:
 
@@ -38,18 +38,35 @@ Vous pouvez créer un répertoire où sera basé le partage. Pour faciliter les 
 Vous pouvez éviter les problèmes d'autorisations potentiels en utilisant chmod pour ouvrir les autorisations de répertoire au 777 (lecture, écriture et exécution pour tous les utilisateurs):
 
 - # chmod 777 /samba/sharehome
-   # nano /etc/samba/smb.conf
 ```
-
-##  3.Define the share through the edit smb.conf.file
-
 ```
-[sharehome] path = /samba/sharehome writable = yes
-```
-## 4. Test the configuration. 
+C'est l'environnement Samba tout construit. Vous pouvez maintenant ajouter une configuration au fichier smb.conf dans le répertoire / etc / samba /. Vous devriez parcourir le fichier de configuration pour avoir une idée du degré de personnalisation possible et de la complexité des choses:
+ - # nano /etc/samba/smb.conf
+ ```
 
+##  3. Définir le partage via le fichier d'édition smb.conf.
+```
+En etant dans nano taper les commandes suivant sans les commentaires (#):
+```
+```
+[sharehome] 
+path = /samba/sharehome 
+writable = yes
+```
+Puis enregister la modifacation et ensuite sortez.
+```
+Utilisez maintenant systemctl pour démarrer et activer le démon Samba. Ubuntu connaît Samba comme smbd, mais sur CentOS, ce sera smb (sans le d):
+```
+```
+# systemctl start smbd
+# systemctl enable smbd
+```
+## 4. Testez la configuration
+```Il est toujours mieux d assurer ces arrieres avant d aller un peu plus loin, du coup  testparm sera notre moyen de verification c est a dire,il montrera si la section que vous avez ajoutée peut être correctement lue par le service Samba. Cette sortie suggère que tout va bien:
+```
 ```
 #testparm
+```
 $ su sambauser
 # smbclient //localhost/sharehome 
 ```
