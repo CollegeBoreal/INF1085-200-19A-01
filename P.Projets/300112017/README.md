@@ -17,6 +17,7 @@ un serveur HTTP, un système de gestion de bases de données et un langage de pr
    web vers l'adresse IP du serveur devrait afficher une page de bienvenue créée lors de l'installation d'Apache.
    
    🙆‍♂️ Remarque
+    
     Mais l’automatisation n’est pas toujours la meilleure solution. Parfois, vous aurez envie de personnaliser votre pile de logiciels en spécifiant des versions particulières pour assurer l'application compatibilité, ou en substituant un paquet à un autre (MariaDB sur MySQL, pour exemple, comme vous le verrez bientôt).   
       
 
