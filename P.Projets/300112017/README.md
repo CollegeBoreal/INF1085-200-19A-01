@@ -7,16 +7,18 @@ Les pages utilisent le format wikitexte de MediaWiki ; ainsi les utilisateurs pe
 
                                               🎾 Building a LAMP server
                                               Statique ou Dinamique SiteWeb?
-😀 LAMP est un acronyme pour Linux, Apache, MySQL, PHP. C'est une pile logicielle comprenant le système d'exploitation, un serveur HTTP, un système de gestion de bases de données et un langage de programmation interprété, et qui permet de mettre en place un serveur web.
-   Le serveur LAMP est une configuration Linux tellement courante qu'Ubuntu, au moins, a son propre métapaquet d'installation.  Le signe d'insertion (^) à la fin de cet exemple identifie la cible comme un paquet spécial regroupé pour simplifier l'installation de piles logicielles communes : 
+😀 LAMP est un acronyme pour Linux, Apache, MySQL, PHP. C'est une pile logicielle comprenant le système d'exploitation,
+un serveur HTTP, un système de gestion de bases de données et un langage de programmation interprété, et qui permet de mettre en place un serveur web.
+   Le serveur LAMP est une configuration Linux tellement courante qu'Ubuntu, au moins, a son propre métapaquet d'installation.Le signe d'insertion (^) à la fin de cet exemple identifie la cible comme un paquet spécial regroupé pour simplifier l'installation de piles logicielles communes : 
    
    $ sudo apt install lamp-server^
    
-   Cette commande, après vous avoir demandé de créer un mot de passe de base de données, déposera automatiquement un serveur Web fonctionnel sur votre système, vous laissant avec rien d'autre à faire que de créer du contenu de site Web. Diriger votre navigateur web vers l'adresse IP du serveur devrait afficher une page de bienvenue créée lors de l'installation d'Apache.
+   Cette commande, après vous avoir demandé de créer un mot de passe de base de données, déposera automatiquement un serveur Web fonctionnel sur votre système, vous laissant avec rien d'autre à faire que de créer du contenu de site Web. Diriger votre navigateur 
+   web vers l'adresse IP du serveur devrait afficher une page de bienvenue créée lors de l'installation d'Apache.
    
    🙆‍♂️ Remarque
    
-    Mais l'automatisation n'est pas toujours la meilleure solution. Parfois, vous voudrez personnaliser votre pile de logiciels en spécifiant des versions de versions particulières pour assurer la compatibilité des applications, ou en substituant un paquet à un autre (MariaDB sur MySQL, par exemple, comme vous allez bientôt le voir). La configuration manuelle sera particulièrement utile dans ce cas, car elle vous forcera à mieux comprendre comment chaque bit fonctionne. 
+    Mais l'automatisation n'est pas toujours la meilleure solution. Parfois, vous voudrez personnaliser votre pile de logiciels en spécifiant des versions de versions particulières pour assurer la compatibilité des applications,ou en substituant un paquet à un autre (MariaDB sur MySQL, par exemple,comme vous allez bientôt le voir).La configuration manuelle sera particulièrement utile dans ce cas, car elle vous forcera à mieux comprendre comment chaque bit fonctionne. 
     
     C'est l'approche que je vais adopter dans ce chapitre.
     Je vous montre la configuration manuellement.Vous avez le choix,soite vous pouvez l'installer 
