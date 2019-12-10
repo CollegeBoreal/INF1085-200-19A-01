@@ -29,7 +29,9 @@ un serveur HTTP, un système de gestion de bases de données et un langage de pr
     Je vous montre la configuration manuellement.Vous avez le choix,soite vous pouvez l'installer 
     sur une machine physique ou sur une machine virtuelle(CB-DEV).
                                    
-                                   👇 Voici les commandes SSH
+                                  
+                                  
+                                  👇 Voici les commandes SSH
     
    
    👍 Machine Physique:
