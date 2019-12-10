@@ -17,21 +17,13 @@ un serveur HTTP, un système de gestion de bases de données et un langage de pr
    web vers l'adresse IP du serveur devrait afficher une page de bienvenue créée lors de l'installation d'Apache.
    
    🙆‍♂️ Remarque
-   
-    Mais l'automatisation n'est pas toujours la meilleure solution.
+       
+       Mais l'automatisation n'est pas toujours la meilleure solution.
     Parfois,vous voudrez personnaliser votre pile de logiciels en spécifiant des versions de versions particulières 
-    pour assurer la compatibilité des applications,ou en substituant 
-    un paquet à un autre (MariaDB sur MySQL, par exemple,comme vous allez bientôt le voir).
-    La configuration manuelle sera particulièrement utile dans ce cas,car elle vous forcera à mieux comprendre 
-    comment chaque bit fonctionne. 
+    pour assurer la compatibilité des applications,ou en substituant un paquet à un autre (MariaDB sur MySQL,par exemple,comme vous allez bientôt le voir).
+    La configuration manuelle sera particulièrement utile dans ce cas,car elle vous forcera à mieux comprendre comment chaque bit fonctionne. 
+
     
-    C'est l'approche que je vais adopter dans ce chapitre.
-    Je vous montre la configuration manuellement.Vous avez le choix,soite vous pouvez l'installer 
-    sur une machine physique ou sur une machine virtuelle(CB-DEV).
-                                   
-                                  
-                                  
-                                  👇 Voici les commandes SSH
     
    
    👍 Machine Physique:
