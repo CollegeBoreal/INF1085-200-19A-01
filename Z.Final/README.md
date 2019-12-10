@@ -22,7 +22,7 @@
 | Search for files                                                    | `find` $4.4.3                                       |
 | Evaluate and compare the basic file system features and options     | `ls`, `touch`, `cat`  $1.2.3                        |
 | Compare and manipulate file content                                 | `diff`, `grep`, `wc`                                |
-| Use input-output redirection (e.g. >, >>, \|, 2>)    | `2>&1`                                              |
+| Use input-output redirection (e.g. >, >>, \| `pipe`, 2>)    | `2>&1`                                              |
 | :-1: Analyze text using basic regular expressions                   |                                                     |
 | Archive, backup, compress, unpack, and uncompress files             | `tar` $4.4.2                                        |
 | Create, delete, copy, and move files and directories                | `mkdir`,`rmdir`,`cd`,`rm`,`mv`,`mv`,`stat` $1.2.3   |
