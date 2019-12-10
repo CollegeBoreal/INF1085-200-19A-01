@@ -82,7 +82,7 @@ Password:
 Ensuite il faut creer Samba Client
 ```
 ```
-- sudo apt-get install smbclient
+- sudo apt-get install smbclient.
 ```
 ```
 # smbclient //localhost/sharehome 
@@ -91,13 +91,16 @@ Enter sambauser's password:
 
 # Resultats 
 ```
-# smbclient //localhost/sharehome Enter sambauser's password: Domain=[WORKGROUP] OS=[Windows 6.1] Server=[Samba 4.3.11-Ubuntu] smb: \>
+# smbclient //localhost/sharehome
+Enter sambauser's password:
+Domain=[WORKGROUP] OS=[Windows 6.1] Server=[Samba 4.3.11-Ubuntu] 
+smb: \>
 ```
 
 # 5.Connectez-vous à partir d'un client Windows
 ```
 -Clique droite  sur le logo de Windows ensuite appuye sur run 
-- Tape: \\10.13.237.41\fileshare
+- Tape: \\10.13.237.41\sharehome 
 ```
 
 
