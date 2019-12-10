@@ -15,14 +15,11 @@ Samba est un logiciel d'interopérabilité qui implémente le protocole proprié
 ```
 
 ## 3.1 Créez un compte utilisateur Samba sur le serveur Linux.
-```
-
- 
-
-```
+   ## 3.1.2 Installer Samba 
+   
+ ```
 $ sudo apt-get update
 $ sudo apt-get install samba
-$ sudo -i
 ```
 ##  2.Designate a share directory 
 
