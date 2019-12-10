@@ -132,9 +132,9 @@ Une fois connecté, vous pourrez gérer les dossiers et fichiers du Pi.
 
 ### A partir du Pi
 Lancer la commande suivante dans le CLI:
--------------- --------
-`~ $ su x` or  `su pi`
--------------- --------
+----------  ----  --------
+`~ $ su x`|  or | `$ su pi`
+----------  ----  --------
 Vous serez ensuite demandez a vous authentifier
 ```
 Password: *********
