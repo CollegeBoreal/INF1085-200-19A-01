@@ -29,7 +29,7 @@ Ensuite vous devrez utiliser un programme appelé smbpasswd pour configurer un u
 
 ##  4.Designer un repertoire de partage  
 ```
-Vous pouvez créer un répertoire où sera basé le partage. Pour faciliter les tests ultérieurs, il faut donc cree un nouveau répertoire. Étant donné que plusieurs clients peuvent finir par travailler avec des fichiers dans ce répertoire:
+Créer un répertoire où sera basé le partage. Pour faciliter les tests ultérieurs, il faut donc cree un nouveau répertoire. Étant donné que plusieurs clients peuvent finir par travailler avec des fichiers dans ce répertoire:
 
 - # mkdir -p /samba/sharehome
 - # touch /samba/sharehome/myfile
@@ -46,7 +46,7 @@ C'est l'environnement Samba tout construit. Vous pouvez maintenant ajouter une c
 
 ##  3. Définir le partage via le fichier d'édition smb.conf.
 ```
-En etant dans nano taper les commandes suivant sans les commentaires (#):
+En etant dans nano taper les commandes suivantes sans les commentaires (#):
 ```
 ```
 [sharehome] 
@@ -62,17 +62,43 @@ Utilisez maintenant systemctl pour démarrer et activer le démon Samba. Ubuntu 
 # systemctl enable smbd
 ```
 ## 4. Testez la configuration
-```Il est toujours mieux d assurer ces arrieres avant d aller un peu plus loin, du coup  testparm sera notre moyen de verification c est a dire,il montrera si la section que vous avez ajoutée peut être correctement lue par le service Samba. Cette sortie suggère que tout va bien:
+```
+Il est toujours mieux d assurer ces arrieres avant d aller un peu plus loin, du coup  testparm sera notre moyen de verification c est a dire,il montrera si la section que vous avez ajoutée peut être correctement lue par le service Samba. Cette sortie suggère que tout va bien:
 ```
 ```
-#testparm
+- # testparm
+```
+Encore un test avant d'inviter vos amis Windows: vous pouvez utiliser le programme smbclient pour vous connecter à votre partage Samba depuis la machine locale. Vous devez d'abord basculer l'utilisateur (su) vers le compte sambauser que vous avez associé à Samba plus tôt. Vous pouvez ensuite exécuter smbclient sur l'adresse et le nom d'hôte du partage (// localhost / sharehome
+va falloir d abord cree Samba client et ensuite proceder aux etapes suivantes :
+
+``` 
+First il faut basculer (su) vers le compte sambauser que vous avez associe a Samba 
+```
 ```
 $ su sambauser
+Password: 
+```
+```
+Ensuite il faut creer Samba Client
+```
+```
+- sudo apt-get install smbclient
+```
+```
 # smbclient //localhost/sharehome 
+Enter sambauser's password:
 ```
 
+# Resultats 
+```
+# smbclient //localhost/sharehome Enter sambauser's password: Domain=[WORKGROUP] OS=[Windows 6.1] Server=[Samba 4.3.11-Ubuntu] smb: \>
+```
 
-
+# 5.Connectez-vous à partir d'un client Windows
+```
+-Clique droite  sur le logo de Windows ensuite appuye sur run 
+- Tape: \\10.13.237.41\fileshare
+```
 
 
 
