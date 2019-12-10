@@ -17,7 +17,7 @@ Ouvrer le Terminal (PuTTY ou GITBash) si vous vous connectez a distance, ou le C
 
 Puis lancer la commande suivante:
 ```
-sudo apt-get update && sudo apt-get upgrade
+~ $ sudo apt-get update && sudo apt-get upgrade
 ``` 
 
 Cette commande installe les mises a jour et lance le mise a niveaux une fois ce dernier termine.
@@ -26,7 +26,7 @@ Cette commande installe les mises a jour et lance le mise a niveaux une fois ce 
 ## STEP :two:
 Apres en etre sure que tous les paquets sont bien installes, vous pouvez maintenant installer SAMBA utilisant les commandes suivantes:
 ```
- sudo apt-get install samba samba-common-bin
+ ~ $ sudo apt-get install samba samba-common-bin
 ```
 
 ## STEP :three:(Optional)
@@ -34,7 +34,8 @@ Si vous ne voulez pas partager tous les fichiers dans le Raspberry Pi, vous pouv
 designes au partage, en utilisant cette commande:
 
 ```
- mkdir ~/share 
+~ $ sudo -i
+~ # mkdir ~/share 
 ```
 
 ##  STEP :four:
@@ -45,7 +46,7 @@ connectes sur le reseau.
 Entrez les commandes suivantes:
 
 ```
- sudo nano /etc/samba/smb.conf 
+ ~ # sudo nano /etc/samba/smb.conf 
 ```
 Le fichier de configuration de Samba est bien documenté. Vous pouvez faire défiler le fichier pour voir ce que vous souhaitez activer.
 
@@ -78,40 +79,66 @@ Après avoir entré les informations ci-dessus, appuyez et maintenez `CTRL+O` to
 
 
 ##  STEP :five:
+
+* :a:
 À l'heure actuelle, nous n'avons que la configuration de l'utilisateur Pi dans le Raspberry Pi. Nous devons maintenant ajouter Pi en tant qu'utilisateur Samba.
 
 Entrez la commande suivante pour l'ajouter au  serveur de SAMBA:
 
 ```
- sudo smbpasswd -a pi 
+ ~ #sudo smbpasswd -a pi 
 ```
 Entrez un nouveau mot de passe lorsque vous y êtes invité par le prompt. 
 
 Vous pouvez utiliser le même mot de passe que votre utilisateur Raspberry Pi mais pour 
 des raisons de sécurité, entrez un mot de passe différent.
+* :b:
 
+Creation d'un autre utilisateur si necessaire:
+```
+~ # adduser x
+```
+Et lui deleguer un mot de passe:
+```
+~ # smbpasswd -a x
+password: ******
+```
 
 ##  STEP :six:
 Enfin, redémarrez le service Samba à l'aide de la commande suivante:
 
 ``` 
-sudo service smbd restart 
+~ # sudo service smbd restart 
 ```
+Et lancer les commandes suivantes pour lancer Samba a partir de Systemctl
+```
+~ # systemctl start smbd
+~ # systemctl enable smbd
+```
+
 OK, donc Samba est maintenant configuré. Vous pouvez tester la configuration en utilisant la commande:
 
 ``` 
- ># test parm
+ ~ # test parm
 ```
 
+## Comment Y Acceder?
+Ouvrez l'Explorateur de fichiers Windows et cliquer sur Réseau pour accéder au dossier partagé Raspberry Pi sur **Windows**.  
 
-
-ouvrir l'Explorateur de fichiers Windows et cliquer sur Réseau pour accéder au dossier partagé Raspberry 
-Pi. 
-
-Lorsque vous cliquez sur le dossier, vous serez invité à saisir vos informations d'identification. Saisissez le nom d'utilisateur du Pi, puis le mot de 
-passe Samba que vous avez créé pour cet utilisateur. 
+Lorsque vous cliquez sur le dossier, vous serez invité à saisir vos informations d'identification. 
+Saisissez le nom d'utilisateur du Pi, puis le mot de passe Samba que vous avez créé pour cet utilisateur. 
 
 Une fois connecté, vous pourrez gérer les dossiers et fichiers du Pi.
+
+### A partir du Pi
+Lancer la commande suivante dans le CLI:
+-------------- --------
+`~ $ su x` or | `su pi`
+-------------- --------
+Vous serez ensuite demandez a vous authentifier
+```
+Password: *********
+````
 
 ``` :warning: en progres ```
 .
