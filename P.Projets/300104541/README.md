@@ -18,10 +18,16 @@ Samba est un logiciel d'interopérabilité qui implémente le protocole proprié
    ## 3.1.2 Installer Samba 
    
  ```
-$ sudo apt-get update
 $ sudo apt-get install samba
+$ sudo apt-get update
+ ```
 ```
-##  2.Designate a share directory 
+Ensuite vous devrez utiliser un programme appelé smbpasswd pour configurer un utilisateur Samba en tant que compte que les clients utiliseront pour se connecter. Mais comme l'autorité Samba sera ajoutée à un compte existant, vous devez d'abord créer un nouveau compte Linux.Vous pouvez choisir n'importe quel nom:
+- # adduser sambauser 
+- # smbpasswd -a sambauser
+```
+
+##  4.Designate a share directory 
 
 ```# mkdir -p /samba/sharehome 
    # touch /samba/sharehome/myfile
