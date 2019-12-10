@@ -13,7 +13,7 @@ $ cd P.Projects
 | 03   | [300105201](300105201) | pi@10.13.237.78 |[:parking: Archives](README.md#parking-chapter-5--configuring-automated-offsite-backups)|:x:               |
 | 04   | [300106918](300106918) | pi@10.13.237.18 |[:parking: SecureWeb](README.md#parking-chapter-9--securing-your-web-server)|:x:               |
 | 05   | [300107361](300107361) | pi@10.13.237.99 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)|:x:               |
-| 06   | [300108234](300108234) | pi@10.13.237.55 |[:parking: Archives](README.md#parking-chapter-5--configuring-automated-offsite-backups)|:x:               |
+| 06   | [300108234](300108234) | pi@10.13.237.55 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)|:x:               |
 | 07   | [300110500](300110500) | pi@10.13.237.75 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)|:x:               |
 | 08   | [300110529](300110529) | pi@10.13.237.80 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) |:x:               |
 | 09   | [300111671](300111671) | pi@10.13.237.63 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn)   |:x:               |

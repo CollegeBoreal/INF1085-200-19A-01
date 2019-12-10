@@ -1,8 +1,6 @@
-DMZ
-
-configurer de routage sur serveur linux
-
-configuration shorewall firewall server
 
 
-![](DMZ.png)
+ufw firewall
+
+
+https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/

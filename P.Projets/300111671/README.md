@@ -1,4 +1,7 @@
 
+
+
+
 # Comment configurer un serveur OpenVPN sur Debian 
 
 
@@ -8,8 +11,10 @@
 
 :pushpin: Pour commencer installer les pacquet de notre serveur VPN ET OpenVPN:
 
+```
 $ sudo apt update
 $ sudo apt install openvpn
+```
 
 *Emettre des certificats:VPN TLS / SSL
 
@@ -18,28 +23,47 @@ $ sudo apt install openvpn
 
 
 
-[🎥] wget -P ~/ https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.4/EasyRSA-3.0.4.tgz
+[🎥] 
+
+```
+$ wget -P ~/ https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.4/EasyRSA-3.0.4.tgz
+```
 
 
 
 :pushpin: Apres telechargement il faut l'archiver:
-
+```
 $ cd ~
 $ tar xvf EasyRSA-3.0.4.tgz
+
+```
 Apres installation de tout les logiciels passons a l'etape 2.
 
 ### :two: Configuration des variables EasyRSA et création de l'autorité de certification
 
 :pushpin: Sur home acceder au repertoire EasyRSA :
 
+```
 $ cd ~/EasyRSA-3.0.4/
+
+```
 Sur ce repertoire acceder au fichier  nommé vars.example
 Faites une copie de ce fichier et nommez-la vars sans extension de fichier:
 
+
+```
 $ cp vars.example vars
 
+```
 -Ouvrez ce nouveau fichier en utilisant votre éditeur de nano que moi je prefere:
+
+```
 $ nano vars
+
+```
+
+
+
 
 
 
@@ -64,63 +88,196 @@ Recherchez les paramètres qui définissent les valeurs par défaut des champs p
 
 
 
-ctrl O pour save et ctrl x pour exit
+ctrl O pour save et ctrl x pour exit 
 
-:m: Le répertoire EasyRSA contient un script appelé easyrsa (permet de a la creation et a la gestion des certification)
-Exécutez ce script avec :
+Ensuite, on lance la séquence qui va générer les clés (.key) et les
+certificats (.crt) :
+```
+$ cd /etc/openvpn/easy-rsa/
+
+```
+```
+$ source vars
+
+```
+```
+$ ./clean-all
+
+```
+```
+$ ./build-dh
+
+```
+
+```
+
+$ ./pkitool --initca
+
+```
+```
+$ ./pkitool --server server
+
+```
+```
+
+$ openvpn --genkey --secret keys/ta.key
+
+```
+Il faut ensuite copier les clés et les certificats utiles pour le serveur
+VPN dans le répertoire /etc/openvpn/ :
+```
+
+$ cp keys/ca.crt keys/ta.key keys/server.crt keys/server.key keys/dh1024.pem /etc/openvpn/
+
+```
+Pour des raisons de sécurité, il faut créer un répertoire 
+dans lequel le processus OpenVPN sera chrooté. Il faut aussi créer
+un autre répertoire qui contiendra la configuration des clients.
+```
+$ mkdir /etc/openvpn/jail
+
+```
+```
+$ mkdir /etc/openvpn/clientconf
+
+```
+Pour terminer, on créé le fichier de configuration
+/etc/openvpn/server.conf
+
+```
+$ nano /etc/openvpn/server.conf
+
+```
+
+Copiez ensuite les lignes suivantes dans ce fichier :
 
 
-$ ./easyrsa init-pki
+:pushpin: Serveur TCP/443
 
-:m: Exécutez easyrsa avec "build-ca" qui va construire 'autorité de certification et créera deux fichiers importants - ca.crt( certificat public) et ca.key- qui constitueront les côtés public et privé( certificat prive) d'un certificat SSL.
-vous pouvez aussi exécuter la build-cacommande avec l' nopassoption suivante:
+```
 
-$ ./easyrsa build-ca nopass
+mode server
 
+proto tcp
 
-Dans la sortie, il vous sera demandé de confirmer le nom commun de votre autorité de certification:
+port 443
 
-appuyez sur ENTERpour accepter le nom par défaut
-
-#### :tree: Création des fichiers de certificat de serveur, de clé et de chiffrement
-
-:m: Commencez par naviguer vers le répertoire EasyRSA sur votre serveur OpenVPN :
-$ cd EasyRSA-3.0.4/
-
-:pushpin: lancez le easyrsascript avec l'option init-pki option
-
-./easyrsa init-pki
-
-Appelez ensuite à easyrsa nouveau le script, cette fois avec l'option gen-req option suivie d'un nom commun pour la machine:
+dev tun
 
 
-$./easyrsa gen-req server nopass
+```
+:pushpin: Clefs et certificats
 
-:pushpin: Cela créera une clé privée pour le serveur et un fichier de demande de certificat appelé server.req. Copiez la clé du serveur dans le /etc/openvpn/répertoire:
+```
+
+ca ca.crt
+
+cert server.crt
+
+key server.key
+
+dh dh1024.pem
+
+tls-auth ta.key 0
+
+cipher AES-256-CBC
+
+```
+
+:pushpin: Reseau
+
+``
+server 10.8.0.0 255.255.255.0
+push "redirect-gateway def1 bypass-dhcp"
+push "dhcp-option DNS 4.4.4.4"
+push "dhcp-option DNS 8.8.8.8"
+keepalive 10 120
+
+``
+
+ :pushpin: Securité
+
+``
+user nobody
+group nogroup
+chroot /etc/openvpn/jail
+persist-key 
+BEDDES Jérémy
+Mémos Personnels
+persist-tun
+comp-lzo
+
+``
+
+:pushpin: Log
+```
+verb 3
+mute 20
+status openvpn-status.log
+; log-append /var/log/openvpn.log
+
+```
+
+ :M: L’adresse IP est bien sur à adapter.
+Le point-virgule est important en fin de fichier, nous l’enlèverons par
+la suite lorsque le serveur sera activé.
+Le fichier de configuration que nous venons de créer permet de créer
+un serveur VPN sécurisé avec SSL. Il est basé sur le protocole TCP et
+utilise le port 443 (HTTPS). Dans l’exemple de ce fichier, les clients
+auront une IP dans la plage d’adresse de 10.8.0.0/24 (à adapter en
+fonction de vos besoins).
+
+Testons la configuration :
+
+```
+$ cd /etc/openvpn
+
+$ openvpn server.conf
+
+```
+Si vous obtenez le message « Initialization Sequence Completed » (ou
+un message similaire), votre serveur démarrera correctement.
+Maintenant vous pouvez enlever le point-virgule du fichier de
+configuration.
+
+Démarrons le serveur :
+```
+$ /etc/init.d/openvpn start
+
+```
+Vos machines clientes vont maintenant pouvoir se connecter au
+serveur VPN. Par contre il sera impossible d’aller plus loin que le
+serveur VPN puisque l’adresse 10.0.8.X n’est pas routée hors du hors du
+serveur.
+
+Configuration du routage :
+``
+:pushpin:  sh -c ‘echo 1 > /proc/sys/net/ipv4/ip_forward’
+
+```
+Pour que ce paramétrage de routage soit permanent, il faut ajouter
+la ligne suivante au fichier /etc/sysctl.conf
+net.ipv4.ip_forward = 1
+Puis il faut configurer la translation d’adresse (NAT) :
+```
+:pushpin: iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
+
+```
+Pour que cette règle de NAT soit persistante après un reboot du
+serveur, il faut utiliser un script existant :
+
+```
+:pushpin: sh -c ‘’iptables-save > /etc/iptables.rules’’
+
+```
+Puis il faut éditer le fichier /etc/network/interfaces pour y ajouter la
+ligne suivante après la définition de l’interface réseau principale
+(iface, inet, eth0 par exemple).
+pre-up iptables-restore < /etc/iptables.rules
 
 
-$ sudo cp ~/EasyRSA-3.0.4/pki/private/server.key /etc/openvpn/
-
-:pushpin: Vous pouvez aussi faire une copie securisee sur votre serveur:
-
-scp ~/EasyRSA-3.0.4/pki/reqs/server.req pi@10.13.237.63:/tmp
 
 
-:m:  En utilisant à easyrsanouveau le script, importez le server.reqfichier en suivant le chemin du fichier avec son nom commun:
-
-$./easyrsa import-req /tmp/server.req server
-
-:pushpin: signez la demande en exécutant le easyrsascript avec l' sign-req option,suivie du type de demande(client ou server) et du nom commun(user,locahost...).
-
-*pour la demande de certificat du serveur OpenVPN vous utiliser server:
-
-$./easyrsa sign-req server pi
-
-
-
-Dans la sortie, il vous sera demandé de vérifier que la demande provient d'une source approuvée. Tapez :yes: puis appuyez sur :ENTER: pour confirmer ceci:
-
-![image](Cap2.PNG)
 
 
 
