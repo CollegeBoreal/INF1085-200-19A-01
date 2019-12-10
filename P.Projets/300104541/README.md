@@ -30,15 +30,14 @@ Ensuite vous devrez utiliser un programme appelé smbpasswd pour configurer un u
 ##  4.Designate a share directory 
 ```
 Vous pouvez créer un répertoire où sera basé le partage. Pour faciliter les tests ultérieurs, il faut donc cree un nouveau répertoire. Étant donné que plusieurs clients peuvent finir par travailler avec des fichiers dans ce répertoire:
-```
-# mkdir -p /samba/sharehome
-# touch /samba/sharehome/myfile
-```
+
+- # mkdir -p /samba/sharehome
+- # touch /samba/sharehome/myfile
 ```
 ```
 Vous pouvez éviter les problèmes d'autorisations potentiels en utilisant chmod pour ouvrir les autorisations de répertoire au 777 (lecture, écriture et exécution pour tous les utilisateurs):
-```
-# chmod 777 /samba/sharehome
+
+- # chmod 777 /samba/sharehome
    # nano /etc/samba/smb.conf
 ```
 
