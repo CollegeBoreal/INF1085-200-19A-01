@@ -18,10 +18,7 @@ un serveur HTTP, un système de gestion de bases de données et un langage de pr
    
    🙆‍♂️ Remarque
        
-       Mais l'automatisation n'est pas toujours la meilleure solution.
-    Parfois,vous voudrez personnaliser votre pile de logiciels en spécifiant des versions de versions particulières 
-    pour assurer la compatibilité des applications,ou en substituant un paquet à un autre (MariaDB sur MySQL,par exemple,comme vous allez bientôt le voir).
-    La configuration manuelle sera particulièrement utile dans ce cas,car elle vous forcera à mieux comprendre comment chaque bit fonctionne. 
+      
 
     
     
@@ -50,72 +47,6 @@ $ docker-machine ls
  
  4️⃣ Installer et configurer MediaWiki
  
-Apache web server
-
-#apt update
-#apt install mariadb-server
-#systemctl status mysql
-
-          Hardening SQL
-          
-#mysql_secure_installation
-$ mysql -u root -p
-
-mysql> CREATE DATABASE wikidb;
-
-mysql> CREATE USER 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
-
-mysql> GRANT ALL PRIVILEGES ON wikidb.* TO 'mw-admin'@'localhost'IDENTIFIED BY 'mypassword';
-
-mysql> FLUSH PRIVILEGES;
-
-mysql> exit
-
-Installing PHP
-
-#apt install php
-
-#apt install libapache2-mod-php
-
-#systemctl restart apache2
-
-#nano /var/www/html/testmyphp.php
-<?php
-phpinfo();
-?>
-
-Installing and configuring MediaWiki
-
-$ wget https://releases.wikimedia.org/mediawiki/1.30/\mediawiki-1.30.0.tar.gz
-
-$ tar xzvf mediawiki-1.30.0.tar.gz
-$ ls
-mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
-
-#cp -r mediawiki-1.30.0/* /var/www/html/
-
-
-$ sudo apt search mbstring
-Sorting... Done
-Full Text Search... Done
-php-mbstring/xenial 1:7.0+35ubuntu6 all
-MBSTRING module for PHP [default]
-php-patchwork-utf8/xenial 1.3.0-1build1 all
-UTF-8 strings handling for PHP
-php7.0-mbstring/xenial-updates 7.0.18-0ubuntu0.16.04.1 amd64
-MBSTRING module for PHP
-
-et après
-
-$ sudo apt install php7.0-mbstring php7.0-xml
-
-$ sudo systemctl restart apache2
-
-$ sudo apt install php-mysql php-apcu php-imagick
-
-$ sudo systemctl restart apache2
-
-Connecting MediaWiki to the database
 
 
 
