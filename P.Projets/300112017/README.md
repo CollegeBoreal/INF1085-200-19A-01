@@ -104,6 +104,25 @@ mysql> exit
 
  NOTE Si votre machine ne vous donne pas le droit de configurer le mot de passe dont vous avez besoin pour exécuter cette commande afin de configurer manuellement:
 
+$ sudo mysql_secure_installation
+
+Vous pouvez confirmer que la base de données est exécutée à l'aide de systemctl :
+
+# systemctl status mysql
+? mysql.service - MySQL Community Server
+Loaded: loaded (/lib/systemd/system/mysql.service;
+                      enabled; vendor preset: enabled)
+Active: active (running) since Wed 2018-05-02 12:26:47 UTC; 6h ago
+Process: 396 ExecStartPost=/usr/share/mysql/mysql-systemd-start post
+                   (code=exited, status=0/SUCCESS)
+Process: 318 ExecStartPre=/usr/share/mysql/mysql-systemd-start pre
+                       (code=exited, status=0/SUCCESS) 
+Main PID: 395 (mysqld)
+     Tasks: 28
+Memory: 126.3M
+            CPU: 20.413s
+CGroup: /system.slice/mysql.service
+           ??395 /usr/sbin/mysqld
 
 
  
