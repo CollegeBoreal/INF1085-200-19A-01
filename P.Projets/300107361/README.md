@@ -16,7 +16,7 @@ Il faut d'abord verifier et installer les dernieres pacquets de mise a jour et d
 Ouvrer le Terminal (PuTTY ou GITBash) si vous vous connectez a distance, ou le CLI(Commande Line Interface) si vous etes directement connecte au Raspberry.
 
 
-<image src="images/connection.png" width = "200px" height = "200px"></image>
+<image src="images/connection.png"></image>
 
 
 Puis lancer la commande suivante:
@@ -101,7 +101,7 @@ Et lui deleguer un mot de passe:
 ~ # smbpasswd -a projet
     Password: ******
 ```
-<image src="images/user.png" width = "200px" height = "200px"></image>
+<image src="images/user.png"></image>
 
 
 
@@ -122,13 +122,13 @@ OK, donc Samba est maintenant configuré. Vous pouvez tester la configuration en
 ``` 
  ~ # testparm
 ```
-<image src="images/test.png" width = "200px" height = "200px"></image>
+<image src="images/test.png"></image>
 
 
 ## Comment Y Acceder? :bulb:
 :a:Ouvrez l'Explorateur de fichiers Windows et cliquer sur **This PC** pour accéder au dossier partagé Raspberry  dans la liste des **Network locations** ou encore Cliquer sur **Computer** et **Map Network Devices** pour localiser ton serveur a l'aide de ton adresse IP et ton Hostname.  
 
-<image src="images/surWin.png" width = "200px" height = "200px"></image>
+<image src="images/surWin.png"></image>
 
 Lorsque vous cliquez sur le dossier, vous serez invité à saisir vos informations d'identification. 
 Saisissez le nom d'utilisateur du Pi, puis le mot de passe Samba que vous avez créé pour cet utilisateur. 
@@ -139,7 +139,7 @@ Une fois connecté, vous pourrez gérer les dossiers et fichiers du Pi.
 
 Ensuite saisisez le Path du Pi precedez de son adresse IP then cliquer sur `Open` ou `ENTER`.
 
-<image src="images/b.png" width = "200px" height = "200px"></image>
+<image src="images/b.png"></image>
 
 
 Cela vous demenderas de vous authentifier.
@@ -164,7 +164,7 @@ $ hostname -I
 ~/shared $ chmod 777 Projet
 ``
 
-<image src="images/partage.png" width = "200px" height = "200px"></image>
+<image src="images/partage.png"></image>
 
 
 ### Minimum requis pour installer Samba :traffic_light:
