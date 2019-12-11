@@ -69,6 +69,8 @@ $ sudo apt install apache2
 
 L'URL que vous utiliserez pour accéder à un site Apache fonctionnant sur votre worksta-tion est localhost. Si, à la place, vous avez choisi de travailler sur un conteneur LXC ou une Virtual-Box VM, alors vous utiliserez l'adresse IP de la machine pour l'URL. Pour vous assurer d'avoir un accès réseau aux sites fonctionnant sur votre VirtualBox VM, assurez-vous qu'elle est configurée pour utiliser un adaptateur ponté (comme vous l'avez fait au chapitre 2).
 
+![Alt tag](wik.JPG)
+
                                               2️⃣   Etape2 : Install PHP
                                               
  L'ingrédient final de LAMP est le langage de script PHP. PHP est un outil qui peut être utilisé pour écrire vos propres applications web. Les applications PHP pré-intégrées sont souvent utilisées par des applications tierces comme MediaWiki pour accéder et traiter les ressources système. On peut donc supposer que vous aurez besoin du P dans votre serveur LAMP.
@@ -106,7 +108,9 @@ mysql> FLUSH PRIVILEGES;
 mysql> exit
 
 
- NOTE Si votre machine ne vous donne pas le droit de configurer le mot de passe dont vous avez besoin pour exécuter cette commande afin de configurer manuellement:
+     🎅 NOTE 
+ Si votre machine ne vous donne pas le droit de configurer le mot de passe dont vous avez besoin pour exécuter cette commande 
+ afin de configurer manuellement:
 
 $ sudo mysql_secure_installation
 
@@ -136,7 +140,7 @@ Premièrement, il faut telecharger le paquet de MediaWiki que vous peuez le fair
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
 mediawiki-1.30.0.tar.gz
 
-         Remarque 
+         🤶 Remarque 
      Si vous obtenez une erreur -bash: wget: Command Not Found lors de l'exécution du commande précédente,vous devrez installer wget.
 L’exécution de tar sur l’archive téléchargée crée un nouveau répertoire contenant toutes les fichiers extraits et répertoires. Vous voudrez copier toute la hiérarchie de répertoires dans le répertoire emplacement du système de fichiers où il fera son travail.
 
@@ -157,19 +161,12 @@ J'utiliserai apt search pour voir quels paquets sont liés à mbstring.
 
 $ sudo apt search mbstring
 Sorting... Done
-
 Full Text Search... Done
-
 php-mbstring/xenial 1:7.0+35ubuntu6 all
-
 MBSTRING module for PHP [default]
-
 php-patchwork-utf8/xenial 1.3.0-1build1 all
-
 UTF-8 strings handling for PHP
-
 php7.0-mbstring/xenial-updates 7.0.18-0ubuntu0.16.04.1 amd64
-
 MBSTRING module for PHP
 
 Ensuite
