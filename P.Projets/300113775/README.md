@@ -36,4 +36,4 @@ public=no
 ### connecter samba avec windows 
 Ouvrir "file explorer" en le tapant dans serach de votre windows , en suite cliquer sur "this pc", en outre map derive , et à la fin rentrer:    \\votreiplocal\ puis cliquer browse vous aurez \\votreiplocal\pimylifeupshare 
 
-### rentrer le nom d'utilisateur , c'est pi par defaut et votre mot de passe 
+### rentrer le nom d'utilisateur , c'est "pi" par defaut et votre mot de passe 
