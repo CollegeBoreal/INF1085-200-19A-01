@@ -7,7 +7,8 @@ Projet
  ```
  
  # install
- ![image]()
+ ![image](update & install.png)
+ 
  ```
  $ sudo apt-get install samba
  ```
