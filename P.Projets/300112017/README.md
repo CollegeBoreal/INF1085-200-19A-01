@@ -109,7 +109,7 @@ $ sudo mysql_secure_installation
 
 Vous pouvez confirmer que la base de données est exécutée à l'aide de systemctl :
 
- #systemctl status mysql
+ $ sudo systemctl status mysql
 ? mysql.service - MySQL Community Server
 Loaded: loaded (/lib/systemd/system/mysql.service;
                       enabled; vendor preset: enabled)
@@ -126,7 +126,7 @@ CGroup: /system.slice/mysql.service
            ??395 /usr/sbin/mysqld
            
            
-            # 4️⃣  Etape4 : Installer et configurer MediaWiki
+             4️⃣  Etape4 : Installer et configurer MediaWiki
 
 Premièrement, il faut telecharger le paquet de MediaWiki que vous peuez le faire avec ce siteweb (www.mediawiki.org/wiki/Download) ou bien avec la commande suivante :
 
@@ -166,10 +166,16 @@ $ sudo systemctl restart apache2
 $ sudo apt install php-mysql php-apcu php-imagick
 $ sudo systemctl restart apache2
 
+![Alt tag](wiki12.png)
+
                 Connecter MediaWiki à la base de données :
 Il faut juste suivre les instructions pour la configuration
 
+![Alt tag](wiki.png)
+
 telecharger le fichier qui s'appelle LocalSetting.php et le le copier dans votre machine (vous devez faire les commande suivantes dans votre PC)
+
+![Alt tag](wiki1.png)
 
 $ scp LocalSettings.php pi@10.13.237.X:/home/pi/
 
@@ -180,6 +186,8 @@ $ sudo cp /home/pi/LocalSettings.php /var/www/html/
 
 Congratulation 
 J'ai terminé d’installer wiki.L'adresse de connexion est:http://10.13.237.60/index.php et le resultat sera comme l'image:
+
+![Alt tag](wiki final.png)
 
 
 
