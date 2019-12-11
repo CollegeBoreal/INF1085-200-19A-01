@@ -16,13 +16,11 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 ```
 $ sudo apt-get update
 ```
-![](pj(1).png)
 
 Et nous installerons également le paquet easy-rsa, qui nous aidera à mettre en place une CA (autorité de certification) interne pour une utilisation avec notre VPN
 ```
 $ sudo apt-get install openvpn easy-rsa
 ```
-![](pj(2).png)
 
 :two: Pour autoriser les connexions entrantes sur un port spécifique, nous utiliserons les commandes suivantes pour spécifier la règle pour UFW
 ```
