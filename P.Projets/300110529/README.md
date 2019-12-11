@@ -29,7 +29,7 @@ $ sudo apt-get install openvpn easy-rsa
 # ufw allow 1194
 ```
 
-Edition des fichiers dans le répertoire /etc/sysconfig/
+:tree: Edition des fichiers dans le répertoire /etc/sysconfig/
 ```
 # nano /etc/sysctl.conf
 ```
