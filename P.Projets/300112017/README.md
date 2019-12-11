@@ -142,7 +142,8 @@ mediawiki-1.30.0.tar.gz
 
          🤶 Remarque 
      Si vous obtenez une erreur -bash: wget: Command Not Found lors de l'exécution du commande précédente,vous devrez installer wget.
-L’exécution de tar sur l’archive téléchargée crée un nouveau répertoire contenant toutes les fichiers extraits et répertoires. Vous voudrez copier toute la hiérarchie de répertoires dans le répertoire emplacement du système de fichiers où il fera son travail.
+L’exécution de tar sur l’archive téléchargée crée un nouveau répertoire contenant toutes les fichiers extraits et répertoires.
+Vous voudrez copier toute la hiérarchie de répertoires dans le répertoire emplacement du système de fichiers où il fera son travail.
 
 $ sudo tar xzvf mediawiki-1.30.0.tar.gz
 $ ls
@@ -169,7 +170,7 @@ UTF-8 strings handling for PHP
 php7.0-mbstring/xenial-updates 7.0.18-0ubuntu0.16.04.1 amd64
 MBSTRING module for PHP
 
-Ensuite
+😀 Ensuite
 
 $ sudo apt install php7.0-mbstring php7.0-xml
 
@@ -181,7 +182,8 @@ $ sudo systemctl restart apache2
 
 ![Alt tag](wiki12.png)
 
-                Connecter MediaWiki à la base de données :
+               👮‍♀️ Connecter MediaWiki à la base de données :
+
 Il faut juste suivre les instructions pour la configuration
 
 ![Alt tag](wiki.png)
@@ -197,7 +199,7 @@ Apres cette commande sur votre serveur:
 $ sudo cp /home/pi/LocalSettings.php /var/www/html/
 
 
-                      🙏Congratulation 
+                       🙏Congratulation 
 
 J'ai terminé d’installer wiki.L'adresse de connexion est:http://10.13.237.60/index.php et le resultat sera comme l'image:
 
