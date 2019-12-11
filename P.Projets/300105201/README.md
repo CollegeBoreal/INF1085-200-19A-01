@@ -1,2 +1,1 @@
-## INSTALLATION DE SAMBA SUR RASPBIAN  
-##       (NETWORK FILE SHARING)
+## How to Setup a Raspberry Pi Samba Server
