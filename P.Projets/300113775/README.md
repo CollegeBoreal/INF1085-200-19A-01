@@ -28,7 +28,7 @@ Pour partager de manière simple des ressources entre plusieurs ordinateurs, l'u
 #### :six: redemarrer votre samba 
 
 ````$ sudo systemctl restart smbd````
-#### :seven: afficher l'addresse local du PI et l'addresse reseau
+#### :seven: afficher l'addresse local du pi 
 
 ````$ hostname -I````
 
