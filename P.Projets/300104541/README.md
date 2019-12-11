@@ -100,7 +100,7 @@ smb: \>
 # 5.Connectez-vous à partir d'un client Windows
 ```
 -Clique droite  sur le logo de Windows ensuite appuye sur run 
-- Tape: \\10.13.237.41\sharehome 
+- Tape: \\10.13.237.41\pimylifeupshare
 ```
 
 
