@@ -33,7 +33,7 @@ Apres en etre sure que tous les paquets sont bien installes, vous pouvez mainten
  ~ $ sudo apt-get install samba samba-common-bin
 ```
 
-## STEP :three:(Optional)
+## STEP :three: (Optionnel)
 Si vous ne voulez pas partager tous les fichiers dans le Raspberry Pi, vous pouvez creer un **fichier de partages** dans lequel vont se trouver les fichiers 
 designes au partage, en utilisant cette commande:
 
