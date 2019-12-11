@@ -146,7 +146,7 @@ Cela vous demenderas de vous authentifier.
 
 
 
-:bulb: ### Tips:
+:bulb: ### Tips :
 Pour voir son addresse IP Local lancer la commande 
 
 ```
