@@ -27,9 +27,14 @@
  $ smbpasswd -a sambauser
    
  
+ # #CONNECTION TO SERVER
  
+![image](Server.png)
+
+
 
 
  # #SERVEUR
+
 
  ![image](Server.png)
