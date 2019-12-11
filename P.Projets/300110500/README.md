@@ -100,7 +100,6 @@ MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 
-r 
 
 
 
@@ -111,7 +110,7 @@ r
 http://10.13.237.75/index.php/Main_Page
 
 
-![Alt tag](Wiiki.png)
+![Alt tag](wiiki.png)
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
