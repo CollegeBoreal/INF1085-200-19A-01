@@ -60,7 +60,7 @@ workgroup = WORKGROUP
 
 [HOMEPI]
 path = /home/pi
-comment = No comment
+comment = Samba On Raspbian
 writeable=Yes
 create mask=0777
 directory mask=0777
@@ -119,7 +119,7 @@ Et lancer les commandes suivantes pour lancer Samba a partir de Systemctl
 OK, donc Samba est maintenant configuré. Vous pouvez tester la configuration en utilisant la commande:
 
 ``` 
- ~ # test parm
+ ~ # testparm
 ```
 
 ## Comment Y Acceder?
