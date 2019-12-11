@@ -63,6 +63,7 @@ $ docker-machine ls
                                       1️⃣   Etape1: Install Apache2
 
 Le serveur HTTP open source Apache tend à dominer le marché des serveurs Web sur toutes les plateformes. Parce qu’il est si populaire, et malgré le fait qu'Apache a de sérieux concurrents, dont Nginx (également multiplate-forme) et le IIS (qui fonctionne exclusivement sur les serveurs Windows). Alors, O Commence!
+
 $ sudo apt update
 $ sudo apt install apache2
 
@@ -73,12 +74,14 @@ L'URL que vous utiliserez pour accéder à un site Apache fonctionnant sur votre
  L'ingrédient final de LAMP est le langage de script PHP. PHP est un outil qui peut être utilisé pour écrire vos propres applications web. Les applications PHP pré-intégrées sont souvent utilisées par des applications tierces comme MediaWiki pour accéder et traiter les ressources système. On peut donc supposer que vous aurez besoin du P dans votre serveur LAMP.
 
 $ sudo apt install php
- $ sudo apt install libapache2-mod-php
+$ sudo apt install libapache2-mod-php
  
  Vous devriez prendre l'habitude de redémarrer Apache chaque fois que vous apportez des modifications à la configuration système d'un serveur web. Voici comment faire :
  
  vous pouvez changer aussi le fichier mais il faust recommencer Apache2
+
 $ sudo systemctl restart apache2
+
 Testing your PHP installation
 
 #nano /var/www/html/testmyphp.php
