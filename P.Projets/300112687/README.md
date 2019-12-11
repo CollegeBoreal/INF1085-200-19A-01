@@ -9,7 +9,7 @@
  
  
  # install
- 
+      ![image](config samba.png)
  
  
  
