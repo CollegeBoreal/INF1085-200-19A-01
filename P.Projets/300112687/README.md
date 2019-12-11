@@ -10,7 +10,7 @@
  
  # install
  
- ![image](P.Projets/300112687/Server.png)
+ ![image](Server.png)
  
  
  $ sudo apt-get install samba
