@@ -6,7 +6,7 @@ Pour partager de manière simple des ressources entre plusieurs ordinateurs, l'u
 
 ##### ressources utilisees (https://pimylifeup.com/raspberry-pi-samba/)
 
-#### :One: connection avec mon rasppberry pi depuis un terminal 
+#### :one: connection avec mon rasppberry pi depuis un terminal 
  ````$ ssh pi@10.13.237.77````
 #### :two: commande d'installation en tant que superutilisateur
 ````$ sudo apt-get install samba samba-common-bin````
