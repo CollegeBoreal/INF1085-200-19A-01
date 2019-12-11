@@ -28,7 +28,7 @@
  $ sudo smbpasswd -a pi
  ```
     $password:joseph
- ```
+
  # #SET PASSWORD
  
 ![image]( password.png)
