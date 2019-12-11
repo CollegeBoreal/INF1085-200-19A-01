@@ -100,7 +100,6 @@ MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 
-r 
 
 
 
@@ -109,6 +108,9 @@ r
  10.13.237.75/index.php
  
 http://10.13.237.75/index.php/Main_Page
+
+
+![Alt tag](wiiki.png)
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
@@ -144,4 +146,4 @@ Je vais installer les deux packages et utiliser systemctl pour redémarrer Apach
 
 
 
-
+,,,,,

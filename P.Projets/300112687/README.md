@@ -9,8 +9,8 @@
  
  
  # install
+      ![image](config samba.png)
  
- ![image](P.Projets/300112687/Server.png)
  
  
  $ sudo apt-get install samba
@@ -25,7 +25,11 @@
   
    ```
  $ smbpasswd -a sambauser
-   ```
+   
  
  
- ![image](P.Projets/300112687/Server.png)
+
+
+ # serveur
+
+ ![image](Server.png)
