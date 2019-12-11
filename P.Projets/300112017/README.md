@@ -128,6 +128,7 @@ CGroup: /system.slice/mysql.service
            4️⃣   Etape4 : Installer et configurer MediaWiki
 
 Premièrement, il faut telecharger le paquet de MediaWiki que vous peuez le faire avec ce siteweb (www.mediawiki.org/wiki/Download) ou bien avec la commande suivante :
+
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
 mediawiki-1.30.0.tar.gz
 
