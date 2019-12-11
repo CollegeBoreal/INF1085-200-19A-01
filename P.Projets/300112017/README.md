@@ -78,7 +78,7 @@ $ sudo apt install php
  Vous devriez prendre l'habitude de redémarrer Apache chaque fois que vous apportez des modifications à la configuration système d'un serveur web. Voici comment faire :
  
  vous pouvez changer aussi le fichier mais il faust recommencer Apache2
-# systemctl restart apache2
+$ sudo systemctl restart apache2
 Testing your PHP installation
 
 #nano /var/www/html/testmyphp.php
@@ -133,7 +133,8 @@ Premièrement, il faut telecharger le paquet de MediaWiki que vous peuez le fair
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
 mediawiki-1.30.0.tar.gz
 
-         Remarque Si vous obtenez une erreur -bash: wget: Command Not Found lors de l'exécution du commande précédente, vous devrez installer wget.
+         Remarque 
+     Si vous obtenez une erreur -bash: wget: Command Not Found lors de l'exécution du commande précédente,vous devrez installer wget.
 L’exécution de tar sur l’archive téléchargée crée un nouveau répertoire contenant toutes les fichiers extraits et répertoires. Vous voudrez copier toute la hiérarchie de répertoires dans le répertoire emplacement du système de fichiers où il fera son travail.
 
 $ sudo tar xzvf mediawiki-1.30.0.tar.gz
@@ -185,9 +186,10 @@ $ sudo cp /home/pi/LocalSettings.php /var/www/html/
 
 
 Congratulation 
+
 J'ai terminé d’installer wiki.L'adresse de connexion est:http://10.13.237.60/index.php et le resultat sera comme l'image:
 
-![Alt tag](wiki final.png)
+![Alt tag](wiki13 final.png)
 
 
 
