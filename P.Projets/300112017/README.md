@@ -169,13 +169,17 @@ $ sudo systemctl restart apache2
 Il faut juste suivre les instructions pour la configuration
 
 telecharger le fichier qui s'appelle LocalSetting.php et le le copier dans votre machine (vous devez faire les commande suivantes dans votre PC)
+
 $ scp LocalSettings.php pi@10.13.237.X:/home/pi/
+
 Apres cette commande sur votre serveur:
+
 $ sudo cp /home/pi/LocalSettings.php /var/www/html/
 
 
 Congratulation 
-Donc, nous avons fini d’installer notre wiki et le résultat devrait être comme ça: 
+J'ai terminé d’installer wiki.L'adresse de connexion est:http://10.13.237.60/index.php et le resultat sera comme l'image:
+
 
 
 
