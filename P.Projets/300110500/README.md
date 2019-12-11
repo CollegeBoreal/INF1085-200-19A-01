@@ -7,8 +7,9 @@ Le Raspberry pi est un nano ordinateur que l'on peut brancher à un écran et ut
 la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
 
 # ETAPES DE CONFIGURATION LAMP SUR RASPERRY PI
-LAMP= Linux, Apache, Mysqlet PHP
+LAMP= Linux, Apache, Mysql et PHP
 
+### INSTALLATION LINUX
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
 
 Avant toute installation, il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
