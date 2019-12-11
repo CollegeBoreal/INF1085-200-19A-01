@@ -7,7 +7,7 @@ Le Raspberry pi est un nano ordinateur que l'on peut brancher à un écran et ut
 la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
 
 ### :pushpin: ETAPES DE CONFIGURATION LAMP SUR RASPBERRY PI
-LAMP= Linux, Apache, Mysql et PHP
+E n rappel l'accronyme LAMP= Linux, Apache, Mysql et PHP
 
 ### :pushpin: INSTALLATION LINUX
 Rasppberry integre deja le systeme linux tout commentaire serait une perte de temps.
