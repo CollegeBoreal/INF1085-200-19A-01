@@ -7,7 +7,7 @@ Le Raspberry pi est un nano ordinateur que l'on peut brancher à un écran et ut
 la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
 
 ### :pushpin: ETAPES DE CONFIGURATION LAMP SUR RASPBERRY PI
-E n rappel l'accronyme LAMP= Linux, Apache, Mysql et PHP
+En rappel l'accronyme LAMP= Linux, Apache, Mysql et PHP
 
 ### :pushpin: INSTALLATION LINUX
 Rasppberry integre deja le systeme linux tout commentaire serait une perte de temps.
@@ -15,24 +15,31 @@ Il convient de configurer votre raspberry pi en l'attribuant une adresse ip et u
 La commande pour configurer l'adress est la suivante: if config
 
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASPBERRY PI
-- MySQL est une base de donnees relationnelle (SGBDR) qui a vu le jour en 1995, creee par Michael Monty Widenius et David Axmark. Elle a ete cree lorsque le marche éeait domine par Microsoft et les solutions propriéeaires (et onéreuses) d’Oracle.
+- MySQL est une base de donnees relationnelle (SGBDR) qui a vu le jour en 1995, creee par Michael Monty Widenius et David Axmark. Elle a ete cree lorsque le marche éeait domine par Microsoft et les solutions proprieeaires d’Oracle.
 - Qu’est-ce que MariaDB
  MariaDB a eu sa première version en octobre 2009, avec la version 5.1.38 Béta, basée sur MySQL 5.1.38. C’était un fork destine a  s’assurer que la base de code MySQL serait libre pour toujours. 
 
 Pour installer MARIA DB sur rasberry pi:
 
-### :one: Ouvrir le terminal git bash et se connecter a votre rasberry pi  
+### :one:se connecter a votre raspberry pi
+Ouvrir le terminal git bash et se connecter a votre rasberry pi  
 ssh pi@10.13.237.75
 
-### :two: faire une mise a jour de votre rasberry pi en entrant la commande:  
+### :two: faire une mise a jour de votre rasberry pi
+Avant toute installation il convient de faire une mise a jour de votre nano ordinateuren en entrant la commande:  
 $ sudo apt-get update
 
-### :three:installation preeliminaire
+### :pushpin: Installation PHP
+- PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
+Pour installer php il fau entrer les 2 commande suivante:
 
  $ apt install php 
- 
  $ apt install libapache2-mod-php   
 
+- Tester la connectivite php
+
+Nous pouvons tester l'installation de php en ouvrant un explorer 
+10.13.237.75/testmyphp.php
 ### :four: installer Mari DB 
 Nous pouvons installer MariaDB avec la commande suivante:
 
@@ -91,7 +98,7 @@ phpinfo();
 
 - Ouvrir un explorer et taper l'adresse suivante sur un explorer 
 
-10.13.237.75/testmyphp.php
+
 
  - copier l'adress et configurer wiki sur un explorer: 
  
