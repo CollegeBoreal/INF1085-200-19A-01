@@ -1,4 +1,4 @@
-# PROJECT INSTALLATION DE SAMBA SUR RASPBIAN :penguin:  > :strawberry: (NETWORK FILE SHARING) 
+﻿# PROJECT INSTALLATION DE SAMBA SUR RASPBIAN :penguin:  > :strawberry: (NETWORK FILE SHARING) 
 
 # INTRODUCTION
 
@@ -14,6 +14,10 @@ implémentation de Samba est installée.
 ## STEP :one:
 Il faut d'abord verifier et installer les dernieres pacquets de mise a jour et de mise a niveaux pour Raspberry Pi.
 Ouvrer le Terminal (PuTTY ou GITBash) si vous vous connectez a distance, ou le CLI(Commande Line Interface) si vous etes directement connecte au Raspberry.
+
+
+<image src="images/connection.png" width = "200px" height = "200px"></image>
+
 
 Puis lancer la commande suivante:
 ```
@@ -34,8 +38,7 @@ Si vous ne voulez pas partager tous les fichiers dans le Raspberry Pi, vous pouv
 designes au partage, en utilisant cette commande:
 
 ```
-~ $ sudo -i
-~ # mkdir ~/share 
+~ $ mkdir home/pi/shared
 ```
 
 ##  STEP :four:
@@ -53,15 +56,10 @@ Le fichier de configuration de Samba est bien documenté. Vous pouvez faire déf
 Vous pouvez également tout supprimer en appuyant longuement sur ```CTRL+K``` ou copiez et collez simplement le code suivant au bas du fichier:
 
 ```
-[global]
-netbios name = Pi
-server string = The Pi File Center
-workgroup = WORKGROUP
-
-[HOMEPI]
-path = /home/pi
+[homepi]
+path = /home/pi/shared
 comment = Samba On Raspbian
-writeable=Yes
+writable=Yes
 create mask=0777
 directory mask=0777
 public=no
@@ -71,7 +69,7 @@ public=no
 
 * ` WORKGROUP` : c'est le domaine dont le serveur Samba fera partie. Par défaut, Windows a le groupe de travail défini comme WORKGROUP.
 * `PATH`: c'est le chemin du répertoire du Raspberry Pi qui sera partagé.
-* `WRITEABLE`: s'il est défini sur oui, il permettra au dossier  d'être accessible en écriture.
+* `WRITABLE`: s'il est défini sur oui, il permettra au dossier  d'être accessible en écriture.
 * `CREATE MASK` and `DIRECTORY MASK` : lorsqu'il est défini sur 0777, l'utilisateur peut lire, écrire et exécuter.
 * `PUBLIC`: s'il est défini sur no, il autorisera uniquement les utilisateurs valides à accéder au dossier partagé.
 
@@ -96,13 +94,16 @@ des raisons de sécurité, entrez un mot de passe différent.
 
 Creation d'un autre utilisateur si necessaire:
 ```
-~ # adduser x
+~ # adduser projet
 ```
 Et lui deleguer un mot de passe:
 ```
-~ # smbpasswd -a x
+~ # smbpasswd -a projet
     Password: ******
 ```
+<image src="images/user.png" width = "200px" height = "200px"></image>
+
+
 
 ##  STEP :six:
 Enfin, redémarrez le service Samba à l'aide de la commande suivante:
@@ -110,7 +111,7 @@ Enfin, redémarrez le service Samba à l'aide de la commande suivante:
 ``` 
 ~ # sudo service smbd restart 
 ```
-Et lancer les commandes suivantes pour lancer Samba a partir de Systemctl
+Et lancer les commandes suivantes pour lancer Samba a partir du service Systemctl
 ```
 ~ # systemctl start smbd
 ~ # systemctl enable smbd
@@ -121,26 +122,50 @@ OK, donc Samba est maintenant configuré. Vous pouvez tester la configuration en
 ``` 
  ~ # testparm
 ```
+<image src="images/test.png" width = "200px" height = "200px"></image>
+
 
 ## Comment Y Acceder? :bulb:
-Ouvrez l'Explorateur de fichiers Windows et cliquer sur Réseau pour accéder au dossier partagé Raspberry Pi sur **Windows**.  
+:a:Ouvrez l'Explorateur de fichiers Windows et cliquer sur **This PC** pour accéder au dossier partagé Raspberry  dans la liste des **Network locations** ou encore Cliquer sur **Computer** et **Map Network Devices** pour localiser ton serveur a l'aide de ton adresse IP et ton Hostname.  
+
+<image src="images/surWin.png" width = "200px" height = "200px"></image>
 
 Lorsque vous cliquez sur le dossier, vous serez invité à saisir vos informations d'identification. 
 Saisissez le nom d'utilisateur du Pi, puis le mot de passe Samba que vous avez créé pour cet utilisateur. 
 
 Une fois connecté, vous pourrez gérer les dossiers et fichiers du Pi.
 
-### A partir du Pi
-Lancer la commande suivante dans le CLI:
-:closed_lock_with_key:
-----------  ----  --------
-`~ $ su x`|  or | `$ su pi`
-----------  ----  --------
-Vous serez ensuite demandez a vous authentifier
-:key:
+:b: Lancer *Run* soit vous faites clique droit sur la touche windows et selectioner **Run** ou encore vous faites `Windows+R`.
+
+Ensuite saisisez le Path du Pi precedez de son adresse IP then cliquer sur `Open` ou `ENTER`.
+
+<image src="images/b.png" width = "200px" height = "200px"></image>
+
+
+Cela vous demenderas de vous authentifier.
+
+
+
+:bulb: ### Tips:
+Pour voir son addresse IP Local lancer la commande 
+
 ```
-Password: *********
-````
+$ hostname -I
+```
+```
+10.13.237.99 172.17.0.1
+```
+
+
+### Finalement creez un fichier sur le serveur dans le fichier de partages `shared` attribuez lui tous les droits et constatez le partage qui se fait automatiquement.
+
+``
+~/shared $ touch Projet
+~/shared $ chmod 777 Projet
+``
+
+<image src="images/partage.png" width = "200px" height = "200px"></image>
+
 
 ### Minimum requis pour installer Samba :traffic_light:
 :pager: Raspberry Pi
