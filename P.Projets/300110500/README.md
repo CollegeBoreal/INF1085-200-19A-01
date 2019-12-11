@@ -1,5 +1,5 @@
 
-## :loop:  MES PREMIERS PAS SUR RASPBERRY PI  
+## :loop:  MES PREMIERS PAS SUR RASPBERRY PI     
 
 ### Utilite de raspberry pi
 Le Raspberry pi est un nano ordinateur que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Il est utilise 
@@ -82,6 +82,9 @@ mysql> FLUSH PRIVILEGES;
 ### :five: Acceder a la base de donnees par la commande suivante: 
 
 $ mysql -u root -p
+
+![Alt tag](mysql.png)
+
 
 ### :six: Creer des de tables pour companydb 
 
