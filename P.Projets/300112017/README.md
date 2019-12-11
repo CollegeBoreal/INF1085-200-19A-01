@@ -172,8 +172,11 @@ MBSTRING module for PHP
 Ensuite
 
 $ sudo apt install php7.0-mbstring php7.0-xml
+
 $ sudo systemctl restart apache2
+
 $ sudo apt install php-mysql php-apcu php-imagick
+
 $ sudo systemctl restart apache2
 
 ![Alt tag](wiki12.png)
@@ -194,7 +197,7 @@ Apres cette commande sur votre serveur:
 $ sudo cp /home/pi/LocalSettings.php /var/www/html/
 
 
-Congratulation 
+                      🙏Congratulation 
 
 J'ai terminé d’installer wiki.L'adresse de connexion est:http://10.13.237.60/index.php et le resultat sera comme l'image:
 
