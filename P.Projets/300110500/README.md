@@ -1,7 +1,7 @@
 
-### :loop:   MES PREMIERS PAS SUR RASBERRY PI
+## :loop:   MES PREMIERS PAS SUR RASBERRY PI
 
-## Utilite de raspberry pi
+### Utilite de raspberry pi
 
 Le Raspberry pi est un nano ordinateur que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Il est utilise 
 la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
@@ -9,15 +9,15 @@ la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'a
 ### :Pushpin: ETAPES DE CONFIGURATION LAMP SUR RASPERRY PI
 LAMP= Linux, Apache, Mysql et PHP
 
-###:Pushpin: INSTALLATION LINUX
+### :Pushpin: INSTALLATION LINUX
 Rasppberry integre deja le systeme linux tout commentaire serait une perte de temps.
 Il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
-La commande pour configurer l'adress est la suite: if config
+La commande pour configurer l'adress est la suivante: if config
 
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
 
-Avant toute installation, il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
 Pour installer MARIA DB sur rasberry pi:
+
 ### :one: Ouvrir le terminal git bash et se connecter a votre rasberry pi  
 ssh pi@10.13.237.75
 
