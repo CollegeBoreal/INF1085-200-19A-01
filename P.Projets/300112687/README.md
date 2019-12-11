@@ -1,12 +1,15 @@
 
-Projet
+### Projet
  
+
  # UPDATE
  ```
  $ sudo apt update 
  ```
  
+ 
  # install
+ 
  ![image](P.Projets/300112687/Server.png)
  
  
