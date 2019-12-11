@@ -33,16 +33,25 @@ Créez ce dossier en exécutant la commande suivante.
           ~ # sudo nano /etc/samba/smb.conf
  
 [global]
+
 netbios name = Pi
+
 server string = The Pi File Center
+
 workgroup = WORKGROUP
 
 [HOMEPI]
+
 path = /home/pi
+
 comment = No comment
+
 writeable=Yes
+
 create mask=0777
+
 directory mask=0777
+
 public=no
 
  NB Après avoir fait les modifications sur nano, appuyez et maintenez CTRL+O touche ENTER puis CTRL+X pour enregistrer les modifications   et quitter. 
