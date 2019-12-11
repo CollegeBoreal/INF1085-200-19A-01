@@ -57,6 +57,19 @@ Pour installer php il fau entrer les 2 commande suivante:
 10.13.237.75/testmyphp.php
 ![Alt tag](Php.png)
 
+
+
+
+
+
+
+
+- Verifier la la connectivite apache
+On peut verifier la connectivite apache en tapant 10.13.237.75 sur un explorer
+
+~$ wget -O verif_apache.html http://127.0.0.1
+
+
 Nous pouvons tester l'installation de php en ouvrant un explorer 
 10.13.237.75/testmyphp.php
 ### :four: Installation Mari DB 
