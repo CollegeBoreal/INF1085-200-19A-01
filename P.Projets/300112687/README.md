@@ -29,9 +29,7 @@
  
  # #CONNECTION TO SERVER
  
-![image](Connect to server.png)
-
-
+![image](P.Projets/300112687/Connect to server.png)
 
 
  # #SERVEUR
