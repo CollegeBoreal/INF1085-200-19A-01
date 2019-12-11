@@ -40,4 +40,4 @@ Ouvrir "file explorer" en le tapant dans serach de votre windows , en suite cliq
 Si vous avez fait tout comme indiquer votre samba est connecter à votre ordinateur windows |
 
 ### resultat final 
-![image](fichierpartager.PNG)
+![image](fichierpartager2.PNG)
