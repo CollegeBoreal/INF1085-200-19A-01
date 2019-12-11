@@ -27,7 +27,7 @@
  $ smbpasswd -a sambauser
    
  
- # #CONNECTION TO SERVER
+ # #SET PASSWORD
  
 ![image]( password.png)
 
