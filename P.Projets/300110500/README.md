@@ -2,7 +2,7 @@
 ## :loop:  MES PREMIERS PAS SUR RASPBERRY PI  
 
 ### Utilite de raspberry pi
-![image]()
+![image](P.Projets/300110500/README.md)
 ```
 Le Raspberry pi est un nano ordinateur que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Il est utilise 
 la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
