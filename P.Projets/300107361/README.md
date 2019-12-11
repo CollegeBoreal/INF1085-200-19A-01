@@ -161,6 +161,7 @@ $ hostname -I
 
 ``
 ~/shared $ touch Projet
+``
 ~/shared $ chmod 777 Projet
 ``
 
