@@ -3,25 +3,25 @@
 1- La première chose que nous devons faire avant de configurer un partage SMB / CIFS sur notre Raspberry Pi est de nous assurer que tout est à jour.
 Pour les mettre a jour on utilise ces deux commandes :
 
-~ # sudo apt-get update
-~ # sudo apt-get upgrade
+### ~ # sudo apt-get update
+### ~ # sudo apt-get upgrade
 
 2- Maintenant que notre système est à jour, on peut procéder à l'installation du logiciel Samba sur notre Raspberry Pi.
 Passons a l'installation des packages dont nous avons besoin pour configurer Samba en exécutant la commande suivante:
 
-~ # sudo apt-get install samba samba-common-bin
+### ~ # sudo apt-get install samba samba-common-bin
 
 3- Avant de configurer notre stockage réseau sur notre Pi, nous devons d'abord créer un dossier que nous partagerons.
 Ce dossier peut être situé n'importe où, y compris sur un disque dur externe monté. Pour ce didacticiel, nous allons créer le répertoire dans le répertoire personnel des utilisateurs «pi».
 Créez ce dossier en exécutant la commande suivante :
 
-~ # mkdir /home/pi/shared
+### ~ # mkdir /home/pi/shared
 
 4- Nous pouvons maintenant partager ce dossier à l'aide du logiciel Samba. Pour ce faire, nous devons modifier le fichier de configuration samba.
 Le fichier de configuration «smb.conf» est l'endroit où vous stockerez tous vos paramètres pour vos partages.
 Nous pouvons commencer à modifier le fichier de configuration en exécutant la commande ci-dessous.
 
-~ # sudo nano /etc/samba/smb.conf
+### ~ # sudo nano /etc/samba/smb.conf
 
 dans ce meme fichier, on va ajouter ces codes :
 
@@ -48,11 +48,11 @@ public=no : Si ce paramètre est réglé sur «non», le Pi aura besoin d'un uti
 Nous allons créer un utilisateur Samba appelé «pi».
 Exécutez la commande suivante pour créer l'utilisateur. Vous serez ensuite invité à saisir le mot de passe.
 
-~ # sudo smbpasswd -a pi
+### ~ # sudo smbpasswd -a pi
 
 Ensuite, avant de nous connecter à notre Raspberry Pi Samba, nous devons redémarrer le service samba afin qu'il se charge dans nos modifications de configuration.
 
-~ #sudo systemctl restart smbd
+### ~ #sudo systemctl restart smbd
 
  La dernière chose que nous devons faire avant d'essayer de nous connecter à notre partage Samba est de récupérer l'adresse IP locale de notre Raspberry Pi.
 
@@ -62,11 +62,18 @@ Bien que vous puissiez vous connecter en utilisant le nom de réseau du Pi, nous
 
 Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
 
-~ # hostname -I
+### ~ # hostname -I
 
 Pour finir, lancer les commandes suivantes pour lancer Samba a partir de Systemctl :
 
-~ # systemctl start smbd
-~ # systemctl enable smbd
+### ~ # systemctl start smbd
+### ~ # systemctl enable smbd
+
+Pour vous connecter à votre Samba sous Windows, commencez par ouvrir l'Explorateur de fichiers.
+
+Dans l'Explorateur de fichiers, cliquez sur l'onglet Ordinateur
+Saisissez le nom d'utilisateur et le mot de passe que vous avez définis à l'aide de l'outil «smbpasswd» plus haut dans le didacticiel.
+
+Une fois terminé, appuyez sur le bouton «OK» pour continuer.
 
             
