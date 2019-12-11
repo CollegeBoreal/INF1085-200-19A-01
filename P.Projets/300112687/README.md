@@ -24,8 +24,8 @@
   ```
   
    ```
- $ smbpasswd -a sambauser
-   
+ $ sudo smbpasswd -a pi
+    $password:joseph
  
  # #SET PASSWORD
  
