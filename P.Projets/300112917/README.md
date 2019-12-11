@@ -31,12 +31,7 @@
 
 ### :six: Ajouter ceci vers la fin de la page
 
-[pimylifeupshare]
-path = /home/pi/shared
-writeable=Yes
-create mask=0777
-directory mask=0777
-public=no</code>
+![image](777.PNG)
 
 :page_with_curl:
 ### :hash: [Pimylifeupshare]
