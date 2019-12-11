@@ -15,6 +15,9 @@ Il convient de configurer votre raspberry pi en l'attribuant une adresse ip et u
 La commande pour configurer l'adress est la suivante: if config
 
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASPBERRY PI
+MySQL est une base de donnees relationnelle (SGBDR) qui a vu le jour en 1995, creee par Michael Monty Widenius et David Axmark. Elle a ete cree lorsque le marche éeait domine par Microsoft et les solutions propriéeaires (et onéreuses) d’Oracle.
+Qu’est-ce que MariaDB
+MariaDB a eu sa première version en octobre 2009, avec la version 5.1.38 Béta, basée sur MySQL 5.1.38. C’était un fork destine a  s’assurer que la base de code MySQL serait libre pour toujours. 
 
 Pour installer MARIA DB sur rasberry pi:
 
