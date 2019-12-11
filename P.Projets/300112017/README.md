@@ -109,7 +109,7 @@ $ sudo mysql_secure_installation
 
 Vous pouvez confirmer que la base de données est exécutée à l'aide de systemctl :
 
-# systemctl status mysql
+#systemctl status mysql
 ? mysql.service - MySQL Community Server
 Loaded: loaded (/lib/systemd/system/mysql.service;
                       enabled; vendor preset: enabled)
@@ -126,7 +126,7 @@ CGroup: /system.slice/mysql.service
            ??395 /usr/sbin/mysqld
            
            
-           4️⃣   Etape4 : Installer et configurer MediaWiki
+           4️⃣  # Etape4 : Installer et configurer MediaWiki
 
 Premièrement, il faut telecharger le paquet de MediaWiki que vous peuez le faire avec ce siteweb (www.mediawiki.org/wiki/Download) ou bien avec la commande suivante :
 
