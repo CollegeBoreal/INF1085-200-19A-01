@@ -1,4 +1,4 @@
-                          PARETAGE DE FICHIER LINUX/WINDOWS: SAMBA
+                                  PARETAGE DE FICHIER LINUX/WINDOWS: SAMBA
    
    Introduction
    
