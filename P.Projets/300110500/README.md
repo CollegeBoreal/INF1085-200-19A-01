@@ -83,7 +83,7 @@ mysql> FLUSH PRIVILEGES;
 
 $ mysql -u root -p
 
-![Alt tag](datal.png)
+![Alt tag](data.png)
 
 
 ### :six: Creer des de tables pour companydb 
