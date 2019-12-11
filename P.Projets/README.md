@@ -20,7 +20,7 @@ $ cd P.Projects
 | 10   | [300111766](300111766) | pi@10.13.237.66 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local            |
 | 11   | [300112017](300112017) | pi@10.13.237.60 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)               | Local            |
 | 12   | [300112687](300112687) | pi@10.13.237.87 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn)               |:x:               |
-| 13   | [300112917](300112917) | pi@10.13.237.79 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
+| 13   | [300112917](300112917) | pi@10.13.237.79 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
 | 14   | [300113775](300113775) | pi@10.13.237.77 |[:parking: Samba](README.md#parking-chapter-8--building-a-nextcloud-file-sharing-server)|:x:               |
 
 
