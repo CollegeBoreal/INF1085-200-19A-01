@@ -71,7 +71,8 @@ L'URL que vous utiliserez pour accéder à un site Apache fonctionnant sur votre
                                               2️⃣   Etape2 : Install PHP
                                               
  L'ingrédient final de LAMP est le langage de script PHP. PHP est un outil qui peut être utilisé pour écrire vos propres applications web. Les applications PHP pré-intégrées sont souvent utilisées par des applications tierces comme MediaWiki pour accéder et traiter les ressources système. On peut donc supposer que vous aurez besoin du P dans votre serveur LAMP.
- $ sudo apt install php
+
+$ sudo apt install php
  $ sudo apt install libapache2-mod-php
  
  Vous devriez prendre l'habitude de redémarrer Apache chaque fois que vous apportez des modifications à la configuration système d'un serveur web. Voici comment faire :
@@ -80,7 +81,7 @@ L'URL que vous utiliserez pour accéder à un site Apache fonctionnant sur votre
 # systemctl restart apache2
 Testing your PHP installation
 
-# nano /var/www/html/testmyphp.php
+#nano /var/www/html/testmyphp.php
 <?php
 phpinfo();
 ?>
@@ -142,7 +143,7 @@ $ sudo cp -r mediawiki-1.30.0/* /var/www/html/
  
 Maintenant Il faut ecrire dans votre navigateur 10.13.237.X/index.php qui va vous montrer cette page :
 
-
+![Alt tag](wikiki.png)
 
 
 
