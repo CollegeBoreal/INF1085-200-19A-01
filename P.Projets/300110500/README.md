@@ -9,7 +9,11 @@ la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'a
 # ETAPES DE CONFIGURATION LAMP SUR RASPERRY PI
 LAMP= Linux, Apache, Mysql et PHP
 
-### INSTALLATION LINUX
+###:Pushpin: INSTALLATION LINUX
+Rasppberry integre deja le systeme linux tout commentaire serait une perte de temps.
+Il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
+La commande pour configurer l'adress est la suite: if config
+
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
 
 Avant toute installation, il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
