@@ -148,6 +148,14 @@ Je vais installer les deux packages et utiliser systemctl pour redémarrer Apach
 
 ~# systemctl restart apache2
 
+![Alt tag](download.png)
+
+
+
+
+
+
+![Alt tag](wiki.png)
 
 
 ,,,,,
