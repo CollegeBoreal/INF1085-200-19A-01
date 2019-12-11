@@ -16,12 +16,12 @@ Pour partager de manière simple des ressources entre plusieurs ordinateurs, l'u
 #### en tant que superuser :
 ````$ sudo nano /etc/samba/smb.conf````
 #### :five: vous devez ajouter ses parametres à la fin de votre éditeur nano
-[pimylifeupshare]
-path = /home/pi/partager
-writeable=Yes
-create mask=0777
-directory mask=0777
-public=no
+````[pimylifeupshare]````
+````path = /home/pi/partager````
+````writeable=Yes````
+````create mask=0777````
+````directory mask=0777````
+````public=no````
 #### :five: à ce niveau vous devez changer le modepasse , j'ai utilisé la lettre "M" 4fois  tout en minuscule comme mot de passe .
 
 ````$ sudo smbpasswd -a pi````
