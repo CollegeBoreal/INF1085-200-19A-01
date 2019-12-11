@@ -123,10 +123,58 @@ Memory: 126.3M
             CPU: 20.413s
 CGroup: /system.slice/mysql.service
            ??395 /usr/sbin/mysqld
+           
+           
+           4️⃣   Etape4 : Installer et configurer MediaWiki
 
+Premièrement, il faut telecharger le paquet de MediaWiki que vous peuez le faire avec ce siteweb (www.mediawiki.org/wiki/Download) ou bien avec la commande suivante :
+$ wget https://releases.wikimedia.org/mediawiki/1.30/\
+mediawiki-1.30.0.tar.gz
 
+         Remarque Si vous obtenez une erreur -bash: wget: Command Not Found lors de l'exécution du commande précédente, vous devrez installer wget.
+L’exécution de tar sur l’archive téléchargée crée un nouveau répertoire contenant toutes les fichiers extraits et répertoires. Vous voudrez copier toute la hiérarchie de répertoires dans le répertoire emplacement du système de fichiers où il fera son travail.
+
+$ sudo tar xzvf mediawiki-1.30.0.tar.gz
+$ ls
+mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
+$ sudo cp -r mediawiki-1.30.0/* /var/www/html/
  
+Maintenant Il faut ecrire dans votre navigateur 10.13.237.X/index.php qui va vous montrer cette page :
 
+
+
+
+
+je dois installer les composants pour finir.
+
+J'utiliserai apt search pour voir quels paquets sont liés à mbstring.
+
+$ sudo apt search mbstring
+Sorting... Done
+Full Text Search... Done
+php-mbstring/xenial 1:7.0+35ubuntu6 all
+MBSTRING module for PHP [default]
+php-patchwork-utf8/xenial 1.3.0-1build1 all
+UTF-8 strings handling for PHP
+php7.0-mbstring/xenial-updates 7.0.18-0ubuntu0.16.04.1 amd64
+MBSTRING module for PHP
+Ensuite
+$ sudo apt install php7.0-mbstring php7.0-xml
+$ sudo systemctl restart apache2
+$ sudo apt install php-mysql php-apcu php-imagick
+$ sudo systemctl restart apache2
+
+                Connecter MediaWiki à la base de données :
+Il faut juste suivre les instructions pour la configuration
+
+telecharger le fichier qui s'appelle LocalSetting.php et le le copier dans votre machine (vous devez faire les commande suivantes dans votre PC)
+$ scp LocalSettings.php pi@10.13.237.X:/home/pi/
+Apres cette commande sur votre serveur:
+$ sudo cp /home/pi/LocalSettings.php /var/www/html/
+
+
+Congratulation 
+Donc, nous avons fini d’installer notre wiki et le résultat devrait être comme ça: 
 
 
 
