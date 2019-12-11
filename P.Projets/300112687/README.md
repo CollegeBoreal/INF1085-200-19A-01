@@ -7,10 +7,11 @@ Projet
  ```
  
  # install
+ ![image](P.Projets/300112687/Server.png)
  ```
  $ sudo apt-get install samba
  ```
-
+## kk
  ```
  $ nano /etc/samba/smb.conf
  ```

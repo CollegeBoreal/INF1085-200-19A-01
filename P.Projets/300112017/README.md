@@ -63,24 +63,30 @@ $ docker-machine ls
                                       1️⃣   Etape1: Install Apache2
 
 Le serveur HTTP open source Apache tend à dominer le marché des serveurs Web sur toutes les plateformes. Parce qu’il est si populaire, et malgré le fait qu'Apache a de sérieux concurrents, dont Nginx (également multiplate-forme) et le IIS (qui fonctionne exclusivement sur les serveurs Windows). Alors, O Commence!
+
 $ sudo apt update
 $ sudo apt install apache2
 
 L'URL que vous utiliserez pour accéder à un site Apache fonctionnant sur votre worksta-tion est localhost. Si, à la place, vous avez choisi de travailler sur un conteneur LXC ou une Virtual-Box VM, alors vous utiliserez l'adresse IP de la machine pour l'URL. Pour vous assurer d'avoir un accès réseau aux sites fonctionnant sur votre VirtualBox VM, assurez-vous qu'elle est configurée pour utiliser un adaptateur ponté (comme vous l'avez fait au chapitre 2).
 
+![Alt tag](wik.JPG)
+
                                               2️⃣   Etape2 : Install PHP
                                               
  L'ingrédient final de LAMP est le langage de script PHP. PHP est un outil qui peut être utilisé pour écrire vos propres applications web. Les applications PHP pré-intégrées sont souvent utilisées par des applications tierces comme MediaWiki pour accéder et traiter les ressources système. On peut donc supposer que vous aurez besoin du P dans votre serveur LAMP.
- $ sudo apt install php
- $ sudo apt install libapache2-mod-php
+
+$ sudo apt install php
+$ sudo apt install libapache2-mod-php
  
  Vous devriez prendre l'habitude de redémarrer Apache chaque fois que vous apportez des modifications à la configuration système d'un serveur web. Voici comment faire :
  
  vous pouvez changer aussi le fichier mais il faust recommencer Apache2
-# systemctl restart apache2
+
+$ sudo systemctl restart apache2
+
 Testing your PHP installation
 
-# nano /var/www/html/testmyphp.php
+#nano /var/www/html/testmyphp.php
 <?php
 phpinfo();
 ?>
@@ -102,13 +108,16 @@ mysql> FLUSH PRIVILEGES;
 mysql> exit
 
 
- NOTE Si votre machine ne vous donne pas le droit de configurer le mot de passe dont vous avez besoin pour exécuter cette commande afin de configurer manuellement:
+         🎅 NOTE 
+ 
+ Si votre machine ne vous donne pas le droit de configurer le mot de passe dont vous avez besoin pour exécuter cette commande 
+ afin de configurer manuellement
 
 $ sudo mysql_secure_installation
 
 Vous pouvez confirmer que la base de données est exécutée à l'aide de systemctl :
 
-# systemctl status mysql
+ $ sudo systemctl status mysql
 ? mysql.service - MySQL Community Server
 Loaded: loaded (/lib/systemd/system/mysql.service;
                       enabled; vendor preset: enabled)
@@ -123,9 +132,79 @@ Memory: 126.3M
             CPU: 20.413s
 CGroup: /system.slice/mysql.service
            ??395 /usr/sbin/mysqld
+           
+           
+             4️⃣  Etape4 : Installer et configurer MediaWiki
 
+Premièrement, il faut telecharger le paquet de MediaWiki que vous peuez le faire avec ce siteweb (www.mediawiki.org/wiki/Download) ou bien avec la commande suivante :
 
+$ wget https://releases.wikimedia.org/mediawiki/1.30/\
+mediawiki-1.30.0.tar.gz
+
+         🤶 Remarque 
+     Si vous obtenez une erreur -bash: wget: Command Not Found lors de l'exécution du commande précédente,vous devrez installer wget.
+L’exécution de tar sur l’archive téléchargée crée un nouveau répertoire contenant toutes les fichiers extraits et répertoires.
+Vous voudrez copier toute la hiérarchie de répertoires dans le répertoire emplacement du système de fichiers où il fera son travail.
+
+$ sudo tar xzvf mediawiki-1.30.0.tar.gz
+$ ls
+mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
+$ sudo cp -r mediawiki-1.30.0/* /var/www/html/
  
+Maintenant Il faut ecrire dans votre navigateur 10.13.237.X/index.php qui va vous montrer cette page :
+
+![Alt tag](wiikiki.png)
+
+
+
+je dois installer les composants pour finir.
+
+J'utiliserai apt search pour voir quels paquets sont liés à mbstring.
+
+$ sudo apt search mbstring
+Sorting... Done
+Full Text Search... Done
+php-mbstring/xenial 1:7.0+35ubuntu6 all
+MBSTRING module for PHP [default]
+php-patchwork-utf8/xenial 1.3.0-1build1 all
+UTF-8 strings handling for PHP
+php7.0-mbstring/xenial-updates 7.0.18-0ubuntu0.16.04.1 amd64
+MBSTRING module for PHP
+
+😀 Ensuite
+
+$ sudo apt install php7.0-mbstring php7.0-xml
+
+$ sudo systemctl restart apache2
+
+$ sudo apt install php-mysql php-apcu php-imagick
+
+$ sudo systemctl restart apache2
+
+![Alt tag](wiki12.png)
+
+               👮‍♀️ Connecter MediaWiki à la base de données :
+
+Il faut juste suivre les instructions pour la configuration
+
+![Alt tag](wiki.png)
+
+telecharger le fichier qui s'appelle LocalSetting.php et le le copier dans votre machine (vous devez faire les commande suivantes dans votre PC)
+
+![Alt tag](wiki1.png)
+
+$ scp LocalSettings.php pi@10.13.237.X:/home/pi/
+
+Apres cette commande sur votre serveur:
+
+$ sudo cp /home/pi/LocalSettings.php /var/www/html/
+
+
+                       🙏Congratulation 
+
+J'ai terminé d’installer wiki.L'adresse de connexion est:http://10.13.237.60/index.php et le resultat sera comme l'image:
+
+![Alt tag](wiki13.png)
 
 
 

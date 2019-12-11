@@ -138,7 +138,7 @@ $ mkdir /etc/openvpn/jail
 
 ```
 ```
-$ mkdir /etc/openvpn/clientconf
+$ mkdir /etc/openvpn/client.conf
 
 ```
 Pour terminer, on créé le fichier de configuration
@@ -166,6 +166,8 @@ dev tun
 
 
 ```
+
+
 :pushpin: Clefs et certificats
 
 ```
@@ -186,35 +188,50 @@ cipher AES-256-CBC
 
 :pushpin: Reseau
 
-``
+```
+
 server 10.8.0.0 255.255.255.0
+
 push "redirect-gateway def1 bypass-dhcp"
+
 push "dhcp-option DNS 4.4.4.4"
+
 push "dhcp-option DNS 8.8.8.8"
+
 keepalive 10 120
 
-``
+
+
+```
 
  :pushpin: Securité
 
-``
+```
 user nobody
+
 group nogroup
+
 chroot /etc/openvpn/jail
+
 persist-key 
-BEDDES Jérémy
-Mémos Personnels
+
+
 persist-tun
+
 comp-lzo
 
-``
+```
 
 :pushpin: Log
 ```
 verb 3
+
 mute 20
+
 status openvpn-status.log
+
 ; log-append /var/log/openvpn.log
+
 
 ```
 
@@ -251,14 +268,17 @@ serveur VPN puisque l’adresse 10.0.8.X n’est pas routée hors du hors du
 serveur.
 
 Configuration du routage :
-``
-:pushpin:  sh -c ‘echo 1 > /proc/sys/net/ipv4/ip_forward’
+
+```
+  sh -c ‘echo 1 > /proc/sys/net/ipv4/ip_forward’
 
 ```
 Pour que ce paramétrage de routage soit permanent, il faut ajouter
 la ligne suivante au fichier /etc/sysctl.conf
 net.ipv4.ip_forward = 1
 Puis il faut configurer la translation d’adresse (NAT) :
+
+
 ```
 :pushpin: iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 
@@ -267,7 +287,9 @@ Pour que cette règle de NAT soit persistante après un reboot du
 serveur, il faut utiliser un script existant :
 
 ```
-:pushpin: sh -c ‘’iptables-save > /etc/iptables.rules’’
+
+ sh -c iptables-save > /etc/iptables.rules
+
 
 ```
 Puis il faut éditer le fichier /etc/network/interfaces pour y ajouter la

@@ -1,27 +1,65 @@
 
-## :loop:   MES PREMIERS PAS SUR RASBERRY PI
+## :loop:  MES PREMIERS PAS SUR RASPBERRY PI  
 
-Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix interessant fait du Raspberry pi un produit ideal pour tester differentes 
-choses, et notamment la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux c.
+### Utilite de raspberry pi
 
+Le Raspberry pi est un nano ordinateur que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Il est utilise 
+la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
 
-### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
+### :pushpin: ETAPES DE CONFIGURATION LAMP SUR RASPBERRY PI
+En rappel l'accronyme LAMP= Linux, Apache, Mysql et PHP
 
-Avant toute installation, il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
+### :pushpin: INSTALLATION LINUX
+Rasppberry integre deja le systeme linux tout commentaire serait une perte de temps.
+Il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
+La commande pour configurer l'adress est la suivante: if config
+
+### :pushpin: INSTALLATION DE PHP SUR RASBERRY PI
+
+### :one: Enter la commande suivante dans git bash pour installer
+ # apt install php
+ ### Specifier la version version php a installer
+ # apt install libapache2-mod-php
+### :two Creer un nouveau fichier avec la commande ci-dessous:
+# nano /var/www/html/testmyphp.php
+### :three: Copier l'extension PHP dans via puis sauvegarder
+<?php
+phpinfo();
+?>
+
+#### :four: Comment Tester la connectivite de php
+
+- Ouvrir un explorer et taper l'adresse suivante sur un explore
+
+### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASPBERRY PI
+- MySQL est une base de donnees relationnelle (SGBDR) qui a vu le jour en 1995, creee par Michael Monty Widenius et David Axmark. Elle a ete cree lorsque le marche éeait domine par Microsoft et les solutions proprieeaires d’Oracle.
+- Qu’est-ce que MariaDB
+ MariaDB a eu sa première version en octobre 2009, avec la version 5.1.38 Béta, basée sur MySQL 5.1.38. C’était un fork destine a  s’assurer que la base de code MySQL serait libre pour toujours. 
+
 Pour installer MARIA DB sur rasberry pi:
-### :one: Ouvrir le terminal git bash et se connecter a votre rasberry pi  
+
+### :one:Se connecter a votre raspberry pi
+Ouvrir le terminal git bash et se connecter a votre rasberry pi  
 ssh pi@10.13.237.75
 
-### :two: faire une mise a jour de votre rasberry pi en entrant la commande:  
+### :two: Faire une mise a jour de votre rasberry pi
+Avant toute installation il convient de faire une mise a jour de votre nano ordinateur en entrant la commande:  
 $ sudo apt-get update
 
-### :three:installation preeliminaire
+### :pushpin: Installation PHP
+- PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
+Pour installer php il fau entrer les 2 commande suivante:
 
  $ apt install php 
- 
  $ apt install libapache2-mod-php   
 
-### :four: installer Mari DB 
+- Tester la connectivitephp
+
+10.13.237.75/testmyphp.php
+
+Nous pouvons tester l'installation de php en ouvrant un explorer 
+10.13.237.75/testmyphp.php
+### :four: Installation Mari DB 
 Nous pouvons installer MariaDB avec la commande suivante:
 
 ~#   apt install mariadb-server
@@ -45,7 +83,7 @@ mysql> FLUSH PRIVILEGES;
 
 $ mysql -u root -p
 
-### :six: creer des de tables pour companydb 
+### :six: Creer des de tables pour companydb 
 
 . MariaDB> use companydb puis inserrrer les donnnees ci-apres
 
@@ -62,30 +100,15 @@ MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 
-### :pushpin: INSTALLATION DE PHP SUR RASBERRY PI
+r 
 
-### :one: Enter la commande suivante dans git bash pour installer
- # apt install php
- ### Specifier la version version php a installer
- # apt install libapache2-mod-php
-### :two Creer un nouveau fichier avec la commande ci-dessous:
-# nano /var/www/html/testmyphp.php
-### :three: Copier l'extension PHP dans via puis sauvegarder
-<?php
-phpinfo();
-?>
 
-#### :four: Comment Tester la connectivite de php
-
-- Ouvrir un explorer et taper l'adresse suivante sur un explorer 
-
-10.13.237.75/testmyphp.php
 
  - copier l'adress et configurer wiki sur un explorer: 
  
  10.13.237.75/index.php
  
- http://10.13.237.75/mw-config/index.php?page=Options
+http://10.13.237.75/index.php/Main_Page
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
