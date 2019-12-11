@@ -111,7 +111,7 @@ VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 http://10.13.237.75/index.php/Main_Page
 
 
-![Alt tag](wiiki.png)
+![Alt tag](wiki.png)
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
