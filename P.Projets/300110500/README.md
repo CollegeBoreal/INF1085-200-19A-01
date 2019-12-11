@@ -14,6 +14,23 @@ Rasppberry integre deja le systeme linux tout commentaire serait une perte de te
 Il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
 La commande pour configurer l'adress est la suivante: if config
 
+### :pushpin: INSTALLATION DE PHP SUR RASBERRY PI
+
+### :one: Enter la commande suivante dans git bash pour installer
+ # apt install php
+ ### Specifier la version version php a installer
+ # apt install libapache2-mod-php
+### :two Creer un nouveau fichier avec la commande ci-dessous:
+# nano /var/www/html/testmyphp.php
+### :three: Copier l'extension PHP dans via puis sauvegarder
+<?php
+phpinfo();
+?>
+
+#### :four: Comment Tester la connectivite de php
+
+- Ouvrir un explorer et taper l'adresse suivante sur un explore
+
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASPBERRY PI
 - MySQL est une base de donnees relationnelle (SGBDR) qui a vu le jour en 1995, creee par Michael Monty Widenius et David Axmark. Elle a ete cree lorsque le marche éeait domine par Microsoft et les solutions proprieeaires d’Oracle.
 - Qu’est-ce que MariaDB
@@ -81,22 +98,7 @@ MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 
-### :pushpin: INSTALLATION DE PHP SUR RASBERRY PI
-
-### :one: Enter la commande suivante dans git bash pour installer
- # apt install php
- ### Specifier la version version php a installer
- # apt install libapache2-mod-php
-### :two Creer un nouveau fichier avec la commande ci-dessous:
-# nano /var/www/html/testmyphp.php
-### :three: Copier l'extension PHP dans via puis sauvegarder
-<?php
-phpinfo();
-?>
-
-#### :four: Comment Tester la connectivite de php
-
-- Ouvrir un explorer et taper l'adresse suivante sur un explorer 
+r 
 
 
 
