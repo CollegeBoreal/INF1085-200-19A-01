@@ -108,9 +108,10 @@ mysql> FLUSH PRIVILEGES;
 mysql> exit
 
 
-     🎅 NOTE 
+         🎅 NOTE 
+ 
  Si votre machine ne vous donne pas le droit de configurer le mot de passe dont vous avez besoin pour exécuter cette commande 
- afin de configurer manuellement:
+ afin de configurer manuellement
 
 $ sudo mysql_secure_installation
 
