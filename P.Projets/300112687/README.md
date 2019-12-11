@@ -20,9 +20,10 @@
  $ nano /etc/samba/smb.conf
  ```
   ```
-  $ adduser sambauser
-  ```
   
+   
+   # #SET PASSWORD
+   
    ```
  $ sudo smbpasswd -a pi
  ```
