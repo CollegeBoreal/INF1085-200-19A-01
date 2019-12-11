@@ -4,6 +4,7 @@
 Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix interessant fait du Raspberry pi un produit ideal pour tester differentes 
 choses, et notamment la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux c.
 
+# ETAPES DE CONFIGURATION LAMP
 
 ### :pushpin: INSTALLATION DE MARIA DB ON YOUR RASBERRY PI
 
@@ -85,7 +86,7 @@ phpinfo();
  
  10.13.237.75/index.php
  
- http://10.13.237.75/mw-config/index.php?page=Options
+http://10.13.237.75/index.php/Main_Page
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
