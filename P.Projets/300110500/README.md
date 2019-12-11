@@ -109,6 +109,9 @@ r
  10.13.237.75/index.php
  
 http://10.13.237.75/index.php/Main_Page
+
+
+![Alt tag](Wiiki.png)
  
 ### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
