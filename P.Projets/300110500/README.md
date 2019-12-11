@@ -59,7 +59,7 @@ Pour installer php il fau entrer les 2 commande suivante:
 
 Nous pouvons tester l'installation de php en ouvrant un explorer 
 10.13.237.75/testmyphp.php
-### :four: installer Mari DB 
+### :four: Installation Mari DB 
 Nous pouvons installer MariaDB avec la commande suivante:
 
 ~#   apt install mariadb-server
@@ -83,7 +83,7 @@ mysql> FLUSH PRIVILEGES;
 
 $ mysql -u root -p
 
-### :six: creer des de tables pour companydb 
+### :six: Creer des de tables pour companydb 
 
 . MariaDB> use companydb puis inserrrer les donnnees ci-apres
 
