@@ -54,7 +54,7 @@ directory mask=0777
 
 public=no
 
- NB Après avoir fait les modifications sur nano, appuyez et maintenez CTRL+O touche ENTER puis CTRL+X pour enregistrer les modifications   et quitter. 
+ 📌NB Après avoir fait les modifications sur nano, appuyez et maintenez CTRL+O touche ENTER puis CTRL+X pour enregistrer les modifications   et quitter. 
 
 5️⃣  dans cet etape nous devons ajouter Pi en tant qu'utilisateur Samba. Pour ce faire nous devons entrez la commande suivante pour l'ajouter au serveur de SAMBA:
 
@@ -75,6 +75,6 @@ public=no
           ~ # test parm
 
    
-   NB : Pour acceder a notre fichier de partage ouvrez l'Explorateur de fichiers Windows et cliquer sur Réseau et accéder au dossier partagé Raspberry Pi sur Windows. Ares cliquez sur le dossier et saisissez les informations d'identification comme le nom d'utilisateur du Pi et le mot de passe qu'on avait mis pour l'utilisateur de Samba.
+   📌NB : Pour acceder a notre fichier de partage ouvrez l'Explorateur de fichiers Windows et cliquer sur Réseau et accéder au dossier partagé Raspberry Pi sur Windows. Ares cliquez sur le dossier et saisissez les informations d'identification comme le nom d'utilisateur du Pi et le mot de passe qu'on avait mis pour l'utilisateur de Samba.
 
 
