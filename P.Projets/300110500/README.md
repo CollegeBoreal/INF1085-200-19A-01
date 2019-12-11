@@ -1,8 +1,10 @@
 
-## :loop:   MES PREMIERS PAS SUR RASBERRY PI
+# :loop:   MES PREMIERS PAS SUR RASBERRY PI
 
-Le Raspberry pi est un nano ordinateur de la taille d'une carte de crédit que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Sa petite taille, et son prix interessant fait du Raspberry pi un produit ideal pour tester differentes 
-choses, et notamment la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux c.
+## Utilite de raspberry pi
+
+Le Raspberry pi est un nano ordinateur que l'on peut brancher à un écran et utilisé comme un ordinateur standard. Il est utilise 
+la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux c.
 
 # ETAPES DE CONFIGURATION LAMP
 
