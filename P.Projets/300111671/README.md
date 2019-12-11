@@ -166,6 +166,8 @@ dev tun
 
 
 ```
+
+
 :pushpin: Clefs et certificats
 
 ```
@@ -186,35 +188,53 @@ cipher AES-256-CBC
 
 :pushpin: Reseau
 
-``
+```
+
 server 10.8.0.0 255.255.255.0
+
 push "redirect-gateway def1 bypass-dhcp"
+
 push "dhcp-option DNS 4.4.4.4"
+
 push "dhcp-option DNS 8.8.8.8"
+
 keepalive 10 120
 
-``
+
+
+```
 
  :pushpin: Securité
 
-``
+```
 user nobody
+
 group nogroup
+
 chroot /etc/openvpn/jail
+
 persist-key 
+
 BEDDES Jérémy
+
 Mémos Personnels
+
 persist-tun
+
 comp-lzo
 
-``
+```
 
 :pushpin: Log
 ```
 verb 3
+
 mute 20
+
 status openvpn-status.log
+
 ; log-append /var/log/openvpn.log
+
 
 ```
 
@@ -267,7 +287,9 @@ Pour que cette règle de NAT soit persistante après un reboot du
 serveur, il faut utiliser un script existant :
 
 ```
-:pushpin: sh -c ‘’iptables-save > /etc/iptables.rules’’
+
+:pushpin: sh -c iptables-save > /etc/iptables.rules
+
 
 ```
 Puis il faut éditer le fichier /etc/network/interfaces pour y ajouter la
