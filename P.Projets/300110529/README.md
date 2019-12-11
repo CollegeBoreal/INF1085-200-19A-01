@@ -16,7 +16,6 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 ```
 $ sudo apt-get update
 ```
-
 Et nous installerons également le paquet easy-rsa, qui nous aidera à mettre en place une CA (autorité de certification) interne pour une utilisation avec notre VPN
 ```
 $ sudo apt-get install openvpn easy-rsa
