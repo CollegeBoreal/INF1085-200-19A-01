@@ -2,7 +2,7 @@ Le logiciel Samba est un outil permettant de partager des dossiers et des imprim
 
 Pour partager de manière simple des ressources entre plusieurs ordinateurs, l'utilisation de Samba est conseillée.
 
-# prjet final (installation samba sur debian et partge fichier avec windows)
+# projet final (installation samba sur debian et partge fichier avec windows)
 
 ##### ressources utilisees (https://pimylifeup.com/raspberry-pi-samba/)
 
