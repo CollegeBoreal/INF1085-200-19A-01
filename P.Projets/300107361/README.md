@@ -67,7 +67,7 @@ directory mask=0777
 public=no
 ```
 
-### Voici une courte explication de la signification du code ci-dessus:
+### :trident: Voici une courte explication de la signification du code ci-dessus:
 
 * ` WORKGROUP` : c'est le domaine dont le serveur Samba fera partie. Par défaut, Windows a le groupe de travail défini comme WORKGROUP.
 * `PATH`: c'est le chemin du répertoire du Raspberry Pi qui sera partagé.
@@ -122,7 +122,7 @@ OK, donc Samba est maintenant configuré. Vous pouvez tester la configuration en
  ~ # testparm
 ```
 
-## Comment Y Acceder?
+## Comment Y Acceder? :bulb:
 Ouvrez l'Explorateur de fichiers Windows et cliquer sur Réseau pour accéder au dossier partagé Raspberry Pi sur **Windows**.  
 
 Lorsque vous cliquez sur le dossier, vous serez invité à saisir vos informations d'identification. 
@@ -132,27 +132,29 @@ Une fois connecté, vous pourrez gérer les dossiers et fichiers du Pi.
 
 ### A partir du Pi
 Lancer la commande suivante dans le CLI:
+:closed_lock_with_key:
 ----------  ----  --------
 `~ $ su x`|  or | `$ su pi`
 ----------  ----  --------
 Vous serez ensuite demandez a vous authentifier
+:key:
 ```
 Password: *********
 ````
 
-``` :warning: en progres ```
-.
+### Minimum requis pour installer Samba :traffic_light:
+:pager: Raspberry Pi
+:floppy_disk: Micro SD Card(8GB+) 
+:satellite: :signal_strength: Ethernet Corde ou Connection Wifi
+:minidisc: Disk dur externe
+:mortar_board: Raspbrry Pi case
+:abcd: USB keyboard
+:arrow_upper_left: USB Mouse
+:electric_plug: De l'alimentation
 .
 .
 
-.
-.
-.
-.
-.
-.
-.
-.
-Pour partager de manière simple des ressources entre plusieurs ordinateurs, 
+:page_with_curl: Pour partager de manière simple des ressources entre plusieurs ordinateurs, 
 l'utilisation de Samba est conseillée.
 
+:copyright: :tm: :registered:
