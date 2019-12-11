@@ -21,11 +21,11 @@ La commande pour configurer l'adress est la suivante: if config
 
 Pour installer MARIA DB sur rasberry pi:
 
-### :one:se connecter a votre raspberry pi
+### :one:Se connecter a votre raspberry pi
 Ouvrir le terminal git bash et se connecter a votre rasberry pi  
 ssh pi@10.13.237.75
 
-### :two: faire une mise a jour de votre rasberry pi
+### :two: Faire une mise a jour de votre rasberry pi
 Avant toute installation il convient de faire une mise a jour de votre nano ordinateur en entrant la commande:  
 $ sudo apt-get update
 
