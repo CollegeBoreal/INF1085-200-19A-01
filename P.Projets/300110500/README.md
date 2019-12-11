@@ -95,6 +95,7 @@ Address varchar(255),
 City varchar(255)
 );
 
+
 ### :7:Insert statements dans companydb
 MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
