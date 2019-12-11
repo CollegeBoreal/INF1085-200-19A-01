@@ -157,14 +157,23 @@ J'utiliserai apt search pour voir quels paquets sont liés à mbstring.
 
 $ sudo apt search mbstring
 Sorting... Done
+
 Full Text Search... Done
+
 php-mbstring/xenial 1:7.0+35ubuntu6 all
+
 MBSTRING module for PHP [default]
+
 php-patchwork-utf8/xenial 1.3.0-1build1 all
+
 UTF-8 strings handling for PHP
+
 php7.0-mbstring/xenial-updates 7.0.18-0ubuntu0.16.04.1 amd64
+
 MBSTRING module for PHP
+
 Ensuite
+
 $ sudo apt install php7.0-mbstring php7.0-xml
 $ sudo systemctl restart apache2
 $ sudo apt install php-mysql php-apcu php-imagick
@@ -192,7 +201,7 @@ Congratulation
 
 J'ai terminé d’installer wiki.L'adresse de connexion est:http://10.13.237.60/index.php et le resultat sera comme l'image:
 
-![Alt tag](wiki13 final.png)
+![Alt tag](wiki13.png)
 
 
 
