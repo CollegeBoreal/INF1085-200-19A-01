@@ -62,11 +62,17 @@ Créez ce dossier en exécutant la commande suivante.
           ~ # systemctl enable smbd
 
   
-  Apres la configuration de Samba, ous pouvez le tester en utilisant la commande:
+  Apres la configuration de Samba, vous pouvez le tester en utilisant la commande:
                
           ~ # test parm
 
    
    📌NB : Pour acceder a notre fichier de partage ouvrez l'Explorateur de fichiers Windows et cliquer sur Réseau et accéder au dossier partagé Raspberry Pi sur Windows. Ares cliquez sur le dossier et saisissez les informations d'identification comme le nom d'utilisateur du Pi et le mot de passe qu'on avait mis pour l'utilisateur de Samba.
+   
+   📌Pour se connecter au repertpoire
+   Utilisateur:pi
+   mot de passe: password
+   
+   
 
 
