@@ -144,15 +144,23 @@ Password: *********
 
 ### Minimum requis pour installer Samba :traffic_light:
 :pager: Raspberry Pi
+
 :floppy_disk: Micro SD Card(8GB+) 
+
 :satellite: :signal_strength: Ethernet Corde ou Connection Wifi
+
 :minidisc: Disk dur externe
+
 :mortar_board: Raspbrry Pi case
+
 :abcd: USB keyboard
+
 :arrow_upper_left: USB Mouse
+
 :electric_plug: De l'alimentation
-.
-.
+
+
+
 
 :page_with_curl: Pour partager de manière simple des ressources entre plusieurs ordinateurs, 
 l'utilisation de Samba est conseillée.
