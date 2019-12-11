@@ -138,7 +138,7 @@ $ mkdir /etc/openvpn/jail
 
 ```
 ```
-$ mkdir /etc/openvpn/clientconf
+$ mkdir /etc/openvpn/client.conf
 
 ```
 Pour terminer, on créé le fichier de configuration
@@ -215,9 +215,6 @@ chroot /etc/openvpn/jail
 
 persist-key 
 
-BEDDES Jérémy
-
-Mémos Personnels
 
 persist-tun
 
@@ -271,14 +268,17 @@ serveur VPN puisque l’adresse 10.0.8.X n’est pas routée hors du hors du
 serveur.
 
 Configuration du routage :
-``
-:pushpin:  sh -c ‘echo 1 > /proc/sys/net/ipv4/ip_forward’
+
+```
+  sh -c ‘echo 1 > /proc/sys/net/ipv4/ip_forward’
 
 ```
 Pour que ce paramétrage de routage soit permanent, il faut ajouter
 la ligne suivante au fichier /etc/sysctl.conf
 net.ipv4.ip_forward = 1
 Puis il faut configurer la translation d’adresse (NAT) :
+
+
 ```
 :pushpin: iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 
@@ -288,7 +288,7 @@ serveur, il faut utiliser un script existant :
 
 ```
 
-:pushpin: sh -c iptables-save > /etc/iptables.rules
+ sh -c iptables-save > /etc/iptables.rules
 
 
 ```
