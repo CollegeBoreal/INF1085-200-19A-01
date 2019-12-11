@@ -32,19 +32,19 @@ Créez ce dossier en exécutant la commande suivante.
  
           ~ # sudo nano /etc/samba/smb.conf
           
-  📌NB: on doit faire ces modifications sur nano
+  📌NB: on doit faire ces modifications sur nano.
  
-path = /home/pi/shared
+          path = /home/pi/shared
 
-comment = No comment
+          comment = No comment
 
-writeable=Yes
+          writeable=Yes
 
-create mask=0777
+          create mask=0777
 
-directory mask=0777
+          directory mask=0777
 
-public=no
+          public=no
 
  📌NB: Après avoir fait les modifications sur nano, appuyez et maintenez CTRL+O touche ENTER puis CTRL+X pour enregistrer les modifications   et quitter. 
 
