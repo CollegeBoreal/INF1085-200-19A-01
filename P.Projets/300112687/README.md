@@ -29,7 +29,6 @@
  ```
     $password:joseph
 
- # #SET PASSWORD
  
 ![image]( password.png)
 
