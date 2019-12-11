@@ -69,7 +69,7 @@ On peut verifier la connectivite apache en tapant 10.13.237.75 sur un explorer
 
 ~$ wget -O verif_apache.html http://127.0.0.1
 
-![Alt tag](Apache.png)
+![Alt tag](Apppache.png)
 
 Nous pouvons tester l'installation de php en ouvrant un explorer 
 10.13.237.75/testmyphp.php
