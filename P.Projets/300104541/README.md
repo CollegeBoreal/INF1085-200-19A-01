@@ -104,6 +104,10 @@ smb: \>
 ```
 
 
+```
+su sambauser password: !Bernadette
+```
+
 
 
 
