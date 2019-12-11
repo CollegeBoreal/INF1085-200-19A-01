@@ -25,10 +25,10 @@ public=no
 #### :five: à ce niveau vous devez changer le modepasse , j'ai utilisé la lettre "M" 4fois  tout en minuscule comme mot de passe .
 
 ````$ sudo smbpasswd -a pi````
-### :six: redemarrer votre samba 
+#### :six: redemarrer votre samba 
 
 ````$ sudo systemctl restart smbd````
-### :seven: afficher l'addresse local du PI et l'addresse reseau
+#### :seven: afficher l'addresse local du PI et l'addresse reseau
 
 ````$ hostname -I````
 
