@@ -166,7 +166,7 @@ iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 
 Enregistrez et fermez à le fichier 
 
-Il faut ensuite assigner les droits adaptés au script et l’installer en tant que script Init.
+Assigner les droits adaptés au script et l’installer en tant que script Init.
 
 ```
 sudo chmod +x /etc/init.d/rpivpn
@@ -182,7 +182,7 @@ sudo /etc/init.d/openvpn restart
 
 Terminer l’installation des clients
 
-il faut leur accorder les droits root en ouvrant le dossier « /etc/openvpn/easy-rsa/keys/ », créer le fichier de configuration client, et entrer les commandes dans le fichier « Test ».
+Il faut leur accorder les droits root en ouvrant le dossier « /etc/openvpn/easy-rsa/keys/ », créer le fichier de configuration client, et entrer les commandes dans le fichier « Test ».
 
 ```
 sudo su
@@ -208,7 +208,7 @@ comp-lzo
 verb 3
 ```
 
-À la quatrième ligne, remplacez « x.x.x.x » par l’adresse IP de votre fournisseur DDNS (si vous utilisez une adresse publique statique, vous pouvez simplement l’insérer ici), suivie par le port grâce auquel le serveur VPN doit être accessible. Aux troisième et quatrième ligne, entrez le nom de votre client (ici, « Test »). Après avoir inséré ces modifications, sauvegardez-les.
+À la quatrième ligne, remplacez « x.x.x.x » par l’adresse IP de votre fournisseur DDNS (si vous utilisez une adresse publique statique, vous pouvez simplement l’insérer ici), suivie par le port grâce auquel le serveur VPN doit être accessible. Aux troisième et quatrième ligne, entrez le nom de votre client (ici, « Test »). Après avoir modifier, sauvegardez.
 
 Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
 
