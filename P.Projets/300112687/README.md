@@ -34,7 +34,7 @@
 
 # #CONNECT TO A SERVER
   
-  --![image]( Connect to server.png)
+ ![image]( Connect to server.png)
 
 
  # #SERVEUR
