@@ -208,6 +208,8 @@ connexion vpn client :  100419831004Amir
 
 
 ##  test de connection vpn
+ 
+ ###  pour le teste veuillez connecté avec le fichier AEC dans client key
 
 ![](TESTVPN.png)
 
