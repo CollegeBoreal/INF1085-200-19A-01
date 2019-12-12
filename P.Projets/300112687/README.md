@@ -48,14 +48,16 @@
 
 
 # :quatre: CONNECT TO A SERVER
+
  ![image](Sc.png)
  
+ 
  # :cinq: PI connection
+ 
   ![image]( pi.png)
 
 
  # :six:SERVER
-
 
  ![image](Server.png)
  
