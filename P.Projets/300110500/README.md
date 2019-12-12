@@ -30,16 +30,16 @@ La commande pour configurer l'adress est la suivante: if config
 
 Pour installer MARIA DB sur rasberry pi:
 
-### :four: Installation Mari DB 
+### :one: Commande d'installation Mari DB 
 Nous pouvons installer MariaDB avec la commande suivante:
 
 ~#   apt install mariadb-server
 
-### Creation de la base des bases de donnes comanydb et wikidb
+### :two: Creation de la base des bases de donnes comanydb et wikidb
 
 mysql> CREATE DATABASE wikidb;
 
-### :four: Creation d'un utlisateur et octroyer des privileges 
+### :three: Creation d'un utlisateur et octroyer des privileges 
 
 - utilisateur et des privileges pour la base de donnes companydb
 
@@ -47,7 +47,7 @@ les commandes ci-dessous permettent de creer un utilisateur et lui octroyer des 
 mysql> CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
-### :five: Acceder a la base de donnees par la commande suivante: 
+### :four: Acceder a la base de donnees par la commande suivante: 
 
 Pour acceder a la base il faut ta per la commande c-apres et utiliser le password approprie
 $ mysql -u root -p
