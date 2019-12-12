@@ -177,7 +177,7 @@ Cette commande est utilise pendant la configuratiion du wiki
  
  Pour la configuration de la langue du wiki j'ai selectionne le francais 
  
- ![Alt tag](imm.png)
+ ![Alt tag](oo0.png)
  
  ajout des information relatifs a la base de donnes a savoir le non du wiki, et attribuer un mot de passe
 
