@@ -77,19 +77,19 @@ Compléter la génération du certificat grâce à la commande pour l’échange
 ./build-dh
 ```
 
-:Ten: Une fois que le processus est complété, fermez votre session :
+:One: Une fois que le processus est complété, fermez votre session :
 
 ```
 exit
 ```
 
-:eleven: Générer les fichiers de configuration pour le serveur OpenVPN :
+:two: Générer les fichiers de configuration pour le serveur OpenVPN :
 
 ```
 sudo nano /etc/openvpn/openvpn.conf
 ```
 
-:twelve: Activez le routage par tunnel IP via « dev tun », sélectionnez le protocole de transport UDP, en sélectionnant « proto udp » Si vous souhaitez utiliser le protocole TCP, sélectionnez « proto tcp »). et déterminer si le serveur OpenVPN est accessible sur port 1194.
+:three: Activez le routage par tunnel IP via « dev tun », sélectionnez le protocole de transport UDP, en sélectionnant « proto udp » Si vous souhaitez utiliser le protocole TCP, sélectionnez « proto tcp »). et déterminer si le serveur OpenVPN est accessible sur port 1194.
 
 ```
 dev tun
@@ -97,7 +97,7 @@ proto udp
 port 1194
 ```
 
-:thirteen: Apres, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et une clé digitale (key) grâce au fichier « easy-rsa ». le cryptage de bits (2048)
+:four: Apres, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et une clé digitale (key) grâce au fichier « easy-rsa ». le cryptage de bits (2048)
 
 ```
 ca /etc/openvpn/easy-rsa/keys/ca.crt
@@ -106,13 +106,13 @@ key /etc/openvpn/easy-rsa/keys/Test.key
 dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 ```
 
-:forteen: Verifiez que le Raspberry est utilisé en tant que serveur. Nommer l’adresse IP et le masque réseau.
+:five: Verifiez que le Raspberry est utilisé en tant que serveur. Nommer l’adresse IP et le masque réseau.
 
 ```
 server 10.13.237.80 255.255.255.254
 ```
 
-:fifteen: La commande « redirect-gateway def1 bypass-dhcp » permet de diriger l’intégralité du trafic IP vers le tunnel IP. vous pourrez renommer les serveurs publics DNS avec lesquels fonctionnera votre serveur VPN. Dans la commande suivante, un serveur est désigné par « 10.13.237.1 », et un serveur de Google par « 8.8.8.8 ».
+:six: La commande « redirect-gateway def1 bypass-dhcp » permet de diriger l’intégralité du trafic IP vers le tunnel IP. vous pourrez renommer les serveurs publics DNS avec lesquels fonctionnera votre serveur VPN. Dans la commande suivante, un serveur est désigné par « 10.13.237.1 », et un serveur de Google par « 8.8.8.8 ».
 
 ```
 push "redirect-gateway def1 bypass-dhcp"
@@ -121,7 +121,7 @@ push "dhcp-option DNS x.x.x.x"
 log-append /var/log/openvpn
 ```
 
-:sixteen: Créer un script pour un accès Internet avec un client
+:seven: Créer un script pour un accès Internet avec un client
 
 Pour accéder à votre réseau local grâce à un tunnel VPN, il faut créer une redirection :
 
@@ -129,7 +129,7 @@ Pour accéder à votre réseau local grâce à un tunnel VPN, il faut créer une
 Sudo nano /etc/init.d/rpivpn
 ```
 
-:seventeen: Dans ce fichier, copiez les commentaires suivants :
+:eight: Dans ce fichier, copiez les commentaires suivants :
 
 ```
 #! /bin/sh
@@ -143,20 +143,20 @@ Sudo nano /etc/init.d/rpivpn
 ### END INIT INFO
 ```
 
-:eighteen: Activez « ip forward » en écrivant « 1 » dans ce dossier :
+:nine: Activez « ip forward » en écrivant « 1 » dans ce dossier :
 
 ```
 echo 'echo "1" > /proc/sys/net/ipv4/ip_forward' | sudo -s
 ```
 
-:nineteen: Créez une redirection pour les paquets VPN « iptables ».
+:ten: Créez une redirection pour les paquets VPN « iptables ».
 
 ```
 iptables -A INPUT -i tun+ -j ACCEPT
 iptables -A FORWARD -i tun+ -j ACCEPT
 ```
 
-twenty: Paramétrer les commandes qui autorisent vos clients VPN à accéder au LAN et à Internet :
+:one: Paramétrer les commandes qui autorisent vos clients VPN à accéder au LAN et à Internet :
 
 ```
 iptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
@@ -164,7 +164,7 @@ iptables -t nat -F POSTROUTING
 iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 ```
 
-:twenty one: Enregistrez et fermez à le fichier 
+:two: Enregistrez et fermez à le fichier 
 
 Assigner les droits adaptés au script et l’installer en tant que script Init.
 
@@ -173,14 +173,14 @@ sudo chmod +x /etc/init.d/rpivpn
 sudo update-rc.d rpivpn defaults
 ```
 
-:twenty two: Exécutez le script et redémarrez le serveur VPN.
+:three: Exécutez le script et redémarrez le serveur VPN.
 
 ```
 sudo /etc/init.d/rpivpn
 sudo /etc/init.d/openvpn restart
 ```
 
-:twenty three: Terminer l’installation des clients
+:four: Terminer l’installation des clients
 
 Il faut leur accorder les droits root en ouvrant le dossier « /etc/openvpn/easy-rsa/keys/ », créer le fichier de configuration client, et entrer les commandes dans le fichier « Test ».
 
@@ -190,7 +190,7 @@ cd /etc/openvpn/easy-rsa/keys
 nano Test.ovpn
 ```
 
-:twenty four: Pour le fichier client « opvn », entrez les commandes :
+:five: Pour le fichier client « opvn », entrez les commandes :
 
 ```
 client
@@ -213,7 +213,7 @@ verb 3
 
 À la quatrième ligne, remplacez par l’adresse IP de votre fournisseur DDNS ( ou si vous utilisez une adresse publique statique, vous pouvez l’insérer), suivie par le port grâce auquel le serveur VPN doit être accessible.
 
-:twenty five: Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
+:six: Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
 
 Installé de pack zip sur votre Raspberry :
 
@@ -221,14 +221,14 @@ Installé de pack zip sur votre Raspberry :
 apt-get install zip
 ```
 
-:twenty six: Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
+:seven: Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
 
 ```
 zip /home/pi/raspberry_Test.zip ca.crt Test.crt Test.key Test.ovpn
 
 ```
 
-:twenty seven: Ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
+:eight: Ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
 
 ```
 chown pi:pi /home/pi/raspberry_Test.zip
