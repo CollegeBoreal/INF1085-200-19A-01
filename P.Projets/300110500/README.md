@@ -75,7 +75,7 @@ Pour installer php il faut entrer les 2 commande suivante:
  
  ### :three: C'est quoi un fichier php 
  
- le fichier php est une extension de nom de fichier php qui  doit etre etre dans le répertoire racine du document Web Apache
+ le fichier php est une extension de nom de fichier php qui peremet de faire des tests de connectivite avec le Web Apache
  
 la commande ci-dessous en mode super utilisateur pour sauvegarder l'extension php
 
@@ -95,7 +95,7 @@ Ctrl + o pour enregistrer et Ctrl + x pour sortir
 
 10.13.237.75/testmyphp.php
 
-### :five: Capture d'ecran d'un test de connectivite
+### :five: Capture d'ecran d'un test de connectivite reussi
 
 ![Alt tag](Php.png)
 
