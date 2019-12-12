@@ -89,6 +89,8 @@ phpinfo();
 
 Ctrl + o pour enregistrer et Ctrl + x pour sortir 
 
+
+
 #### :four: Comment Tester la connectivite de php
 
 - Ouvrir un explorer et taper l'adresse suivante sur un explore
@@ -134,26 +136,27 @@ http://10.13.237.75/index.php/Main_Page
 
 ![Alt tag](wiki.png)
  
-### :pushpin: INSTALLER MEDIAWIKI SUR RASBERRY PI
+### :pushpin: C'est quoi un 
 
-Le wiki le plus important est Wikipedia. C'est une immense encyclopedie (au meme titre qu'une encyclopédie papier).
-Elle possede des dizaines de milliers d'articles sur différents sujets (societe, sante, mathematiques, informatique, litterature...) dans differentes langues (la majorite des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
+C'est une immense encyclopedie (au meme titre qu'une encyclopedie papier).
+Elle possede des dizaines de milliers d'articles sur differents sujets (societe, sante, mathematiques, informatique, litterature...) dans differentes langues (la majorite des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
 
+### :one: INSTALLER MEDIAWIKI SUR RASBERRY PI
+
+Pour extraire le fichier d'installation directement sur votre serveur via la ligne de commande, vous pouvez cliquer avec le bouton droit sur le lien Telecharger, selectionner Copier l'adresse du lien et coller l'adresse dans une fenêtre de terminal avec le programme
 - pour installer wiki, il faut excecuter la commande suivante dans le terminal git bash
 
 $ wget https://releases.wikimedia.org/mediawiki/1.30/\
+
 mediawiki-1.30.0.tar.gz      
 
-Pour cree un nouveau repertoire contenant tous les fichiers et repertoires en copiant toute cette hierarchie de repertoires a l'emplacement du système de fichiers ou il fera son travail.
+### :two: Excecutioin de la commande tar
+la commmane ci-dessous permet de creer un nouveau repertoire contenant tous les fichiers et repertoires en copiant toute cette hierarchie de repertoires a l'emplacement du système de fichiers ou il fera son travail.
 Pour mon cas MediaWiki va etre la seule application Web hebergee sur notre rasberry pi, ce qui  signifie qu'il est notre repertoire racine Web. Pour creer un nouveau repertoire il excecuter la commande suivante:
 
  .$ tar xzvf mediawiki-1.30.0.tar.gz
 
-Une fois que l'archive a ete cree excecuter la commande ci desoous pour s'assurer de sa creation. 
 
-$ ls
-
-mediawiki-1.30.0 mediawiki-1.30.0.tar.gz
 
  vous souhaiterez peut-etre creer un sous-repertoire à la racine du document qui exposera le service de maniere
  pratique et previsible. ceci place les fichiers dans un repertoire appele / var / www / html / mediawiki /. La commande ci dessous 
@@ -168,7 +171,11 @@ Je vais installer les deux packages et utiliser systemctl pour redémarrer Apach
 
 ![Alt tag](download.png)
 
+http://10.13.237.75/index.php/Main_Page
 
+
+
+![Alt tag](wiki.png)
 
 
 
