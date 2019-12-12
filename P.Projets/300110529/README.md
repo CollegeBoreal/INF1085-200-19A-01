@@ -243,7 +243,7 @@ apt-get install zip
 :eight: Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
 
 ```
-zip /home/pi/raspberry_Test.zip ca.crt Test.crt Test.key Test.ovpn
+zip /home/pi/raspberry_Test.zip ca.crt ca.crt ta.key Test.ovpn
 
 ```
 
