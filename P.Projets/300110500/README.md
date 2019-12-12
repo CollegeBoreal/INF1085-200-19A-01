@@ -112,15 +112,17 @@ Le logiciel Apache HTTP Server (Apache) est un serveur HTTP cree et maintenu au 
 
 ### :two: Commande d'installation 
 
+Apres une mise a jour il faut installer appache2
+
 $ sudo apt update
 
  ~# apt install libapache2-mod-php
 
-### :thre: Verifier la connectivite apache
+### :three: Verifier la connectivite apache
 
 On peut verifier la connectivite apache en tapant 10.13.237.75 sur un explorer
 
-~$ wget -O verif_apache.html http://127.0.0.1
+
 
 ![Alt tag](Apppache.png)
 
