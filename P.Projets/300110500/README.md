@@ -45,7 +45,9 @@ mysql> CREATE DATABASE wikidb;
 - utilisateur et des privileges pour la base de donnes companydb
 
 les commandes ci-dessous permettent de creer un utilisateur et lui octroyer des privileges sur maria db
+
 mysql> CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
+
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
 ### :four: Acceder a la base de donnees par la commande suivante: 
