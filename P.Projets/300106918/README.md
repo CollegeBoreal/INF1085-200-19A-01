@@ -110,7 +110,7 @@ key /etc/openvpn/easy-rsa/keys/AEK.key
 dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 
 
-# •	Dans cette section, nous allons configurer et lancer notre serveur OpenVPN.
+ •	Dans cette section, nous allons configurer et lancer notre serveur OpenVPN.
        Serveur ./build-key-server
 
 ## Étape 7 - Déplacer les certificats et les clés du serveur
@@ -118,15 +118,19 @@ dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 Nous allons maintenant copier le certificat et la clé dans /etc/openvpn , car OpenVPN recherchera dans ce répertoire l'autorité de certification, le certificat et la clé du serveur. 
 cp / etc / openvpn / easy-rsa / keys / { server .crt, server .key, ca.crt} / etc / openvpn
 
-#  copier le certificat et la clé dans /etc/openvpn ,
+   copier le certificat et la clé dans /etc/openvpn ,
+   
 •	vérifier que la copie a réussi avec:
-#    ls / etc / openvpn
+
+     ls / etc / openvpn
 •	le serveur OpenVPN est prêt à fonctionner. Démarrez-le et vérifiez l'état.
-#    openvpn start
+
+     openvpn start
+     
 •	état du service openvpn
 
 
-Étape 8 - Générer des certificats et des clés pour les clients 
+## Étape 8 - Générer des certificats et des clés pour les clients 
 
 Jusqu'à présent, nous avons installé et configuré le serveur OpenVPN, créé une autorité de certification et créé le certificat et la clé du serveur. Dans cette étape, nous utilisons l'autorité de certification du serveur pour générer des certificats et des clés pour chaque appareil client qui se connectera au VPN. 
 
@@ -135,11 +139,11 @@ Comme nous l'avons fait avec la clé du serveur, nous en client1 maintenant une 
   ./build-key client1
   
   
-  Ensuite, nous allons copier la clé générée dans le répertoire des keys Easy-RSA que nous avons créé précédemment. Notez que nous changeons l'extension de .conf en .ovpn . C'est pour correspondre à la convention. 
+ # Ensuite, nous allons copier la clé générée dans le répertoire des keys Easy-RSA que nous avons créé précédemment. Notez que nous changeons l'extension de .conf en .ovpn . C'est pour correspondre à la convention. 
   
    cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/easy-rsa/keys/client.ovpn
    
-   Nous devons modifier chaque fichier client pour inclure l'adresse IP du serveur OpenVPN afin qu'il sache à quoi se connecter. Ouvrez client.ovpn utilisant nano ou votre éditeur de texte préféré. 
+  # Nous devons modifier chaque fichier client pour inclure l'adresse IP du serveur OpenVPN afin qu'il sache à quoi se connecter. Ouvrez client.ovpn utilisant nano ou votre éditeur de texte préféré. 
    
      nano / etc / openvpn / easy-rsa / keys / client.ovpn
      
@@ -167,7 +171,7 @@ verb 3
   The hostname/IP and port of the server. # You can have multiple remote entries # to load balance between the servers. remote your_server_ip 1194 
   
   
- Transfert de certificats et de clés vers les appareils clients 
+ ## Transfert de certificats et de clés vers les appareils clients 
 Rappelez-vous à partir des étapes ci-dessus que nous avons créé les certificats et clés client, et qu'ils sont stockés sur le serveur OpenVPN dans le /etc/openvpn/easy-rsa/keys . 
 Pour chaque client, nous devons transférer les fichiers de certificat client, de clé et de modèle de profil vers un dossier sur notre ordinateur local ou un autre périphérique client. 
 Dans cet exemple, notre appareil client1 nécessite son certificat et sa clé, situés sur le serveur dans: 
@@ -196,9 +200,9 @@ Voici un exemple de commande SCP utilisant notre exemple client1 . Il place le f
 
 
 
-ip: 10.13.237.4
+# ip: 10.13.237.4
 
-ssh mode de passe: raspberry
+# ssh mode de passe: raspberry
  
-connexion vpn client :  100419831004Amir
+# connexion vpn client :  100419831004Amir
 
