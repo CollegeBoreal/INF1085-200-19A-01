@@ -56,15 +56,26 @@ Créez ce dossier en exécutant la commande suivante.
 
           ~ # sudo service smbd restart
 
-  Pour lancer Samba entrer ces commandesa partir de Systemctl
   
           ~ # systemctl start smbd
           ~ # systemctl enable smbd
 
   
-  Apres la configuration de Samba, vous pouvez le tester en utilisant la commande:
+ 7️⃣ Apres la configuration de Samba, vous pouvez le tester en utilisant la commande:
                
           ~ # test parm
+          
+ 8️⃣  Le mot de passe par defaut de est raspberry donc a cette etape on peut changer le mot de passe pas la commande suivante:
+  
+          $ sudo smbpasswd -a pi
+          
+ 9️⃣ Apres les modifications il est necessaire de redemarer le service samba par la commande suivante:
+  
+ 🔟         $ sudo systemctl restart smbd
+          
+  Maintenant on arrive a la dernniere etape de notre installation qu'il sagit d'imprimer l'adresse IPlocal du Pi. Pour se faire mettez la    commande suivante:
+  
+          $ hostname -I
 
    
    📌NB : Pour acceder a notre fichier de partage ouvrez l'Explorateur de fichiers Windows et cliquer sur Réseau et accéder au dossier partagé Raspberry Pi sur Windows. Ares cliquez sur le dossier et saisissez les informations d'identification comme le nom d'utilisateur du Pi et le mot de passe qu'on avait mis pour l'utilisateur de Samba.
