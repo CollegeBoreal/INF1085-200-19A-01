@@ -54,7 +54,7 @@
   ![image]( pi.png)
 
 
- # #SERVEUR
+ # #SERVER
 
 
  ![image](Server.png)
