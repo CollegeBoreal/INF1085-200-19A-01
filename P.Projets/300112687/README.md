@@ -48,8 +48,7 @@
 
 
 # #CONNECT TO A SERVER
- ![image]( Connect .png)
- ![image]( pi.png)
+ ![image]()
  
  # #PI connection
   ![image]( pi.png)
