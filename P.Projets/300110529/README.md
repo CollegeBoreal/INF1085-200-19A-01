@@ -12,7 +12,7 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 
 ## Comment installer !
 
-## Première étape
+## :pushpin: Première étape
 
 :one: Avant de débuter l’installation premièrement il est recommandé de rechercher et d’installer sur le Raspberry les mises à jour disponibles :
 
@@ -79,7 +79,7 @@ Compléter la génération du certificat grâce à la commande pour l’échange
 ./build-dh
 ```
 
-## Deuxieme étape
+## :pushpin: Deuxieme étape
 
 :one: Une fois que le processus est complété, fermez votre session :
 
@@ -153,7 +153,7 @@ Sudo nano /etc/init.d/rpivpn
 echo 'echo "1" > /proc/sys/net/ipv4/ip_forward' | sudo -s
 ```
 
-## Troisième étape
+## :pushpin: Troisième étape
 
 :one: Créez une redirection pour les paquets VPN « iptables ».
 
@@ -241,7 +241,7 @@ chown pi:pi /home/pi/raspberry_Test.zip
 exit
 ```
 
-## N.B: Voici la commande pour voir si le openvpn est actif :
+## :pushpin: N.B: Voici la commande pour voir si le openvpn est actif :
 
 ```
 $ systemctl status openvpn
