@@ -27,10 +27,14 @@
    ```
  $ sudo smbpasswd -a pi
  ```
-    $password:joseph
+    --$password:joseph
 
  
 ![image]( password.png)
+
+# #CONNECT TO A SERVER
+  
+  --![image]( Connect to server.png)
 
 
  # #SERVEUR
