@@ -45,44 +45,6 @@ ssh pi@10.13.237.75
 Avant toute installation il convient de faire une mise a jour de votre nano ordinateur en entrant la commande:  
 $ sudo apt-get update
 
-### :pushpin: Installation PHP
-### :one: c'est quoi PHP
-PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
-
-### :two: Installation PHP
-Pour installer php il fau entrer les 2 commande suivante:
-
- $ apt install php 
- 
- $ apt install libapache2-mod-php   
- 
- ### :three: Test de connectivite
-
-ON peut tester la connectivite php
-
-10.13.237.75/testmyphp.php
-
-### :four: Capture d'ecran:
-
-![Alt tag](Php.png)
-
-
-
-
-
-
-
-
-- Verifier la la connectivite apache
-
-On peut verifier la connectivite apache en tapant 10.13.237.75 sur un explorer
-
-~$ wget -O verif_apache.html http://127.0.0.1
-
-![Alt tag](Apppache.png)
-
-Nous pouvons tester l'installation de php en ouvrant un explorer 
-10.13.237.75/testmyphp.php
 ### :four: Installation Mari DB 
 Nous pouvons installer MariaDB avec la commande suivante:
 
@@ -126,6 +88,53 @@ MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
 
+
+
+
+
+
+
+
+
+
+### :pushpin: Installation PHP
+### :one: c'est quoi PHP
+PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
+
+### :two: Installation PHP
+Pour installer php il fau entrer les 2 commande suivante:
+
+ $ apt install php 
+ 
+ $ apt install libapache2-mod-php   
+ 
+ ### :three: Test de connectivite
+
+ON peut tester la connectivite php
+
+10.13.237.75/testmyphp.php
+
+### :four: Capture d'ecran:
+
+![Alt tag](Php.png)
+
+
+
+
+
+
+
+
+- Verifier la la connectivite apache
+
+On peut verifier la connectivite apache en tapant 10.13.237.75 sur un explorer
+
+~$ wget -O verif_apache.html http://127.0.0.1
+
+![Alt tag](Apppache.png)
+
+Nous pouvons tester l'installation de php en ouvrant un explorer 
+10.13.237.75/testmyphp.php
 
 
 
