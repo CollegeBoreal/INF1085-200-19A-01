@@ -200,9 +200,9 @@ Voici un exemple de commande SCP utilisant notre exemple client1 . Il place le f
 
 
 
-# ip: 10.13.237.4
+ip: 10.13.237.4
 
-# ssh mode de passe: raspberry
+ssh mode de passe: raspberry
  
-# connexion vpn client :  100419831004Amir
+connexion vpn client :  100419831004Amir
 
