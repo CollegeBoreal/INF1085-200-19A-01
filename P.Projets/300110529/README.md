@@ -193,22 +193,25 @@ nano Test.ovpn
 Pour le fichier client « opvn », entrez les commandes :
 
 ```
-dev tun
 client
+dev tun
 proto udp
 remote 205.211.23.237 1194
 resolv-retry infinite
 nobind
 persist-key
 persist-tun
-ca ca.crt
-cert Test.crt
-key Test.key
-comp-lzo
+remote-cert-tls server
+tls-version-min 1.2
+verify-x509-name raspberrypi_d959d7fb-b1cd-4f9a-a020-5d2c5468ba3b name
+cipher AES-256-CBC
+auth SHA256
+auth-nocache
 verb 3
+<ca>
 ```
 
-À la quatrième ligne, remplacez « x.x.x.x » par l’adresse IP de votre fournisseur DDNS (si vous utilisez une adresse publique statique, vous pouvez simplement l’insérer ici), suivie par le port grâce auquel le serveur VPN doit être accessible. Aux troisième et quatrième ligne, entrez le nom de votre client (ici, « Test »). Après avoir modifier, sauvegardez.
+À la quatrième ligne, remplacez par l’adresse IP de votre fournisseur DDNS ( ou si vous utilisez une adresse publique statique, vous pouvez l’insérer), suivie par le port grâce auquel le serveur VPN doit être accessible.
 
 Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
 
