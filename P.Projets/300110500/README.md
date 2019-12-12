@@ -46,12 +46,17 @@ Avant toute installation il convient de faire une mise a jour de votre nano ordi
 $ sudo apt-get update
 
 ### :pushpin: Installation PHP
-- PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
+### :one: c'est quoi PHP
+PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
+
+### :two:
 Pour installer php il fau entrer les 2 commande suivante:
 
  $ apt install php 
  
  $ apt install libapache2-mod-php   
+ 
+ ### :three:
 
 - Tester la connectivitephp
 
