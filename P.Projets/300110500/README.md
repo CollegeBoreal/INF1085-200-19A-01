@@ -105,6 +105,7 @@ Ctrl + o pour enregistrer et Ctrl + x pour sortir
 ### :one: Enter la commande suivante dans git bash pour installer  
  # apt install php
  ### Specifier la version version php a installer
+ 
  # apt install libapache2-mod-php
 ### :two Creer un nouveau fichier avec la commande ci-dessous:
 
