@@ -114,9 +114,7 @@ Ctrl + o pour enregistrer et Ctrl + x pour sortir
 ### :two Creer un nouveau fichier avec la commande ci-dessous:
 
 
-
-
-- Verifier la la connectivite apache
+- Verifier la connectivite apache
 
 On peut verifier la connectivite apache en tapant 10.13.237.75 sur un explorer
 
@@ -152,7 +150,7 @@ $ wget https://releases.wikimedia.org/mediawiki/1.30/\
 
 mediawiki-1.30.0.tar.gz      
 
-### :two: Excecutioin de la commande tar
+### :two: Excecution de la commande tar
 
 la commmane ci-dessous permet de creer un nouveau repertoire contenant tous les fichiers et repertoires en copiant toute cette hierarchie de repertoires a l'emplacement du système de fichiers ou il fera son travail.
 Pour mon cas MediaWiki va etre la seule application Web hebergee sur notre rasberry pi, ce qui  signifie qu'il est notre repertoire racine Web. Pour creer un nouveau repertoire il excecuter la commande suivante:
