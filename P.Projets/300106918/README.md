@@ -86,4 +86,5 @@ Uncomment the next line to enable packet forwarding for IPv4 #net.ipv4.ip_forwar
 #    openvpn start
 •	état du service openvpn
 
+![](vpn.png)
 
