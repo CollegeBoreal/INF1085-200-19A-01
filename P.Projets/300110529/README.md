@@ -78,11 +78,11 @@ Si vous souhaitez attribuer un mot de passe aux clients, il faudra remplacer la 
 ./build-key-pass tablet
 …
 ```
-Voici ensuite comment compléter la génération du certificat grâce à la commande pour l’échange de clés Diffie-Hellman :
+Voici ensuite comment compléter la génération du certificat grâce à la commande pour l’échange de clés :
 ```
 ./build-dh
 ```
-Cette étape peut prendre du temps. Une fois que le processus est complété, fermez votre session d’utilisateur root :
+Une fois que le processus est complété, fermez votre session d’utilisateur root :
 ```
 exit
 ```
@@ -107,12 +107,12 @@ dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 ```
 C’est maintenant le moment de préciser que le Raspberry Pi est utilisé en tant que serveur. Pour ce faire, il faut nommer l’adresse IP et le masque réseau de façon à ce qu’ils soient attribués au VPN.
 ```
-server 10.8.0.0 255.255.255.0
+server 10.13.237.80 255.255.255.254
 ```
-La commande « redirect-gateway def1 bypass-dhcp » permet de diriger l’intégralité du trafic IP vers le tunnel IP. Si vous avez des exigences élevées en ce qui concerne le niveau de sécurité, vous pouvez les expérimenter lors du paramétrage ; si toutefois ceci cause des problèmes ou ralentit la navigation, il est recommandé d’annuler cette configuration. Les instructions ci-dessous, en revanche, devront être utilisées dans tous les cas, car c’est grâce à elles que vous pourrez renommer les serveurs publics DNS avec lesquels fonctionnera votre serveur VPN. Dans la commande suivante, un serveur de 1&1 IONOS est désigné par « 217.237.150.188 », et un serveur de Google par « 8.8.8.8 ». Vous pouvez toutefois modifier ces codes comme vous le souhaitez en spécifiant les adresses IPv4 d’autres serveurs DNS. Dans la commande « log-append /var/log/openvpn », assurez-vous que l’information de connexion est écrite dans le fichier « /var/log/openvpn ».
+La commande « redirect-gateway def1 bypass-dhcp » permet de diriger l’intégralité du trafic IP vers le tunnel IP. Si vous avez des exigences élevées en ce qui concerne le niveau de sécurité, vous pouvez les expérimenter lors du paramétrage ; si toutefois ceci cause des problèmes ou ralentit la navigation, il est recommandé d’annuler cette configuration. Les instructions ci-dessous, en revanche, devront être utilisées dans tous les cas, car c’est grâce à elles que vous pourrez renommer les serveurs publics DNS avec lesquels fonctionnera votre serveur VPN. Dans la commande suivante, un serveur de 1&1 IONOS est désigné par « 205.211.23.237 », et un serveur de Google par « 8.8.8.8 ». Vous pouvez toutefois modifier ces codes comme vous le souhaitez en spécifiant les adresses IPv4 d’autres serveurs DNS. Dans la commande « log-append /var/log/openvpn », assurez-vous que l’information de connexion est écrite dans le fichier « /var/log/openvpn ».
 ```
 push "redirect-gateway def1 bypass-dhcp"
-push "dhcp-option DNS 217.237.150.188"
+push "dhcp-option DNS 205.211.23.237"
 push "dhcp-option DNS 8.8.8.8"
 log-append /var/log/openvpn
 ```
@@ -150,12 +150,12 @@ Ensuite, activez « ip forward » en écrivant « 1 » dans ce dossier :
 ```
 echo 'echo "1" > /proc/sys/net/ipv4/ip_forward' | sudo -s
 ```
-Puis créez une redirection pour les paquets VNP en utilisant le filtre de paquets « iptables ».
+Puis créez une redirection pour les paquets VPN en utilisant le filtre de paquets « iptables ».
 ```
 iptables -A INPUT -i tun+ -j ACCEPT
 iptables -A FORWARD -i tun+ -j ACCEPT
 ```
-Il s’agit ensuite de paramétrer les commandes qui autorisent vos clients VNP à accéder au LAN et à Internet. Voici comment procéder :
+Il s’agit ensuite de paramétrer les commandes qui autorisent vos clients VPN à accéder au LAN et à Internet. Voici comment procéder :
 ```
 iptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -t nat -F POSTROUTING
