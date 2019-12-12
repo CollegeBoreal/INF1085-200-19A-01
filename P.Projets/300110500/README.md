@@ -95,7 +95,7 @@ Ctrl + o pour enregistrer et Ctrl + x pour sortir
 
 10.13.237.75/testmyphp.php
 
-### :five: Capture d'ecran d'un de connectivite
+### :five: Capture d'ecran d'un test de connectivite
 
 ![Alt tag](Php.png)
 
