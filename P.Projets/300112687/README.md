@@ -48,11 +48,9 @@
 ![image]( password.png)
 
 # CONNECT TO A SERVER
-  
-  
  ![image]( Connect .png)
  
- 
+
  
  # #PI connection
  ![image]( pi.png)
