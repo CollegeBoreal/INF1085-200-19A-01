@@ -26,7 +26,7 @@
   permettre l'acces à different utilisateur,le fichier sera 
   ajouter à la fin de la page .
   
-    -[pimylifeupshare]
+    - [pimylifeupshare]
      writeable=Yes
      create mask=0777
      directory mask=0777
