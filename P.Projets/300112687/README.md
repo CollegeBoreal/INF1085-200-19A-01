@@ -43,9 +43,9 @@
  $ sudo smbpasswd -a pi
  ```
     -$password:joseph
-```
  
 ![image]( password.png)
+
 
 # #CONNECT TO A SERVER
  ![image]( Connect .png)
