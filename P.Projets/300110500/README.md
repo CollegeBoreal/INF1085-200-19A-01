@@ -87,7 +87,7 @@ Copier l'extension PHP dans via puis sauvegarder
 phpinfo();
 ?>
 
-Ctrl + o pour enregistrer etCtrl + x pour sortir 
+Ctrl + o pour enregistrer et Ctrl + x pour sortir 
 
 #### :four: Comment Tester la connectivite de php
 
