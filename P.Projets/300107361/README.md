@@ -18,6 +18,14 @@ Ouvrer le Terminal (PuTTY ou GITBash) si vous vous connectez a distance, ou le C
 
 <image src="images/connection.png"></image>
 
+```
+Ip Adress: 10.13.237.99
+```
+
+``
+Password de tous les utilisateurs : Raspberry
+``
+
 
 Puis lancer la commande suivante:
 ```
