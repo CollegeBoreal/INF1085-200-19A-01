@@ -206,3 +206,13 @@ ssh mode de passe: raspberry
  
 connexion vpn client :  100419831004Amir
 
+
+##  test de connection vpn
+
+![](TESTVPN.png)
+
+
+
+##  vpn connecté 
+
+![](connexionvpn.png)
