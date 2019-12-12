@@ -167,7 +167,7 @@ Cette commande est utilise pendant la configuratiion du wiki
  
  ![Alt tag](conf.png)
  
- Pour la configuration de la langue du wiki j'ai selectionne le francais 
+ Pour la configuration de la langue du wiki j'ai selectionne l'anglais
  
  ![Alt tag](imm.png)
  
