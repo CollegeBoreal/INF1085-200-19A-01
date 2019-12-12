@@ -1,14 +1,14 @@
 
-### Projet
+# #SAMBA PROJET
  
 
- # UPDATE
+ # 1 INSTALLATION
  ```
- $ sudo apt update 
+ -$ sudo apt-get intstall samba samba-common-bin
  ```
  
  
- # install
+ # 2 UPDATE
       ![image](config samba.png)
  
  
