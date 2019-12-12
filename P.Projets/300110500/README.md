@@ -13,6 +13,7 @@ ssh pi@10.13.237.75
 ### :two: Faire une mise a jour de votre rasberry pi
 
 Avant toute installation il convient de faire une mise a jour de votre nano ordinateur en entrant la commande:  
+
 $ sudo apt-get update
 
 ### :pushpin: ETAPES DE CONFIGURATION LAMP SUR RASPBERRY PI
