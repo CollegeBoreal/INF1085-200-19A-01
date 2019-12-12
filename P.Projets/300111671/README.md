@@ -1,6 +1,7 @@
-
-
-
+```
+pi@10.13.237.63 
+pasword:Sa67516029
+```
 
 # Comment configurer un serveur OpenVPN sur Debian 
 
@@ -295,10 +296,15 @@ serveur, il faut utiliser un script existant :
 Puis il faut éditer le fichier /etc/network/interfaces pour y ajouter la
 ligne suivante après la définition de l’interface réseau principale
 (iface, inet, eth0 par exemple).
+
+
+```
 pre-up iptables-restore < /etc/iptables.rules
 
+```
 
 
+Mon serveur est prêt à accueillir des clients :smiley: :smiley: :smiley::smiley:
 
 
 
