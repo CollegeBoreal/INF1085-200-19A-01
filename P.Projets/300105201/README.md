@@ -30,14 +30,14 @@ Nous pouvons commencer à modifier le fichier de configuration en exécutant la 
 ~ # sudo nano /etc/samba/smb.conf
 ```
 dans ce meme fichier, on va ajouter ces codes :
-
+```
 [pimylifeupshare]
 path = /home/pi/shared
 writeable=Yes
 create mask=0777
 directory mask=0777
 public=no
-
+```
 Avant de poursuivre, je vais vous exoliquez La signifiaction de ces codes :
 [pimylifeupshare] : Ceci définit le partage lui-même, le code entre crochets est le point auquel vous accéderez au partage. Par exemple, la nôtre sera à l'adresse suivante: // raspberrypi / pimylifeupshare
 
