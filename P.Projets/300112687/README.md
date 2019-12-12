@@ -50,7 +50,7 @@
 # #CONNECT TO A SERVER
   
   
- ![image]( P.Projets/300112687/Connect to server.png)
+ ![image]( Connect .png)
  
  
  
