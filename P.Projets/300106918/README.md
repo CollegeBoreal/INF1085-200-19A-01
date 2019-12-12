@@ -7,6 +7,7 @@ OpenVPN est une application VPN open source qui vous permet de créer et de rejo
 Étape 1 - Installez OpenVPN
 •	Avant d'installer des packages, mettez à jour l'index des packages apt.
   apt-get update
+  apt-get update
 •	Maintenant, nous pouvons installer le serveur OpenVPN avec easy-RSA pour le chiffrement.
 #  apt-get install openvpn easy-rsa
 
