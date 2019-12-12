@@ -234,3 +234,10 @@ Ensuite ajuster les droits des fichiers et terminer l’installation par « exit
 chown pi:pi /home/pi/raspberry_Test.zip
 exit
 ```
+
+## N.B: Pour voir si le openvpn est actif, voici la commande à faire:
+
+```
+$ systemctl status openvpn
+```
+
