@@ -25,7 +25,12 @@
   Ajout du fichier dans la configuration nano afin de 
   permettre l'acces à different utilisateur,le fichier sera 
   ajouter à la fin de la page .
-   
+  
+    -[pimylifeupshare]
+     writeable=Yes
+     create mask=0777
+     directory mask=0777
+     public=no
    
    ![image]( creation.png)
    ![image]( pimylifeupshare.png )
