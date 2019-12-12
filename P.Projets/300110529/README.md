@@ -12,6 +12,8 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 
 ## Comment installer !
 
+## Première Etape
+
 :one: Avant de débuter l’installation premièrement il est recommandé de rechercher et d’installer sur le Raspberry les mises à jour disponibles :
 
 ```
@@ -72,6 +74,8 @@ ln -s openssl-1.0.0.cnf openssl.cnf
 :nine: Entrez le code à deux lettres correspondant au pays et générez le certificat en appuyant deux fois sur la touche « Y ».
 
 Compléter la génération du certificat grâce à la commande pour l’échange de clés :
+
+## Deuxieme Etape
 
 ```
 ./build-dh
@@ -144,6 +148,8 @@ Sudo nano /etc/init.d/rpivpn
 ```
 
 :nine: Activez « ip forward » en écrivant « 1 » dans ce dossier :
+
+## Troisième Etape
 
 ```
 echo 'echo "1" > /proc/sys/net/ipv4/ip_forward' | sudo -s
