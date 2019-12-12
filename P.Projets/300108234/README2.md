@@ -1,4 +1,4 @@
-## :V: Securing network connections VPN `Chapter 10`
+## :v: Securing network connections VPN `Chapter 10`
 
 ### :pushpin: Introduction
 
