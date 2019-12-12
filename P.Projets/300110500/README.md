@@ -172,6 +172,11 @@ Cette commande est utilise pendant la configuratiion du wiki
  ### four:: Telechargement  du fichier LocalSettings
  Une fois l'installation termine, MediaWiki démarre son processus d'installation. Une fois terminé, il vous invite à télécharger un fichier appelé LocalSettings.php puis à l'enregistrer dans le répertoire racine MediaWiki (/ var / www / html / dans cet exemple). Vous pouvez utiliser scp pour copier le fichier que vous avez enregistré dans le directeur personnel de votre utilisateur
  
+ ![Alt tag](ficier.png)
+ 
+ 
+ 
+ 
  $ scp LocalSettings.php ubuntu@10.0.3.184:/home/ubuntu/
 And then, from a command line on your server, move it to the document root:
 
