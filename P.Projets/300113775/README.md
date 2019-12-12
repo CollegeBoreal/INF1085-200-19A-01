@@ -1,3 +1,5 @@
+## Mon Raspberry pi est au laboratoire j’utilise l’adresse IP suivante 10.13.237.77 et le mode passe est la lettre « M » 4 fois le tout en minuscule.
+
 Le logiciel Samba est un outil permettant de partager des dossiers et des imprimantes à travers un réseau local. Il permet de partager et d'accéder aux ressources d'autres ordinateurs fonctionnant avec des systèmes d'exploitation Microsoft® Windows® et Apple® Mac OS® X, ainsi que des systèmes GNU/Linux, *BSD et Solaris dans lesquels une implémentation de Samba est installée.
 
 Pour partager de manière simple des ressources entre plusieurs ordinateurs, l'utilisation de Samba est conseillée.
