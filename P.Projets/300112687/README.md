@@ -19,7 +19,7 @@
       
       
       - $ mkdir /home/pi/shared
-        ```   
+        
         
       - $ sudo nano /etc/samba/smb.conf
        
