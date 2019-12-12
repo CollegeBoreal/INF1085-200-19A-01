@@ -241,6 +241,12 @@ chown pi:pi /home/pi/raspberry_Test.zip
 exit
 ```
 
+## Vérifier let tunnel dans la configuration réseau tun0
+
+# ip addr
+
+![image](addr.png)
+
 ## :pushpin: N.B: Voici la commande pour voir si le openvpn est actif :
 
 ```
