@@ -191,17 +191,11 @@ Ouvrir un explorateur et tester la la configuration wiki
 http://10.13.237.75/index.php/Main_Page
 
 
-![Alt tag](download.png)
-
+![Alt tag](wiki.png)
 
 
 
 ![Alt tag](wiki.png)
 
 
-
-
-![Alt tag](wiki.png)
-
-
-,,,,,
+:christmas_tree: :christmas_tree::christmas_tree:
