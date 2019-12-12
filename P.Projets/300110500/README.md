@@ -174,33 +174,25 @@ Cette commande est utilise pendant la configuratiion du wiki
  
  ![Alt tag](fichier.png)
  
+  vous souhaiterez peut-etre creer un sous-repertoire a la racine du document qui exposera le service de maniere
+ pratique et previsible. ceci place les fichiers dans un repertoire appele / var / www / html / mediawiki /. La commande ci dessou
  
+ ### :five: Copier le fichier LocalSetting vers wiki
+ Une copier du fichier LocalSetting est necessaire pour terminer l'installion 
  
- 
- $ scp LocalSettings.php ubuntu@10.0.3.184:/home/ubuntu/
-And then, from a command line on your server, move it to the document root:
+ $ scp LocalSettings.php pi@10.13.237.75:/home/pi/
 
-~# cp /home/ubuntu/LocalSettings.php /var/www/html/
+ ~# cp /home/pi/LocalSettings.php /var/www/html/
 
+### :six: Test de connectivite de la page principale 
 
- vous souhaiterez peut-etre creer un sous-repertoire a la racine du document qui exposera le service de maniere
- pratique et previsible. ceci place les fichiers dans un repertoire appele / var / www / html / mediawiki /. La commande ci dessous 
+Ouvrir un explorateur et tester la la configuration wiki
 
-~# cp -r mediawiki-1.30.0/* /var/www/html
+http://10.13.237.75/index.php/Main_Page
 
-Une recherche similaire pour xml et php (apt search xml | grep php) m'a parlé d'un package appelé php7.0-xml qui semblait susceptible de satisfaire aux exigences XML de MediaWiki. Je vais installer les deux packages et utiliser systemctl pour redémarrer Apache:
-
-
-
-Je vais installer les deux packages et utiliser systemctl pour redémarrer Apache:
-
-~#  apt install php7.0-mbstring php7.0-xml
-
-~# systemctl restart apache2
 
 ![Alt tag](download.png)
 
-http://10.13.237.75/index.php/Main_Page
 
 
 
