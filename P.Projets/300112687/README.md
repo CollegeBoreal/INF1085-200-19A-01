@@ -47,10 +47,10 @@
  
 ![image]( password.png)
 
-# #CONNECT TO A SERVER
+# CONNECT TO A SERVER
   
   
- ![image](Connect .png)
+ ![image]( Connect .png)
  
  
  
