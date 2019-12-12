@@ -34,12 +34,13 @@ Après avoir installé OpenVPN, copiez les scripts tout prêts « easy-rsa » da
 sudo cp -r /usr/share/easy-rsa /etc/openvpn/easy-rsa
 ```
 
-Ouvrez ensuite le fichier suivant dans la console : « /etc/openvpn/easy-rsa/vars », et entrez-y la commande ci-dessous :
+Ouvrez ensuite le fichier suivant dans la console : « /etc/openvpn/easy-rsa/vars » et entrez-y la commande :
 
 ```
 sudo nano /etc/openvpn/easy-rsa/vars
 
 ```
+
 Maintenant il s’agit d’ajuster le fichier. Vous pouvez modifier les paramètres en remplaçant l’intégralité de la ligne « export EASY_RSA="`pwd` » par la commande :
 
 ```
@@ -55,18 +56,14 @@ source vars
 ln -s openssl-1.0.0.cnf openssl.cnf
 ```
 
-Certificats et clés pour installer OpenVPN
-
-réinitialiser les clés et créez les premiers fichiers de clés pour OpenVPN.
+Certificats et clés pour installer OpenVPN (Réinitialiser les clés et créez les premiers fichiers de clés pour OpenVPN).
 
 ```
 ./clean-all
 ./build-ca OpenVPN
 ```
 
-Le programme vous demande ensuite de rentrer les deux lettres correspondant à votre « nom de pays » : entrez CN pour le Canada.
-
-Apres, générer les fichiers clés pour le serveur :
+Rentrer les deux lettres correspondant à votre « nom de pays » : entrez CN pour le Canada. et générer les fichiers clés pour le serveur :
 
 ```
 ./build-key-server server
@@ -74,7 +71,7 @@ Apres, générer les fichiers clés pour le serveur :
 
 Entrez le code à deux lettres correspondant au pays et générez le certificat en appuyant deux fois sur la touche « Y ».
 
-Voici ensuite comment compléter la génération du certificat grâce à la commande pour l’échange de clés :
+Compléter la génération du certificat grâce à la commande pour l’échange de clés :
 
 ```
 ./build-dh
@@ -92,7 +89,7 @@ Générer les fichiers de configuration pour le serveur OpenVPN :
 sudo nano /etc/openvpn/openvpn.conf
 ```
 
-En premier lieu, activez le routage par tunnel IP via « dev tun », sélectionnez le protocole de transport UDP, en sélectionnant « proto udp » Si vous souhaitez utiliser le protocole TCP, sélectionnez « proto tcp »). et déterminer si le serveur OpenVPN est accessible sur port 1194.
+Activez le routage par tunnel IP via « dev tun », sélectionnez le protocole de transport UDP, en sélectionnant « proto udp » Si vous souhaitez utiliser le protocole TCP, sélectionnez « proto tcp »). et déterminer si le serveur OpenVPN est accessible sur port 1194.
 
 ```
 dev tun
@@ -100,17 +97,21 @@ proto udp
 port 1194
 ```
 
-Ensuite, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et une clé digitale (key) grâce au fichier « easy-rsa ». le cryptage de bits (1024, 2048 etc.).
+Apres, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et une clé digitale (key) grâce au fichier « easy-rsa ». le cryptage de bits (1024, 2048 etc.).
+
 ```
 ca /etc/openvpn/easy-rsa/keys/ca.crt
 cert /etc/openvpn/easy-rsa/keys/server.crt
 key /etc/openvpn/easy-rsa/keys/server.key
 dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 ```
+
 Verifiez que le Raspberry est utilisé en tant que serveur. Nommer l’adresse IP et le masque réseau.
+
 ```
 server 10.13.237.80 255.255.255.254
 ```
+
 La commande « redirect-gateway def1 bypass-dhcp » permet de diriger l’intégralité du trafic IP vers le tunnel IP. vous pourrez renommer les serveurs publics DNS avec lesquels fonctionnera votre serveur VPN. Dans la commande suivante, un serveur est désigné par « 10.13.237.1 », et un serveur de Google par « 8.8.8.8 ».
 
 ```
@@ -122,10 +123,12 @@ log-append /var/log/openvpn
 
 Créer un script pour un accès Internet avec un client
 
-Pour accéder à votre réseau local grâce à un tunnel VPN, il faut créer une redirection. Il convient pour cela de créer d’abord un fichier « /etc/init.d/rpivpn » :
+Pour accéder à votre réseau local grâce à un tunnel VPN, il faut créer une redirection :
+
 ```
 Sudo nano /etc/init.d/rpivpn
 ```
+
 Dans ce fichier, copiez les commentaires suivants :
 
 ```
@@ -179,7 +182,7 @@ sudo /etc/init.d/openvpn restart
 
 Terminer l’installation des clients
 
-il faut leur accorder les droits root en ouvrant le dossier « /etc/openvpn/easy-rsa/keys/ », créer le fichier de configuration client, et entrer les commandes dans le fichier « laptop ».
+il faut leur accorder les droits root en ouvrant le dossier « /etc/openvpn/easy-rsa/keys/ », créer le fichier de configuration client, et entrer les commandes dans le fichier « Test ».
 
 ```
 sudo su
@@ -193,30 +196,36 @@ Pour le fichier client « opvn », entrez les commandes :
 dev tun
 client
 proto udp
-remote x.x.x.x 1194
+remote 205.211.23.237 1194
 resolv-retry infinite
 nobind
 persist-key
 persist-tun
 ca ca.crt
-cert laptop.crt
-key laptop.key
+cert Test.crt
+key Test.key
 comp-lzo
 verb 3
 ```
+
 À la quatrième ligne, remplacez « x.x.x.x » par l’adresse IP de votre fournisseur DDNS (si vous utilisez une adresse publique statique, vous pouvez simplement l’insérer ici), suivie par le port grâce auquel le serveur VPN doit être accessible. Aux troisième et quatrième ligne, entrez le nom de votre client (ici, « Test »). Après avoir inséré ces modifications, sauvegardez-les.
 
-Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip. Si vous n’avez pas encore installé de pack zip sur votre Raspberry, vous pouvez le faire grâce à la commande suivante :
+Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
+
+Installé de pack zip sur votre Raspberry :
+
 ```
 apt-get install zip
 ```
+
 Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
 
 ```
 zip /home/pi/raspberry_Test.zip ca.crt Test.crt Test.key Test.ovpn
 
 ```
-Il faut ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
+
+Ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
 
 ```
 chown pi:pi /home/pi/raspberry_Test.zip
