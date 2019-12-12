@@ -240,4 +240,3 @@ exit
 ```
 $ systemctl status openvpn
 ```
-
