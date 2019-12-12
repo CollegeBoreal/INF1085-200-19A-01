@@ -169,7 +169,16 @@ Cette commande est utilise pendant la configuratiion du wiki
  
  ~# systemctl restart apache2
  
- ### four:: Telechargement  du fichier LocalSettings
+ ### :four: Configuration wiki 
+ 
+ ![Alt tag](conf.png)
+ 
+ ![Alt tag](page.png)
+
+![Alt tag](admi.png)
+
+ 
+ ### :five:: Telechargement  du fichier LocalSettings
  Une fois l'installation termine, MediaWiki démarre son processus d'installation. Une fois terminé, il vous invite à télécharger un fichier appelé LocalSettings.php puis à l'enregistrer dans le répertoire racine MediaWiki (/ var / www / html / dans cet exemple). Vous pouvez utiliser scp pour copier le fichier que vous avez enregistré dans le directeur personnel de votre utilisateur
  
  ![Alt tag](fichier.png)
@@ -177,22 +186,18 @@ Cette commande est utilise pendant la configuratiion du wiki
   vous souhaiterez peut-etre creer un sous-repertoire a la racine du document qui exposera le service de maniere
  pratique et previsible. ceci place les fichiers dans un repertoire appele / var / www / html / mediawiki /. La commande ci dessou
  
- ### :five: Copier le fichier LocalSetting vers wiki
+ ### :six: Copier le fichier LocalSetting vers wiki
  Une copier du fichier LocalSetting est necessaire pour terminer l'installion 
  
  $ scp LocalSettings.php pi@10.13.237.75:/home/pi/
 
  ~# cp /home/pi/LocalSettings.php /var/www/html/
 
-### :six: Test de connectivite de la page principale 
+### :seven: Test de connectivite de la page principale 
 
 Ouvrir un explorateur et tester la la configuration wiki
 
 http://10.13.237.75/index.php/Main_Page
-
-
-![Alt tag](wiki.png)
-
 
 
 ![Alt tag](wiki.png)
