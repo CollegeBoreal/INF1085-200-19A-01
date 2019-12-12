@@ -44,7 +44,7 @@ mysql> CREATE DATABASE wikidb;
 
 ### :three: Creation d'un utlisateur et octroyer des privileges 
 
-- utilisateur et des privileges pour la base de donnes companydb
+- Creation utilisateur et des privileges pour la base de donnes companydb
 
 les commandes ci-dessous permettent de creer un utilisateur et lui octroyer des privileges sur maria db
 
@@ -65,7 +65,7 @@ $ mysql -u root -p
 
 ### :one: c'est quoi PHP
 
-PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
+PHP signifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
 
 ### :two: Installation PHP
 Pour installer php il faut entrer les 2 commande suivante:
