@@ -1,4 +1,4 @@
-                                  PARETAGE DE FICHIER LINUX/WINDOWS: SAMBA
+                                 # PAR1️⃣TAGE DE FICHIER LINUX/WINDOWS: SAMBA
    
    Introduction
    
