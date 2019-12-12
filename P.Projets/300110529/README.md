@@ -101,8 +101,8 @@ Apres, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et u
 
 ```
 ca /etc/openvpn/easy-rsa/keys/ca.crt
-cert /etc/openvpn/easy-rsa/keys/server.crt
-key /etc/openvpn/easy-rsa/keys/server.key
+cert /etc/openvpn/easy-rsa/keys/Test.crt
+key /etc/openvpn/easy-rsa/keys/Test.key
 dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 ```
 
