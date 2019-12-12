@@ -73,9 +73,11 @@ Exécutez la commande ci-dessous pour imprimer l'adresse IP locale du Pi.
 ```
 Pour finir, lancer les commandes suivantes pour lancer Samba a partir de Systemctl :
 ```
-### ~ # systemctl start smbd
-### ~ # systemctl enable smbd
-
+ ~ # systemctl start smbd
+```
+```
+~ # systemctl enable smbd
+```
 Pour vous connecter à votre Samba sous Windows, commencez par ouvrir l'Explorateur de fichiers.
 
 Dans l'Explorateur de fichiers, cliquez sur l'onglet Ordinateur
