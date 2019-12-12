@@ -47,10 +47,10 @@
 ![image]( password.png)
 
 
-# :quatre:CONNECT TO A SERVER
+# :quatre: CONNECT TO A SERVER
  ![image](Sc.png)
  
- # :cinq:PI connection
+ # :cinq: PI connection
   ![image]( pi.png)
 
 
