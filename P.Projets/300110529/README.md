@@ -12,7 +12,7 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 
 ## Comment installer !
 
-Avant de débuter l’installation premièrement il est recommandé de rechercher et d’installer sur le Raspberry les mises à jour disponibles :
+:one: Avant de débuter l’installation premièrement il est recommandé de rechercher et d’installer sur le Raspberry les mises à jour disponibles :
 
 ```
 sudo apt-get update
@@ -20,7 +20,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-Installer OpenVPN et mettre en place des fichiers easy-rsa
+:two: Installer OpenVPN et mettre en place des fichiers easy-rsa
 
 Commencez par utiliser la commande ci-dessous pour installer le programme OpenVPN et OpenSSL :
 
@@ -28,26 +28,26 @@ Commencez par utiliser la commande ci-dessous pour installer le programme OpenVP
 sudo apt-get install openvpn openssl
 ```
 
-Après avoir installé OpenVPN, copiez les scripts tout prêts « easy-rsa » dans le fichier de configuration OpenVPN.
+:three: Après avoir installé OpenVPN, copiez les scripts tout prêts « easy-rsa » dans le fichier de configuration OpenVPN.
 
 ```
 sudo cp -r /usr/share/easy-rsa /etc/openvpn/easy-rsa
 ```
 
-Ouvrez ensuite le fichier suivant dans la console : « /etc/openvpn/easy-rsa/vars » et entrez-y la commande :
+:four: Ouvrez ensuite le fichier suivant dans la console : « /etc/openvpn/easy-rsa/vars » et entrez-y la commande :
 
 ```
 sudo nano /etc/openvpn/easy-rsa/vars
 
 ```
 
-Maintenant il s’agit d’ajuster le fichier. Vous pouvez modifier les paramètres en remplaçant l’intégralité de la ligne « export EASY_RSA="`pwd` » par la commande :
+:five: Maintenant il s’agit d’ajuster le fichier. Vous pouvez modifier les paramètres en remplaçant l’intégralité de la ligne « export EASY_RSA="`pwd` » par la commande :
 
 ```
 export EASY_RSA="/etc/openvpn/easy-rsa"
 ```
 
-Ensuite, retournez dans le dossier de configuration « easy-rsa », accordez les droits root et intégrez les paramètres réglés précédemment dans les variables de l’environnement en exécutant le script « vars » grâce à la commande « source ».
+:six: Ensuite, retournez dans le dossier de configuration « easy-rsa », accordez les droits root et intégrez les paramètres réglés précédemment dans les variables de l’environnement en exécutant le script « vars » grâce à la commande « source ».
 
 ```
 cd /etc/openvpn/easy-rsa
@@ -56,20 +56,20 @@ source vars
 ln -s openssl-1.0.0.cnf openssl.cnf
 ```
 
-Certificats et clés pour installer OpenVPN (Réinitialiser les clés et créez les premiers fichiers de clés pour OpenVPN).
+:seven: Certificats et clés pour installer OpenVPN (Réinitialiser les clés et créez les premiers fichiers de clés pour OpenVPN).
 
 ```
 ./clean-all
 ./build-ca OpenVPN
 ```
 
-Rentrer les deux lettres correspondant à votre « nom de pays » : entrez CN pour le Canada. et générer les fichiers clés pour le serveur :
+:eight: Rentrer les deux lettres correspondant à votre « nom de pays » : entrez CN pour le Canada. et générer les fichiers clés pour le serveur :
 
 ```
 ./build-key-server server
 ```
 
-Entrez le code à deux lettres correspondant au pays et générez le certificat en appuyant deux fois sur la touche « Y ».
+:nine: Entrez le code à deux lettres correspondant au pays et générez le certificat en appuyant deux fois sur la touche « Y ».
 
 Compléter la génération du certificat grâce à la commande pour l’échange de clés :
 
@@ -77,19 +77,19 @@ Compléter la génération du certificat grâce à la commande pour l’échange
 ./build-dh
 ```
 
-Une fois que le processus est complété, fermez votre session :
+:ten: Une fois que le processus est complété, fermez votre session :
 
 ```
 exit
 ```
 
-Générer les fichiers de configuration pour le serveur OpenVPN :
+:eleven: Générer les fichiers de configuration pour le serveur OpenVPN :
 
 ```
 sudo nano /etc/openvpn/openvpn.conf
 ```
 
-Activez le routage par tunnel IP via « dev tun », sélectionnez le protocole de transport UDP, en sélectionnant « proto udp » Si vous souhaitez utiliser le protocole TCP, sélectionnez « proto tcp »). et déterminer si le serveur OpenVPN est accessible sur port 1194.
+:twelve: Activez le routage par tunnel IP via « dev tun », sélectionnez le protocole de transport UDP, en sélectionnant « proto udp » Si vous souhaitez utiliser le protocole TCP, sélectionnez « proto tcp »). et déterminer si le serveur OpenVPN est accessible sur port 1194.
 
 ```
 dev tun
@@ -97,7 +97,7 @@ proto udp
 port 1194
 ```
 
-Apres, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et une clé digitale (key) grâce au fichier « easy-rsa ». le cryptage de bits (2048)
+:thirteen: Apres, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et une clé digitale (key) grâce au fichier « easy-rsa ». le cryptage de bits (2048)
 
 ```
 ca /etc/openvpn/easy-rsa/keys/ca.crt
@@ -106,13 +106,13 @@ key /etc/openvpn/easy-rsa/keys/Test.key
 dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 ```
 
-Verifiez que le Raspberry est utilisé en tant que serveur. Nommer l’adresse IP et le masque réseau.
+:forteen: Verifiez que le Raspberry est utilisé en tant que serveur. Nommer l’adresse IP et le masque réseau.
 
 ```
 server 10.13.237.80 255.255.255.254
 ```
 
-La commande « redirect-gateway def1 bypass-dhcp » permet de diriger l’intégralité du trafic IP vers le tunnel IP. vous pourrez renommer les serveurs publics DNS avec lesquels fonctionnera votre serveur VPN. Dans la commande suivante, un serveur est désigné par « 10.13.237.1 », et un serveur de Google par « 8.8.8.8 ».
+:fifteen: La commande « redirect-gateway def1 bypass-dhcp » permet de diriger l’intégralité du trafic IP vers le tunnel IP. vous pourrez renommer les serveurs publics DNS avec lesquels fonctionnera votre serveur VPN. Dans la commande suivante, un serveur est désigné par « 10.13.237.1 », et un serveur de Google par « 8.8.8.8 ».
 
 ```
 push "redirect-gateway def1 bypass-dhcp"
@@ -121,7 +121,7 @@ push "dhcp-option DNS x.x.x.x"
 log-append /var/log/openvpn
 ```
 
-Créer un script pour un accès Internet avec un client
+:sixteen: Créer un script pour un accès Internet avec un client
 
 Pour accéder à votre réseau local grâce à un tunnel VPN, il faut créer une redirection :
 
@@ -129,7 +129,7 @@ Pour accéder à votre réseau local grâce à un tunnel VPN, il faut créer une
 Sudo nano /etc/init.d/rpivpn
 ```
 
-Dans ce fichier, copiez les commentaires suivants :
+:seventeen: Dans ce fichier, copiez les commentaires suivants :
 
 ```
 #! /bin/sh
@@ -143,20 +143,20 @@ Dans ce fichier, copiez les commentaires suivants :
 ### END INIT INFO
 ```
 
-Activez « ip forward » en écrivant « 1 » dans ce dossier :
+:eighteen: Activez « ip forward » en écrivant « 1 » dans ce dossier :
 
 ```
 echo 'echo "1" > /proc/sys/net/ipv4/ip_forward' | sudo -s
 ```
 
-Créez une redirection pour les paquets VPN « iptables ».
+:nineteen: Créez une redirection pour les paquets VPN « iptables ».
 
 ```
 iptables -A INPUT -i tun+ -j ACCEPT
 iptables -A FORWARD -i tun+ -j ACCEPT
 ```
 
-Paramétrer les commandes qui autorisent vos clients VPN à accéder au LAN et à Internet :
+twenty: Paramétrer les commandes qui autorisent vos clients VPN à accéder au LAN et à Internet :
 
 ```
 iptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
@@ -164,7 +164,7 @@ iptables -t nat -F POSTROUTING
 iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 ```
 
-Enregistrez et fermez à le fichier 
+:twenty one: Enregistrez et fermez à le fichier 
 
 Assigner les droits adaptés au script et l’installer en tant que script Init.
 
@@ -173,14 +173,14 @@ sudo chmod +x /etc/init.d/rpivpn
 sudo update-rc.d rpivpn defaults
 ```
 
-Exécutez le script et redémarrez le serveur VPN.
+:twenty two: Exécutez le script et redémarrez le serveur VPN.
 
 ```
 sudo /etc/init.d/rpivpn
 sudo /etc/init.d/openvpn restart
 ```
 
-Terminer l’installation des clients
+:twenty three: Terminer l’installation des clients
 
 Il faut leur accorder les droits root en ouvrant le dossier « /etc/openvpn/easy-rsa/keys/ », créer le fichier de configuration client, et entrer les commandes dans le fichier « Test ».
 
@@ -190,7 +190,7 @@ cd /etc/openvpn/easy-rsa/keys
 nano Test.ovpn
 ```
 
-Pour le fichier client « opvn », entrez les commandes :
+:twenty four: Pour le fichier client « opvn », entrez les commandes :
 
 ```
 client
@@ -213,7 +213,7 @@ verb 3
 
 À la quatrième ligne, remplacez par l’adresse IP de votre fournisseur DDNS ( ou si vous utilisez une adresse publique statique, vous pouvez l’insérer), suivie par le port grâce auquel le serveur VPN doit être accessible.
 
-Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
+:twenty five: Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
 
 Installé de pack zip sur votre Raspberry :
 
@@ -221,14 +221,14 @@ Installé de pack zip sur votre Raspberry :
 apt-get install zip
 ```
 
-Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
+:twenty six: Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
 
 ```
 zip /home/pi/raspberry_Test.zip ca.crt Test.crt Test.key Test.ovpn
 
 ```
 
-Ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
+:twenty seven: Ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
 
 ```
 chown pi:pi /home/pi/raspberry_Test.zip
