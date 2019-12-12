@@ -33,6 +33,7 @@ La commande pour configurer l'adress est la suivante: if config
 Pour installer MARIA DB sur rasberry pi:
 
 ### :one: Commande d'installation Maria DB 
+
 Nous pouvons installer MariaDB avec la commande suivante:
 
 ~#   apt install mariadb-server
