@@ -85,8 +85,7 @@ Créez ce dossier en exécutant la commande suivante.
    Utilisateur:pi
    
    mot de passe: password
-   ![](https://github.com/CollegeBoreal/INF1085-200-19A-01/blob/master/samba2.PNG?raw=true)
-   ![]()
+   ![](https://github.com/CollegeBoreal/INF1085-200-19A-01/blob/master/P.Projets/300111766/image/samba2.PNG?raw=true)
    
 
 
