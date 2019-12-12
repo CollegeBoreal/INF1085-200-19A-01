@@ -49,8 +49,11 @@
 
 # #CONNECT TO A SERVER
   ![image](Connect .png)
+
+ [image](  P.Projets/300112687/Connect to server.png)
  
- # #PI connection
+ 
+ -# #PI connection
   ![image]( pi.png)
 
 
