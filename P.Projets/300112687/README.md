@@ -49,7 +49,7 @@
 
 # #CONNECT TO A SERVER
   
- [image](  Connect to server.png)
+ [image](  P.Projets/300112687/Connect .png)
  
  
  # #PI connection
