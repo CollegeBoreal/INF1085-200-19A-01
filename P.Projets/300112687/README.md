@@ -20,7 +20,7 @@
       - $ mkdir /home/pi/shared
         ```   
       - $ sudo nano /etc/samba/smb.conf
-       ``
+       ```
   Ajout du fichier dans la configuration nano afin de 
   permettre l'acces à different utilisateur,le fichier sera 
   ajouter à la fin de la page .
