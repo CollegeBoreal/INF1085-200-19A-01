@@ -12,16 +12,13 @@ Devenu populaire au fur et à mesure que plus d'employés travaillaient dans les
 
 ## Comment installer !
 
-Avant de débuter l’installation avec OpenVPN en elle-même, il est recommandé de rechercher et d’installer sur votre Raspberry Pi toutes les mises à jour disponibles : pour ce faire, il suffit d’entrer les commandes suivantes sur la console :
+Avant de débuter l’installation premièrement il est recommandé de rechercher et d’installer sur le Raspberry les mises à jour disponibles :
 ```
 sudo apt-get update
 
 sudo apt-get upgrade
 ```
-Si vous n’avez pas encore changé les identifiants par défaut de votre Raspberry Pi (nom d’utilisateur « Pi » et mot de passe « Raspberry »), il est temps de le faire, sinon n’importe qui pourra accéder à votre système, localement ou sur le réseau via SSH. Grâce à la commande ci-dessous, vous accéderez à la configuration de votre nano-ordinateur, et pourrez choisir un mot de passe sécurisé.
-```
-sudo raspi-config
-```
+
 Installer OpenVPN et mettre en place des fichiers easy-rsa
 
 Commencez par utiliser la commande ci-dessous pour installer le programme OpenVPN et OpenSSL, qui permet d’encrypter la connexion Internet :
