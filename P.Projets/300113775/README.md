@@ -34,7 +34,7 @@ Pour partager de manière simple des ressources entre plusieurs ordinateurs, l'u
 
 
 ### connecter samba avec windows 
-Ouvrir "file explorer" en le tapant dans serach de votre windows , en suite cliquer sur "this pc", en outre map derive , et à la fin rentrer:    \\votreiplocal\ puis cliquer browse vous aurez \\votreiplocal\pimylifeupshare puis ok 
+Ouvrir "file explorer" en le tapant dans serach de votre windows , en suite cliquer sur "this pc", en outre map drive , et à la fin rentrer:    \\votreiplocal\ puis cliquer browse vous aurez \\votreiplocal\pimylifeupshare puis ok 
 
 ### rentrer le nom d'utilisateur , c'est "pi" par defaut et votre mot de passe .
 Si vous avez fait tout comme indiquer votre samba est connecter à votre ordinateur windows |
