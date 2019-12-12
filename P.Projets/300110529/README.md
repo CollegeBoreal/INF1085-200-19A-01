@@ -241,7 +241,7 @@ chown pi:pi /home/pi/raspberry_Test.zip
 exit
 ```
 
-## N.B: Pour voir si le openvpn est actif, voici la commande à faire:
+## N.B: Voici la commande pour voir si le openvpn est actif :
 
 ```
 $ systemctl status openvpn
