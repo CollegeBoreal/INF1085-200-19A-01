@@ -2,24 +2,23 @@
 # #SAMBA PROJET
  
 
+
+
+
  # 1 INSTALLATION
+ 
+ ![image]( Sudo.png)
+ 
  ```
  -$ sudo apt-get intstall samba samba-common-bin
- ```
  
+ ```
+       
  
  # 2 UPDATE
-      ![image](config samba.png)
+      
+      
  
- 
- 
- $ sudo apt-get install samba
- ```
-## kk
- ```
- $ nano /etc/samba/smb.conf
- ```
-  ```
   
    
    # #SET PASSWORD
