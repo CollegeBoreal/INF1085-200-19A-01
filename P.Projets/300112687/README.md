@@ -40,7 +40,7 @@
  
  
  # #PI connection
- ![image]( Connect to server.png)
+ ![image]( pi.png)
 
 
  # #SERVEUR
