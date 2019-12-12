@@ -209,7 +209,7 @@ connexion vpn client :  100419831004Amir
 
 ##  test de connection vpn
  
- ###  pour le teste veuillez connecté avec le fichier AEC dans client key
+ ###  pour le teste veuillez connecté avec le fichier AEK dans client key ZIP
 
 ![](TESTVPN.png)
 
