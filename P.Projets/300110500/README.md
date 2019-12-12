@@ -91,28 +91,27 @@ Nous pouvons installer MariaDB avec la commande suivante:
 ### Creation de la base des bases de donnes comanydb et wikidb
 
 mysql> CREATE DATABASE wikidb;
-mysql> CREATE DATABASE wikidb;
 
-### :four: Creation d'un utlisateur et des privileges 
+### :four: Creation d'un utlisateur et octroyer des privileges 
+
 - utilisateur et des privileges pour la base de donnes companydb
+les commandes ci-dessous permettent de creer un utilisateur et lui octroyer des privileges sur maria db
+
 mysql> CREATE USER 'root'@'localhost' IDENTIFIED BY 'password';
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 
-- utilisateur et des privileges pour la base de donnes wikibd
-mysql> CREATE USER 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
-mysql> GRANT ALL PRIVILEGES ON wikidb.* TO 'mw-admin'@'localhost' IDENTIFIED BY 'mypassword';
-mysql> FLUSH PRIVILEGES; 
-
 ### :five: Acceder a la base de donnees par la commande suivante: 
 
+Pour acceder a la base il faut ta per la commande c-apres et utiliser le password approprie
 $ mysql -u root -p
 
 ![Alt tag](data.png)
 
+### :six: Creer des tables pour companydb 
+Pour creer des tables il faut  le DCL ci apres: l
+ MariaDB> use companydb 
 
-### :six: Creer des de tables pour companydb 
-
-. MariaDB> use companydb puis inserrrer les donnnees ci-apres
+Iinserer  les donnnees ci-apres
 
 MariaDB> CREATE TABLE Contacts (
 ID int,
@@ -122,8 +121,7 @@ Address varchar(255),
 City varchar(255)
 );
 
-
-### :7:Insert statements dans companydb
+### :seven:Insert statements dans companydb
 MariaDB> INSERT INTO Contacts (ID, LastName, FirstName, Address, City)
 VALUES ('001', 'Torvalds', 'Linus', '123 Any St.', 'Newtown');
 
