@@ -219,6 +219,19 @@ verb 3
 
 À la quatrième ligne, remplacez par l’adresse IP de votre fournisseur DDNS ( ou si vous utilisez une adresse publique statique, vous pouvez l’insérer), suivie par le port grâce auquel le serveur VPN doit être accessible.
 
+## :pushpin: N.B: Vérifier let tunnel dans la configuration réseau tun0
+
+ip addr
+
+![image](addr.png)
+
+## Voici la commande pour voir si le openvpn est actif :
+
+```
+$ systemctl status openvpn
+```
+![image]( active.png)
+
 :seven: Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
 
 Installé de pack zip sur votre Raspberry :
@@ -240,16 +253,3 @@ zip /home/pi/raspberry_Test.zip ca.crt Test.crt Test.key Test.ovpn
 chown pi:pi /home/pi/raspberry_Test.zip
 exit
 ```
-
-## :pushpin: N.B: Vérifier let tunnel dans la configuration réseau tun0
-
-ip addr
-
-![image](addr.png)
-
-## Voici la commande pour voir si le openvpn est actif :
-
-```
-$ systemctl status openvpn
-```
-![image]( active.png)
