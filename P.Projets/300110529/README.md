@@ -40,7 +40,7 @@ Il s’agit maintenant d’ajuster ce fichier. Vous pouvez modifier les paramèt
 ```
 export EASY_RSA="/etc/openvpn/easy-rsa"
 ```
-La longueur de la clé peut également être ajustée, ce qui détermine le niveau de sécurité du cryptage. Un Raspberry 3 dispose d’assez de puissance pour supporter sans problème une clé d’une longueur de 2048 bits. Avec la version 2 en revanche, ce cryptage dégrade considérablement la vitesse, et il est par conséquent recommandé d’utiliser un cryptage de 1024 bits seulement : c’est à vous d’apprécier, selon votre utilisation, quel paramètre parmi la vitesse de connexion ou le niveau de cryptage est le plus important. Un cryptage de 4096 bits est quant à lui utile dans certains cas seulement. On peut changer la longueur de la clé et ajuster la quantité de bits dans la ligne « export KEY_SIZE=2048 ».
+La longueur de la clé peut également être ajustée, ce qui détermine le niveau de sécurité du cryptage.
 
 Ensuite, retournez dans le dossier de configuration « easy-rsa », accordez les droits root et intégrez les paramètres réglés précédemment dans les variables de l’environnement en exécutant le script « vars » grâce à la commande « source ». Enfin, vous pouvez rendre le fichier de configuration obtenu accessible via un lien symbolique intitulé « openssl.cnf ».
 ```
@@ -56,7 +56,7 @@ Commencez par réinitialiser les clés et créez ensuite les premiers fichiers d
 ./clean-all
 ./build-ca OpenVPN
 ```
-Le programme vous demande ensuite de rentrer les deux lettres correspondant à votre « nom de pays » : entrez FR pour la France. Les champs suivants ne sont pas essentiels, et vous pouvez directement confirmer en pressant la touche « entrée ».
+Le programme vous demande ensuite de rentrer les deux lettres correspondant à votre « nom de pays » : entrez CN pour le Canada. Les champs suivants ne sont pas essentiels, et vous pouvez directement confirmer en pressant la touche « entrée ».
 
 Ensuite, voici comment générer les fichiers clés pour le serveur :
 ```
