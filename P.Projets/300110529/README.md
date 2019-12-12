@@ -105,8 +105,8 @@ port 1194
 
 ```
 ca /etc/openvpn/easy-rsa/keys/ca.crt
-cert /etc/openvpn/easy-rsa/keys/Test.crt
-key /etc/openvpn/easy-rsa/keys/Test.key
+cert /etc/openvpn/easy-rsa/keys/ca.crt
+key /etc/openvpn/easy-rsa/keys/ta.key
 dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 ```
 
