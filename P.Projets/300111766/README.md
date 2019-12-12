@@ -1,4 +1,4 @@
-                                   # SERVER LINUX SAMBA🎾
+                                              SERVER LINUX SAMBA🎾
    
    Introduction
    
