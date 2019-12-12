@@ -110,12 +110,12 @@ key /etc/openvpn/easy-rsa/keys/AEK.key
 dh /etc/openvpn/easy-rsa/keys/dh2048.pem
 
 
- •	Dans cette section, nous allons configurer et lancer notre serveur OpenVPN.
+ Dans cette section, nous allons configurer et lancer notre serveur OpenVPN.
        Serveur ./build-key-server
 
 ## Étape 7 - Déplacer les certificats et les clés du serveur
 
-Nous allons maintenant copier le certificat et la clé dans /etc/openvpn , car OpenVPN recherchera dans ce répertoire l'autorité de certification, le certificat et la clé du serveur. 
+ Nous allons maintenant copier le certificat et la clé dans /etc/openvpn , car OpenVPN recherchera dans ce répertoire l'autorité de certification, le certificat et la clé du serveur. 
 cp / etc / openvpn / easy-rsa / keys / { server .crt, server .key, ca.crt} / etc / openvpn
 
    copier le certificat et la clé dans /etc/openvpn ,
@@ -139,11 +139,11 @@ Comme nous l'avons fait avec la clé du serveur, nous en client1 maintenant une 
   ./build-key client1
   
   
- # Ensuite, nous allons copier la clé générée dans le répertoire des keys Easy-RSA que nous avons créé précédemment. Notez que nous changeons l'extension de .conf en .ovpn . C'est pour correspondre à la convention. 
+ Ensuite, nous allons copier la clé générée dans le répertoire des keys Easy-RSA que nous avons créé précédemment. Notez que nous changeons l'extension de .conf en .ovpn . C'est pour correspondre à la convention. 
   
    cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /etc/openvpn/easy-rsa/keys/client.ovpn
    
-  # Nous devons modifier chaque fichier client pour inclure l'adresse IP du serveur OpenVPN afin qu'il sache à quoi se connecter. Ouvrez client.ovpn utilisant nano ou votre éditeur de texte préféré. 
+  Nous devons modifier chaque fichier client pour inclure l'adresse IP du serveur OpenVPN afin qu'il sache à quoi se connecter. Ouvrez client.ovpn utilisant nano ou votre éditeur de texte préféré. 
    
      nano / etc / openvpn / easy-rsa / keys / client.ovpn
      
