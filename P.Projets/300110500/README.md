@@ -49,18 +49,21 @@ $ sudo apt-get update
 ### :one: c'est quoi PHP
 PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
 
-### :two:
+### :two: Installation PHP
 Pour installer php il fau entrer les 2 commande suivante:
 
  $ apt install php 
  
  $ apt install libapache2-mod-php   
  
- ### :three:
+ ### :three: TEest de connectivite
 
-- Tester la connectivitephp
+ON peut tester la connectivite php
 
 10.13.237.75/testmyphp.php
+
+### :Capture d'ecran:
+
 ![Alt tag](Php.png)
 
 
