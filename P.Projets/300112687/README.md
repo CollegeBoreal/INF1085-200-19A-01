@@ -5,7 +5,7 @@
 
 
 
- # :ONE: INSTALLATION
+ # :one: INSTALLATION
  
  ![image]( Sudo.png)
  
@@ -15,7 +15,7 @@
  ```
        
  
- # :TWO: UPDATE
+ # :two: UPDATE
       
       
  
