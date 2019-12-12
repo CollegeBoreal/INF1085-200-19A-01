@@ -5,12 +5,12 @@
 Le Raspberry pi est un nano ordinateur que l'on peut brancher à un ecran et utilise comme un ordinateur standard. Il est utilise 
 pour la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
 
-### :one: Se connecter a votre raspberry pi
+### :one: Comment se connecter a votre raspberry pi
 Ouvrir le terminal git bash et se connecter a votre rasberry pi  
 
 ssh pi@10.13.237.75
 
-### :two: Faire une mise a jour de votre rasberry pi
+### :two: Faire une mise a jour  de votre rasberry pi avant toute installation
 
 Avant toute installation il convient de faire une mise a jour de votre nano ordinateur en entrant la commande:  
 
@@ -55,10 +55,14 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 Pour acceder a la base il faut ta per la commande c-apres et utiliser le password approprie
 $ mysql -u root -p
 
+### :five: Capture d'ecran
+
 ![Alt tag](data.png)
 
 ### :pushpin: Installation PHP
+
 ### :one: c'est quoi PHP
+
 PHPsignifie Hypertext Preprocessor est un langage de programmation libre, principalement utilise pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprétede faon locale.
 
 ### :two: Installation PHP
@@ -68,29 +72,29 @@ Pour installer php il faut entrer les 2 commande suivante:
  
  $ apt install libapache2-mod-php  
  
- ### :two: Sauvegarde du fichier php dans un repertoire
+ ### :two: C'est quoi un fichier php 
  
-Excecuter la commande ci-dessous en mide duper utilisateur pour sauvegarder l'extension php
+ le fichier php est une extension de nom de fichier php qui  doit etre etre dans le répertoire racine du document Web Apache
+ 
+la commande ci-dessous en mode super utilisateur pour sauvegarder l'extension php
 
  nano /var/www/html/testmyphp.php
 
-Copier l'extension PHP dans via puis sauvegarder
+Copier l'extension PHP dans via puis sauvegarder 
 
 <?php
 phpinfo();
 ?>
 
+Ctrl + o pour enregistrer etCtrl + x pour sortir 
+
 #### :three: Comment Tester la connectivite de php
 
 - Ouvrir un explorer et taper l'adresse suivante sur un explore
- 
- ### :four: Test de connectivite
-
-On peut tester la connectivite php
 
 10.13.237.75/testmyphp.php
 
-### :five: Capture d'ecran:
+### :ffour: Capture d'ecran d'un de connectivite
 
 ![Alt tag](Php.png)
 
