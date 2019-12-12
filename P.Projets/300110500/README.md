@@ -107,15 +107,16 @@ Ctrl + o pour enregistrer et Ctrl + x pour sortir
 ### :pushpin: INSTALLATION DE APACHE  SUR RASPBERRY PI
 
 ### :one:  C'est quoi apache
-### :one: Enter la commande suivante dans git bash pour installer  
- # apt install php
- ### Specifier la version version php a installer
- 
- # apt install libapache2-mod-php
-### :two Creer un nouveau fichier avec la commande ci-dessous:
 
+Le logiciel Apache HTTP Server (Apache) est un serveur HTTP cree et maintenu au sein de la fondation Apache. C'est le serveur HTTP le plus populaire du World Wide Web. 
 
-- Verifier la connectivite apache
+### :two: Commande d'installation 
+
+$ sudo apt update
+
+ ~# apt install libapache2-mod-php
+
+### :thre: Verifier la connectivite apache
 
 On peut verifier la connectivite apache en tapant 10.13.237.75 sur un explorer
 
