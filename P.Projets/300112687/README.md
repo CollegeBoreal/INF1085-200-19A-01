@@ -17,7 +17,7 @@
  
  # :two: Creation du repertoire et Modification du fichier 
       
-      ```
+      
       - $ mkdir /home/pi/shared
         ```   
         
