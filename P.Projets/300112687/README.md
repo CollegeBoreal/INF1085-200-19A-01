@@ -11,11 +11,13 @@
  
  ```
  -$ sudo apt-get intstall samba samba-common-bin
- 
  ```
        
- 
+   ![image]( creation.png)
  # :two: Creation du repertoire et Modification du fichier 
+ 
+           
+           ![image]( creation.png)
       
       
       - $ mkdir /home/pi/shared
