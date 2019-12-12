@@ -61,4 +61,4 @@ sudo apt-get install smbclient
 and then run this command to log in to your Samba share from the local machine :
 
 # smbclient //localhost/sharehome
-
+je vous envoie le password et le user name par email.
