@@ -21,6 +21,7 @@ $ sudo apt-get update
 En rappel l'accronyme LAMP= Linux, Apache, Mysql et PHP
 
 ### :pushpin: INSTALLATION LINUX
+
 Rasppberry integre deja le systeme linux tout commentaire serait une perte de temps.
 Il convient de configurer votre raspberry pi en l'attribuant une adresse ip et un mot de passe.
 La commande pour configurer l'adress est la suivante: if config
