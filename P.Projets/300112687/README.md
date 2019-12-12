@@ -47,12 +47,12 @@
 ![image]( password.png)
 
 
-# :4: CONNECT TO A SERVER
+# :four: CONNECT TO A SERVER
 
  ![image](Sc.png)
  
  
- # :5: PI connection
+ # :five: PI connection
  
   ![image]( pi.png)
 
