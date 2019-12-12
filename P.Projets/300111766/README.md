@@ -71,9 +71,9 @@ Créez ce dossier en exécutant la commande suivante.
           
  9️⃣ Apres les modifications il est necessaire de redemarer le service samba par la commande suivante:
   
- 🔟         $ sudo systemctl restart smbd
+         $ sudo systemctl restart smbd
           
-  Maintenant on arrive a la dernniere etape de notre installation qu'il sagit d'imprimer l'adresse IPlocal du Pi. Pour se faire mettez la    commande suivante:
+   🔟  Maintenant on arrive a la dernniere etape de notre installation qu'il sagit d'imprimer l'adresse IPlocal du Pi. Pour se faire       mettez la commande suivante:
   
           $ hostname -I
 
