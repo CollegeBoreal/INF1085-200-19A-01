@@ -13,12 +13,9 @@
  -$ sudo apt-get intstall samba samba-common-bin
  ```
        
-   ![image]( creation.png)
- # :two: Creation du repertoire et Modification du fichier 
  
+ # :two: Creation du repertoire et Modification du fichier 
            
-           ![image]( creation.png)
-      
       
       - $ mkdir /home/pi/shared
         
@@ -29,6 +26,10 @@
   permettre l'acces à different utilisateur,le fichier sera 
   ajouter à la fin de la page .
    
+   
+   ![image]( creation.png)
+      
+      
    # :three:SET PASSWORD
    
    ```
