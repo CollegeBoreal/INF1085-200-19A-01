@@ -205,7 +205,7 @@ apt-get install zip
 ```
 Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
 ```
-zip /home/pi/raspberry_laptop.zip ca.crt laptop.crt laptop.key laptop.ovpn
+zip /home/pi/raspberry_laptop.zip ca.crt laptop.crt laptop.key Test.ovpn
 ```
 Il faut ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
 ```
