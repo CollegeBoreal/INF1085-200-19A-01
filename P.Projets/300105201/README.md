@@ -3,8 +3,12 @@
 1- La première chose que nous devons faire avant de configurer un partage SMB / CIFS sur notre Raspberry Pi est de nous assurer que tout est à jour.
 Pour les mettre a jour on utilise ces deux commandes :
 
-### ~ # sudo apt-get update
-### ~ # sudo apt-get upgrade
+```
+ ~ # sudo apt-get update
+```
+```
+ ~ # sudo apt-get upgrade
+ ```
 
 2- Maintenant que notre système est à jour, on peut procéder à l'installation du logiciel Samba sur notre Raspberry Pi.
 Passons a l'installation des packages dont nous avons besoin pour configurer Samba en exécutant la commande suivante:
