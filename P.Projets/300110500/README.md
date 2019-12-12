@@ -56,7 +56,7 @@ Pour installer php il fau entrer les 2 commande suivante:
  
  $ apt install libapache2-mod-php   
  
- ### :three: TEest de connectivite
+ ### :three: Test de connectivite
 
 ON peut tester la connectivite php
 
