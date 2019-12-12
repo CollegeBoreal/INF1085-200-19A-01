@@ -89,6 +89,7 @@ phpinfo();
 
 Ctrl + o pour enregistrer et Ctrl + x pour sortir 
 
+![Alt tag](doc.png)
 
 
 #### :four: Comment Tester la connectivite de php
