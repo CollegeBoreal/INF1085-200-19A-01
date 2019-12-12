@@ -77,7 +77,7 @@ Compléter la génération du certificat grâce à la commande pour l’échange
 ./build-dh
 ```
 
-:ten: Une fois que le processus est complété, fermez votre session :
+:Ten: Une fois que le processus est complété, fermez votre session :
 
 ```
 exit
