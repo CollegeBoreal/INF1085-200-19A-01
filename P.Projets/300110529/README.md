@@ -28,7 +28,7 @@ Commencez par utiliser la commande ci-dessous pour installer le programme OpenVP
 ```
 sudo apt-get install openvpn openssl
 ```
-Après avoir installé OpenVPN, copiez les scripts tout prêts « easy-rsa » dans le fichier de configuration OpenVPN. C’est ici que vous pourrez créer de nombreux certificats et des clés. La commande suivante fonctionne seulement sous Raspbian Jessie (pour les systèmes d’exploitation Wheezy précédents, le script se trouve à l’emplacement « /usr/share/doc/openvpn/examples/easy-rsa/2.0 ») :
+Après avoir installé OpenVPN, copiez les scripts tout prêts « easy-rsa » dans le fichier de configuration OpenVPN.
 ```
 sudo cp -r /usr/share/easy-rsa /etc/openvpn/easy-rsa
 ```
