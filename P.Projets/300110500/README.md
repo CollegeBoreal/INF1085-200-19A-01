@@ -137,10 +137,10 @@ http://10.13.237.75/index.php/Main_Page
 
 ![Alt tag](wiki.png)
  
-### :pushpin: C'est quoi un 
+### :pushpin: C'est quoi un wiki
 
 C'est une immense encyclopedie (au meme titre qu'une encyclopedie papier).
-Elle possede des dizaines de milliers d'articles sur differents sujets (societe, sante, mathematiques, informatique, litterature...) dans differentes langues (la majorite des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole...)
+Elle possede des dizaines de milliers d'articles sur differents sujets (societe, sante, mathematiques, informatique, litterature...) dans differentes langues dont la majorite des articles sont en anglais, mais on en trouve aussi beaucoup en français, allemand, espagnole
 
 ### :one: INSTALLER MEDIAWIKI SUR RASBERRY PI
 
@@ -152,17 +152,40 @@ $ wget https://releases.wikimedia.org/mediawiki/1.30/\
 mediawiki-1.30.0.tar.gz      
 
 ### :two: Excecutioin de la commande tar
+
 la commmane ci-dessous permet de creer un nouveau repertoire contenant tous les fichiers et repertoires en copiant toute cette hierarchie de repertoires a l'emplacement du système de fichiers ou il fera son travail.
 Pour mon cas MediaWiki va etre la seule application Web hebergee sur notre rasberry pi, ce qui  signifie qu'il est notre repertoire racine Web. Pour creer un nouveau repertoire il excecuter la commande suivante:
 
  .$ tar xzvf mediawiki-1.30.0.tar.gz
+ 
+### :three: Le decor dans le wiki 
+
+ ImageMagick est un outil de traitement d'image ce qui permet le dec or notre page web.
+ Un autre redémarrage pour Apache et un autre rafraîchissement de la fenetre du navigateur, et vous devriez etre pret:
+ 
+Cette commande est utilise pendant la configuratiion du wiki
+
+ ~# apt install php-mysql php-apcu php-imagick
+ 
+ ~# systemctl restart apache2
+ 
+ ### four:: Telechargement  du fichier LocalSettings
+ Une fois l'installation termine, MediaWiki démarre son processus d'installation. Une fois terminé, il vous invite à télécharger un fichier appelé LocalSettings.php puis à l'enregistrer dans le répertoire racine MediaWiki (/ var / www / html / dans cet exemple). Vous pouvez utiliser scp pour copier le fichier que vous avez enregistré dans le directeur personnel de votre utilisateur
+ 
+ $ scp LocalSettings.php ubuntu@10.0.3.184:/home/ubuntu/
+And then, from a command line on your server, move it to the document root:
+
+~# cp /home/ubuntu/LocalSettings.php /var/www/html/
 
 
-
- vous souhaiterez peut-etre creer un sous-repertoire à la racine du document qui exposera le service de maniere
+ vous souhaiterez peut-etre creer un sous-repertoire a la racine du document qui exposera le service de maniere
  pratique et previsible. ceci place les fichiers dans un repertoire appele / var / www / html / mediawiki /. La commande ci dessous 
 
 ~# cp -r mediawiki-1.30.0/* /var/www/html
+
+Une recherche similaire pour xml et php (apt search xml | grep php) m'a parlé d'un package appelé php7.0-xml qui semblait susceptible de satisfaire aux exigences XML de MediaWiki. Je vais installer les deux packages et utiliser systemctl pour redémarrer Apache:
+
+
 
 Je vais installer les deux packages et utiliser systemctl pour redémarrer Apache:
 
