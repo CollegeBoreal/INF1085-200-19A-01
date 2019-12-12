@@ -65,7 +65,7 @@ ln -s openssl-1.0.0.cnf openssl.cnf
 ./build-ca OpenVPN
 ```
 
-:eight: Rentrer les deux lettres correspondant à votre « nom de pays » : entrez CN pour le Canada. et générer les fichiers clés pour le serveur :
+:eight: Rentrer les deux lettres correspondant à votre « nom de pays » : entrez CA pour le Canada. et générer les fichiers clés pour le serveur :
 
 ```
 ./build-key-server server
