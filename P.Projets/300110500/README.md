@@ -3,7 +3,7 @@
 
 ### Utilite de raspberry pi
 Le Raspberry pi est un nano ordinateur que l'on peut brancher à un ecran et utilise comme un ordinateur standard. Il est utilise 
-la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
+pour la creation d'un serveur Web chez soi. Pour sa pour sa taille il ne faut pas s'attendre a des performances incroyables, mais pour mettre en ligne des projets a montrer au client ou experimenter avec linux.
 
 ### :one: Se connecter a votre raspberry pi
 Ouvrir le terminal git bash et se connecter a votre rasberry pi  
