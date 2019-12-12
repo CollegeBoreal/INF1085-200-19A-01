@@ -72,7 +72,7 @@ Pour installer php il faut entrer les 2 commande suivante:
  
  $ apt install libapache2-mod-php  
  
- ### :two: C'est quoi un fichier php 
+ ### :three: C'est quoi un fichier php 
  
  le fichier php est une extension de nom de fichier php qui  doit etre etre dans le répertoire racine du document Web Apache
  
@@ -88,13 +88,13 @@ phpinfo();
 
 Ctrl + o pour enregistrer etCtrl + x pour sortir 
 
-#### :three: Comment Tester la connectivite de php
+#### :four: Comment Tester la connectivite de php
 
 - Ouvrir un explorer et taper l'adresse suivante sur un explore
 
 10.13.237.75/testmyphp.php
 
-### :ffour: Capture d'ecran d'un de connectivite
+### :five: Capture d'ecran d'un de connectivite
 
 ![Alt tag](Php.png)
 
