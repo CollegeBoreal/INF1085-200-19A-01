@@ -17,6 +17,7 @@ Avant toute installation il convient de faire une mise a jour de votre nano ordi
 $ sudo apt-get update
 
 ### :pushpin: ETAPES DE CONFIGURATION LAMP SUR RASPBERRY PI
+
 En rappel l'accronyme LAMP= Linux, Apache, Mysql et PHP
 
 ### :pushpin: INSTALLATION LINUX
