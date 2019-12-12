@@ -124,17 +124,6 @@ On peut verifier la connectivite apache en tapant 10.13.237.75 sur un explorer
 
 Nous pouvons tester l'installation de php en ouvrant un explorer 
 10.13.237.75/testmyphp.php
-
-
-
- - copier l'adress et configurer wiki sur un explorer: 
- 
- 10.13.237.75/index.php
- 
-http://10.13.237.75/index.php/Main_Page
-
-
-![Alt tag](wiki.png)
  
 ### :pushpin: C'est quoi un wiki
 
