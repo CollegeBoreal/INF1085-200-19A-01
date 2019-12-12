@@ -171,9 +171,15 @@ Cette commande est utilise pendant la configuratiion du wiki
  
  ### :four: Configuration wiki 
  
+ cliquer sur la partie bleu de l'image  pour commencer la configuration
+ 
  ![Alt tag](conf.png)
  
- ![Alt tag](page.png)
+ Pour la configuration de la langue du wiki j'ai selectionne le francais 
+ 
+ ![Alt tag](imm.png)
+ 
+ ajout des information relatifs a la base de donnes a savoir le non du wiki, et attribuer un mot de passe
 
 ![Alt tag](admi.png)
 
