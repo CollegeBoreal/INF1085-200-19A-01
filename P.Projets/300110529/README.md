@@ -202,7 +202,7 @@ nano Test.ovpn
 client
 dev tun
 proto udp
-remote 205.211.23.237 1194
+remote 10.13.237.80 1194
 resolv-retry infinite
 nobind
 persist-key
@@ -243,7 +243,7 @@ apt-get install zip
 :eight: Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
 
 ```
-zip /home/pi/raspberry_Test.zip ca.crt ca.crt ta.key Test.ovpn
+zip /home/pi/raspberry_Test.zip ca.crt ta.key Test.ovpn
 
 ```
 
