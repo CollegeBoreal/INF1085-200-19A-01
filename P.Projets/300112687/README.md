@@ -36,6 +36,11 @@
   
   
  ![image]( Connect to server.png)
+ 
+ 
+ 
+ # #PI connection
+ ![image]( Connect to server.png)
 
 
  # #SERVEUR
