@@ -77,7 +77,7 @@ Compléter la génération du certificat grâce à la commande pour l’échange
 ./build-dh
 ```
 
-:One: Une fois que le processus est complété, fermez votre session :
+:one: Une fois que le processus est complété, fermez votre session :
 
 ```
 exit
@@ -149,14 +149,14 @@ Sudo nano /etc/init.d/rpivpn
 echo 'echo "1" > /proc/sys/net/ipv4/ip_forward' | sudo -s
 ```
 
-:ten: Créez une redirection pour les paquets VPN « iptables ».
+:one: Créez une redirection pour les paquets VPN « iptables ».
 
 ```
 iptables -A INPUT -i tun+ -j ACCEPT
 iptables -A FORWARD -i tun+ -j ACCEPT
 ```
 
-:one: Paramétrer les commandes qui autorisent vos clients VPN à accéder au LAN et à Internet :
+:two: Paramétrer les commandes qui autorisent vos clients VPN à accéder au LAN et à Internet :
 
 ```
 iptables -A FORWARD -m state --state ESTABLISHED,RELATED -j ACCEPT
@@ -164,7 +164,7 @@ iptables -t nat -F POSTROUTING
 iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -o eth0 -j MASQUERADE
 ```
 
-:two: Enregistrez et fermez à le fichier 
+:three: Enregistrez et fermez à le fichier 
 
 Assigner les droits adaptés au script et l’installer en tant que script Init.
 
@@ -173,14 +173,14 @@ sudo chmod +x /etc/init.d/rpivpn
 sudo update-rc.d rpivpn defaults
 ```
 
-:three: Exécutez le script et redémarrez le serveur VPN.
+:four: Exécutez le script et redémarrez le serveur VPN.
 
 ```
 sudo /etc/init.d/rpivpn
 sudo /etc/init.d/openvpn restart
 ```
 
-:four: Terminer l’installation des clients
+:five: Terminer l’installation des clients
 
 Il faut leur accorder les droits root en ouvrant le dossier « /etc/openvpn/easy-rsa/keys/ », créer le fichier de configuration client, et entrer les commandes dans le fichier « Test ».
 
@@ -190,7 +190,7 @@ cd /etc/openvpn/easy-rsa/keys
 nano Test.ovpn
 ```
 
-:five: Pour le fichier client « opvn », entrez les commandes :
+:six: Pour le fichier client « opvn », entrez les commandes :
 
 ```
 client
@@ -213,7 +213,7 @@ verb 3
 
 À la quatrième ligne, remplacez par l’adresse IP de votre fournisseur DDNS ( ou si vous utilisez une adresse publique statique, vous pouvez l’insérer), suivie par le port grâce auquel le serveur VPN doit être accessible.
 
-:six: Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
+:seven: Enfin, copiez le fichier de configuration avec les certificats et les clés dans un fichier zip.
 
 Installé de pack zip sur votre Raspberry :
 
@@ -221,14 +221,14 @@ Installé de pack zip sur votre Raspberry :
 apt-get install zip
 ```
 
-:seven: Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
+:eight: Pour créer un fichier zip, utilisez les commandes ci-dessous en vous assurant que chaque ligne comprend le bon nom de client.
 
 ```
 zip /home/pi/raspberry_Test.zip ca.crt Test.crt Test.key Test.ovpn
 
 ```
 
-:eight: Ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
+:nine: Ensuite ajuster les droits des fichiers et terminer l’installation par « exit ».
 
 ```
 chown pi:pi /home/pi/raspberry_Test.zip
