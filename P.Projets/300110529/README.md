@@ -97,7 +97,7 @@ proto udp
 port 1194
 ```
 
-Apres, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et une clé digitale (key) grâce au fichier « easy-rsa ». le cryptage de bits (1024, 2048 etc.).
+Apres, créez un certificat root (ca) SSL/TLS, un certificat digital (cert) et une clé digitale (key) grâce au fichier « easy-rsa ». le cryptage de bits (2048)
 
 ```
 ca /etc/openvpn/easy-rsa/keys/ca.crt
