@@ -178,7 +178,7 @@ Cette commande est utilise pendant la configuratiion du wiki
  
  Pour la configuration de la langue du wiki j'ai selectionne le francais 
  
- ![Alt tag](oo0.png)
+ ![Alt tag](ooo.png)
  
  ajout des information relatifs a la base de donnes a savoir le non du wiki, et attribuer un mot de passe
 
@@ -202,7 +202,7 @@ Cette commande est utilise pendant la configuratiion du wiki
 
 ### :seven: Test de connectivite de la page principale 
 
-Ouvrir un explorateur et tester la la configuration wiki
+Ouvrir un explorer et tester la la configuration wiki
 
 http://10.13.237.75/index.php/Main_Page
 
