@@ -75,11 +75,11 @@ ln -s openssl-1.0.0.cnf openssl.cnf
 
 Compléter la génération du certificat grâce à la commande pour l’échange de clés :
 
-## Deuxieme étape
-
 ```
 ./build-dh
 ```
+
+## Deuxieme étape
 
 :one: Une fois que le processus est complété, fermez votre session :
 
@@ -149,11 +149,11 @@ Sudo nano /etc/init.d/rpivpn
 
 :nine: Activez « ip forward » en écrivant « 1 » dans ce dossier :
 
-## Troisième étape
-
 ```
 echo 'echo "1" > /proc/sys/net/ipv4/ip_forward' | sudo -s
 ```
+
+## Troisième étape
 
 :one: Créez une redirection pour les paquets VPN « iptables ».
 
