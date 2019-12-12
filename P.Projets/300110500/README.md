@@ -15,7 +15,7 @@ La commande pour configurer l'adress est la suivante: if config
 
 ### :pushpin: INSTALLATION DE PHP SUR RASBERRY PI
 
-### :one: Enter la commande suivante dans git bash pour installer
+### :one: Enter la commande suivante dans git bash pour installer  
  # apt install php
  ### Specifier la version version php a installer
  # apt install libapache2-mod-php
