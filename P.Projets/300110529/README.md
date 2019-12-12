@@ -246,3 +246,4 @@ exit
 ```
 $ systemctl status openvpn
 ```
+ ![image]( vpn active.png)
