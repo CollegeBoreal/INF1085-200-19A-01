@@ -85,6 +85,7 @@ Créez ce dossier en exécutant la commande suivante.
    Utilisateur:pi
    
    mot de passe: password
+   ![]()
    
    
 
