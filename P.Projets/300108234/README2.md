@@ -8,20 +8,21 @@ Virtual Private Networking (VPN) is used to set up a virtual network connection 
 
 #### :one: STEP 1: INSTALL OPENVPN SOFTWARE
 
-Execute the following command: 
+Firstly run the update 🧐
+
+```
+sudo apt update
+```
+
+Execute the following command to install OpenVPN 
 
 ```
 sudo apt-get install network-manager-openvpn
 ```
 
-#### :two: STEP 2: SETTINGs
+#### :two: STEP 2:  VPN setting
 
-Open the network menu, go to `VPN Connections` and click on `Configure VPN`
-
-#### :three: STEP 3: ADD VPN CONNECTION
-
-Click on "Add" then `Import a saved VPN configuration` and then `Create`  and select the downloaded configuration file.
-
-#### :four: STEP 4:  VPN setting
-
-Enter your login credentials and click on `Save`
+Execute the folloning command and change user to nobody and group to nogroup
+```
+nano /etc/openvpn/server.conf
+```
