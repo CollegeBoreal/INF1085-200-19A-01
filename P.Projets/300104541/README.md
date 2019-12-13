@@ -102,6 +102,7 @@ smb: \>
 -Clique droite  sur le logo de Windows ensuite appuye sur run 
 - Tape: \\10.13.237.41\sharehome
 ```
+![image]()
 
 
 ```
