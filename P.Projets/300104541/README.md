@@ -106,6 +106,8 @@ smb: \>
 Exemple
 ```
 ![image](https://github.com/CollegeBoreal/INF1085-200-19A-01/blob/master/P.Projets/300104541/sketch5.png?raw=true)
+![image]()
+
 
 
 ```
