@@ -20,7 +20,7 @@ $ cd P.Projects
 | 10   | [300111766](300111766) | pi@10.13.237.66 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| [:heavy_check_mark:](Corrections/300111766.png) | smb://IP/pimylifeupshare |
 | 11   | [300112017](300112017) | pi@10.13.237.60 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| [:heavy_check_mark:](Corrections/300112017.png) | http://10.13.237.60/index.php  |
 | 12   | [300112687](300112687) | pi@10.13.237.87 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| [:heavy_check_mark:](Corrections/300112687.png) | smb://IP/pimylifeupshare |
-| 13   | [300112917](300112917) | pi@10.13.237.79 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| :x:                |
+| 13   | [300112917](300112917) | pi@10.13.237.79 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| [:heavy_check_mark:](Corrections/300112917.png) | smb://IP/pimylifeupshare |
 | 14   | [300113775](300113775) | pi@10.13.237.77 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| :x:                |
 
 
