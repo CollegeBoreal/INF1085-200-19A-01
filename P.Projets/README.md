@@ -6,22 +6,22 @@
 $ cd P.Projects
 ```
 
-|:hash:| :id:      | :computer:      | Nom projet       | local/cloud      | 
-|------|-----------|------------------------------|------------------|------------------|
-| 01   | [300104524](300104524) | pi@10.13.237.19 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
-| 02   | [300104541](300104541) | pi@10.13.237.41 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
-| 03   | [300105201](300105201) | pi@10.13.237.78 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
-| 04   | [300106918](300106918) | pi@10.13.237.18 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local            |
-| 05   | [300107361](300107361) | pi@10.13.237.99 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
-| 06   | [300108234](300108234) | pi@10.13.237.55 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
-| 07   | [300110500](300110500) | pi@10.13.237.75 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
-| 08   | [300110529](300110529) | pi@10.13.237.80 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local            |
-| 09   | [300111671](300111671) | pi@10.13.237.63 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local            |
-| 10   | [300111766](300111766) | pi@10.13.237.66 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local            |
-| 11   | [300112017](300112017) | pi@10.13.237.60 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)               | Local            |
-| 12   | [300112687](300112687) | pi@10.13.237.87 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local            |
-| 13   | [300112917](300112917) | pi@10.13.237.79 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local            |
-| 14   | [300113775](300113775) | pi@10.13.237.77 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local            |
+|:hash:| :id:      | :computer:                   | Nom projet       | local/cloud      |  Pass |
+|------|-----------|------------------------------|------------------|------------------|-------|
+| 01   | [300104524](300104524) | pi@10.13.237.19 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :heavy_check_mark: |
+| 02   | [300104541](300104541) | pi@10.13.237.41 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
+| 03   | [300105201](300105201) | pi@10.13.237.78 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
+| 04   | [300106918](300106918) | pi@10.13.237.18 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local | :x:                |
+| 05   | [300107361](300107361) | pi@10.13.237.99 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
+| 06   | [300108234](300108234) | pi@10.13.237.55 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
+| 07   | [300110500](300110500) | pi@10.13.237.75 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
+| 08   | [300110529](300110529) | pi@10.13.237.80 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local | :x:                |
+| 09   | [300111671](300111671) | pi@10.13.237.63 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local | :x:                |
+| 10   | [300111766](300111766) | pi@10.13.237.66 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local | :x:                |
+| 11   | [300112017](300112017) | pi@10.13.237.60 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)               | Local | :x:                |
+| 12   | [300112687](300112687) | pi@10.13.237.87 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local | :x:                |
+| 13   | [300112917](300112917) | pi@10.13.237.79 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local | :x:                |
+| 14   | [300113775](300113775) | pi@10.13.237.77 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| Local | :x:                |
 
 
 ## Liste 
