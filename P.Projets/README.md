@@ -8,7 +8,7 @@ $ cd P.Projects
 
 |:hash:| :id:      | :computer:                   | Nom projet       | local/cloud      |  Pass |
 |------|-----------|------------------------------|------------------|------------------|-------|
-| 01   | [300104524](300104524) | pi@10.13.237.19 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :heavy_check_mark: |
+| 01   | [300104524](300104524) | pi@10.13.237.19 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | [:heavy_check_mark:](Corrections/300104524.png) |
 | 02   | [300104541](300104541) | pi@10.13.237.41 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
 | 03   | [300105201](300105201) | pi@10.13.237.78 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
 | 04   | [300106918](300106918) | pi@10.13.237.18 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local | :x:                |
