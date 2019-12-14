@@ -8,9 +8,9 @@ $ cd P.Projects
 
 |:hash:| :id:      | :computer:      | Nom projet       | local/cloud      | 
 |------|-----------|------------------------------|------------------|------------------|
-| 01   | [300104524](300104524) | pi@10.13.237.19 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn)   |:x:               |
-| 02   | [300104541](300104541) | pi@10.13.237.41 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn)               |:x:               |
-| 03   | [300105201](300105201) | pi@10.13.237.78 |[:parking: Archives](README.md#parking-chapter-5--configuring-automated-offsite-backups)|:x:               |
+| 01   | [300104524](300104524) | pi@10.13.237.19 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
+| 02   | [300104541](300104541) | pi@10.13.237.41 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
+| 03   | [300105201](300105201) | pi@10.13.237.78 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local            |
 | 04   | [300106918](300106918) | pi@10.13.237.18 |[:parking: SecureWeb](README.md#parking-chapter-9--securing-your-web-server)|:x:               |
 | 05   | [300107361](300107361) | pi@10.13.237.99 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)|:x:               |
 | 06   | [300108234](300108234) | pi@10.13.237.55 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)|:x:               |
