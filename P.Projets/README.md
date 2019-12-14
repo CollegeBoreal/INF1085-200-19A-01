@@ -12,9 +12,9 @@ $ cd P.Projects
 | 02   | [300104541](300104541) | pi@10.13.237.41 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| [:heavy_check_mark:](Corrections/300104524.png) | smb://IP/sharehome |
 | 03   | [300105201](300105201) | pi@10.13.237.78 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| [:heavy_check_mark:](Corrections/300105201.png) | smb://IP/pimylifeupshare |
 | 04   | [300106918](300106918) | pi@10.13.237.18 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | [:heavy_check_mark:](Corrections/300106918.png)| [client key.zip](300106918/client%20key.zip) |
-| 05   | [300107361](300107361) | pi@10.13.237.99 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| [:x:](Corrections/300106918.png) | smb://IP/homepi |
+| 05   | [300107361](300107361) | pi@10.13.237.99 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| [:x:](Corrections/300107361.png) | smb://IP/homepi |
 | 06   | [300108234](300108234) | pi@10.13.237.55 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| [:x:](Corrections/300108234.png) | smb://IP/fileshare |
-| 07   | [300110500](300110500) | pi@10.13.237.75 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| [:heavy_check_mark:](Corrections/300106918.png) | http://10.13.237.75/index.php/Main_Page  |
+| 07   | [300110500](300110500) | pi@10.13.237.75 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| [:heavy_check_mark:](Corrections/300110500.png) | http://10.13.237.75/index.php/Main_Page  |
 | 08   | [300110529](300110529) | pi@10.13.237.80 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | :x:                |
 | 09   | [300111671](300111671) | pi@10.13.237.63 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | :x:                |
 | 10   | [300111766](300111766) | pi@10.13.237.66 |[:parking: Samba](README.md#parking-chapitre-12--sharing-data-over-a-private-network)| :x:                |
