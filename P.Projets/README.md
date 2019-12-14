@@ -11,7 +11,7 @@ $ cd P.Projects
 | 01   | [300104524](300104524) | pi@10.13.237.19 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | [:heavy_check_mark:](Corrections/300104524.png) | smb://IP/pimylifeupshare |
 | 02   | [300104541](300104541) | pi@10.13.237.41 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | [:heavy_check_mark:](Corrections/300104524.png) | smb://IP/sharehome |
 | 03   | [300105201](300105201) | pi@10.13.237.78 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | [:heavy_check_mark:](Corrections/300105201.png) | smb://IP/pimylifeupshare |
-| 04   | [300106918](300106918) | pi@10.13.237.18 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local | :x:                |
+| 04   | [300106918](300106918) | pi@10.13.237.18 |[:parking: VPN](README.md#parking-chapter-10--securing-network-connections-vpn) | Local | [:heavy_check_mark:](Corrections/300106918.png)| [client key.zip](300106918/client%20key.zip) |
 | 05   | [300107361](300107361) | pi@10.13.237.99 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
 | 06   | [300108234](300108234) | pi@10.13.237.55 |[:parking: Samba](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
 | 07   | [300110500](300110500) | pi@10.13.237.75 |[:parking: MediaWiki](README.md#parking-chapter-7--building-a-mediawiki-server)| Local | :x:                |
