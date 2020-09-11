@@ -5,8 +5,7 @@ Administration Linux
 
 |No| Date   | Cours                       | Intitulé                                |  Pratique .                            |
 |--|--------|:----------------------------|:----------------------------------------|:---------------------------------------|
-| 1|16-09-19| [0.Blog](./0.Blog)          | Installer Ubuntu 18.04                  | Démontrer l'installation par un blog (i.e. http://wordpress.com  ) |
-| 1|01-10-19| [2.Keys](./2.Keys)          | Installer Docker Engine                 | Démontrer l'installation de clés privés et de [Docker Engine](https://www.docker.com/products/container-runtime) |
+| 1|20-09-25| [0.Blog](./0.Blog)          | Installer Ubuntu 20.04                  | Démontrer l'installation par un blog (i.e. http://wordpress.com  ) |
 
 
 ## Resultats d'Apprentissage du Cours
@@ -22,25 +21,23 @@ Administration Linux
 
 ## Déroulement de cours:
 
-|# | Date   |                                                     |     Commentaires                                                   |
-|--|:------:|:----------------------------------------------------|:-------------------------------------------------------------------|
-|01|03-09-19|                                                     | Rentrée des classes                                                |
-|03|10-09-19| [1.Shell](./1.Shell)                                | Shell                                                              |
-|02|17-09-19| [3.Boot](./3.Boot)                                  | Boot                           Ubuntu 18.04                        |
-|04|24-09-19| TBD                                                 | TBD                                                                |
-|05|01-10-19| TBD                                                 | TBD                                                                |
-|06|08-10-19| TBD                                                 | TBD                                                                |
-|07|15-10-19| TBD                                                 | TBD                                                                |
-|08|22-10-19| Semaine d'études                                    | Pas de cours                                                       |
-|09|29-10-19| TBD                                                 | TBD                                                                |
-|10|05-11-19| TBD                                                 | TBD                                                                |
-|11|12-11-19| TBD                                                 | TBD                                                                |
-|12|19-11-19| TBD                                                 | TBD                                                                |
-|13|26-11-19| TBD                                                 | TBD                                                                |
-|14|03-12-19| TBD                                                 | TBD                                                                |
-|15|10-12-19| TBD                                                 | TBD                                                                |
-
-
+|No| Date   | Cours                                          | Intitulé                                |  Commentaires     |
+|--|:------:|:-----------------------------------------------|:----------------------------------------|:------------------|
+|01|20-09-07|                                                | Rentrée des classes                     |                   |
+|02|20-09-14|[0.Blog](./0.Blog)                              | Ma première installation.               |                   |
+|03|20-09-21|[1.Shell](./1.Shell)                            | Shell                                   | Chapitre 3        |
+|04|20-09-28|[3.Boot](./3.Boot)                              | Boot                                    | Chapitre 4, 5     |
+|05|20-10-05|                                                |                                         |                   |
+|06|20-10-12|                                                |                                         |                   |
+|07|20-10-19|                                                |                                         |                   |
+|08|20-10-26| Autumn Break                                   |                                         |                   |
+|09|20-11-02|                                                |                                         |                   |
+|10|20-11-09|                                                |                                         |                   |
+|11|20-11-16|                                                |                                         |                   |
+|12|20-11-23|                                                |                                         |                   |
+|13|20-12-30|                                                |                                         |                   |
+|14|20-12-07|                                                |                                         |                   |
+|15|20-12-14| Fin des cours                                  |                                         |                   |
 
 # References
 
