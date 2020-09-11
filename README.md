@@ -45,7 +45,7 @@ Administration Linux
 |----------------|-----------------------------------------------|
 | Linux in Action| https://www.manning.com/books/linux-in-action |
 
-[aws_summit_toronto_2019](https://www.cvent.com/events/aws-summit-toronto/registration-34622b420102432e812ca0ed88d09bfd.aspx?lang=fr-CA&fqp=true)
+[aws_summit_toronto_2020](https://aws.amazon.com/events/summits/toronto/2020/)
 
 # Activités
 
